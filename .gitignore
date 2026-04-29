@@ -4,6 +4,9 @@ node_modules/
 # Local Claude Code settings
 .claude/
 
+# Backup of original photos before optimization (kept locally only)
+brand_photos_original/
+
 # Local-only dev/scrape tools and scratch data
 scrape-debug.mjs
 scrape-google-reviews.mjs

@@ -1,0 +1,19 @@
+# Local dev tooling — not needed on Vercel
+node_modules/
+package.json
+package-lock.json
+serve.mjs
+screenshot.mjs
+screenshot-jobber.mjs
+scrape-debug.mjs
+scrape-google-reviews.mjs
+google-reviews.json
+temporary screenshots/
+
+# Internal workflow notes
+CLAUDE.md
+.claude/
+
+# Repo metadata
+.gitignore
+.gitattributes

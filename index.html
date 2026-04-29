@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yard Dog Landscapes — Sit. Stay. Perfect Landscape.</title>
+<meta name="description" content="Premium landscape design, lawn care, and hardscaping in Longview, TX. Family-owned since 2017. Sit. Stay. Perfect Landscape." />
+<link rel="icon" href="brand_assets/Yard Dog Logo.png" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Jobber work request form embed styles -->
+<link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'ydg': {
+            green:    '#2F6B2A',  // Yard Dog Green
+            'green-d':'#21501E',
+            'green-l':'#4A8E45',
+            ink:      '#0E1714',  // Brand black / deep
+            night:    '#091513',
+            cream:    '#F4EFE2',
+            sage:     '#C5CDB3',
+            khaki:    '#D9C79A',
+            mocha:    '#5A3A22',
+            red:      '#C8362C',
+          }
+        },
+        fontFamily: {
+          display: ['Anton', 'Impact', 'sans-serif'],
+          sans:    ['Inter', 'Arial', 'sans-serif'],
+        },
+        boxShadow: {
+          'btn':    '0 8px 24px -10px rgba(47, 107, 42, 0.55), inset 0 1px 0 rgba(255,255,255,0.18)',
+          'card':   '0 1px 0 rgba(255,255,255,0.04) inset, 0 12px 40px -16px rgba(0,0,0,0.55), 0 2px 6px -2px rgba(0,0,0,0.35)',
+          'soft':   '0 24px 60px -28px rgba(14,23,20,0.45)',
+          'lift':   '0 30px 80px -30px rgba(47,107,42,0.45), 0 12px 30px -18px rgba(0,0,0,0.5)',
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #0E1714;
+    background: #F4EFE2;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-display { font-family: 'Anton', Impact, sans-serif; letter-spacing: -0.01em; }
+
+  /* Tight tracking on large display headings */
+  .h-display { letter-spacing: -0.025em; line-height: 0.92; }
+
+  /* Body line-height */
+  .lede { line-height: 1.65; }
+
+  /* SVG noise overlay for depth */
+  .grain::before {
+    content:"";
+    position:absolute; inset:0;
+    pointer-events:none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>");
+    opacity: 0.10;
+    mix-blend-mode: overlay;
+  }
+
+  /* Hero radial gradient stack */
+  .hero-bg {
+    background:
+      radial-gradient(1100px 600px at 12% 8%, rgba(74,142,69,0.28), transparent 60%),
+      radial-gradient(900px 700px at 92% 18%, rgba(197,205,179,0.18), transparent 65%),
+      radial-gradient(700px 700px at 60% 100%, rgba(33,80,30,0.45), transparent 60%),
+      linear-gradient(180deg, #091513 0%, #0E1714 55%, #0E1714 100%);
+  }
+
+  /* Decorative dotted/topo lines */
+  .topo {
+    background-image:
+      radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Buttons — primary */
+  .btn-primary {
+    position: relative;
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: linear-gradient(180deg, #4A8E45 0%, #2F6B2A 60%, #21501E 100%);
+    color: #F4EFE2;
+    padding: 0.95rem 1.6rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    box-shadow: 0 10px 28px -12px rgba(47,107,42,0.65), inset 0 1px 0 rgba(255,255,255,0.22), inset 0 -1px 0 rgba(0,0,0,0.18);
+    transform: translateZ(0);
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms cubic-bezier(.2,.8,.2,1);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(47,107,42,0.75), inset 0 1px 0 rgba(255,255,255,0.25); }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-primary:focus-visible { outline: 2px solid #C5CDB3; outline-offset: 3px; }
+
+  /* Buttons — ghost */
+  .btn-ghost {
+    display:inline-flex; align-items:center; gap:0.6rem;
+    border: 1.5px solid rgba(244,239,226,0.28);
+    color: #F4EFE2;
+    padding: 0.9rem 1.55rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    background: rgba(255,255,255,0.02);
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1), background 220ms, border-color 220ms;
+  }
+  .btn-ghost:hover { background: rgba(244,239,226,0.08); border-color: rgba(244,239,226,0.55); transform: translateY(-2px); }
+  .btn-ghost:focus-visible { outline: 2px solid #4A8E45; outline-offset: 3px; }
+
+  .btn-dark {
+    display:inline-flex; align-items:center; gap:0.6rem;
+    color: #0E1714;
+    border: 1.5px solid rgba(14,23,20,0.85);
+    background: transparent;
+    padding: 0.9rem 1.55rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1), background 220ms, color 220ms;
+  }
+  .btn-dark:hover { background: #0E1714; color: #F4EFE2; transform: translateY(-2px); }
+
+  /* Hand-drawn CTA highlight (vanilla port of HandWrittenTitle effect) */
+  .cta-mark {
+    position: relative;
+    display: inline-flex;
+    isolation: isolate;
+  }
+  .cta-mark > .cta-mark-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 132%;
+    height: 240%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    overflow: visible;
+    z-index: 0;
+  }
+  .cta-mark > .cta-mark-svg path {
+    fill: none;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    vector-effect: non-scaling-stroke;
+    opacity: 0;
+  }
+  .cta-mark.is-drawn > .cta-mark-svg path {
+    animation:
+      cta-draw 2.5s cubic-bezier(0.43, 0.13, 0.23, 0.96) forwards,
+      cta-fade 0.5s ease-out forwards;
+  }
+  @keyframes cta-draw {
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes cta-fade {
+    to { opacity: 0.95; }
+  }
+  .cta-mark > * { position: relative; z-index: 1; }
+  /* color variants — match against background */
+  .cta-mark--cream > .cta-mark-svg path { stroke: #F4EFE2; }
+  .cta-mark--green > .cta-mark-svg path { stroke: #4A8E45; }
+  .cta-mark--ink   > .cta-mark-svg path { stroke: #0E1714; }
+  @media (prefers-reduced-motion: reduce) {
+    .cta-mark.is-drawn > .cta-mark-svg path {
+      animation: none;
+      stroke-dashoffset: 0;
+      opacity: 0.9;
+    }
+  }
+
+  /* Testimonials: vertically auto-scrolling columns (vanilla port of motion/react component) */
+  @keyframes ydg-scroll-up {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-50%); }
+  }
+  .t-mask {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  }
+  .t-track {
+    animation: ydg-scroll-up var(--t-duration, 18s) linear infinite;
+    will-change: transform;
+  }
+  .t-col:hover .t-track { animation-play-state: paused; }
+  .t-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(14,23,20,0.06);
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 18px 40px -22px rgba(47,107,42,0.18), 0 4px 10px -6px rgba(14,23,20,0.08);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .t-track { animation: none; }
+  }
+
+  /* Service card hover */
+  .service-card {
+    transition: transform 320ms cubic-bezier(.2,.8,.2,1), box-shadow 320ms cubic-bezier(.2,.8,.2,1), border-color 320ms;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -28px rgba(14,23,20,0.35), 0 8px 24px -10px rgba(47,107,42,0.25); }
+
+  /* Image treatment */
+  .img-treat {
+    position: relative; overflow: hidden; border-radius: 1.25rem;
+  }
+  .img-treat img { display:block; width:100%; height:100%; object-fit: cover; }
+  .img-treat::after {
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(180deg, transparent 55%, rgba(9,21,19,0.55) 100%);
+    pointer-events:none;
+  }
+  .img-tint::before {
+    content:""; position:absolute; inset:0;
+    background: rgba(47,107,42,0.10); mix-blend-mode: multiply; pointer-events:none;
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .marquee-track { animation: marquee 38s linear infinite; }
+
+  /* Subtle nav blur on scroll cue */
+  .nav-blur { backdrop-filter: saturate(140%) blur(10px); -webkit-backdrop-filter: saturate(140%) blur(10px); }
+
+  /* Tag chip */
+  .chip {
+    display:inline-flex; align-items:center; gap:0.5rem;
+    padding: 0.4rem 0.85rem; border-radius: 9999px;
+    background: rgba(244,239,226,0.08);
+    border: 1px solid rgba(244,239,226,0.16);
+    color: #C5CDB3; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .chip-light {
+    display:inline-flex; align-items:center; gap:0.5rem;
+    padding: 0.4rem 0.85rem; border-radius: 9999px;
+    background: rgba(47,107,42,0.08);
+    border: 1px solid rgba(47,107,42,0.18);
+    color: #21501E; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+  }
+  /* Gallery photo overlay chips need to read against any background */
+  .img-treat figcaption .chip {
+    color: #ffffff;
+    background: rgba(9,21,19,0.45);
+    border-color: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-weight: 600;
+  }
+
+  /* Star color */
+  .star { color: #E8B53A; }
+
+  /* Section divider rule */
+  .rule { height:1px; background: linear-gradient(90deg, transparent, rgba(14,23,20,0.18), transparent); }
+
+  /* Reveal on hover for arrow */
+  .arrow-link .arrow { transition: transform 240ms cubic-bezier(.2,.8,.2,1); }
+  .arrow-link:hover .arrow { transform: translateX(4px); }
+
+  /* Jobber form embed: let it fill the card edge-to-edge */
+  .jobber-form-mount {
+    position: relative;
+    min-height: 720px;
+    width: 100%;
+  }
+  .jobber-form-mount.jobber-inline-work-request {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .jobber-form-mount iframe.jobber-work-request {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 720px;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+</style>
+</head>
+<body class="bg-ydg-cream">
+
+<!-- ================= NAV ================= -->
+<header class="absolute top-0 inset-x-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-6">
+    <nav class="flex items-center justify-between rounded-full nav-blur bg-ydg-night/40 border border-white/10 pl-3 pr-3 py-2">
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="relative inline-flex h-11 w-11 rounded-full bg-ydg-cream ring-1 ring-white/15 overflow-hidden">
+          <img src="brand_assets/Yard Dog Logo.png" alt="Yard Dog Landscapes" class="h-11 w-11 object-contain p-0.5" />
+        </span>
+        <span class="font-display text-ydg-cream text-xl tracking-tight leading-none">
+          YARD DOG <span class="text-ydg-green-l">LANDSCAPES</span>
+        </span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-8 text-sm text-ydg-cream/85">
+        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+        <li><a href="#work"     class="hover:text-white transition-colors">Our Work</a></li>
+        <li><a href="#about"    class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#reviews"  class="hover:text-white transition-colors">Reviews</a></li>
+        <li><a href="#contact"  class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:9038446877" class="hidden md:inline-flex items-center gap-2 text-ydg-cream/85 text-sm hover:text-white transition-colors">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          (903) 844-6877
+        </a>
+        <a href="#contact" class="btn-primary text-sm py-2.5 px-4">
+          Get a Free Quote
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative overflow-hidden hero-bg grain pt-36 lg:pt-44 pb-24 lg:pb-32">
+  <!-- topographic dot pattern -->
+  <div class="absolute inset-0 topo opacity-50 pointer-events-none"></div>
+
+  <!-- subtle floating leaves -->
+  <svg class="absolute -top-8 right-[-60px] w-[420px] opacity-[0.07]" viewBox="0 0 200 200" fill="none" stroke="#C5CDB3" stroke-width="0.6">
+    <path d="M100 10 C 60 50, 60 130, 100 190 C 140 130, 140 50, 100 10 Z"/>
+    <path d="M100 30 V 180" />
+  </svg>
+  <svg class="absolute bottom-[-40px] left-[-60px] w-[360px] opacity-[0.06]" viewBox="0 0 200 200" fill="none" stroke="#C5CDB3" stroke-width="0.6">
+    <path d="M100 10 C 60 50, 60 130, 100 190 C 140 130, 140 50, 100 10 Z"/>
+    <path d="M100 30 V 180" />
+  </svg>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    <div class="lg:col-span-7">
+      <span class="chip mb-6">
+        <span class="h-1.5 w-1.5 rounded-full bg-ydg-green-l"></span>
+        Family-owned · Longview, TX · Since 2017
+      </span>
+
+      <h1 class="font-display h-display text-ydg-cream text-[14vw] sm:text-[10vw] lg:text-[7.5rem] xl:text-[8.5rem]">
+        SIT. STAY.
+        <span class="block text-ydg-green-l">PERFECT LANDSCAPE.</span>
+      </h1>
+
+      <p class="lede mt-7 max-w-xl text-ydg-cream/75 text-lg">
+        From weekly mows to full-property transformations — we design, build, and maintain
+        outdoor spaces East Texans actually want to come home to. No fluff. No shortcuts.
+        Just a yard that earns the bone.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <span class="cta-mark cta-mark--cream">
+          <svg class="cta-mark-svg" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+            <path pathLength="1" d="M 950 90 C 1250 300, 1050 480, 600 520 C 250 520, 150 480, 150 300 C 150 120, 350 80, 600 80 C 850 80, 950 180, 950 180" />
+          </svg>
+          <a href="#contact" class="btn-primary">
+            Get a Free Quote
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </span>
+        <a href="tel:9038446877" class="btn-ghost">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          Call (903) 844-6877
+        </a>
+      </div>
+
+      <!-- proof row -->
+      <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-5">
+        <div class="flex items-center gap-3">
+          <div class="flex -space-x-2">
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night bg-ydg-khaki"></span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night bg-ydg-sage"></span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night bg-ydg-mocha"></span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night bg-ydg-green-l"></span>
+          </div>
+          <div class="text-ydg-cream/80 text-sm leading-tight">
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <span class="ml-1 font-semibold text-ydg-cream">5.0</span>
+            </div>
+            <span class="text-xs text-ydg-cream/60">200+ Google Reviews</span>
+          </div>
+        </div>
+
+        <span class="hidden md:block h-10 w-px bg-white/10"></span>
+
+        <div class="text-ydg-cream/80 text-sm">
+          <div class="font-display text-2xl text-ydg-cream leading-none">7+</div>
+          <div class="text-xs text-ydg-cream/60">Years serving East Texas</div>
+        </div>
+
+        <span class="hidden md:block h-10 w-px bg-white/10"></span>
+
+        <div class="text-ydg-cream/80 text-sm">
+          <div class="font-display text-2xl text-ydg-cream leading-none">1,200+</div>
+          <div class="text-xs text-ydg-cream/60">Properties cared for</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: stacked imagery -->
+    <div class="lg:col-span-5 relative">
+      <div class="relative">
+        <!-- main image -->
+        <div class="img-treat img-tint shadow-lift aspect-[4/5] rotate-[1.5deg]">
+          <img src="brand_photos/IMG_3526.jpg" alt="Front yard stepping-stone path with crepe myrtles in bloom">
+        </div>
+
+        <!-- secondary card -->
+        <div class="absolute -left-8 -bottom-10 w-44 sm:w-56 img-treat shadow-card rotate-[-4deg] hidden sm:block">
+          <img src="brand_photos/IMG_3683.jpg" alt="Warm-toned flagstone patio at a brick home" class="aspect-[4/5]">
+        </div>
+
+        <!-- floating badge -->
+        <div class="absolute -right-4 top-8 sm:top-14 bg-ydg-cream rounded-2xl shadow-soft p-4 w-56 border border-black/5">
+          <div class="flex items-center gap-2 text-ydg-green-d">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span class="text-xs font-semibold uppercase tracking-widest">Licensed & Insured</span>
+          </div>
+          <p class="mt-2 text-sm text-ydg-ink/75 leading-snug">
+            Free on-site quotes within 24 hours. No obligation.
+          </p>
+        </div>
+
+        <!-- floating tag -->
+        <div class="absolute -bottom-6 right-2 sm:right-8 bg-ydg-night/85 backdrop-blur rounded-xl px-4 py-3 border border-white/10 hidden sm:flex items-center gap-3">
+          <span class="h-2.5 w-2.5 rounded-full bg-ydg-green-l shadow-[0_0_0_4px_rgba(74,142,69,0.25)]"></span>
+          <div class="text-ydg-cream text-xs leading-tight">
+            <div class="font-semibold">Booking Spring 2026</div>
+            <div class="text-ydg-cream/60">Limited weekly slots</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGO MARQUEE / TRUST BAR ================= -->
+<section class="bg-ydg-night text-ydg-cream/60 py-6 border-y border-white/5 overflow-hidden">
+  <div class="flex gap-16 marquee-track whitespace-nowrap text-sm uppercase tracking-[0.25em]">
+    <span>★ Belgard Authorized Contractor</span>
+    <span>· Texas Nursery & Landscape Assoc.</span>
+    <span>· EPA Certified Applicator</span>
+    <span>· Best of Longview 2024</span>
+    <span>· Family Owned Since 2017</span>
+    <span>· Licensed & Insured</span>
+    <span>★ Belgard Authorized Contractor</span>
+    <span>· Texas Nursery & Landscape Assoc.</span>
+    <span>· EPA Certified Applicator</span>
+    <span>· Best of Longview 2024</span>
+    <span>· Family Owned Since 2017</span>
+    <span>· Licensed & Insured</span>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="relative py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <span class="chip-light">What We Do</span>
+        <h2 class="font-display h-display text-ydg-ink text-5xl sm:text-6xl lg:text-7xl mt-5">
+          The full pack of <span class="text-ydg-green">outdoor services</span>.
+        </h2>
+      </div>
+      <p class="lede max-w-md text-ydg-ink/65">
+        Whether you need a tidy weekly mow or a backyard rebuild, our crew handles every
+        inch of your property like it's our own.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service Card 1 -->
+      <article class="service-card relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card overflow-hidden">
+        <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-ydg-sage/30 blur-2xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-green/10 text-ydg-green-d flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20s2-1 4-1 4 1 4 1 2-1 4-1 4 1 4 1"/><path d="M5 17V7M9 17V5M13 17V8M17 17V6M21 17v-6"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5 text-ydg-ink">Lawn Care & Mowing</h3>
+          <p class="mt-2 text-ydg-ink/65 lede">
+            Weekly and bi-weekly maintenance, edging, blowing, and seasonal cleanups that
+            keep curb appeal sharp year-round.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-d font-semibold">
+            Plan my service <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Card 2 -->
+      <article class="service-card relative bg-ydg-ink text-ydg-cream rounded-3xl p-7 border border-white/10 shadow-card overflow-hidden">
+        <div class="absolute -top-16 -right-10 h-48 w-48 rounded-full bg-ydg-green/30 blur-3xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-green-l/15 text-ydg-green-l flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M5 9c0 4 3 7 7 7s7-3 7-7"/><path d="M3 14c1 4 5 7 9 7s8-3 9-7"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5">Landscape Design</h3>
+          <p class="mt-2 text-ydg-cream/70 lede">
+            Custom plant beds, native plantings, drainage, and full yard transformations
+            built around how you actually live.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-l font-semibold">
+            Design my space <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Card 3 -->
+      <article class="service-card relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card overflow-hidden">
+        <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-ydg-khaki/40 blur-2xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-mocha/10 text-ydg-mocha flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="10" width="6" height="6"/><rect x="9" y="6" width="6" height="6"/><rect x="15" y="11" width="6" height="6"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5 text-ydg-ink">Hardscaping & Patios</h3>
+          <p class="mt-2 text-ydg-ink/65 lede">
+            Paver patios, retaining walls, fire pits, and walkways engineered to handle
+            East Texas weather for decades.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-d font-semibold">
+            Build my patio <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Card 4 -->
+      <article class="service-card relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card overflow-hidden">
+        <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-ydg-sage/40 blur-2xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-green/10 text-ydg-green-d flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M8 4l4 4 4-4M5 22h14M7 22V11M17 22V11M5 11h14M9 8c0 2-2 3-2 3M15 8c0 2 2 3 2 3"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5 text-ydg-ink">Tree & Shrub Care</h3>
+          <p class="mt-2 text-ydg-ink/65 lede">
+            Pruning, trimming, removal, and seasonal feeding to keep mature trees and
+            ornamentals healthy.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-d font-semibold">
+            Schedule a visit <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Card 5 -->
+      <article class="service-card relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card overflow-hidden">
+        <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-ydg-green-l/30 blur-2xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-green/10 text-ydg-green-d flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M4 8c4 4 12 4 16 0M4 16c4 4 12 4 16 0"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5 text-ydg-ink">Irrigation & Drainage</h3>
+          <p class="mt-2 text-ydg-ink/65 lede">
+            Smart sprinkler installs, leak repair, and drainage solutions for soggy
+            spots that won't quit.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-d font-semibold">
+            Fix my system <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Card 6 -->
+      <article class="service-card relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card overflow-hidden">
+        <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-ydg-khaki/40 blur-2xl"></div>
+        <div class="relative">
+          <div class="h-12 w-12 rounded-2xl bg-ydg-green/10 text-ydg-green-d flex items-center justify-center">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          </div>
+          <h3 class="font-display text-3xl mt-5 text-ydg-ink">Lawn Treatment</h3>
+          <p class="mt-2 text-ydg-ink/65 lede">
+            Fertilization, weed control, and aeration programs tuned to East Texas
+            soil and grass types.
+          </p>
+          <a href="#contact" class="arrow-link mt-5 inline-flex items-center gap-2 text-ydg-green-d font-semibold">
+            Get a program <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ================= ABOUT / WHY ================= -->
+<section id="about" class="relative py-24 lg:py-32 bg-ydg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+    <!-- imagery collage -->
+    <div class="lg:col-span-6 relative">
+      <div class="grid grid-cols-6 grid-rows-6 gap-4 h-[520px]">
+        <div class="img-treat img-tint col-span-4 row-span-4 shadow-soft">
+          <img src="brand_photos/IMG_3406.jpg" alt="Yard Dog crew member with the company truck and shop dog">
+        </div>
+        <div class="img-treat col-span-2 row-span-3 col-start-5 row-start-1 shadow-soft">
+          <img src="brand_photos/IMG_3736.jpg" alt="River rock drainage bed alongside a brick home">
+        </div>
+        <div class="img-treat col-span-2 row-span-3 col-start-5 row-start-4 shadow-soft">
+          <img src="brand_photos/IMG_3523.jpg" alt="Flagstone patio with blooming pink azaleas">
+        </div>
+        <div class="img-treat col-span-4 row-span-2 col-start-1 row-start-5 shadow-soft">
+          <img src="brand_photos/IMG_3680.jpg" alt="Custom flagstone patio install in a backyard">
+        </div>
+      </div>
+
+      <!-- floating logo medallion -->
+      <div class="absolute -bottom-6 -left-6 bg-white rounded-full h-28 w-28 flex items-center justify-center shadow-card border border-black/5">
+        <img src="brand_assets/Yard Dog Logo.png" alt="" class="h-20 w-20 object-contain">
+      </div>
+    </div>
+
+    <div class="lg:col-span-6">
+      <span class="chip-light">Why Yard Dog</span>
+      <h2 class="font-display h-display text-ydg-ink text-5xl sm:text-6xl lg:text-7xl mt-5">
+        Loyal as a hound. <br/>
+        <span class="text-ydg-green">Sharp as a spade.</span>
+      </h2>
+      <p class="lede mt-6 text-ydg-ink/70 max-w-xl text-lg">
+        We started Yard Dog in 2017 with one truck, one trailer, and a stubborn belief
+        that lawn care should feel personal. Almost a decade later, we still answer the phone,
+        still walk every property, and still treat your yard like our own front lawn.
+      </p>
+
+      <div class="mt-10 grid sm:grid-cols-2 gap-5">
+        <div class="p-5 rounded-2xl bg-white/70 border border-black/5">
+          <div class="flex items-center gap-3 text-ydg-green-d font-semibold">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Same crew, every visit
+          </div>
+          <p class="text-ydg-ink/65 text-sm mt-2 lede">
+            You'll see the same friendly faces — not a rotating subcontractor pool.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white/70 border border-black/5">
+          <div class="flex items-center gap-3 text-ydg-green-d font-semibold">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Transparent pricing
+          </div>
+          <p class="text-ydg-ink/65 text-sm mt-2 lede">
+            Itemized estimates. No surprise add-ons. No "we'll figure it out later."
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white/70 border border-black/5">
+          <div class="flex items-center gap-3 text-ydg-green-d font-semibold">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            On-time, every time
+          </div>
+          <p class="text-ydg-ink/65 text-sm mt-2 lede">
+            We schedule tight and communicate fast. Rain reschedules sent the same day.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white/70 border border-black/5">
+          <div class="flex items-center gap-3 text-ydg-green-d font-semibold">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Local, licensed, insured
+          </div>
+          <p class="text-ydg-ink/65 text-sm mt-2 lede">
+            Based in Longview. Serving Gregg, Harrison, Smith, and Upshur counties.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <span class="cta-mark cta-mark--green">
+          <svg class="cta-mark-svg" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+            <path pathLength="1" d="M 950 90 C 1250 300, 1050 480, 600 520 C 250 520, 150 480, 150 300 C 150 120, 350 80, 600 80 C 850 80, 950 180, 950 180" />
+          </svg>
+          <a href="#contact" class="btn-primary">
+            Schedule a Walkthrough
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK GALLERY ================= -->
+<section id="work" class="relative py-24 lg:py-32 bg-ydg-night text-ydg-cream overflow-hidden">
+  <div class="absolute inset-0 topo opacity-40 pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+      <div class="max-w-2xl">
+        <span class="chip">Recent Work</span>
+        <h2 class="font-display h-display text-5xl sm:text-6xl lg:text-7xl mt-5">
+          A look at the <span class="text-ydg-green-l">backyard</span>.
+        </h2>
+      </div>
+      <p class="lede text-ydg-cream/70 max-w-md">
+        Real homes, real crews, real results — pulled straight from this season's project log.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-12 gap-5">
+      <figure class="md:col-span-7 img-treat aspect-[16/10] shadow-card">
+        <img src="brand_photos/IMG_3738.jpg" alt="River rock bed with manicured shrubs and front porch">
+        <figcaption class="absolute bottom-4 left-4 text-sm">
+          <span class="chip">Hallsville · Front Yard Refresh</span>
+        </figcaption>
+      </figure>
+      <figure class="md:col-span-5 img-treat aspect-[16/10] shadow-card">
+        <img src="brand_photos/IMG_3525.jpg" alt="Flagstone side-yard walkway with retaining wall">
+        <figcaption class="absolute bottom-4 left-4 text-sm">
+          <span class="chip">Longview · Paver Walkway</span>
+        </figcaption>
+      </figure>
+      <figure class="md:col-span-5 img-treat aspect-[16/10] shadow-card">
+        <img src="brand_photos/IMG_3737.jpg" alt="Backyard flagstone landing under a wood deck">
+        <figcaption class="absolute bottom-4 left-4 text-sm">
+          <span class="chip">Kilgore · Backyard Patio</span>
+        </figcaption>
+      </figure>
+      <figure class="md:col-span-7 img-treat aspect-[16/10] shadow-card">
+        <img src="brand_photos/IMG_3452.jpg" alt="Skid steer working on a paver patio install">
+        <figcaption class="absolute bottom-4 left-4 text-sm">
+          <span class="chip">Tyler · Hardscape Build</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#contact" class="btn-ghost">
+        See more on Instagram
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="py-24 lg:py-32 bg-ydg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-14">
+      <span class="chip-light">How It Works</span>
+      <h2 class="font-display h-display text-ydg-ink text-5xl sm:text-6xl lg:text-7xl mt-5">
+        Four steps. <span class="text-ydg-green">Zero guesswork.</span>
+      </h2>
+    </div>
+
+    <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <li class="relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card">
+        <span class="font-display text-7xl text-ydg-green/15 absolute top-3 right-5 leading-none">01</span>
+        <h3 class="font-display text-2xl text-ydg-ink relative">Reach out</h3>
+        <p class="lede text-ydg-ink/65 text-sm mt-2 relative">
+          Call us or fill out the quote form — takes about a minute.
+        </p>
+      </li>
+      <li class="relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card">
+        <span class="font-display text-7xl text-ydg-green/15 absolute top-3 right-5 leading-none">02</span>
+        <h3 class="font-display text-2xl text-ydg-ink relative">On-site walkthrough</h3>
+        <p class="lede text-ydg-ink/65 text-sm mt-2 relative">
+          We meet at your property, listen, measure, and map the work.
+        </p>
+      </li>
+      <li class="relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card">
+        <span class="font-display text-7xl text-ydg-green/15 absolute top-3 right-5 leading-none">03</span>
+        <h3 class="font-display text-2xl text-ydg-ink relative">Clear estimate</h3>
+        <p class="lede text-ydg-ink/65 text-sm mt-2 relative">
+          Itemized, written, no pressure. You decide on your timeline.
+        </p>
+      </li>
+      <li class="relative bg-white rounded-3xl p-7 border border-black/[0.06] shadow-card">
+        <span class="font-display text-7xl text-ydg-green/15 absolute top-3 right-5 leading-none">04</span>
+        <h3 class="font-display text-2xl text-ydg-ink relative">Crew shows up</h3>
+        <p class="lede text-ydg-ink/65 text-sm mt-2 relative">
+          On time, in uniform, ready to work — and we don't leave a mess.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= REVIEWS (auto-scrolling columns) ================= -->
+<section id="reviews" class="relative py-24 lg:py-32 bg-white overflow-hidden">
+  <!-- subtle radial wash -->
+  <div class="pointer-events-none absolute inset-0 opacity-60"
+       style="background:
+         radial-gradient(900px 500px at 12% 0%, rgba(74,142,69,0.08), transparent 60%),
+         radial-gradient(900px 500px at 88% 100%, rgba(217,199,154,0.18), transparent 60%);">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+    <!-- Header -->
+    <div class="flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
+      <span class="chip-light">Testimonials</span>
+      <h2 class="font-display h-display text-ydg-ink text-5xl sm:text-6xl lg:text-7xl mt-5">
+        What our <span class="text-ydg-green">neighbors</span> say.
+      </h2>
+      <p class="lede mt-5 text-ydg-ink/65 max-w-md">
+        200+ five-star Google reviews from East Texans who let us treat their yard like our own.
+      </p>
+      <div class="flex items-center gap-2 mt-5">
+        <div class="flex">
+          <svg class="h-5 w-5 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+          <svg class="h-5 w-5 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+          <svg class="h-5 w-5 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+          <svg class="h-5 w-5 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+          <svg class="h-5 w-5 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+        </div>
+        <span class="text-ydg-ink/70 text-sm">5.0 average · Google Reviews</span>
+      </div>
+    </div>
+
+    <!-- Three scrolling columns. Each column shows the same 3 real Google reviews
+         in a different order so something different is in view at any moment.
+         Reviews + profile pics pulled from yarddoglandscapes.com homepage. -->
+    <div class="t-mask flex justify-center gap-6 mt-14 max-h-[740px] overflow-hidden">
+
+      <!-- Column 1: Kathy → Renee → Laura -->
+      <div class="t-col w-full max-w-xs">
+        <div class="t-track flex flex-col gap-6 pb-6" style="--t-duration: 28s;">
+          <!-- Kathy -->
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars">
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+            </div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5">
+              <img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" />
+              <div class="flex flex-col">
+                <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span>
+                <span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span>
+              </div>
+            </div>
+          </article>
+          <!-- Renee -->
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars">
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+            </div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5">
+              <img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" />
+              <div class="flex flex-col">
+                <span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span>
+                <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
+              </div>
+            </div>
+          </article>
+          <!-- Laura -->
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars">
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+              <svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg>
+            </div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5">
+              <img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" />
+              <div class="flex flex-col">
+                <span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span>
+                <span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- duplicate set for seamless loop -->
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span><span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span><span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span><span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Column 2: Renee → Laura → Kathy -->
+      <div class="t-col hidden md:block w-full max-w-xs">
+        <div class="t-track flex flex-col gap-6 pb-6" style="--t-duration: 36s;">
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span><span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span><span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span><span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span></div></div>
+          </article>
+
+          <!-- duplicate -->
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span><span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span><span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span><span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Column 3: Laura → Kathy → Renee -->
+      <div class="t-col hidden lg:block w-full max-w-xs">
+        <div class="t-track flex flex-col gap-6 pb-6" style="--t-duration: 32s;">
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span><span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span><span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7">
+            <div class="flex" aria-label="5 out of 5 stars"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span><span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span></div></div>
+          </article>
+
+          <!-- duplicate -->
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-2.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura</span><span class="text-xs text-ydg-ink/60 leading-5">Leaf cleanup · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy</span><span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span></div></div>
+          </article>
+          <article class="t-card p-7" aria-hidden="true">
+            <div class="flex"><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg><svg class="h-4 w-4 star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18.2 22 12 18.3 5.8 22l1.7-7.3L2 10l7.1-1.1L12 2z"/></svg></div>
+            <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much Yard Dog"</p>
+            <div class="flex items-center gap-3 mt-5"><img src="https://i0.wp.com/yarddoglandscapes.com/wp-content/uploads/2026/03/unnamed-1.png?fit=80%2C80&amp;ssl=1" alt="" width="40" height="40" loading="lazy" class="h-10 w-10 rounded-full object-cover bg-ydg-cream ring-1 ring-black/5" /><div class="flex flex-col"><span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee</span><span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span></div></div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA / CONTACT ================= -->
+<section id="contact" class="relative py-24 lg:py-32 bg-ydg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="relative rounded-[2rem] overflow-hidden hero-bg grain border border-white/10 shadow-lift">
+      <div class="absolute inset-0 topo opacity-40 pointer-events-none"></div>
+
+      <div class="relative grid lg:grid-cols-12 gap-10 p-8 sm:p-12 lg:p-16 items-center">
+        <div class="lg:col-span-7 text-ydg-cream">
+          <span class="chip">Free Quote · 24-Hour Response</span>
+          <h2 class="font-display h-display text-5xl sm:text-6xl lg:text-7xl mt-5">
+            Ready to <span class="text-ydg-green-l">throw us the bone?</span>
+          </h2>
+          <p class="lede mt-5 text-ydg-cream/75 max-w-lg">
+            Tell us about your property. We'll come look at it, listen to what you want,
+            and send a clear written estimate within a day. No pressure. No upsells.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <span class="cta-mark cta-mark--cream">
+              <svg class="cta-mark-svg" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+                <path pathLength="1" d="M 950 90 C 1250 300, 1050 480, 600 520 C 250 520, 150 480, 150 300 C 150 120, 350 80, 600 80 C 850 80, 950 180, 950 180" />
+              </svg>
+              <a href="tel:9038446877" class="btn-primary">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                Call (903) 844-6877
+              </a>
+            </span>
+            <a href="mailto:info@yarddoglandscapes.com" class="btn-ghost">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              info@yarddoglandscapes.com
+            </a>
+          </div>
+
+          <div class="mt-10 flex items-center gap-6 text-ydg-cream/70 text-sm">
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Longview, TX
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Mon–Sat · 7a–6p
+            </div>
+          </div>
+        </div>
+
+        <!-- Jobber Work Request Form (live embed) -->
+        <div class="lg:col-span-5 bg-ydg-cream rounded-2xl shadow-card border border-black/5 jobber-form-card overflow-hidden flex flex-col">
+          <div class="px-7 pt-7 pb-5">
+            <div class="flex items-center gap-2 text-ydg-green-d">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              <span class="text-xs font-semibold uppercase tracking-[0.18em]">Request a Free Quote</span>
+            </div>
+            <h3 class="font-display text-3xl text-ydg-ink mt-3 leading-tight">Tell us about your yard.</h3>
+            <p class="text-sm text-ydg-ink/65 mt-2 lede">
+              Submit a request and we'll be in touch within 24 hours to schedule your free walkthrough — no pressure, no upsells.
+            </p>
+          </div>
+
+          <div id="1ec26b22-ac72-4231-a9fb-0208c4f65e85-2119821" class="jobber-form-mount flex-1"></div>
+          <script
+            src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
+            clienthub_id="1ec26b22-ac72-4231-a9fb-0208c4f65e85-2119821"
+            form_url="https://clienthub.getjobber.com/client_hubs/1ec26b22-ac72-4231-a9fb-0208c4f65e85/public/work_request/embedded_work_request_form?form_id=2119821"></script>
+          <noscript>
+            <a href="https://clienthub.getjobber.com/client_hubs/1ec26b22-ac72-4231-a9fb-0208c4f65e85/public/work_request/embedded_work_request_form?form_id=2119821" class="btn-primary w-full justify-center m-4" target="_blank" rel="noopener">Open Quote Form</a>
+          </noscript>
+        </div>
+        <!-- end Jobber form -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-ydg-night text-ydg-cream/80 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-12 w-12 rounded-full bg-ydg-cream overflow-hidden ring-1 ring-white/10">
+            <img src="brand_assets/Yard Dog Logo.png" alt="" class="h-12 w-12 object-contain p-0.5">
+          </span>
+          <span class="font-display text-2xl text-ydg-cream tracking-tight leading-none">
+            YARD DOG <span class="text-ydg-green-l">LANDSCAPES</span>
+          </span>
+        </div>
+        <p class="mt-5 max-w-sm text-sm lede text-ydg-cream/65">
+          Sit. Stay. Perfect Landscape. Family-owned landscape design, lawn care, and
+          hardscaping serving Longview and East Texas since 2017.
+        </p>
+
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#" aria-label="Instagram" class="h-10 w-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="h-10 w-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7c0-1 .3-2 2-2h2V1.2C16.6 1.1 15.3 1 14 1c-3 0-5 1.8-5 5v4H6v4h3v8h4z"/></svg>
+          </a>
+          <a href="#" aria-label="Google" class="h-10 w-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <div class="text-xs uppercase tracking-[0.2em] text-ydg-cream/50">Services</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a class="hover:text-white transition-colors" href="#services">Lawn Care</a></li>
+          <li><a class="hover:text-white transition-colors" href="#services">Landscape Design</a></li>
+          <li><a class="hover:text-white transition-colors" href="#services">Hardscaping</a></li>
+          <li><a class="hover:text-white transition-colors" href="#services">Tree & Shrub Care</a></li>
+          <li><a class="hover:text-white transition-colors" href="#services">Irrigation & Drainage</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-4">
+        <div class="text-xs uppercase tracking-[0.2em] text-ydg-cream/50">Contact</div>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-center gap-3">
+            <svg class="h-4 w-4 text-ydg-green-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:9038446877" class="hover:text-white">(903) 844-6877</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="h-4 w-4 text-ydg-green-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <a href="mailto:info@yarddoglandscapes.com" class="hover:text-white">info@yarddoglandscapes.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="h-4 w-4 text-ydg-green-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Longview, TX · Serving Gregg, Harrison, Smith & Upshur counties</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-ydg-cream/50">
+      <div>© <span id="year">2026</span> Yard Dog Landscapes. All rights reserved.</div>
+      <div class="flex items-center gap-5">
+        <a href="#" class="hover:text-white">Privacy</a>
+        <a href="#" class="hover:text-white">Terms</a>
+        <span class="text-ydg-cream/40">Sit. Stay. Perfect Landscape.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Hand-drawn CTA highlight: animate the SVG path when each .cta-mark scrolls into view.
+  (function () {
+    const marks = document.querySelectorAll('.cta-mark');
+    if (!marks.length) return;
+    if (!('IntersectionObserver' in window)) {
+      marks.forEach(m => m.classList.add('is-drawn'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-drawn');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.45 });
+    marks.forEach(m => io.observe(m));
+  })();
+</script>
+</body>
+</html>

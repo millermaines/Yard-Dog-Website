@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Local Claude Code settings
+.claude/
+
+# Local-only dev/scrape tools and scratch data
+scrape-debug.mjs
+scrape-google-reviews.mjs
+screenshot-jobber.mjs
+google-reviews.json
+
+# Screenshot scratch dir
+temporary screenshots/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

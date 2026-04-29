@@ -139,42 +139,42 @@
     },
     {
       "source": "/services/hardscaping",
-      "destination": "/services",
-      "permanent": true
-    },
-    {
-      "source": "/hardscaping",
-      "destination": "/services",
+      "destination": "/hardscaping",
       "permanent": true
     },
     {
       "source": "/services/patios",
-      "destination": "/services",
+      "destination": "/hardscaping",
       "permanent": true
     },
     {
       "source": "/patios",
-      "destination": "/services",
+      "destination": "/hardscaping",
       "permanent": true
     },
     {
       "source": "/services/tree-care",
-      "destination": "/services",
+      "destination": "/tree-shrub-care",
       "permanent": true
     },
     {
       "source": "/services/tree-trimming",
-      "destination": "/services",
+      "destination": "/tree-shrub-care",
       "permanent": true
     },
     {
       "source": "/tree-trimming",
-      "destination": "/services",
+      "destination": "/hedge-trimming",
+      "permanent": true
+    },
+    {
+      "source": "/tree-care",
+      "destination": "/tree-shrub-care",
       "permanent": true
     },
     {
       "source": "/services/drainage",
-      "destination": "/services",
+      "destination": "/drainage",
       "permanent": true
     },
     {

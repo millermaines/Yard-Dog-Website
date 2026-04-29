@@ -38,18 +38,31 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  fs.stat(filePath, (err, stat) => {
-    if (err || !stat.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
-      res.end('Not found');
-      return;
-    }
-    const ext = path.extname(filePath).toLowerCase();
+  function send(p) {
+    const ext = path.extname(p).toLowerCase();
     res.writeHead(200, {
       'Content-Type': MIME[ext] || 'application/octet-stream',
       'Cache-Control': 'no-cache',
     });
-    fs.createReadStream(filePath).pipe(res);
+    fs.createReadStream(p).pipe(res);
+  }
+
+  fs.stat(filePath, (err, stat) => {
+    if (!err && stat.isFile()) return send(filePath);
+
+    // Clean-URL fallback: if no extension on the request, try .html
+    if (!path.extname(filePath)) {
+      const htmlPath = filePath.replace(/[\\/]+$/, '') + '.html';
+      fs.stat(htmlPath, (err2, stat2) => {
+        if (!err2 && stat2.isFile()) return send(htmlPath);
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('Not found');
+      });
+      return;
+    }
+
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('Not found');
   });
 });
 

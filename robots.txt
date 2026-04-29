@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://yarddoglandscapes.com/sitemap.xml
+
+Sitemap: https://www.yarddoglandscapes.com/sitemap.xml

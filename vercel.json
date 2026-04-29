@@ -173,17 +173,7 @@
       "permanent": true
     },
     {
-      "source": "/services/irrigation",
-      "destination": "/services",
-      "permanent": true
-    },
-    {
       "source": "/services/drainage",
-      "destination": "/services",
-      "permanent": true
-    },
-    {
-      "source": "/services/sprinklers",
       "destination": "/services",
       "permanent": true
     },

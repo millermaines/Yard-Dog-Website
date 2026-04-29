@@ -133,21 +133,6 @@ const SERVICES = [
     seasonText: 'Late winter and early spring are the prime windows for major pruning on most East Texas ornamentals before bud break.',
     cadenceFAQ: 'Most ornamental shrubs do well with two shapings per year, and shade trees benefit from a structural prune every two to three years.'
   },
-  {
-    slug: 'irrigation-drainage', display: 'Irrigation & Drainage', lower: 'irrigation and drainage',
-    parent: 'services.html',
-    bullets: [
-      'Smart sprinkler installations',
-      'Drip-line systems',
-      'French drains',
-      'Surface grading',
-      'Sprinkler repair',
-      'Backflow inspection'
-    ],
-    photoBank: ['IMG_3736.jpg','IMG_3526.jpg','11.jpg','10.jpg'],
-    seasonText: 'East Texas summers regularly hit drought stretches in July and August, while heavy spring rain creates drainage problems on flat lots and clay-heavy soil.',
-    cadenceFAQ: 'Most systems benefit from a spring start-up check and a fall winterization. Drainage projects are typically one-time installs, with periodic inspection every couple of years.'
-  },
 ];
 
 // ---------------- HELPERS ----------------

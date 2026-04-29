@@ -446,12 +446,43 @@
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
           (903) 844-6877
         </a>
-        <a href="contact" class="btn-primary text-sm py-2.5 px-4">
+        <a href="contact" class="hidden md:inline-flex btn-primary text-sm py-2.5 px-4">
           Get a Free Quote
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
+        <!-- Mobile hamburger toggle (hidden lg+) -->
+        <button id="landingHamburger" class="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full text-ydg-cream hover:bg-white/10 transition" aria-label="Open menu" aria-expanded="false" aria-controls="landingMobileMenu">
+          <svg class="h-6 w-6 hb-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="h-6 w-6 hb-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile menu panel (lg:hidden, only opens on click) -->
+    <div id="landingMobileMenu" class="lg:hidden hidden mt-3 rounded-2xl nav-blur bg-ydg-night/95 border border-white/10 overflow-hidden shadow-2xl">
+      <ul class="flex flex-col py-2 text-base text-ydg-cream/90">
+        <li><a href="/" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors font-medium">Home</a></li>
+        <li><a href="about" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">About Us</a></li>
+        <li><a href="our-work" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Our Work</a></li>
+        <li>
+          <a href="services" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Services</a>
+          <ul class="ml-6 my-1 border-l border-white/10">
+            <li><a href="landscaping"      class="block px-6 py-2 text-sm text-ydg-cream/70 hover:bg-white/5 hover:text-white transition-colors">Landscaping</a></li>
+            <li><a href="lawn-maintenance" class="block px-6 py-2 text-sm text-ydg-cream/70 hover:bg-white/5 hover:text-white transition-colors">Lawn Maintenance</a></li>
+            <li><a href="leaf-removal"     class="block px-6 py-2 text-sm text-ydg-cream/70 hover:bg-white/5 hover:text-white transition-colors">Leaf Removal</a></li>
+            <li><a href="fertilization"    class="block px-6 py-2 text-sm text-ydg-cream/70 hover:bg-white/5 hover:text-white transition-colors">Fertilization</a></li>
+            <li><a href="christmas-lights" class="block px-6 py-2 text-sm text-ydg-cream/70 hover:bg-white/5 hover:text-white transition-colors">Christmas Lights</a></li>
+          </ul>
+        </li>
+        <li><a href="contact" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Contact Us</a></li>
+        <li class="px-4 pt-3 pb-4">
+          <a href="contact" class="btn-primary w-full justify-center">
+            Get a Free Quote
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -3167,6 +3198,41 @@
         document.addEventListener('pointermove', update, { passive: true });
         document.addEventListener('touchmove', update, { passive: true });
       })();
+
+  // Mobile hamburger toggle (landing page navbar)
+  (function () {
+    var btn = document.getElementById('landingHamburger');
+    var menu = document.getElementById('landingMobileMenu');
+    if (!btn || !menu) return;
+    var openIcon = btn.querySelector('.hb-open');
+    var closeIcon = btn.querySelector('.hb-close');
+    btn.addEventListener('click', function () {
+      var isOpen = !menu.classList.contains('hidden');
+      if (isOpen) {
+        menu.classList.add('hidden');
+        if (openIcon) openIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open menu');
+      } else {
+        menu.classList.remove('hidden');
+        if (openIcon) openIcon.classList.add('hidden');
+        if (closeIcon) closeIcon.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.setAttribute('aria-label', 'Close menu');
+      }
+    });
+    // Close menu when clicking a link inside it
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.add('hidden');
+        if (openIcon) openIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open menu');
+      });
+    });
+  })();
 </script>
 </body>
 </html>

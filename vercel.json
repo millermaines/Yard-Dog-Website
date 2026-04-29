@@ -1,0 +1,76 @@
+{
+  "trailingSlash": false,
+  "cleanUrls": false,
+  "redirects": [
+    { "source": "/contact-us", "destination": "/contact.html", "permanent": true },
+    { "source": "/contact", "destination": "/contact.html", "permanent": true },
+    { "source": "/get-in-touch", "destination": "/contact.html", "permanent": true },
+
+    { "source": "/about", "destination": "/about.html", "permanent": true },
+    { "source": "/about-us", "destination": "/about.html", "permanent": true },
+    { "source": "/our-story", "destination": "/about.html", "permanent": true },
+
+    { "source": "/our-work", "destination": "/our-work.html", "permanent": true },
+    { "source": "/portfolio", "destination": "/our-work.html", "permanent": true },
+    { "source": "/gallery", "destination": "/our-work.html", "permanent": true },
+    { "source": "/work", "destination": "/our-work.html", "permanent": true },
+    { "source": "/projects", "destination": "/our-work.html", "permanent": true },
+
+    { "source": "/services", "destination": "/services.html", "permanent": true },
+    { "source": "/our-services", "destination": "/services.html", "permanent": true },
+    { "source": "/what-we-do", "destination": "/services.html", "permanent": true },
+
+    { "source": "/services/lawn-care", "destination": "/lawn-maintenance.html", "permanent": true },
+    { "source": "/lawn-care", "destination": "/lawn-maintenance.html", "permanent": true },
+    { "source": "/services/lawn-maintenance", "destination": "/lawn-maintenance.html", "permanent": true },
+    { "source": "/services/mowing", "destination": "/lawn-maintenance.html", "permanent": true },
+    { "source": "/mowing", "destination": "/lawn-maintenance.html", "permanent": true },
+
+    { "source": "/services/landscaping", "destination": "/landscaping.html", "permanent": true },
+    { "source": "/landscaping", "destination": "/landscaping.html", "permanent": true },
+    { "source": "/services/landscape-design", "destination": "/landscaping.html", "permanent": true },
+    { "source": "/landscape-design", "destination": "/landscaping.html", "permanent": true },
+
+    { "source": "/services/leaf-removal", "destination": "/leaf-removal.html", "permanent": true },
+    { "source": "/leaf-removal", "destination": "/leaf-removal.html", "permanent": true },
+    { "source": "/services/leaf-cleanup", "destination": "/leaf-removal.html", "permanent": true },
+    { "source": "/leaf-cleanup", "destination": "/leaf-removal.html", "permanent": true },
+
+    { "source": "/services/fertilization", "destination": "/fertilization.html", "permanent": true },
+    { "source": "/fertilization", "destination": "/fertilization.html", "permanent": true },
+    { "source": "/services/lawn-fertilization", "destination": "/fertilization.html", "permanent": true },
+
+    { "source": "/services/christmas-lights", "destination": "/christmas-lights.html", "permanent": true },
+    { "source": "/christmas-lights", "destination": "/christmas-lights.html", "permanent": true },
+    { "source": "/services/christmas-light-installation", "destination": "/christmas-lights.html", "permanent": true },
+    { "source": "/services/holiday-lights", "destination": "/christmas-lights.html", "permanent": true },
+    { "source": "/holiday-lights", "destination": "/christmas-lights.html", "permanent": true },
+
+    { "source": "/services/hardscaping", "destination": "/services.html", "permanent": true },
+    { "source": "/hardscaping", "destination": "/services.html", "permanent": true },
+    { "source": "/services/patios", "destination": "/services.html", "permanent": true },
+    { "source": "/patios", "destination": "/services.html", "permanent": true },
+    { "source": "/services/tree-care", "destination": "/services.html", "permanent": true },
+    { "source": "/services/tree-trimming", "destination": "/services.html", "permanent": true },
+    { "source": "/tree-trimming", "destination": "/services.html", "permanent": true },
+    { "source": "/services/irrigation", "destination": "/services.html", "permanent": true },
+    { "source": "/services/drainage", "destination": "/services.html", "permanent": true },
+    { "source": "/services/sprinklers", "destination": "/services.html", "permanent": true },
+
+    { "source": "/quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/get-a-quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/get-a-free-quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/free-quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/request-a-quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/request-quote", "destination": "/contact.html", "permanent": true },
+    { "source": "/estimate", "destination": "/contact.html", "permanent": true },
+
+    { "source": "/blog", "destination": "/", "permanent": true },
+    { "source": "/blog/:slug*", "destination": "/", "permanent": true },
+    { "source": "/news", "destination": "/", "permanent": true },
+    { "source": "/news/:slug*", "destination": "/", "permanent": true },
+
+    { "source": "/feed", "destination": "/", "permanent": true },
+    { "source": "/feed/:type*", "destination": "/", "permanent": true }
+  ]
+}

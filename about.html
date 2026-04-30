@@ -141,7 +141,65 @@
       <div class="container">
         <div class="service-area-grid">
           <div class="service-area-map">
-            <img src="brand_photos/service-area-map.png" alt="Map of Texas with Yard Dog Landscapes' East Texas service area highlighted" loading="lazy" decoding="async" width="610" height="565">
+            <svg class="service-area-map-svg" viewBox="0 0 610 565" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="svcMapTitle svcMapDesc">
+              <title id="svcMapTitle">Yard Dog Landscapes East Texas service area</title>
+              <desc id="svcMapDesc">Stylized map of Texas with seven East Texas counties highlighted: Gregg, Upshur, Harrison, Rusk, Smith, Panola, and Nacogdoches.</desc>
+
+              <defs>
+                <filter id="svcMapClusterGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="6"/>
+                </filter>
+              </defs>
+
+              <!-- Texas state silhouette -->
+              <path class="svc-tx-state" d="M 58 70 L 178 70 L 178 142 L 246 142 L 250 130 L 292 130 L 470 134 L 478 192 L 488 258 L 502 322 L 514 372 L 532 432 L 522 480 L 478 510 L 422 524 L 360 538 L 296 532 L 232 518 L 178 498 L 132 470 L 96 432 L 70 388 L 52 332 L 40 268 L 36 208 L 42 158 L 58 70 Z"/>
+
+              <!-- Subtle glow behind East TX cluster -->
+              <ellipse class="svc-cluster-glow" cx="438" cy="262" rx="58" ry="68" filter="url(#svcMapClusterGlow)"/>
+
+              <!-- 7 highlighted East Texas counties -->
+              <g class="svc-county-cluster">
+                <!-- Upshur (north of Gregg) -->
+                <polygon class="svc-county-fill" points="406,202 458,200 460,232 408,234"/>
+                <!-- Smith (west of cluster, larger) -->
+                <polygon class="svc-county-fill" points="372,234 406,234 408,278 372,278"/>
+                <!-- Gregg (tiny, center) -->
+                <polygon class="svc-county-fill" points="408,234 440,234 440,262 408,262"/>
+                <!-- Harrison (east of Gregg, against LA border) -->
+                <polygon class="svc-county-fill" points="440,232 478,228 480,266 442,266"/>
+                <!-- Rusk (south of Gregg, larger) -->
+                <polygon class="svc-county-fill" points="402,262 462,262 462,302 402,302"/>
+                <!-- Panola (east of Rusk, against LA border) -->
+                <polygon class="svc-county-fill" points="462,266 480,266 482,304 462,302"/>
+                <!-- Nacogdoches (south of Rusk, larger) -->
+                <polygon class="svc-county-fill" points="406,302 464,302 468,348 410,348"/>
+              </g>
+
+              <!-- Inline mini-labels on each highlighted county -->
+              <g class="svc-county-microlabels">
+                <text x="432" y="220" text-anchor="middle">UPSHUR</text>
+                <text x="389" y="259" text-anchor="middle">SMITH</text>
+                <text x="424" y="252" text-anchor="middle" class="svc-tiny">GREGG</text>
+                <text x="461" y="251" text-anchor="middle">HARRISON</text>
+                <text x="432" y="287" text-anchor="middle">RUSK</text>
+                <text x="471" y="289" text-anchor="middle" class="svc-tiny" transform="rotate(90 471 289)">PANOLA</text>
+                <text x="437" y="328" text-anchor="middle">NACOGDOCHES</text>
+              </g>
+
+              <!-- Callout title + arrow on the upper right -->
+              <g class="svc-callout">
+                <text x="296" y="64" class="svc-callout-eyebrow">PROUDLY SERVING</text>
+                <text x="296" y="100" class="svc-callout-headline">EAST TEXAS</text>
+                <text x="296" y="132" class="svc-callout-sub">7 COUNTIES · 1 CREW · EVERY WEEK</text>
+                <path class="svc-callout-arrow" d="M 308 152 Q 320 188 358 220" fill="none"/>
+                <polygon class="svc-callout-arrow-head" points="350,212 372,222 360,232"/>
+              </g>
+
+              <!-- Louisiana state-line marker -->
+              <line class="svc-state-line" x1="488" y1="200" x2="498" y2="358"/>
+              <text x="510" y="282" class="svc-state-label" text-anchor="start">LA</text>
+              <text x="180" y="378" class="svc-state-label" text-anchor="middle">TEXAS</text>
+            </svg>
           </div>
           <div class="service-area-copy">
             <span class="section-eyebrow">Where we work</span>
@@ -149,13 +207,14 @@
             <p>From our home base in Longview, our crews cover the East Texas piney woods — every county in our quote area, every week of the year.</p>
             <ul class="county-list">
               <li><span class="county-name">Gregg County</span><span class="county-cities">Longview · White Oak · Kilgore · Gladewater</span></li>
+              <li><span class="county-name">Upshur County</span><span class="county-cities">Gilmer · Big Sandy</span></li>
               <li><span class="county-name">Harrison County</span><span class="county-cities">Hallsville · Marshall</span></li>
               <li><span class="county-name">Smith County</span><span class="county-cities">Tyler</span></li>
               <li><span class="county-name">Rusk County</span><span class="county-cities">Henderson</span></li>
               <li><span class="county-name">Panola County</span><span class="county-cities">Carthage</span></li>
               <li><span class="county-name">Nacogdoches County</span><span class="county-cities">Nacogdoches</span></li>
             </ul>
-            <p class="service-area-note">Plus Upshur County and surrounding East Texas communities — if you're nearby, ask.</p>
+            <p class="service-area-note">Plus surrounding East Texas communities — if you're nearby, ask.</p>
             <span class="cta-mark cta-mark--green"><svg class="cta-mark-svg" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M 950 90 C 1250 300, 1050 480, 600 520 C 250 520, 150 480, 150 300 C 150 120, 350 80, 600 80 C 850 80, 950 180, 950 180" /></svg><a class="btn btn-primary" href="contact">Check Your Area</a></span>
           </div>
         </div>

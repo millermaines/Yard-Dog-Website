@@ -23,13 +23,13 @@
       extend: {
         colors: {
           'ydg': {
-            green:    '#2F6B2A',  // Yard Dog Green
-            'green-d':'#21501E',
-            'green-l':'#4A8E45',
-            ink:      '#0E1714',  // Brand black / deep
-            night:    '#091513',
+            green:    '#E63946',  // Yard Dog Green
+            'green-d':'#B22934',
+            'green-l':'#F26D77',
+            ink:      '#0F1B2A',  // Brand black / deep
+            night:    '#070D17',
             cream:    '#F4EFE2',
-            sage:     '#C5CDB3',
+            sage:     '#E5DCB3',
             khaki:    '#D9C79A',
             mocha:    '#5A3A22',
             red:      '#C8362C',
@@ -40,10 +40,10 @@
           sans:    ['Inter', 'Arial', 'sans-serif'],
         },
         boxShadow: {
-          'btn':    '0 8px 24px -10px rgba(47, 107, 42, 0.55), inset 0 1px 0 rgba(255,255,255,0.18)',
+          'btn':    '0 8px 24px -10px rgba(230, 57, 70, 0.55), inset 0 1px 0 rgba(255,255,255,0.18)',
           'card':   '0 1px 0 rgba(255,255,255,0.04) inset, 0 12px 40px -16px rgba(0,0,0,0.55), 0 2px 6px -2px rgba(0,0,0,0.35)',
-          'soft':   '0 24px 60px -28px rgba(14,23,20,0.45)',
-          'lift':   '0 30px 80px -30px rgba(47,107,42,0.45), 0 12px 30px -18px rgba(0,0,0,0.5)',
+          'soft':   '0 24px 60px -28px rgba(15, 27, 42,0.45)',
+          'lift':   '0 30px 80px -30px rgba(230, 57, 70,0.45), 0 12px 30px -18px rgba(0,0,0,0.5)',
         }
       }
     }
@@ -54,7 +54,7 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Inter', Arial, sans-serif;
-    color: #0E1714;
+    color: #0F1B2A;
     background: #F4EFE2;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -81,10 +81,10 @@
   /* Hero radial gradient stack */
   .hero-bg {
     background:
-      radial-gradient(1100px 600px at 12% 8%, rgba(74,142,69,0.28), transparent 60%),
-      radial-gradient(900px 700px at 92% 18%, rgba(197,205,179,0.18), transparent 65%),
-      radial-gradient(700px 700px at 60% 100%, rgba(33,80,30,0.45), transparent 60%),
-      linear-gradient(180deg, #091513 0%, #0E1714 55%, #0E1714 100%);
+      radial-gradient(1100px 600px at 12% 8%, rgba(230, 57, 70,0.28), transparent 60%),
+      radial-gradient(900px 700px at 92% 18%, rgba(229, 220, 179,0.18), transparent 65%),
+      radial-gradient(700px 700px at 60% 100%, rgba(178, 41, 52,0.45), transparent 60%),
+      linear-gradient(180deg, #070D17 0%, #0F1B2A 55%, #0F1B2A 100%);
   }
 
   /* Decorative dotted/topo lines */
@@ -98,19 +98,19 @@
   .btn-primary {
     position: relative;
     display: inline-flex; align-items: center; gap: 0.6rem;
-    background: linear-gradient(180deg, #4A8E45 0%, #2F6B2A 60%, #21501E 100%);
+    background: linear-gradient(180deg, #F26D77 0%, #E63946 60%, #B22934 100%);
     color: #F4EFE2;
     padding: 0.95rem 1.6rem;
     border-radius: 9999px;
     font-weight: 600;
     letter-spacing: 0.01em;
-    box-shadow: 0 10px 28px -12px rgba(47,107,42,0.65), inset 0 1px 0 rgba(255,255,255,0.22), inset 0 -1px 0 rgba(0,0,0,0.18);
+    box-shadow: 0 10px 28px -12px rgba(230, 57, 70,0.65), inset 0 1px 0 rgba(255,255,255,0.22), inset 0 -1px 0 rgba(0,0,0,0.18);
     transform: translateZ(0);
     transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms cubic-bezier(.2,.8,.2,1);
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(47,107,42,0.75), inset 0 1px 0 rgba(255,255,255,0.25); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(230, 57, 70,0.75), inset 0 1px 0 rgba(255,255,255,0.25); }
   .btn-primary:active { transform: translateY(0); }
-  .btn-primary:focus-visible { outline: 2px solid #C5CDB3; outline-offset: 3px; }
+  .btn-primary:focus-visible { outline: 2px solid #E5DCB3; outline-offset: 3px; }
 
   /* Buttons — ghost */
   .btn-ghost {
@@ -124,19 +124,19 @@
     transition: transform 220ms cubic-bezier(.2,.8,.2,1), background 220ms, border-color 220ms;
   }
   .btn-ghost:hover { background: rgba(244,239,226,0.08); border-color: rgba(244,239,226,0.55); transform: translateY(-2px); }
-  .btn-ghost:focus-visible { outline: 2px solid #4A8E45; outline-offset: 3px; }
+  .btn-ghost:focus-visible { outline: 2px solid #F26D77; outline-offset: 3px; }
 
   .btn-dark {
     display:inline-flex; align-items:center; gap:0.6rem;
-    color: #0E1714;
-    border: 1.5px solid rgba(14,23,20,0.85);
+    color: #0F1B2A;
+    border: 1.5px solid rgba(15, 27, 42,0.85);
     background: transparent;
     padding: 0.9rem 1.55rem;
     border-radius: 9999px;
     font-weight: 600;
     transition: transform 220ms cubic-bezier(.2,.8,.2,1), background 220ms, color 220ms;
   }
-  .btn-dark:hover { background: #0E1714; color: #F4EFE2; transform: translateY(-2px); }
+  .btn-dark:hover { background: #0F1B2A; color: #F4EFE2; transform: translateY(-2px); }
 
   /* Hand-drawn CTA highlight (vanilla port of HandWrittenTitle effect) */
   .cta-mark {
@@ -179,8 +179,8 @@
   .cta-mark > * { position: relative; z-index: 1; }
   /* color variants — match against background */
   .cta-mark--cream > .cta-mark-svg path { stroke: #F4EFE2; }
-  .cta-mark--green > .cta-mark-svg path { stroke: #4A8E45; }
-  .cta-mark--ink   > .cta-mark-svg path { stroke: #0E1714; }
+  .cta-mark--green > .cta-mark-svg path { stroke: #F26D77; }
+  .cta-mark--ink   > .cta-mark-svg path { stroke: #0F1B2A; }
   @media (prefers-reduced-motion: reduce) {
     .cta-mark.is-drawn > .cta-mark-svg path {
       animation: none;
@@ -205,9 +205,9 @@
   .t-col:hover .t-track { animation-play-state: paused; }
   .t-card {
     background: #FFFFFF;
-    border: 1px solid rgba(14,23,20,0.06);
+    border: 1px solid rgba(15, 27, 42,0.06);
     border-radius: 1.5rem;
-    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 18px 40px -22px rgba(47,107,42,0.18), 0 4px 10px -6px rgba(14,23,20,0.08);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 18px 40px -22px rgba(230, 57, 70,0.18), 0 4px 10px -6px rgba(15, 27, 42,0.08);
   }
   @media (prefers-reduced-motion: reduce) {
     .t-track { animation: none; }
@@ -220,10 +220,10 @@
   .service-card:hover {
     transform: translateY(-6px);
     box-shadow:
-      0 0 0 4px hsl(95, 60%, 55%),
-      0 18px 48px rgba(106, 170, 58, 0.32),
-      0 30px 60px -28px rgba(14,23,20,0.35),
-      0 8px 24px -10px rgba(47,107,42,0.25);
+      0 0 0 4px hsl(354, 78%, 56%),
+      0 18px 48px rgba(242, 109, 119, 0.32),
+      0 30px 60px -28px rgba(15, 27, 42, 0.35),
+      0 8px 24px -10px rgba(230, 57, 70,0.25);
   }
 
   /* Image treatment */
@@ -233,12 +233,12 @@
   .img-treat img { display:block; width:100%; height:100%; object-fit: cover; }
   .img-treat::after {
     content:""; position:absolute; inset:0;
-    background: linear-gradient(180deg, transparent 55%, rgba(9,21,19,0.55) 100%);
+    background: linear-gradient(180deg, transparent 55%, rgba(7, 13, 23,0.55) 100%);
     pointer-events:none;
   }
   .img-tint::before {
     content:""; position:absolute; inset:0;
-    background: rgba(47,107,42,0.10); mix-blend-mode: multiply; pointer-events:none;
+    background: rgba(230, 57, 70,0.10); mix-blend-mode: multiply; pointer-events:none;
   }
 
   /* Marquee */
@@ -257,19 +257,19 @@
     padding: 0.4rem 0.85rem; border-radius: 9999px;
     background: rgba(244,239,226,0.08);
     border: 1px solid rgba(244,239,226,0.16);
-    color: #C5CDB3; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: #E5DCB3; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
   }
   .chip-light {
     display:inline-flex; align-items:center; gap:0.5rem;
     padding: 0.4rem 0.85rem; border-radius: 9999px;
-    background: rgba(47,107,42,0.08);
-    border: 1px solid rgba(47,107,42,0.18);
-    color: #21501E; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+    background: rgba(230, 57, 70,0.08);
+    border: 1px solid rgba(230, 57, 70,0.18);
+    color: #B22934; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
   }
   /* Gallery photo overlay chips need to read against any background */
   .img-treat figcaption .chip {
     color: #ffffff;
-    background: rgba(9,21,19,0.45);
+    background: rgba(7, 13, 23,0.45);
     border-color: rgba(255,255,255,0.85);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -280,7 +280,7 @@
   .star { color: #E8B53A; }
 
   /* Section divider rule */
-  .rule { height:1px; background: linear-gradient(90deg, transparent, rgba(14,23,20,0.18), transparent); }
+  .rule { height:1px; background: linear-gradient(90deg, transparent, rgba(15, 27, 42,0.18), transparent); }
 
   /* Reveal on hover for arrow */
   .arrow-link .arrow { transition: transform 240ms cubic-bezier(.2,.8,.2,1); }
@@ -314,11 +314,11 @@
 .glow-card {
   position: relative;
   isolation: isolate;
-  --glow-base: 100;
-  --glow-spread: 25;
+  --glow-base: 354;
+  --glow-spread: 8;
   --glow-border: 3;
   --glow-size: 280;
-  --glow-saturation: 65%;
+  --glow-saturation: 78%;
   --glow-lightness: 56%;
   --glow-hue: calc(var(--glow-base) + (var(--glow-xp, 0.5) * var(--glow-spread, 0)));
 }
@@ -395,11 +395,11 @@
 }
 .img-treat:hover {
   transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 24px 48px rgba(15, 26, 14, 0.35);
+  box-shadow: 0 24px 48px rgba(15, 27, 42, 0.35);
 }
 .img-treat:hover::before {
-  border-color: hsl(95, 65%, 56%);
-  box-shadow: inset 0 0 36px rgba(106, 170, 58, 0.45);
+  border-color: hsl(354, 78%, 56%);
+  box-shadow: inset 0 0 36px rgba(242, 109, 119, 0.45);
 }
 .img-treat:hover img {
   transform: scale(1.06);
@@ -530,11 +530,11 @@
   <div class="absolute inset-0 topo opacity-50 pointer-events-none"></div>
 
   <!-- subtle floating leaves -->
-  <svg class="absolute -top-8 right-[-60px] w-[420px] opacity-[0.07]" viewBox="0 0 200 200" fill="none" stroke="#C5CDB3" stroke-width="0.6">
+  <svg class="absolute -top-8 right-[-60px] w-[420px] opacity-[0.07]" viewBox="0 0 200 200" fill="none" stroke="#E5DCB3" stroke-width="0.6">
     <path d="M100 10 C 60 50, 60 130, 100 190 C 140 130, 140 50, 100 10 Z"/>
     <path d="M100 30 V 180" />
   </svg>
-  <svg class="absolute bottom-[-40px] left-[-60px] w-[360px] opacity-[0.06]" viewBox="0 0 200 200" fill="none" stroke="#C5CDB3" stroke-width="0.6">
+  <svg class="absolute bottom-[-40px] left-[-60px] w-[360px] opacity-[0.06]" viewBox="0 0 200 200" fill="none" stroke="#E5DCB3" stroke-width="0.6">
     <path d="M100 10 C 60 50, 60 130, 100 190 C 140 130, 140 50, 100 10 Z"/>
     <path d="M100 30 V 180" />
   </svg>
@@ -577,10 +577,10 @@
       <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-5">
         <div class="flex items-center gap-3">
           <div class="flex -space-x-2" aria-hidden="true">
-            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#21501E;color:#F4EFE2;">K</span>
-            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#4A7C2F;color:#F4EFE2;">R</span>
-            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#C8B89A;color:#0F1A0E;">L</span>
-            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#F4EFE2;color:#0F1A0E;">D</span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#B22934;color:#F4EFE2;">K</span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#E63946;color:#F4EFE2;">R</span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#C8B89A;color:#0F1B2A;">L</span>
+            <span class="h-9 w-9 rounded-full ring-2 ring-ydg-night flex items-center justify-center text-xs font-semibold tracking-wide" style="background:#F4EFE2;color:#0F1B2A;">D</span>
           </div>
           <div class="text-ydg-cream/80 text-sm leading-tight">
             <div class="flex items-center gap-1.5">
@@ -637,7 +637,7 @@
 
         <!-- floating tag -->
         <div class="absolute -bottom-6 right-2 sm:right-8 bg-ydg-night/85 backdrop-blur rounded-xl px-4 py-3 border border-white/10 hidden sm:flex items-center gap-3">
-          <span class="h-2.5 w-2.5 rounded-full bg-ydg-green-l shadow-[0_0_0_4px_rgba(74,142,69,0.25)]"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-ydg-green-l shadow-[0_0_0_4px_rgba(230, 57, 70,0.25)]"></span>
           <div class="text-ydg-cream text-xs leading-tight">
             <div class="font-semibold">Booking Spring 2026</div>
             <div class="text-ydg-cream/60">Limited weekly slots</div>
@@ -990,7 +990,7 @@
   <!-- subtle radial wash -->
   <div class="pointer-events-none absolute inset-0 opacity-60"
        style="background:
-         radial-gradient(900px 500px at 12% 0%, rgba(74,142,69,0.08), transparent 60%),
+         radial-gradient(900px 500px at 12% 0%, rgba(230, 57, 70,0.08), transparent 60%),
          radial-gradient(900px 500px at 88% 100%, rgba(217,199,154,0.18), transparent 60%);">
   </div>
 
@@ -1019,7 +1019,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We have hired Yard Dog a handful of times now and are always blown away by their knowledge, professionalism and care…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jonathan Mayo</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Repeat client · Verified Google review</span>
@@ -1030,7 +1030,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very polite and accommodating young men! If you ask for other things done in your yards, they will take care of it, and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy Ritter</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1041,7 +1041,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We are so thrilled with our Christmas Light installation this holiday season. Yard Dog Lawn &amp; Lights has done an…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">KW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">KW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Karen Wiersig</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1052,7 +1052,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I am so happy with my new yard service. They are reliable, easy to talk to and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">AO</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">AO</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Alicia Ogee</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1063,7 +1063,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I contacted Yard Dog Lawn &amp; Lights on a Monday about giving be a quote for a landscaping project in our yard. Within…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">RB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">RB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ron Boyett</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -1074,7 +1074,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I've used this service before it was purchased by who owns it now, but I'm not upset over how it's running now! The…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bailee Ash</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1085,7 +1085,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional. Listened to my instructions."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Joel Rainer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1096,7 +1096,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">AR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">AR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ashley Riley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1107,7 +1107,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always on time. Great communication. Care for our property!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">MH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">MH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">McCall Hawthorne</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1118,7 +1118,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always prompt &amp; they do a nice job!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">PJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">PJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Phyllis Jolley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1129,7 +1129,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The team does a great job on my yard."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">MM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">MM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Melissa Maines</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1140,7 +1140,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog did a great job removing all the leaves in our backyard. We will be using them every year going forward."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">PY</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">PY</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">P-Nut Y'Barbo</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -1151,7 +1151,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Love Yard Dog Lawn and Lights! They always do a fabulous job and keep my yard looking great!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">CR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">CR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Christi Rankin</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1162,7 +1162,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog did a great job cleaning up my backyard full of leaves and pine needles. Saved my back an entire day of raking. And for a reasonable price, too!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">David Dusek</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -1173,7 +1173,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very good service and very polite!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">LO</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">LO</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura Odom</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1184,7 +1184,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Professional and courteous. The price for the job was reasonable and was better than others I had checked with."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">JF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">JF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">John Frazier</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1195,7 +1195,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very fast to respond, showed up quickly and did a great job, all lights are nice and straight."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">AC</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">AC</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Aaron Combs</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1206,7 +1206,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his team of workers did a great job!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">MB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">MB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Mila Breitenberg</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1217,7 +1217,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys did a great job. They were even sweet and brought my trash can up to the house. Glad we switched to Yard Dog. We'd recommend them to anyone in the White Oak area!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">AD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">AD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Anna Dear</span>
         <span class="text-xs text-ydg-ink/60 leading-5">White Oak · Lawn maintenance · Verified Google review</span>
@@ -1228,7 +1228,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn &amp; Lights has been great for us and are quick to address any issues."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">David Snow</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1239,7 +1239,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Awesome experience with these guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Donna Stockton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1250,7 +1250,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always does a great job! Very professional!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">KH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">KH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kim Harris</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1261,7 +1261,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The crew did a great job. The grass was thick this week and they took extra time to mow it down evenly."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Shelly Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -1272,7 +1272,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Great job done. Am going to continue using them bi-weekly. I recommend them if you're looking for great service!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">TH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">TH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Teri Hanes</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1283,7 +1283,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Fantastic service, team has taken great care of our lawn. Always on time and respectful of the land. These guys go the extra mile."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Travis Martin</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1294,7 +1294,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional and would highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">AB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">AB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Amanda B.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1305,7 +1305,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller did a wonderful job! He was quick and thorough, I would recommend Yard Dog highly!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">MA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">MA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Melissa Adams</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1316,7 +1316,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Does a great job. Shows up on time. Prices are good. Very friendly. I highly recommend this service."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">PB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">PB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Penny Behan</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1327,7 +1327,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Awesome service. They have been doing our yard for years now. Highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Sam Davidson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1338,7 +1338,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Fast and friendly service. We've used them for quite some time."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Brenda L.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1349,7 +1349,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I recently hired Miller to clear out my ditch area, and I couldn't be more impressed with the results. From start to finish, the service was professional and efficient. They cleared the area quickly, removing overgrowth, debris, and ensuring proper drainage. The attention to detail was excellent, and they made sure to leave the space neat and tidy. Not only did they complete the job within the estimated time frame, but they also communicated with me throughout the process to ensure everything met my expectations. The ditch now looks great, and I can already tell it's going to function much better. Overall, highly recommend Miller for any type of lawn care!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">SB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">SB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Staci Barham</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Drainage · Verified Google review</span>
@@ -1362,7 +1362,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We have hired Yard Dog a handful of times now and are always blown away by their knowledge, professionalism and care…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jonathan Mayo</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Repeat client · Verified Google review</span>
@@ -1373,7 +1373,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very polite and accommodating young men! If you ask for other things done in your yards, they will take care of it, and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy Ritter</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1384,7 +1384,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We are so thrilled with our Christmas Light installation this holiday season. Yard Dog Lawn &amp; Lights has done an…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">KW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">KW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Karen Wiersig</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1395,7 +1395,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I am so happy with my new yard service. They are reliable, easy to talk to and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">AO</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">AO</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Alicia Ogee</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1406,7 +1406,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I contacted Yard Dog Lawn &amp; Lights on a Monday about giving be a quote for a landscaping project in our yard. Within…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">RB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">RB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ron Boyett</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -1417,7 +1417,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I've used this service before it was purchased by who owns it now, but I'm not upset over how it's running now! The…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bailee Ash</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1428,7 +1428,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional. Listened to my instructions."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Joel Rainer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1439,7 +1439,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">AR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">AR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ashley Riley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1450,7 +1450,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always on time. Great communication. Care for our property!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">MH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">MH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">McCall Hawthorne</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1461,7 +1461,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always prompt &amp; they do a nice job!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">PJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">PJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Phyllis Jolley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1472,7 +1472,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The team does a great job on my yard."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">MM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">MM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Melissa Maines</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1483,7 +1483,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog did a great job removing all the leaves in our backyard. We will be using them every year going forward."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">PY</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">PY</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">P-Nut Y'Barbo</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -1494,7 +1494,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Love Yard Dog Lawn and Lights! They always do a fabulous job and keep my yard looking great!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">CR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">CR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Christi Rankin</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1505,7 +1505,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog did a great job cleaning up my backyard full of leaves and pine needles. Saved my back an entire day of raking. And for a reasonable price, too!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">David Dusek</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -1516,7 +1516,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very good service and very polite!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">LO</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">LO</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Laura Odom</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1527,7 +1527,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Professional and courteous. The price for the job was reasonable and was better than others I had checked with."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">JF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">JF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">John Frazier</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1538,7 +1538,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very fast to respond, showed up quickly and did a great job, all lights are nice and straight."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">AC</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">AC</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Aaron Combs</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1549,7 +1549,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his team of workers did a great job!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">MB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">MB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Mila Breitenberg</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1560,7 +1560,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys did a great job. They were even sweet and brought my trash can up to the house. Glad we switched to Yard Dog. We'd recommend them to anyone in the White Oak area!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">AD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">AD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Anna Dear</span>
         <span class="text-xs text-ydg-ink/60 leading-5">White Oak · Lawn maintenance · Verified Google review</span>
@@ -1571,7 +1571,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn &amp; Lights has been great for us and are quick to address any issues."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">David Snow</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1582,7 +1582,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Awesome experience with these guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Donna Stockton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1593,7 +1593,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always does a great job! Very professional!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">KH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">KH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kim Harris</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1604,7 +1604,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The crew did a great job. The grass was thick this week and they took extra time to mow it down evenly."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Shelly Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -1615,7 +1615,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Great job done. Am going to continue using them bi-weekly. I recommend them if you're looking for great service!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">TH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">TH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Teri Hanes</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1626,7 +1626,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Fantastic service, team has taken great care of our lawn. Always on time and respectful of the land. These guys go the extra mile."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Travis Martin</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1637,7 +1637,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional and would highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">AB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">AB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Amanda B.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1648,7 +1648,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller did a wonderful job! He was quick and thorough, I would recommend Yard Dog highly!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">MA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">MA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Melissa Adams</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1659,7 +1659,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Does a great job. Shows up on time. Prices are good. Very friendly. I highly recommend this service."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">PB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">PB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Penny Behan</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1670,7 +1670,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Awesome service. They have been doing our yard for years now. Highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Sam Davidson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1681,7 +1681,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Fast and friendly service. We've used them for quite some time."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Brenda L.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1692,7 +1692,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I recently hired Miller to clear out my ditch area, and I couldn't be more impressed with the results. From start to finish, the service was professional and efficient. They cleared the area quickly, removing overgrowth, debris, and ensuring proper drainage. The attention to detail was excellent, and they made sure to leave the space neat and tidy. Not only did they complete the job within the estimated time frame, but they also communicated with me throughout the process to ensure everything met my expectations. The ditch now looks great, and I can already tell it's going to function much better. Overall, highly recommend Miller for any type of lawn care!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">SB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">SB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Staci Barham</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Drainage · Verified Google review</span>
@@ -1708,7 +1708,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"As a new customer to Yard Dog Lawn Service, we have been very pleased with their work. As a senior couple we utilize…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">LG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">LG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Larry Wade Gardner</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1719,7 +1719,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I rented a bobcat with an auger to drill holes for a fence. Communication, pricing, delivery service, everything was…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">LT</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">LT</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Larkin Turner</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Equipment rental · Verified Google review</span>
@@ -1730,7 +1730,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn &amp; Lights did an amazing job hanging our Christmas lights! They actually showed up two days earlier than…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">W</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">W</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Whitney</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1741,7 +1741,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I couldn't be happier with the work done on my flower bed! Yard Dog Lawn &amp; Lights were professional, hardworking, and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">FG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">FG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Fernando Gutierrez</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -1752,7 +1752,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller Maines and crew have been terrific. They have been able to work us in to their schedule…sometimes on short…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Rick Higginbotham</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1763,7 +1763,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Give them a call. Great service, great job. Completed quickly. Yard Dog will be my first call."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">TM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">TM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">tony martens</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1774,7 +1774,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog &quot;guys&quot; are always pleasant, prompt and quick to come back if they miss a spot. I've used them for over a year and a half and have recommended them highly!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">LR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">LR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Lori &quot;Lulu&quot; Royer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1785,7 +1785,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys do a terrific job. I've had Yard Dog for about a year at my home in Hallsville, and there's nothing they overlook. They take good care of cutting, trimming and clean up after. I highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">B. S.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Hallsville · Lawn maintenance · Verified Google review</span>
@@ -1796,7 +1796,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very nice and courteous workers. They do an excellent job taking care of my yard."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">PG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">PG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Patti Glover</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1807,7 +1807,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The work requested was done very well, and he got to me the next business day."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">NF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">NF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Nikki Seimears Faircloth</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1818,7 +1818,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Thanks for the much needed lawn revival, Yard Dog! Your crew is professional, punctual, and consistent. Miller, Jacob and Alex are all-stars with an eye for detail."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">QK</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">QK</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Queen Kong</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn treatment · Verified Google review</span>
@@ -1829,7 +1829,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They have been doing my yard for way over a year. Fantastic job everytime. I highly recommend them!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">CH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">CH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cathy Hartley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1840,7 +1840,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"This group is punctual and thorough. They did a great job on my lawn and I am for sure going to contact with them during the spring and summer months to come."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">CB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">CB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Clint Boggio</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1851,7 +1851,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">LG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">LG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">L. Griggs</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -1862,7 +1862,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Guys did a wonderful job, very clean and neat. Them doing a great job for my elderly neighbor is also very appreciated."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JP</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JP</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jacob Palmer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1873,7 +1873,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller was responsive and quick to set a date and install our Christmas lights. The price was outstanding compared to all other quotes. Nice guys to chat with as well. Ours were installed today."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">SL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">SL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">S. Log</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1884,7 +1884,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"So happy with the Christmas lights that Miller and Chris hung for us last week. They always make it easy and provide exceptional service. Thanks guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">LB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">LB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Luke Bueno</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -1895,7 +1895,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog's crews arrive when scheduled and complete the job professionally."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">KB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">KB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ken Bedsole</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1906,7 +1906,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Absolutely love! Very professional, efficient, and affordable! Would definitely recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">KZ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">KZ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Katelyn Van Zandt</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1917,7 +1917,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional and friendly crew. They did great work."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">CS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">CS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cody Sheperd</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1928,7 +1928,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"What a great group! My yard looks great and they have helped with everything from new sod to the flowerbeds. Would highly recommend."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Donna Stockton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Sod · Flowerbeds · Verified Google review</span>
@@ -1939,7 +1939,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much, Yard Dog."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">RL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">RL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee Loose</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -1950,7 +1950,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Working with Yard Dog has been a great experience for our commercial property and I would highly recommend them!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">HM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">HM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Hunter Malensek</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Commercial property · Verified Google review</span>
@@ -1961,7 +1961,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The team did a great job, our yard looks amazing!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">OL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">OL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Okoye Lawson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1972,7 +1972,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did an excellent job for us."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">MW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">MW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Mason Williams</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1983,7 +1983,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Have had Yard Dog for a few seasons now. Been very pleased with all the services they offer."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Benjamin Watson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -1994,7 +1994,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We've been using Miller for over a year now. Reliable, punctual, and he does a great job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JN</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JN</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jennifer Newland</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2005,7 +2005,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Driving up my driveway and seeing my home restored to the way it should look made my heart happy and put a smile on my face! Terrific work!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">BJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">BJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bianca Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -2016,7 +2016,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog always does a great job for us! We always know when to expect him and he's always good about doing any extras we might need from time to time! We highly recommend him!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">SS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">SS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Sally Smith</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2027,7 +2027,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog: competitive pricing, always on schedule, and great looking jobs."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">CE</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">CE</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Christopher Edmiaston</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2040,7 +2040,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"As a new customer to Yard Dog Lawn Service, we have been very pleased with their work. As a senior couple we utilize…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">LG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">LG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Larry Wade Gardner</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2051,7 +2051,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I rented a bobcat with an auger to drill holes for a fence. Communication, pricing, delivery service, everything was…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">LT</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">LT</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Larkin Turner</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Equipment rental · Verified Google review</span>
@@ -2062,7 +2062,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn &amp; Lights did an amazing job hanging our Christmas lights! They actually showed up two days earlier than…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">W</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">W</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Whitney</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -2073,7 +2073,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I couldn't be happier with the work done on my flower bed! Yard Dog Lawn &amp; Lights were professional, hardworking, and…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">FG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">FG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Fernando Gutierrez</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -2084,7 +2084,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller Maines and crew have been terrific. They have been able to work us in to their schedule…sometimes on short…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Rick Higginbotham</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2095,7 +2095,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Give them a call. Great service, great job. Completed quickly. Yard Dog will be my first call."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">TM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">TM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">tony martens</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2106,7 +2106,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog &quot;guys&quot; are always pleasant, prompt and quick to come back if they miss a spot. I've used them for over a year and a half and have recommended them highly!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">LR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">LR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Lori &quot;Lulu&quot; Royer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2117,7 +2117,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys do a terrific job. I've had Yard Dog for about a year at my home in Hallsville, and there's nothing they overlook. They take good care of cutting, trimming and clean up after. I highly recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">B. S.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Hallsville · Lawn maintenance · Verified Google review</span>
@@ -2128,7 +2128,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very nice and courteous workers. They do an excellent job taking care of my yard."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">PG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">PG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Patti Glover</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2139,7 +2139,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The work requested was done very well, and he got to me the next business day."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">NF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">NF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Nikki Seimears Faircloth</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2150,7 +2150,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Thanks for the much needed lawn revival, Yard Dog! Your crew is professional, punctual, and consistent. Miller, Jacob and Alex are all-stars with an eye for detail."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">QK</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">QK</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Queen Kong</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn treatment · Verified Google review</span>
@@ -2161,7 +2161,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They have been doing my yard for way over a year. Fantastic job everytime. I highly recommend them!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">CH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">CH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cathy Hartley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2172,7 +2172,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"This group is punctual and thorough. They did a great job on my lawn and I am for sure going to contact with them during the spring and summer months to come."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">CB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">CB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Clint Boggio</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2183,7 +2183,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Amazing job on our yard! We have tons of trees and I was skeptical at how many leaves they could actually get up but NOW, our yard looks like there was never 1 leaf in it. Thank you, Yard Dog!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">LG</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">LG</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">L. Griggs</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Verified Google review</span>
@@ -2194,7 +2194,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Guys did a wonderful job, very clean and neat. Them doing a great job for my elderly neighbor is also very appreciated."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JP</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JP</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jacob Palmer</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2205,7 +2205,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller was responsive and quick to set a date and install our Christmas lights. The price was outstanding compared to all other quotes. Nice guys to chat with as well. Ours were installed today."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">SL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">SL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">S. Log</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -2216,7 +2216,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"So happy with the Christmas lights that Miller and Chris hung for us last week. They always make it easy and provide exceptional service. Thanks guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">LB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">LB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Luke Bueno</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Christmas lights · Verified Google review</span>
@@ -2227,7 +2227,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog's crews arrive when scheduled and complete the job professionally."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">KB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">KB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Ken Bedsole</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2238,7 +2238,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Absolutely love! Very professional, efficient, and affordable! Would definitely recommend!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">KZ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">KZ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Katelyn Van Zandt</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2249,7 +2249,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional and friendly crew. They did great work."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">CS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">CS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cody Sheperd</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2260,7 +2260,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"What a great group! My yard looks great and they have helped with everything from new sod to the flowerbeds. Would highly recommend."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Donna Stockton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Sod · Flowerbeds · Verified Google review</span>
@@ -2271,7 +2271,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I called Yard Dog Lawn and Lights for a quote to mow yard. I received a quote in an hour and what the cost would be. I received a message on Thursday telling me my appointment was on Friday this week. This company I would recommend to anyone! They did such a great job I am truly impressed with how my yard looks. THANK YOU so much, Yard Dog."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">RL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">RL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee Loose</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -2282,7 +2282,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Working with Yard Dog has been a great experience for our commercial property and I would highly recommend them!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">HM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">HM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Hunter Malensek</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Commercial property · Verified Google review</span>
@@ -2293,7 +2293,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"The team did a great job, our yard looks amazing!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">OL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">OL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Okoye Lawson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2304,7 +2304,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did an excellent job for us."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">MW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">MW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Mason Williams</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2315,7 +2315,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Have had Yard Dog for a few seasons now. Been very pleased with all the services they offer."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Benjamin Watson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2326,7 +2326,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We've been using Miller for over a year now. Reliable, punctual, and he does a great job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">JN</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">JN</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jennifer Newland</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2337,7 +2337,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Driving up my driveway and seeing my home restored to the way it should look made my heart happy and put a smile on my face! Terrific work!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">BJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">BJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bianca Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Landscaping · Verified Google review</span>
@@ -2348,7 +2348,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog always does a great job for us! We always know when to expect him and he's always good about doing any extras we might need from time to time! We highly recommend him!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">SS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">SS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Sally Smith</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2359,7 +2359,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog: competitive pricing, always on schedule, and great looking jobs."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">CE</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">CE</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Christopher Edmiaston</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2375,7 +2375,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys do a great job. They are in and out quickly, and the yard always look great. They respond quickly to text…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">AW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">AW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Andrea Wheatley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2386,7 +2386,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I couldn't be happier with my lawn service! Moving into a new home is stressful enough, but a crazy lawn, a million…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">TB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">TB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Terra Beswick</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2397,7 +2397,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn Service have proven to provide top quality service. They're very dependable, reliable, and polite…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">EH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">EH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Edith Hirth</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2408,7 +2408,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn care has done an amazing job on my Mom's yard! Miller is always so kind and replies back quickly for…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Becky McCurdy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2419,7 +2419,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard dog was very responsive, showed up when they said they would, did the work when they scheduled to do the work, had…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Treyben Letlow</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2430,7 +2430,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller does awesome work!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">BW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">BW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Betty Watkins</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2441,7 +2441,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They did a good job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">CS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">CS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cody Speak</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2452,7 +2452,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always wonderful. Great jobs, very unobtrusive, neat. Nice guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">RB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">RB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Richard Boyd</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2463,7 +2463,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"A really good crew. They work fast and are very thorough in everything they do. I definitely recommend them."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">KB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">KB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kay Berry</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2474,7 +2474,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very knowledgeable in every aspect of lawn care!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">AK</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">AK</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Andrew Kufahl</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2485,7 +2485,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his guys crushed it 🤙🏻"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">CC</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">CC</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cade Carter</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2496,7 +2496,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"My yard looks so good. Thank you!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Debbie Schroeder</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2507,7 +2507,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Looks great"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">RJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">RJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2518,7 +2518,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Jacob and Chris did a great job removing leaves and trimming the crepe myrtles. I wish that I could afford them on a regular basis."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">JM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">JM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Joe Murphy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Tree trimming · Verified Google review</span>
@@ -2529,7 +2529,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Really good guys, was on time, very professional, and we will be using his business anytime we need to. Thank you guys 👍"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">RL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">RL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Robert Leal</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2540,7 +2540,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I use Yard Dog for all of my lawn care needs. The guys on the crew are always professional and courteous. Would definitely recommend to everyone!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">T</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">T</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Tommy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2551,7 +2551,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did a great job and showed up as scheduled."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Tommie D.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2562,7 +2562,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional, easy to work with, and do a great job!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kaylie Reeves</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2573,7 +2573,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They were awesome, and were able to get our drainage issue fixed ASAP before it started storming again. Miller was so kind and helpful as well!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">KF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">KF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kaitlin Fields</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Drainage · Verified Google review</span>
@@ -2584,7 +2584,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his crew are wonderful. Our yard has never looked better. We have full green grass now. They are always professional and we highly recommend their services."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">SB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">SB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">S. B.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn treatment · Verified Google review</span>
@@ -2595,7 +2595,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller at Yard Dog Lawn and Lights knocked out my flower beds, looked great and did what he said. Definitely will hire them back."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Steven R.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Flowerbeds · Verified Google review</span>
@@ -2606,7 +2606,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Thank you for prompt, courteous service. You went above and beyond what we had asked of you. Thanks again."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BT</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BT</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bart Tilton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2617,7 +2617,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">KP</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">KP</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy Poynor</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span>
@@ -2628,7 +2628,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did an excellent job cleaning up my flower beds. Made the house look very good. Also, they did an excellent job cleaning up after themselves."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">FA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">FA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Floyd Armstrong</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Flowerbeds · Verified Google review</span>
@@ -2639,7 +2639,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Absolutely fantastic!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">BR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">BR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Becky Reaves</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2650,7 +2650,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I have used Yard Dog at home. They are always reliable and do great work. I highly recommend them for anyone needing yard service or event lights!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">SS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">SS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Shelly Smith</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2661,7 +2661,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller was mowing the neighbor's yard and we were in need of a new lawn care company. He was kind, professional and mowed our yard quickly and it looks great! Thank you!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">JF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">JF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Johnathan Flores</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -2672,7 +2672,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We absolutely love this company. They have done a wonderful job for us."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">JR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">JR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jason Rumsey</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2683,7 +2683,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Been using him for 5 years and always does an amazing job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Robert Hill</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2694,7 +2694,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;" aria-label="5 out of 5 stars">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Great service and affordable!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">B</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">B</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Brandon</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2707,7 +2707,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"These guys do a great job. They are in and out quickly, and the yard always look great. They respond quickly to text…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">AW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">AW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Andrea Wheatley</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2718,7 +2718,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I couldn't be happier with my lawn service! Moving into a new home is stressful enough, but a crazy lawn, a million…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">TB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">TB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Terra Beswick</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2729,7 +2729,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn Service have proven to provide top quality service. They're very dependable, reliable, and polite…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">EH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">EH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Edith Hirth</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2740,7 +2740,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard Dog Lawn care has done an amazing job on my Mom's yard! Miller is always so kind and replies back quickly for…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Becky McCurdy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2751,7 +2751,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Yard dog was very responsive, showed up when they said they would, did the work when they scheduled to do the work, had…"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Treyben Letlow</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2762,7 +2762,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller does awesome work!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">BW</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">BW</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Betty Watkins</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2773,7 +2773,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They did a good job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">CS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">CS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cody Speak</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2784,7 +2784,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Always wonderful. Great jobs, very unobtrusive, neat. Nice guys!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">RB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">RB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Richard Boyd</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2795,7 +2795,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"A really good crew. They work fast and are very thorough in everything they do. I definitely recommend them."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">KB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">KB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kay Berry</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2806,7 +2806,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very knowledgeable in every aspect of lawn care!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">AK</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">AK</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Andrew Kufahl</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2817,7 +2817,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his guys crushed it 🤙🏻"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">CC</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">CC</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Cade Carter</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2828,7 +2828,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"My yard looks so good. Thank you!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">DS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Debbie Schroeder</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2839,7 +2839,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Looks great"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">RJ</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">RJ</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Renee Johnson</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2850,7 +2850,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Jacob and Chris did a great job removing leaves and trimming the crepe myrtles. I wish that I could afford them on a regular basis."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">JM</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">JM</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Joe Murphy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Leaf removal · Tree trimming · Verified Google review</span>
@@ -2861,7 +2861,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Really good guys, was on time, very professional, and we will be using his business anytime we need to. Thank you guys 👍"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">RL</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">RL</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Robert Leal</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2872,7 +2872,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I use Yard Dog for all of my lawn care needs. The guys on the crew are always professional and courteous. Would definitely recommend to everyone!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">T</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">T</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Tommy</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2883,7 +2883,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did a great job and showed up as scheduled."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">TD</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">TD</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Tommie D.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2894,7 +2894,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Very professional, easy to work with, and do a great job!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">KR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kaylie Reeves</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2905,7 +2905,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"They were awesome, and were able to get our drainage issue fixed ASAP before it started storming again. Miller was so kind and helpful as well!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">KF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">KF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kaitlin Fields</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Drainage · Verified Google review</span>
@@ -2916,7 +2916,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller and his crew are wonderful. Our yard has never looked better. We have full green grass now. They are always professional and we highly recommend their services."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">SB</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">SB</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">S. B.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn treatment · Verified Google review</span>
@@ -2927,7 +2927,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller at Yard Dog Lawn and Lights knocked out my flower beds, looked great and did what he said. Definitely will hire them back."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">SR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">SR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Steven R.</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Flowerbeds · Verified Google review</span>
@@ -2938,7 +2938,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Thank you for prompt, courteous service. You went above and beyond what we had asked of you. Thanks again."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">BT</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">BT</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Bart Tilton</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2949,7 +2949,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller &amp; his crew are top notch. Polite, on time, &amp; diligent professionals. He came recommended to help us re-sod a section of our backyard. He knows what he's talking about, &amp; they did a great job. We highly recommend! Thanks, Miller!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">KP</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">KP</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Kathy Poynor</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Re-sod · Verified Google review</span>
@@ -2960,7 +2960,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Did an excellent job cleaning up my flower beds. Made the house look very good. Also, they did an excellent job cleaning up after themselves."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">FA</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">FA</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Floyd Armstrong</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Flowerbeds · Verified Google review</span>
@@ -2971,7 +2971,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Absolutely fantastic!!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1A0E;color:#F4EFE2;letter-spacing:0.02em;">BR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#0F1B2A;color:#F4EFE2;letter-spacing:0.02em;">BR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Becky Reaves</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2982,7 +2982,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"I have used Yard Dog at home. They are always reliable and do great work. I highly recommend them for anyone needing yard service or event lights!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1A0E;letter-spacing:0.02em;">SS</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#C8B89A;color:#0F1B2A;letter-spacing:0.02em;">SS</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Shelly Smith</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -2993,7 +2993,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Miller was mowing the neighbor's yard and we were in need of a new lawn care company. He was kind, professional and mowed our yard quickly and it looks great! Thank you!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1A0E;letter-spacing:0.02em;">JF</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E8B53A;color:#0F1B2A;letter-spacing:0.02em;">JF</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Johnathan Flores</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn mowing · Verified Google review</span>
@@ -3004,7 +3004,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"We absolutely love this company. They have done a wonderful job for us."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#6AAA3A;color:#0F1A0E;letter-spacing:0.02em;">JR</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#F26D77;color:#0F1B2A;letter-spacing:0.02em;">JR</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Jason Rumsey</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -3015,7 +3015,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Been using him for 5 years and always does an amazing job."</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#21501E;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#B22934;color:#F4EFE2;letter-spacing:0.02em;">RH</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Robert Hill</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>
@@ -3026,7 +3026,7 @@
     <div class="flex text-base leading-none" style="color:#E8B53A;letter-spacing:0.04em;">★★★★★</div>
     <p class="text-ydg-ink/85 lede mt-3">"Great service and affordable!"</p>
     <div class="flex items-center gap-3 mt-5">
-      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#4A7C2F;color:#F4EFE2;letter-spacing:0.02em;">B</span>
+      <span class="h-10 w-10 rounded-full ring-1 ring-black/5 flex items-center justify-center text-sm font-semibold" style="background:#E63946;color:#F4EFE2;letter-spacing:0.02em;">B</span>
       <div class="flex flex-col">
         <span class="font-medium text-ydg-ink leading-5 tracking-tight">Brandon</span>
         <span class="text-xs text-ydg-ink/60 leading-5">Lawn maintenance · Verified Google review</span>

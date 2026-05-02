@@ -169,8 +169,8 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   flex-shrink: 0;
   text-decoration: none;
 }
-.nav-brand > img,
-.nav-brand img:not(.nav-brand-icon) {
+.nav-brand > img:not(.nav-banner),
+.nav-brand img:not(.nav-brand-icon):not(.nav-banner) {
   /* Wrap-style: place the img inside a circle via this rule */
   height: 44px;
   width: 44px;
@@ -179,6 +179,20 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   border-radius: 50%;
   background: var(--color-bg-section);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+.nav-brand img.nav-banner {
+  height: 42px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+@media (max-width: 600px) {
+  .nav-brand img.nav-banner { height: 34px; max-width: 180px; }
 }
 .nav-brand-text {
   font-family: 'Anton', 'Inter', sans-serif;

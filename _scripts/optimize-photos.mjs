@@ -9,7 +9,7 @@ const photosDir = path.join(projectRoot, 'brand_photos');
 const backupDir = path.join(projectRoot, 'brand_photos_original');
 
 const MAX_WIDTH = 1920;
-const JPEG_QUALITY = 0.82;
+const JPEG_QUALITY = 0.92;   // High quality preset — visually indistinguishable from source on web display
 const SKIP_BELOW_KB = 250;
 
 // Files to skip outright (already-optimized derivatives or things we shouldn't touch)

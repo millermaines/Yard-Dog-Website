@@ -213,23 +213,13 @@
       "permanent": true
     },
     {
-      "source": "/blog",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/:slug*",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/news",
-      "destination": "/",
+      "destination": "/blog",
       "permanent": true
     },
     {
       "source": "/news/:slug*",
-      "destination": "/",
+      "destination": "/blog",
       "permanent": true
     },
     {

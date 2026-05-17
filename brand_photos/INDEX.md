@@ -78,11 +78,13 @@ a "site:" caption — those entries land at the bottom.
 
 ## Photos added via Telegram (auto-appended)
 
-- `2026-05-17-janessa-glenn-before.jpg` — Janessa Glenn property (job #981), BEFORE flower-bed install. Wraparound back deck of a large two-story brick home under mature shade trees; sparse plantings, bare soil along the deck skirt, garden-stake fencing in place.
-- `2026-05-17-janessa-glenn-after.jpg` — Janessa Glenn property (job #981), AFTER flower-bed install. Same deck angle with full curved foundation bed: stone block edging, fresh black mulch, dense plantings (ferns + salvia + smaller shrubs).
-- `2026-05-17-janessa-glenn-side-hydrangeas.jpg` — Janessa Glenn property (job #981), side angle of the finished work. Hydrangeas in bloom (pink/blue) and freshly mulched bed along the side of the wraparound deck.
-- `2026-05-17-janessa-glenn-side2-hydrangeas-tree.jpg` — Janessa Glenn property (job #981), AFTER. Hydrangea bed under mature tree with sandstone block edging and fresh black mulch; side view of the deck.
-- `2026-05-17-janessa-glenn-back-yard-fence.jpg` — Janessa Glenn property (job #981), AFTER. Backyard view between the deck and the wood privacy fence; mulched bed along the deck skirt with small new plantings.
-- `2026-05-17-janessa-glenn-back-fence-long-bed.jpg` — Janessa Glenn property (job #981), AFTER. Wide backyard with a long curved mulched bed running between the deck and the fence; sandstone block edging, mature trees overhead.
-- `2026-05-17-janessa-glenn-red-roses-liriope.jpg` — Janessa Glenn property (job #981). Red knockout roses behind a row of fresh-planted liriope (monkey grass) edging; bare dirt still showing — likely a mid-install or detail shot.
-- `2026-05-17-janessa-glenn-front-boxwoods-roses.jpg` — Janessa Glenn property (job #981), AFTER. Front-yard hero shot: globe boxwoods, red knockout rose under a tree, fresh black mulch, sandstone block edging, liriope border. Most polished of the set.
+### Janessa Glenn property — job #981 (2026-05-17, four before/after pairs)
+
+- `2026-05-17-janessa-glenn-deck-before.jpg` — BEFORE: wraparound back deck of a large two-story brick home, mature shade trees, sparse plantings, bare soil along the deck skirt with garden-stake fencing in place.
+- `2026-05-17-janessa-glenn-deck-after.jpg` — AFTER: same deck angle with a full curved foundation bed; sandstone block edging, fresh black mulch, dense plantings (ferns + salvia + smaller shrubs).
+- `2026-05-17-janessa-glenn-side-hydrangeas-before.jpg` — BEFORE: side angle of the deck with the existing hydrangea bed and old/thin mulch on a narrow strip.
+- `2026-05-17-janessa-glenn-side-hydrangeas-after.jpg` — AFTER: same side with the bed extended, new sandstone block edging, fresh black mulch, hydrangeas intact under the mature tree.
+- `2026-05-17-janessa-glenn-back-fence-before.jpg` — BEFORE: backyard corner between deck and wood privacy fence with old/sparse mulch strip.
+- `2026-05-17-janessa-glenn-back-fence-after.jpg` — AFTER: same backyard with a long curved mulched bed running between the deck and the fence; new sandstone block edging, mature trees overhead.
+- `2026-05-17-janessa-glenn-front-roses-before.jpg` — BEFORE: front-yard knockout rose bed with bare dirt and fresh-planted liriope plugs awaiting fill and mulch.
+- `2026-05-17-janessa-glenn-front-roses-after.jpg` — AFTER: front-yard hero with globe boxwoods + red knockout rose under a tree, fresh black mulch, sandstone block edging, liriope border. Most polished shot of the set.

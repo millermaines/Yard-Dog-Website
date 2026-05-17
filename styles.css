@@ -2194,6 +2194,19 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   color: var(--color-text-dark);
 }
 .blog-post-body em { color: #B22934; font-style: normal; font-weight: 600; }
+.blog-post-body ul {
+  margin: 0 0 22px 0;
+  padding: 0 0 0 22px;
+  list-style: disc;
+}
+.blog-post-body ul li {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--color-text-dark);
+  margin: 0 0 10px 0;
+  padding-left: 4px;
+}
+.blog-post-body ul li strong { color: var(--color-text-dark); font-weight: 700; }
 .blog-post-divider {
   border: 0;
   border-top: 1px solid var(--color-border);

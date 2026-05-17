@@ -77,3 +77,7 @@ a "site:" caption — those entries land at the bottom.
 ---
 
 ## Photos added via Telegram (auto-appended)
+
+- `2026-05-17-janessa-glenn-before.jpg` — Janessa Glenn property (job #981), BEFORE flower-bed install. Wraparound back deck of a large two-story brick home under mature shade trees; sparse plantings, bare soil along the deck skirt, garden-stake fencing in place.
+- `2026-05-17-janessa-glenn-after.jpg` — Janessa Glenn property (job #981), AFTER flower-bed install. Same deck angle with full curved foundation bed: stone block edging, fresh black mulch, dense plantings (ferns + salvia + smaller shrubs).
+- `2026-05-17-janessa-glenn-side-hydrangeas.jpg` — Janessa Glenn property (job #981), side angle of the finished work. Hydrangeas in bloom (pink/blue) and freshly mulched bed along the side of the wraparound deck.

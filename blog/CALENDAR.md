@@ -22,8 +22,6 @@ in `/root/alienkind`).
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-05-23 | blog-bermuda-vs-st-augustine-east-texas | Bermuda vs. St. Augustine in East Texas: Which Fits Your Yard | Lawn Maintenance | Heat tolerance, shade, water, foot traffic — what we actually see thrive in each part of the region |
-| 2026-05-30 | blog-fire-ants-east-texas | Why Fire Ants Explode in May (and What Actually Kills the Mound) | Lawn Maintenance | Lifecycle timing, mound treatment vs. broadcast, the two products that actually work |
 | 2026-06-06 | blog-irrigation-mistakes-east-texas | The Three Irrigation Mistakes That Cook East Texas Lawns | Lawn Maintenance | Wrong times, too-frequent cycles, broken heads nobody notices — and how to audit your own system |
 | 2026-06-13 | blog-summer-pruning-rules | What You Should and Shouldn't Prune in June | Hedge Trimming | Crepe myrtles, hollies, hydrangeas — when summer cuts help and when they kill the bloom |
 | 2026-06-20 | blog-brown-patch-vs-heat-stress | Brown Patch vs. Heat Stress: How to Tell the Difference (Before You Make It Worse) | Lawn Maintenance | Fungus rings vs. crisp edges, why watering more makes one worse, fungicide vs. patience |
@@ -36,6 +34,8 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-05-30 | blog-fire-ants-east-texas.html | Why Fire Ants Explode in May (and What Actually Kills the Mound) | Lawn Maintenance |
+| 2026-05-23 | blog-bermuda-vs-st-augustine-east-texas.html | Bermuda vs. St. Augustine in East Texas: Which Fits Your Yard | Lawn Maintenance |
 | 2026-05-16 | blog-mulch-depth-east-texas.html | How Much Mulch You Actually Need (It's Less Than You Think) | Mulch Installation |
 | 2026-05-09 | blog-east-texas-spring-fertilization.html | The East Texas Fertilization Window Most Homeowners Miss | Fertilization |
 | 2026-05-02 | blog-east-texas-summer-lawn.html | Why Your East Texas Lawn Looks Worse in July (And What Actually Helps) | Lawn Maintenance |

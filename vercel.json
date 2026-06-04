@@ -1,6 +1,12 @@
 {
   "trailingSlash": false,
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/go/:tag",
+      "destination": "/api/go?c=:tag"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",

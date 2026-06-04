@@ -7,9 +7,11 @@
 // FAIL-OPEN: a prospect must NEVER see an error or a slow page because logging
 // failed — the Supabase write races a 1.5s timeout and all errors are swallowed.
 //
-// Env (Vercel project settings): YARDDOG_SUPABASE_URL, YARDDOG_SUPABASE_SERVICE_ROLE_KEY
-// (server-side only — never exposed to the client). Remember this project on the
-// key-rotation consumer list.
+// Env (Vercel project settings): YARDDOG_SUPABASE_URL, YARDDOG_SUPABASE_PUBLISHABLE_KEY.
+// Deliberately the LOW-PRIVILEGE publishable (anon) key, not service_role: an
+// RLS policy on yard_dog_campaign_events allows anon to INSERT qr_scan rows
+// only — no reads, no other tables. Worst-case leak = someone can fake scan
+// counts, not read business data.
 
 const DESTS = {
   c1: '/contact?utm_source=eddm&utm_medium=mailer&utm_campaign=c1',
@@ -25,7 +27,7 @@ export default async function handler(req, res) {
 
   try {
     const url = process.env.YARDDOG_SUPABASE_URL;
-    const key = process.env.YARDDOG_SUPABASE_SERVICE_ROLE_KEY;
+    const key = process.env.YARDDOG_SUPABASE_PUBLISHABLE_KEY;
     if (url && key && tag) {
       await Promise.race([
         fetch(`${url}/rest/v1/yard_dog_campaign_events`, {

@@ -3,6 +3,18 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "yarddoglawncare.com" }],
+      "destination": "https://www.yarddoglandscapes.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.yarddoglawncare.com" }],
+      "destination": "https://www.yarddoglandscapes.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/contact-us",
       "destination": "/contact",
       "permanent": true

@@ -19,20 +19,29 @@
 // LEGAL: knockout questions are phrased to stay clear of IRCA (work-auth only,
 // never citizenship), ADEA (18-or-older yes/no, never DOB), ADA (essential
 // functions with-or-without-accommodation, never medical), Texas HB 2466
-// ban-the-box (screening stated POST-offer only), FCRA (post-offer consent).
+// ban-the-box (screening stated POST-offer only), FCRA (post-offer consent),
+// and Title VII religious accommodation (Saturday/Sabbath, post-Groff).
 // Do not "improve" the wording without re-checking those.
-
-const KNOCKOUT = [
+//
+// All seven knockout answers are collected + stored, but only the five
+// OBJECTIVE gates auto-decide eligibility. Schedule (Saturday/early start) and
+// physical ability are captured-but-not-auto-rejected: a "No" there carries
+// Title VII / ADA duties, so the VM triage tool flags it for a human
+// conversation instead of a silent rejection.
+const KO_FIELDS = ['ko_work_auth', 'ko_age_18', 'ko_license', 'ko_transport', 'ko_physical', 'ko_schedule', 'ko_screen_consent'];
+const HARD_GATES = [
   { id: 'ko_work_auth', pass: 'Yes' },
   { id: 'ko_age_18', pass: 'Yes' },
   { id: 'ko_license', pass: 'Yes' },
   { id: 'ko_transport', pass: 'Yes, every day' },
-  { id: 'ko_physical', pass: 'Yes' },
-  { id: 'ko_schedule', pass: 'Yes' },
   { id: 'ko_screen_consent', pass: 'Yes' },
 ];
 
-// form field -> human gear label used as the sc_equipment jsonb key
+// form field -> human gear label used as the sc_equipment jsonb key. These
+// labels are the SCORING KEY and must stay byte-identical to CORE_GEAR /
+// LANDSCAPE_GEAR in yd-applicant-triage.ts. Do NOT change them to match
+// on-screen helper text (e.g. the form shows "String trimmer (weed eater)"
+// but the key here and in the scorer is the bare "String trimmer").
 const EQUIP_FIELDS = {
   equip_zero_turn: 'Zero-turn mower',
   equip_push_mower: 'Push mower',
@@ -75,14 +84,17 @@ export default async function handler(req, res) {
     return res.end(JSON.stringify({ ok: true, eligible: true }));
   }
 
-  // Minimal required contact fields — without these the application is useless.
-  if (!str(body.full_name) || !str(body.phone)) {
+  // Minimal required fields — without these the application is useless. The
+  // form requires name, phone, and all seven knockout answers; a direct POST
+  // missing them is junk, so reject it before writing a row.
+  if (!str(body.full_name) || !str(body.phone) || KO_FIELDS.some((f) => !str(body[f]))) {
     res.statusCode = 400;
     return res.end(JSON.stringify({ ok: false, error: 'missing_required' }));
   }
 
-  // 2) Deterministic knockout for the instant applicant-facing reply.
-  const eligible = KNOCKOUT.every((r) => str(body[r.id]) === r.pass);
+  // 2) Deterministic knockout for the instant applicant-facing reply. Only the
+  // five objective gates decide eligibility (see KO_FIELDS/HARD_GATES note).
+  const eligible = HARD_GATES.every((r) => str(body[r.id]) === r.pass);
 
   // Assemble the equipment self-rating map (human gear label -> rating string).
   const sc_equipment = {};
@@ -99,7 +111,7 @@ export default async function handler(req, res) {
   // the VM re-derives from, so it mirrors the typed columns exactly.
   const record = {};
   for (const f of CONTACT_FIELDS) record[f] = str(body[f]);
-  for (const r of KNOCKOUT) record[r.id] = str(body[r.id]);
+  for (const f of KO_FIELDS) record[f] = str(body[f]);
   for (const f of SCORED_TEXT) record[f] = str(body[f]);
   record.sc_equipment = sc_equipment;
   record.attestation = attestation;

@@ -1,10 +1,12 @@
 // seo-fixups-2026-06.mjs
 // Idempotent site-wide local-SEO consistency sweep. Safe to re-run.
 //
-//   1. NAP hours: normalize every page to the canonical "Mon–Sat 7AM–6PM"
-//      (footer text 106 files) and schema openingHours "Mo-Sa 07:00-18:00" (18 files).
-//      Fixes the live inconsistency where the homepage said Mon–Sat 7a–6p but every
-//      interior page said Mon–Fri 7AM–5PM / Sat 9AM–3PM.
+//   1. NAP hours: normalize every page to the canonical "Open 24 Hours" (footer text)
+//      and schema openingHours "Mo-Su 00:00-23:59". This matches the live Google
+//      Business Profile, which shows 24-hour availability — a confirmed lead driver
+//      (a mowing client chose Yard Dog in June 2026 specifically because the profile
+//      read as open later than competitors). Catches every prior variant: the stale
+//      "Mon–Fri 7AM–5PM / Sat 9AM–3PM" and the brief "Mon–Sat 7AM–6PM".
 //   2. Broken logo: schema "image" pointing at /logo.png (404) -> real logo URL (28 files).
 //   3. Internal links: inject the 6 niche service cards into all 10 city-hub pages,
 //      and add an "also serving" city list to the 6 niche base service pages — so the
@@ -58,31 +60,29 @@ const htmlFiles = () => fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
 
 function stringSweep() {
   let footerFixed = 0, schemaHoursFixed = 0, loneFixed = 0, logoFixed = 0;
+  const HOURS_DISPLAY = 'Open 24 Hours';
+  const HOURS_SCHEMA = '"Mo-Su 00:00-23:59"';
   for (const f of htmlFiles()) {
     const p = path.join(ROOT, f);
     let html = fs.readFileSync(p, 'utf8');
     const before = html;
 
-    // Footer full string first, then any lone remainder (order matters).
-    if (html.includes('Mon–Fri 7AM–5PM, Sat 9AM–3PM')) {
-      html = html.split('Mon–Fri 7AM–5PM, Sat 9AM–3PM').join('Mon–Sat 7AM–6PM');
-      footerFixed++;
+    // Footer display string — collapse every historical variant to the canonical.
+    // Order matters: longest/most-specific first so we never leave a partial remainder.
+    for (const old of ['Mon–Fri 7AM–5PM, Sat 9AM–3PM', 'Mon–Sat 7AM–6PM', 'Mon–Fri 7AM–5PM', 'Mon–Sat · 7a–6p']) {
+      if (html.includes(old)) { html = html.split(old).join(HOURS_DISPLAY); footerFixed++; }
     }
-    if (html.includes('Mon–Fri 7AM–5PM')) {
-      html = html.split('Mon–Fri 7AM–5PM').join('Mon–Sat 7AM–6PM');
-      loneFixed++;
-    }
-    // Schema openingHours — single-line form (niche base pages, contact, etc.)
-    if (html.includes('"Mo-Fr 07:00-17:00", "Sa 09:00-15:00"')) {
-      html = html.split('"Mo-Fr 07:00-17:00", "Sa 09:00-15:00"').join('"Mo-Sa 07:00-18:00"');
-      schemaHoursFixed++;
-    }
-    // Schema openingHours — multiline form (city-hub pages)
-    const mlOld = '      "openingHours": [\n        "Mo-Fr 07:00-17:00",\n        "Sa 09:00-15:00"\n      ],';
-    const mlNew = '      "openingHours": ["Mo-Sa 07:00-18:00"],';
-    if (html.includes(mlOld)) {
-      html = html.split(mlOld).join(mlNew);
-      schemaHoursFixed++;
+    // Schema openingHours — every historical form -> 24/7.
+    // Single-line stale form, single-line interim form, and the old multiline form.
+    for (const old of [
+      '"Mo-Fr 07:00-17:00", "Sa 09:00-15:00"',
+      '"Mo-Sa 07:00-18:00"',
+      '      "openingHours": [\n        "Mo-Fr 07:00-17:00",\n        "Sa 09:00-15:00"\n      ],',
+    ]) {
+      const repl = old.startsWith('      "openingHours"')
+        ? `      "openingHours": [${HOURS_SCHEMA}],`
+        : HOURS_SCHEMA;
+      if (html.includes(old)) { html = html.split(old).join(repl); schemaHoursFixed++; }
     }
     // Broken /logo.png -> real logo (both www and non-www forms)
     if (html.includes('yarddoglandscapes.com/logo.png')) {

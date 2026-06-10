@@ -196,6 +196,36 @@
       "permanent": true
     },
     {
+      "source": "/services/retaining-walls",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/retaining-wall",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/retaining-wall-installation",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/retaining-walls-installation",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/block-walls",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/seating-walls",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
       "source": "/quote",
       "destination": "/contact",
       "permanent": true

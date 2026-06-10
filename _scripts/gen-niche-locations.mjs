@@ -1,7 +1,8 @@
 // gen-niche-locations.mjs
-// Generates the 60 NICHE service-location pages (6 services x 10 cities) that the
+// Generates the 70 NICHE service-location pages (7 services x 10 cities) that the
 // April-2026 live audit flagged as ranking gaps: hedge-trimming, flower-bed-installation,
-// sod-installation, mulch-installation, tree-planting, drainage.
+// sod-installation, mulch-installation, tree-planting, drainage, and retaining-walls.
+// (retaining-walls added 2026-06-10 to match the live retaining-walls.html base page.)
 //
 // IMPORTANT: This emits pages in the CURRENT LIVE chrome (mega-menu nav, banner brand,
 // Blog link, cta-mark + spotlight scripts, www + clean-URL canonical, Service + FAQPage +
@@ -131,6 +132,20 @@ const SERVICES = [
     photoBank: ['IMG_3736.jpg', 'IMG_3523.jpg', 'IMG_3683.jpg', 'IMG_3454.jpg', 'IMG_3452.jpg'],
     seasonText: 'East Texas clay holds water and spring storms come in heavy stretches, so drainage work matters most heading into the wet months — but a regrade or French drain can go in any time the ground is workable.',
     cadenceFAQ: 'Drainage is typically a one-time install, though we will check the system after the first few heavy rains and can clear catch basins seasonally if you would like us to.',
+  },
+  {
+    slug: 'retaining-walls', display: 'Retaining Walls', lower: 'retaining walls',
+    bullets: [
+      'Segmental block retaining walls',
+      'Natural stone & boulder walls',
+      'Seating walls & garden walls',
+      'Terraced & multi-tier walls',
+      'Engineered base, gravel backfill & geogrid',
+      'Drainage & weep outlets behind every wall',
+    ],
+    photoBank: ['6.jpg', 'IMG_3452.jpg', 'IMG_3454.jpg', 'IMG_3523.jpg', 'IMG_3683.jpg'],
+    seasonText: 'A retaining wall lives or dies on what sits behind it, so every wall we build starts with a compacted base set below grade, gravel backfill, and a drain that carries water to daylight before East Texas clay can push the wall out of line.',
+    cadenceFAQ: 'A retaining wall is a one-time build rather than a recurring service, and a wall set on a compacted base with drainage behind it is made to hold the grade for decades.',
   },
 ];
 

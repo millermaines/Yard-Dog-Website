@@ -9,6 +9,10 @@
 //   3. Internal links: inject the 6 niche service cards into all 10 city-hub pages,
 //      and add an "also serving" city list to the 6 niche base service pages — so the
 //      new niche service+city pages are reachable from the hub/base cluster.
+//   3c. Retaining Walls (added 2026-06-10): shipped after the original 6-niche sweep,
+//      so it sits OUTSIDE the niche-service-cards / niche-also-serving sentinel blocks.
+//      This wires its 10 city pages into the hub grids (the 14th family) and adds the
+//      also-serving list to retaining-walls.html, matching what the niche services get.
 //   4. Sitemap: regenerate sitemap.xml as a COMPLETE www/clean-URL index of every page
 //      (the old one had 37 URLs and omitted the entire 130-page service+city matrix).
 
@@ -166,6 +170,68 @@ ${chips}
   console.log(`base also-serving: injected ${done}, skipped(already) ${skipped}`);
 }
 
+// ---------------- 3c: retaining-walls wiring (added 2026-06-10) ----------------
+// Retaining Walls is the 14th service family. It shipped after the niche sweep, so it
+// is not covered by the niche-service-cards / niche-also-serving sentinels above.
+// Hub card photo bank matches gen-niche-locations.mjs so the look is identical.
+// Idempotent: hub injection is guarded by href presence, base block by the sentinel.
+const RETAINING = {
+  slug: 'retaining-walls', display: 'Retaining Walls',
+  photos: ['6.jpg', 'IMG_3452.jpg', 'IMG_3454.jpg', 'IMG_3523.jpg', 'IMG_3683.jpg'],
+};
+
+function injectRetainingWalls() {
+  // hub cards — append one Retaining Walls card to each city hub's services-grid
+  let hubDone = 0, hubSkip = 0;
+  for (let ci = 0; ci < CITIES.length; ci++) {
+    const city = CITIES[ci];
+    const p = path.join(ROOT, `${city.slug}-tx.html`);
+    if (!fs.existsSync(p)) { console.warn(`  hub missing: ${city.slug}-tx.html`); continue; }
+    let html = fs.readFileSync(p, 'utf8');
+    const href = `${RETAINING.slug}-${city.slug}-tx`;
+    if (html.includes(`href="${href}"`)) { hubSkip++; continue; }
+    // anchor after the niche cards (or the grid open if no sentinel), insert before the grid close
+    const si = html.indexOf('<!-- niche-service-cards -->');
+    const anchor = si >= 0 ? si : html.indexOf('<div class="services-grid">');
+    if (anchor < 0) { console.warn(`  no grid anchor in ${city.slug}-tx.html`); continue; }
+    const close = html.indexOf('\n        </div>', anchor);
+    if (close < 0) { console.warn(`  no grid close in ${city.slug}-tx.html`); continue; }
+    const card = hubCard(RETAINING, city, ci);
+    html = html.slice(0, close) + '\n' + card + html.slice(close);
+    fs.writeFileSync(p, html, 'utf8');
+    hubDone++;
+  }
+  console.log(`retaining-walls hub cards: injected ${hubDone}, skipped(already) ${hubSkip}`);
+
+  // base also-serving — add the 10-city list to retaining-walls.html
+  const SENTINEL = '<!-- niche-also-serving -->';
+  const anchor = '    <section class="section bg-dark">';
+  const bp = path.join(ROOT, 'retaining-walls.html');
+  if (!fs.existsSync(bp)) { console.warn('  base missing: retaining-walls.html'); return; }
+  let html = fs.readFileSync(bp, 'utf8');
+  if (html.includes(SENTINEL)) { console.log('retaining-walls base also-serving: skipped(already)'); return; }
+  const ai = html.indexOf(anchor);
+  if (ai < 0) { console.warn('  no CTA anchor in retaining-walls.html'); return; }
+  const d = esc(RETAINING.display);
+  const chips = CITIES.map(c =>
+    `          <a class="also-chip" href="${RETAINING.slug}-${c.slug}-tx">${d} in ${c.display}, TX</a>`
+  ).join('\n');
+  const section = `    ${SENTINEL}
+    <section class="section">
+      <div class="container also-serving">
+        <h3>Also serving these East Texas towns:</h3>
+        <div class="also-chips">
+${chips}
+        </div>
+      </div>
+    </section>
+
+`;
+  html = html.slice(0, ai) + section + html.slice(ai);
+  fs.writeFileSync(bp, html, 'utf8');
+  console.log('retaining-walls base also-serving: injected');
+}
+
 // ---------------- 4: complete sitemap regen ----------------
 
 function categorize(file) {
@@ -225,6 +291,7 @@ console.log('--- SEO fixups 2026-06 ---');
 stringSweep();
 injectHubCards();
 injectBaseAlsoServing();
+injectRetainingWalls();
 buildSitemap();
 fixRobots();
 console.log('--- done ---');

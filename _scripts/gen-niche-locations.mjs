@@ -151,6 +151,112 @@ const SERVICES = [
   },
 ];
 
+// ---------------- CLOSE-RING LOCAL CONTENT ----------------
+// Longview / White Oak / Kilgore are the priority battleground cities for the niche-keyword
+// map pack. Their pages get genuinely unique, locally-grounded content so they are not thin
+// templated city-swaps: a city lead paragraph, a per-service soil/condition angle, a local
+// proof FAQ, real before/after photos, and real Google reviews. Everything here is factual
+// East-Texas detail or a verbatim review from the homepage review schema. No em dashes
+// (Miller's house style) and no city claimed on a photo we cannot place.
+
+const CLOSE_RING = new Set(['longview', 'white-oak', 'kilgore']);
+
+// City lead paragraph (replaces the generic clay-soil p2). {ANGLE} = per-service soil clause,
+// {S} = service.lower. Anchored on well-known local geography.
+const CITY_LEAD = {
+  longview: `Longview is the hub of the Piney Woods and the largest city in Gregg County, and the yards here come with the territory: tall pines, mature oaks, rolling lots, and the iron-red clay East Texas is known for. {ANGLE} We have worked yards from Pine Tree and Spring Hill to Greggton and the older neighborhoods near downtown, and {S} here only works when it is built for that ground instead of a one-size-fits-all script.`,
+  'white-oak': `White Oak is a tight-knit Gregg County town strung along US-80 just west of Longview, Roughneck country where a lot of the lots sit under established shade and mature trees. {ANGLE} We treat these established yards like our own, and our {S} is built around what White Oak's ground and shade actually call for.`,
+  kilgore: `Kilgore wears its history out loud, from the oil derricks downtown on the World's Richest Acre to the Rangerettes at Kilgore College, and it sits right on the Gregg and Rusk county line. {ANGLE} The soils here lean sandy and piney, and our {S} is tuned to that fast-draining East Texas ground rather than a generic script.`,
+};
+
+// Per-(city, service) soil/condition angle. One bespoke clause for all 18 close-ring combos.
+const SERVICE_ANGLE = {
+  longview: {
+    'hedge-trimming': `Longview's long humid summers push boxwood, holly, and ligustrum hard, so foundation plantings around these homes can swallow a window in one season without steady shaping.`,
+    'flower-bed-installation': `Longview's heavy red clay bakes hard and drains slow, so a bed here lives or dies on prep: we break up and amend the clay and set the grade so water runs away from the house.`,
+    'sod-installation': `New sod struggles to root in Longview's compacted red clay, so we till and amend before a single roll goes down, then leave a watering plan built for clay that sheds water faster than sand.`,
+    'mulch-installation': `A good mulch layer matters more on Longview's clay than almost anywhere: it keeps the surface from crusting in the August heat and holds moisture in beds that otherwise dry hard between rains.`,
+    'tree-planting': `Planting into Longview's red clay means digging wide rather than deep and building a watering basin, because clay traps water around a too-deep root ball and can drown a young tree.`,
+    'drainage': `Longview's red clay and rolling lots are a recipe for standing water and soggy low spots after the heavy spring storms that roll through the Piney Woods, which is why French drains and regrading are some of our most-requested work here.`,
+  },
+  'white-oak': {
+    'hedge-trimming': `A lot of White Oak's older lots sit under mature shade, where hedges grow leggy reaching for light, so we shape them to stay full and keep the foundation plantings off the brick.`,
+    'flower-bed-installation': `White Oak's lighter, sandier soil drains well but dries out fast and runs low on nutrients, so we work in compost and lean on plantings that hold up in the dappled shade common on these lots.`,
+    'sod-installation': `White Oak's sandier ground drains quickly, which is friendly to new sod but means it can dry between waterings, so we match the grass to the sun the lot gets and set a schedule that keeps roots damp while they take.`,
+    'mulch-installation': `On White Oak's sandy, fast-draining lots, mulch earns its keep holding moisture around roots and feeding the soil as it breaks down, kept pulled back off the trunks and even across the bed.`,
+    'tree-planting': `White Oak's sandy loam is forgiving to dig and drains well, so the make-or-break for a new tree here is water through the first two summers, which we plan for with a basin and a clear aftercare plan.`,
+    'drainage': `Even on White Oak's sandier ground, downspouts dumping at the foundation and flat low spots still pool after a hard rain, so we reroute the water with extensions, swales, and catch basins until it leaves the yard.`,
+  },
+  kilgore: {
+    'hedge-trimming': `Kilgore's warm, humid stretch from spring into fall keeps hedges growing, and we keep the boxwoods, hollies, and ligustrums around these homes shaped without shocking them into bare spots.`,
+    'flower-bed-installation': `Kilgore's sandy, piney soil drains fast and leans acidic, so we amend for moisture and nutrition and choose plantings that thrive in that East Texas ground rather than fight it.`,
+    'sod-installation': `Kilgore's sandy soil drains fast, which is great against root rot but means new sod dries out quickly, so we amend to hold moisture and leave a watering plan that keeps the first few weeks on track.`,
+    'mulch-installation': `On Kilgore's fast-draining sandy beds, a fresh even mulch layer is what holds water around the roots through summer and keeps weeds out of the open ground between plants.`,
+    'tree-planting': `Kilgore's sandy ground is easy to dig and drains freely, so young trees here mainly need steady water their first couple of summers, set up with a basin and mulch ring at planting.`,
+    'drainage': `Kilgore's sandy soil drains better than Longview's clay, but downspouts, hardpan layers, and flat spots still pond after heavy storms, so we grade and route the water out with drains and emitters sized to the lot.`,
+  },
+};
+
+// 4th, city-specific FAQ for the close-ring pages: local proof plus the 5.0 / 110+ review moat.
+const LOCAL_FAQ = {
+  longview: {
+    q: `Are you local to Longview, TX?`,
+    a: `Yes. Yard Dog is based right here and works Longview yards every week, from Pine Tree and Spring Hill to Greggton and the neighborhoods near downtown. We are family-owned, fully insured, and hold a 5.0 rating across more than 110 Google reviews from East Texas homeowners.`,
+  },
+  'white-oak': {
+    q: `Are you local to White Oak, TX?`,
+    a: `Yes. White Oak is one of our core service areas, just up US-80 from our Longview base. We are family-owned and fully insured with a 5.0 rating across more than 110 Google reviews, including White Oak neighbors who switched to Yard Dog.`,
+  },
+  kilgore: {
+    q: `Are you local to Kilgore, TX?`,
+    a: `Yes. We work Kilgore regularly, from the neighborhoods around Kilgore College to homes all over town. Yard Dog is family-owned, fully insured, and holds a 5.0 rating across more than 110 Google reviews from East Texas homeowners.`,
+  },
+};
+
+// Real before/after photos (Yard Dog's own jobs) for services we have verified imagery for.
+// Captioned honestly as East-Texas work; we do not claim a city we cannot place the photo in.
+const BEFORE_AFTER = {
+  'flower-bed-installation': [
+    { src: '2026-05-17-janessa-glenn-front-roses-before.jpg', cap: 'Before', alt: 'Front flower bed before a Yard Dog renovation in East Texas' },
+    { src: '2026-05-17-janessa-glenn-front-roses-after.jpg', cap: 'After: a Yard Dog flower bed renovation in East Texas', alt: 'Freshly planted and mulched front rose bed after Yard Dog flower bed installation' },
+    { src: '2026-05-17-janessa-glenn-side-hydrangeas-after.jpg', cap: 'A hydrangea bed cleaned up, planted, and mulched', alt: 'Hydrangea flower bed planted, edged, and mulched by Yard Dog Landscapes' },
+  ],
+  'mulch-installation': [
+    { src: 'brysoncornerbefore.jpg', cap: 'Before', alt: 'Tired corner bed before Yard Dog re-edged and mulched it' },
+    { src: 'brysoncornerafter.jpg', cap: 'After: re-edged and topped with fresh mulch', alt: 'Corner bed re-edged and mulched by Yard Dog Landscapes in East Texas' },
+    { src: '2026-05-17-janessa-glenn-back-fence-after.jpg', cap: 'A clean-cut, mulched bed line along the fence', alt: 'Mulched bed line cut clean along a back fence by Yard Dog Landscapes' },
+  ],
+};
+
+// Real Google reviews, verbatim from the homepage review schema. Rendered as visible
+// testimonials only (no Review JSON-LD on these pages: off-subject first-party review markup
+// risks Google's review-snippet policy; the homepage carries the canonical markup).
+const REVIEWS = {
+  staci:   { name: 'Staci Barham',  sub: 'Google Review · Drainage', quote: `I recently hired Miller to clear out my ditch area, and I couldn't be more impressed with the results. They cleared the area quickly, removing overgrowth and debris and ensuring proper drainage. The ditch now looks great, and I can already tell it's going to function much better. Highly recommend Miller for any type of lawn care!` },
+  anna:    { name: 'Anna Dear',     sub: 'Google Review · White Oak', quote: `These guys did a great job. They were even sweet and brought my trash can up to the house. Glad we switched to Yard Dog. We'd recommend them to anyone in the White Oak area!` },
+  ashley:  { name: 'Ashley Riley',  sub: 'Verified Google Review',    quote: `Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future.` },
+  travis:  { name: 'Travis Martin', sub: 'Verified Google Review',    quote: `Fantastic service, team has taken great care of our lawn. Always on time and respectful of the land. These guys go the extra mile.` },
+  penny:   { name: 'Penny Behan',   sub: 'Verified Google Review',    quote: `Does a great job. Shows up on time. Prices are good. Very friendly. I highly recommend this service.` },
+  melissa: { name: 'Melissa Adams', sub: 'Verified Google Review',    quote: `Miller did a wonderful job! He was quick and thorough, I would recommend Yard Dog highly!` },
+  john:    { name: 'John Frazier',  sub: 'Verified Google Review',    quote: `Professional and courteous. The price for the job was reasonable and was better than others I had checked with.` },
+};
+const GENERAL_REVIEWS = ['ashley', 'travis', 'penny', 'melissa', 'john'];
+
+// Pick 3 reviews per close-ring page: surface a relevant one (drainage -> Staci's ditch job,
+// White Oak -> Anna who names White Oak), then fill from the general pool, rotated so sibling
+// pages do not all show the same set.
+function pickReviews(service, citySlug, cityIndex, serviceIndex) {
+  const picks = [];
+  if (service.slug === 'drainage') picks.push('staci');
+  if (citySlug === 'white-oak') picks.push('anna');
+  const offset = (cityIndex + serviceIndex) % GENERAL_REVIEWS.length;
+  for (let i = 0; picks.length < 3 && i <= GENERAL_REVIEWS.length; i++) {
+    const r = GENERAL_REVIEWS[(offset + i) % GENERAL_REVIEWS.length];
+    if (!picks.includes(r)) picks.push(r);
+  }
+  return picks.slice(0, 3).map(k => REVIEWS[k]);
+}
+
 // ---------------- HELPERS ----------------
 
 function escAmp(s) {
@@ -171,7 +277,16 @@ function introParagraphs(service, city) {
   const ct = city.county;
   const nb = city.nearby.map(n => cityBySlug[n].display);
   const p1 = `Yard Dog Landscapes is the ${sLow} ${cd} TX homeowners trust to show up, do the work right, and treat the property like our own. We've been working yards across ${ct} since 2017, and ${cd} sits in our regular service area alongside ${nb[0]} and ${nb[1]}. When you call us for ${sLow} ${cd} Texas, you get a local crew, a written estimate, and the same standards on every visit.`;
-  const p2 = `${cd} sits in the heart of East Texas, where hot summers, clay-heavy soil, and stretches of heavy spring rain shape what your yard actually needs. ${service.seasonText} Yard Dog Landscapes ${cd} clients get a service plan tuned to the local climate — not a one-size-fits-all script — because East Texas ${sLow} only works when the schedule and the methods match the ground.`;
+  // Close-ring cities get a unique, locally-grounded p2 (city lead + per-service soil angle);
+  // every other city keeps the shared seasonal paragraph.
+  let p2;
+  if (CLOSE_RING.has(city.slug)) {
+    p2 = CITY_LEAD[city.slug]
+      .replace('{ANGLE}', SERVICE_ANGLE[city.slug][service.slug])
+      .replace(/\{S\}/g, sLow);
+  } else {
+    p2 = `${cd} sits in the heart of East Texas, where hot summers, clay-heavy soil, and stretches of heavy spring rain shape what your yard actually needs. ${service.seasonText} Yard Dog Landscapes ${cd} clients get a service plan tuned to the local climate — not a one-size-fits-all script — because East Texas ${sLow} only works when the schedule and the methods match the ground.`;
+  }
   const p3 = `From routine ${sLow} to bigger seasonal projects, our crew handles ${cd} properties of every size. We also serve nearby ${nb[0]}, ${nb[1]}, and ${nb[2]}, plus the rest of ${ct}. Call (903) 844-6877 or request a free quote online — we walk every property in person before we send a price.`;
   return [p1, p2, p3];
 }
@@ -181,7 +296,7 @@ function faqs(service, city) {
   const cd = city.display;
   const ct = city.county;
   const nb = city.nearby.map(n => cityBySlug[n].display);
-  return [
+  const list = [
     {
       q: `Do you offer ${sLow} in ${cd}, TX?`,
       a: `Yes. Yard Dog Landscapes is a family-owned company that's been serving ${cd} and the rest of ${ct} since 2017, and ${sLow} is one of our core services. Whether you want a one-time job or recurring work tied to the season, we'll write up a clear, itemized estimate and stick to it.`,
@@ -195,6 +310,9 @@ function faqs(service, city) {
       a: `Yard Dog Landscapes serves ${cd}, plus nearby ${nb[0]}, ${nb[1]}, ${nb[2]}, and surrounding ${ct} communities. If you're not sure whether you're in our service area, give us a call at (903) 844-6877 — we cover most of East Texas.`,
     },
   ];
+  // Close-ring pages get a 4th local-proof FAQ (neighborhoods + the 5.0 review moat).
+  if (CLOSE_RING.has(city.slug)) list.push(LOCAL_FAQ[city.slug]);
+  return list;
 }
 
 // ---------------- SHARED CHROME (lifted verbatim from live landscaping-<city>-tx.html) ----------------

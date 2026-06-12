@@ -22,7 +22,6 @@ in `/root/alienkind`).
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-06-13 | blog-landscape-fabric-under-mulch-east-texas | Why We Don't Put Landscape Fabric Under Mulch | Mulch Installation | **READY 2026-06-10 — fully wired (post file + blog.html card + sitemap), committed, holding for Miller's push go-ahead.** Mulch composts into soil on top of the fabric, windblown weeds root in that layer and lock down through the sheet, soil starves below; fabric only belongs under rock/gravel. |
 | 2026-06-20 | blog-summer-pruning-rules | What You Should and Shouldn't Prune in June | Hedge Trimming | Crepe myrtles, hollies, hydrangeas: when summer cuts help and when they kill the bloom |
 | 2026-06-27 | blog-brown-patch-vs-heat-stress | Brown Patch vs. Heat Stress: How to Tell the Difference (Before You Make It Worse) | Lawn Maintenance | Fungus rings vs. crisp edges, why watering more makes one worse, fungicide vs. patience |
 | 2026-07-04 | blog-flower-beds-that-survive-july | The Five Plants That Actually Survive a Longview July | Flower Bed Installation | Lantana, vinca, salvia, plumbago, knockout roses: what we plant when clients want low-maintenance summer color |
@@ -35,6 +34,7 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-06-10 | blog-landscape-fabric-under-mulch-east-texas.html | Why We Don't Put Landscape Fabric Under Mulch | Mulch Installation |
 | 2026-06-06 | blog-irrigation-mistakes-east-texas.html | The Three Irrigation Mistakes That Cook East Texas Lawns | Lawn Maintenance |
 | 2026-05-30 | blog-fire-ants-east-texas.html | Why Fire Ants Explode in May (and What Actually Kills the Mound) | Lawn Maintenance |
 | 2026-05-23 | blog-bermuda-vs-st-augustine-east-texas.html | Bermuda vs. St. Augustine in East Texas: Which Fits Your Yard | Lawn Maintenance |

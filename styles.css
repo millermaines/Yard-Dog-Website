@@ -138,7 +138,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 
 /* ---------- Navbar (floating pill, dark glass — matches landing page) ---------- */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -147,6 +147,20 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   border-bottom: 0;
   box-shadow: none;
   padding-top: 24px;
+  transition: background 0.3s var(--ease-smooth), padding 0.3s var(--ease-smooth),
+    box-shadow 0.3s var(--ease-smooth), border-color 0.3s var(--ease-smooth);
+}
+/* Floating nav: transparent over the hero, then a dark glass bar fades in once
+   the page scrolls (JS toggles .is-stuck). Nav text is already cream/white, so
+   it stays readable in both states; only the backdrop changes. */
+.navbar.is-stuck {
+  background: rgba(15, 27, 42, 0.92);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  backdrop-filter: saturate(140%) blur(10px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .nav-wrap { position: relative; }
 .nav-inner {
@@ -222,6 +236,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   padding: 0;
   font-weight: 500;
   font-size: 0.9rem;
+  white-space: nowrap;
   color: rgba(244, 239, 226, 0.85);
   background: transparent;
   border-radius: 0;

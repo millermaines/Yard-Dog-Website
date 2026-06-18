@@ -571,12 +571,15 @@
 }
 /* ============ end spotlight glow ============ */
 
+/* Floating nav: transparent pill over the hero, dark glass once scrolled. */
+#siteHeader nav { transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease; }
+#siteHeader.is-stuck nav { background-color: rgba(7, 13, 23, .92); box-shadow: 0 8px 28px rgba(0, 0, 0, .35); }
 </style>
 </head>
 <body class="bg-ydg-cream">
 
 <!-- ================= NAV ================= -->
-<header class="absolute top-0 inset-x-0 z-40">
+<header id="siteHeader" class="fixed top-0 inset-x-0 z-40">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-6">
     <nav class="flex items-center justify-between rounded-full nav-blur bg-ydg-night/40 border border-white/10 pl-3 pr-3 py-2">
       <a href="/" class="flex items-center group" aria-label="Yard Dog Landscapes home">
@@ -625,7 +628,6 @@
           </div>
         </li>
         <li><a href="blog" class="hover:text-white transition-colors">Blog</a></li>
-        <li><a href="careers" class="hover:text-white transition-colors">Careers</a></li>
         <li><a href="contact" class="hover:text-white transition-colors">Contact Us</a></li>
       </ul>
 
@@ -677,7 +679,6 @@
           </ul>
         </li>
         <li><a href="blog" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Blog</a></li>
-        <li><a href="careers" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Careers</a></li>
         <li><a href="contact" class="block px-6 py-3 hover:bg-white/5 hover:text-white transition-colors">Contact Us</a></li>
         <li class="px-4 pt-3 pb-1">
           <a href="careers" class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-ydg-green text-ydg-green-l hover:bg-ydg-green hover:text-white py-3 px-4 font-semibold transition-colors">
@@ -1696,6 +1697,15 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Floating nav: fade in the dark glass bar once the page scrolls.
+  (function () {
+    var hdr = document.getElementById('siteHeader');
+    if (!hdr) return;
+    var onScroll = function(){ hdr.classList.toggle('is-stuck', window.scrollY > 24); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
 
   // Hand-drawn CTA highlight: animate the SVG path when each .cta-mark scrolls into view.
   (function () {

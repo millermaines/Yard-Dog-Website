@@ -131,7 +131,6 @@
               </div>
             </li>
             <li><a class="nav-link active" href="blog">Blog</a></li>
-            <li><a class="nav-link" href="careers">Careers</a></li>
             <li><a class="nav-link" href="contact">Contact Us</a></li>
             <li><a class="nav-mobile-cta nav-mobile-cta--ghost" href="careers">Join the Pack</a></li>
             <li><a class="nav-mobile-cta" href="contact">Get a Free Quote</a></li>
@@ -349,6 +348,13 @@
       var navWrap = document.getElementById('navWrap');
       var hamburger = document.getElementById('hamburgerBtn');
       var servicesItem = document.getElementById('servicesItem');
+      // Floating nav: fade in the dark glass bar once the page scrolls.
+      var navbarEl = document.querySelector('.navbar');
+      if (navbarEl) {
+        var onNavScroll = function(){ navbarEl.classList.toggle('is-stuck', window.scrollY > 24); };
+        onNavScroll();
+        window.addEventListener('scroll', onNavScroll, { passive: true });
+      }
       if (hamburger && navWrap) {
         hamburger.addEventListener('click', function(){
           var open = navWrap.classList.toggle('is-open');

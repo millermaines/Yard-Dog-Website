@@ -316,6 +316,19 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   font-size: 0.875rem;
   padding: 10px 16px;
 }
+/* Secondary nav CTA — "Join the Pack" sits beside the solid "Get a Free Quote".
+   Red outline = priority #2 (clients first), still in the red family ("two red"). */
+.nav-cta--ghost {
+  background: transparent;
+  color: var(--color-green-light);
+  border: 1px solid var(--color-green-primary);
+  box-shadow: none;
+}
+.nav-cta--ghost:hover {
+  background: var(--color-green-primary);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(230, 57, 70, 0.4);
+}
 
 .hamburger {
   display: none;
@@ -420,8 +433,45 @@ p { line-height: 1.7; color: var(--color-text-mid); }
     font-size: 0.9rem;
   }
   .nav-mobile-cta:hover { background: var(--color-green-light); color: #ffffff; }
+  .nav-mobile-cta--ghost {
+    background: transparent;
+    color: var(--color-green-light);
+    border: 1px solid var(--color-green-primary);
+  }
+  .nav-mobile-cta--ghost:hover { background: var(--color-green-primary); color: #ffffff; }
 }
 @media (min-width: 901px) { .nav-mobile-cta { display: none; } }
+
+/* Two nav CTAs (Join the Pack + Get a Free Quote) — tighten spacing on the
+   narrow desktop band so the pill nav does not crowd between 901-1100px. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .nav-links { gap: 20px; }
+  .nav-cta { padding: 9px 13px; font-size: 0.82rem; }
+}
+
+/* Careers "what's in it for you" perks list */
+.careers-perks {
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.careers-perks li {
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.5;
+}
+.careers-perks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-green-primary);
+}
 
 
 /* ---------- Hero (landing) ---------- */

@@ -10,6 +10,12 @@
   "redirects": [
     {
       "source": "/:path*",
+      "has": [{ "type": "host", "value": "yarddoglandscapes.com" }],
+      "destination": "https://www.yarddoglandscapes.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "yarddoglawncare.com" }],
       "destination": "https://www.yarddoglandscapes.com/:path*",
       "permanent": true

@@ -154,7 +154,7 @@
               <div class="careers-2col">
                 <div class="form-row">
                   <label for="phone">Cell phone<span class="req">*</span></label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(903) 555-0123" maxlength="20" required>
                 </div>
                 <div class="form-row">
                   <label for="email">Email</label>
@@ -493,8 +493,21 @@
         statusBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
+      var phoneEl = document.getElementById('phone');
+      // Clear the "all 10 digits" error the moment they start correcting it.
+      if (phoneEl) phoneEl.addEventListener('input', function () { phoneEl.setCustomValidity(''); });
+
       form.addEventListener('submit', function (e) {
         e.preventDefault();
+        // Require a COMPLETE 10-digit US phone. Strip any formatting the person
+        // typed (spaces, dashes, parens) and allow a leading country-code 1.
+        // type="tel" enforces no length on its own, so an 8-digit number would
+        // otherwise sail straight through as a dead lead we can't call back.
+        var phoneDigits = ((phoneEl && phoneEl.value) || '').replace(/\D/g, '');
+        if (phoneDigits.length === 11 && phoneDigits.charAt(0) === '1') phoneDigits = phoneDigits.slice(1);
+        if (phoneEl) {
+          phoneEl.setCustomValidity(phoneDigits.length === 10 ? '' : 'Enter all 10 digits of your phone number, including the area code.');
+        }
         if (!form.reportValidity()) return;
         var btn = document.getElementById('applySubmit');
         btn.disabled = true;
@@ -503,6 +516,7 @@
 
         var payload = {};
         new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        payload.phone = phoneDigits;  // submit the normalized 10-digit number
         payload.source = 'careers_page';
         payload.utm = window.location.search ? window.location.search.replace(/^\?/, '') : '';
 

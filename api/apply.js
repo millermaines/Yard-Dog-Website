@@ -92,6 +92,18 @@ export default async function handler(req, res) {
     return res.end(JSON.stringify({ ok: false, error: 'missing_required' }));
   }
 
+  // Phone must be a COMPLETE 10-digit US number. Strip any formatting and allow
+  // a leading country-code 1; reject anything that doesn't land on 10 digits.
+  // An incomplete number (e.g. the 8 digits one applicant submitted) is a dead
+  // lead we can't call back, so it gets rejected at the front door. This is the
+  // server backstop — the form validates first, but client checks are bypassable.
+  let phoneDigits = str(body.phone).replace(/\D/g, '');
+  if (phoneDigits.length === 11 && phoneDigits[0] === '1') phoneDigits = phoneDigits.slice(1);
+  if (phoneDigits.length !== 10) {
+    res.statusCode = 400;
+    return res.end(JSON.stringify({ ok: false, error: 'invalid_phone' }));
+  }
+
   // 2) Deterministic knockout for the instant applicant-facing reply. Only the
   // five objective gates decide eligibility (see KO_FIELDS/HARD_GATES note).
   const eligible = HARD_GATES.every((r) => str(body[r.id]) === r.pass);
@@ -115,6 +127,7 @@ export default async function handler(req, res) {
   for (const f of SCORED_TEXT) record[f] = str(body[f]);
   record.sc_equipment = sc_equipment;
   record.attestation = attestation;
+  record.phone = phoneDigits; // store the normalized 10-digit number (propagates to raw_answers below)
 
   const row = {
     ...record,

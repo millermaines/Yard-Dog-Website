@@ -22,11 +22,11 @@ in `/root/alienkind`).
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-06-20 | blog-summer-pruning-rules | What You Should and Shouldn't Prune in June | Hedge Trimming | Crepe myrtles, hollies, hydrangeas: when summer cuts help and when they kill the bloom |
 | 2026-06-27 | blog-brown-patch-vs-heat-stress | Brown Patch vs. Heat Stress: How to Tell the Difference (Before You Make It Worse) | Lawn Maintenance | Fungus rings vs. crisp edges, why watering more makes one worse, fungicide vs. patience |
 | 2026-07-04 | blog-flower-beds-that-survive-july | The Five Plants That Actually Survive a Longview July | Flower Bed Installation | Lantana, vinca, salvia, plumbago, knockout roses: what we plant when clients want low-maintenance summer color |
 | 2026-07-11 | blog-summer-mowing-height | Why Mowing Shorter in Summer Backfires | Lawn Maintenance | The scalping spiral: every notch down costs roots and invites crabgrass; the right July deck height for bermuda vs. St. Augustine |
 | 2026-07-18 | blog-drainage-french-drain-east-texas | When Your East Texas Yard Needs a French Drain (And When It Doesn't) | Drainage | Standing-water diagnostics, cheaper grading alternatives, what a real drain install costs |
+| 2026-07-25 | blog-chinch-bugs-st-augustine | Why St. Augustine Dies in the Sunniest Part of the Yard in Late Summer | Lawn Maintenance | Chinch bug damage vs. drought: the full-sun dead patches watering won't fix, how to scout the green-to-brown edge, and why the hottest yards get hit first |
 
 ---
 
@@ -34,6 +34,7 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-06-20 | blog-summer-pruning-rules.html | What You Should and Shouldn't Prune in June | Hedge Trimming |
 | 2026-06-10 | blog-landscape-fabric-under-mulch-east-texas.html | Why We Don't Put Landscape Fabric Under Mulch | Mulch Installation |
 | 2026-06-06 | blog-irrigation-mistakes-east-texas.html | The Three Irrigation Mistakes That Cook East Texas Lawns | Lawn Maintenance |
 | 2026-05-30 | blog-fire-ants-east-texas.html | Why Fire Ants Explode in May (and What Actually Kills the Mound) | Lawn Maintenance |

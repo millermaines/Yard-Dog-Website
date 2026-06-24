@@ -23,12 +23,21 @@
 // and Title VII religious accommodation (Saturday/Sabbath, post-Groff).
 // Do not "improve" the wording without re-checking those.
 //
-// All seven knockout answers are collected + stored, but only the five
-// OBJECTIVE gates auto-decide eligibility. Schedule (Saturday/early start) and
-// physical ability are captured-but-not-auto-rejected: a "No" there carries
-// Title VII / ADA duties, so the VM triage tool flags it for a human
-// conversation instead of a silent rejection.
-const KO_FIELDS = ['ko_work_auth', 'ko_age_18', 'ko_license', 'ko_transport', 'ko_physical', 'ko_schedule', 'ko_screen_consent'];
+// HB 2466 (eff. 9/1/2025) restricts application-stage criminal-history
+// questions only for private employers with 15+ employees; Yard Dog is under
+// that floor and exempt, so the post-offer posture here is a voluntary best
+// practice, not a statutory requirement -- revisit if headcount reaches 15.
+// The criminal-history question (ko_criminal_history) asks about CONVICTIONS
+// only (never arrests) and is captured-but-not-auto-decided: an auto-reject on
+// a conviction is the blanket exclusion the EEOC 2012 guidance condemns and
+// forecloses the required individualized assessment.
+//
+// All eight knockout answers are collected + stored, but only the five
+// OBJECTIVE gates auto-decide eligibility. Schedule (Saturday/early start),
+// physical ability, and criminal history are captured-but-not-auto-rejected: a
+// "No"/disclosure there carries Title VII / ADA / EEOC duties, so the VM triage
+// tool flags it for a human conversation instead of a silent rejection.
+const KO_FIELDS = ['ko_work_auth', 'ko_age_18', 'ko_license', 'ko_transport', 'ko_physical', 'ko_schedule', 'ko_screen_consent', 'ko_criminal_history'];
 const HARD_GATES = [
   { id: 'ko_work_auth', pass: 'Yes' },
   { id: 'ko_age_18', pass: 'Yes' },

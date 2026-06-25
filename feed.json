@@ -1,0 +1,66 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Yard Dog Landscapes Blog",
+  "home_page_url": "https://www.yarddoglandscapes.com/blog",
+  "feed_url": "https://www.yarddoglandscapes.com/feed.json",
+  "description": "Practical lawn care, landscaping, and yard advice from the crew at Yard Dog Landscapes, written for East Texas homeowners.",
+  "language": "en-US",
+  "items": [
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-summer-pruning-rules",
+      "url": "https://www.yarddoglandscapes.com/blog-summer-pruning-rules",
+      "title": "What You Should and Shouldn't Prune in June",
+      "summary": "In East Texas, a June haircut helps some plants and kills the bloom on others. Here's the difference between crepe myrtles, hollies, hydrangeas, and azaleas, plus the one tree you should never cut this time of year.",
+      "date_published": "2026-06-20T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-landscape-fabric-under-mulch-east-texas",
+      "url": "https://www.yarddoglandscapes.com/blog-landscape-fabric-under-mulch-east-texas",
+      "title": "Why We Don't Put Landscape Fabric Under Mulch",
+      "summary": "Landscape fabric under mulch sounds like a permanent fix for weeds. In two or three years it's usually the worst weed bed on the block, and a mess to tear out. Here's what actually happens and what we do instead.",
+      "date_published": "2026-06-13T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-irrigation-mistakes-east-texas",
+      "url": "https://www.yarddoglandscapes.com/blog-irrigation-mistakes-east-texas",
+      "title": "The Three Irrigation Mistakes That Cook East Texas Lawns",
+      "summary": "Your sprinklers run every day and the lawn still looks cooked by July. It's usually one of three mistakes: wrong time, wrong schedule, or a broken head nobody's noticed. Here's how to audit your own system in 20 minutes.",
+      "date_published": "2026-06-06T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-fire-ants-east-texas",
+      "url": "https://www.yarddoglandscapes.com/blog-fire-ants-east-texas",
+      "title": "Why Fire Ants Explode in May (and What Actually Kills the Mound)",
+      "summary": "Fire ant mounds pop up everywhere in May for a reason. Most people treat them the slow, expensive way. Here's the two-product system that actually works in East Texas, and the order matters.",
+      "date_published": "2026-05-30T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-bermuda-vs-st-augustine-east-texas",
+      "url": "https://www.yarddoglandscapes.com/blog-bermuda-vs-st-augustine-east-texas",
+      "title": "Bermuda vs. St. Augustine in East Texas: Which Grass Fits Your Yard",
+      "summary": "Bermuda loves sun and foot traffic. St. Augustine handles shade. In East Texas, picking wrong means a thin, struggling lawn no fertilizer can fix. Here's how we decide on every property.",
+      "date_published": "2026-05-23T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-mulch-depth-east-texas",
+      "url": "https://www.yarddoglandscapes.com/blog-mulch-depth-east-texas",
+      "title": "How Much Mulch You Actually Need in East Texas (It's Less Than You Think)",
+      "summary": "Big-box stores tell you 3 inches of mulch. We do 1 to 1.5 inches and the beds look better, the weeds stay down, and your plants don't suffocate. Here's the math and the reason.",
+      "date_published": "2026-05-16T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-east-texas-spring-fertilization",
+      "url": "https://www.yarddoglandscapes.com/blog-east-texas-spring-fertilization",
+      "title": "The East Texas Fertilization Window Most Homeowners Miss",
+      "summary": "Most people fertilize too early or too late. The May window in East Texas is short, real, and most homeowners blow right through it. Here's what to put down, when, and what we see go wrong.",
+      "date_published": "2026-05-09T14:00:00.000Z"
+    },
+    {
+      "id": "https://www.yarddoglandscapes.com/blog-east-texas-summer-lawn",
+      "url": "https://www.yarddoglandscapes.com/blog-east-texas-summer-lawn",
+      "title": "Why Your East Texas Lawn Looks Worse in July (And What Actually Helps)",
+      "summary": "Mid-July yard looking rough? Most East Texas lawn problems come from a handful of fixable mistakes. Here's what we see on almost every property, and what to change before this summer cooks your grass again.",
+      "date_published": "2026-05-02T14:00:00.000Z"
+    }
+  ]
+}

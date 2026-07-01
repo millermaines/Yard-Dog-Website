@@ -1205,6 +1205,10 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 .project-photo--6::before { background-image: url('brand_photos/IMG_3526.jpg'); }
 .project-photo--7::before { background-image: url('brand_photos/IMG_3736.jpg'); }
 .project-photo--8::before { background-image: url('brand_photos/IMG_3683.jpg'); }
+.project-photo--9::before { background-image: url('brand_photos/forresterafter.jpg'); }
+.project-photo--10::before { background-image: url('brand_photos/brysoncornerafter.jpg'); }
+.project-photo--11::before { background-image: url('brand_photos/2026-05-17-janessa-glenn-front-roses-after.jpg'); }
+.project-photo--12::before { background-image: url('brand_photos/2026-05-17-janessa-glenn-back-fence-after.jpg'); }
 
 /* ---------- Location pages: also-serving chips ---------- */
 .also-serving { text-align: center; }

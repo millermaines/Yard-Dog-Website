@@ -42,8 +42,9 @@ const PHONE = '+1-903-844-6877';
 const EMAIL = 'info@yarddoglandscapes.com';
 
 // --- canonical enrichment values (all real / public-fact, none fabricated) ---
-const GEO = { '@type': 'GeoCoordinates', latitude: 32.5007, longitude: -94.7405 }; // Longview, TX centroid
+const GEO = { '@type': 'GeoCoordinates', latitude: 32.4385084, longitude: -94.8481025 }; // authoritative Google Business Profile map pin
 const SAMEAS = [
+  'https://www.google.com/maps?cid=3450977957239277557', // canonical Google Business Profile (from Miller's Maps link, CID)
   'https://www.facebook.com/yarddoglandscapes',
   'https://www.instagram.com/yarddoglawnlights',
   'https://www.youtube.com/millermaines',
@@ -145,7 +146,7 @@ function enrichBusiness(node) {
   else if (Array.isArray(ty) && !ty.includes('HomeAndConstructionBusiness')) { node['@type'] = ['LocalBusiness', 'HomeAndConstructionBusiness']; changed = true; }
   set('foundingDate', '2017');
   set('founder', FOUNDER);
-  set('geo', GEO);
+  if (JSON.stringify(node.geo) !== JSON.stringify(GEO)) { node.geo = GEO; changed = true; } // force to authoritative GBP pin
   set('priceRange', '$$');
   set('knowsAbout', KNOWS_ABOUT);
   set('contactPoint', CONTACT_POINT);
@@ -255,6 +256,7 @@ ${cities}
 - Insured: Yes, fully insured
 - Free estimates: Yes
 - Website: ${BASE}
+- Google Business Profile: https://www.google.com/maps?cid=3450977957239277557
 `;
 }
 

@@ -79,14 +79,14 @@ const SERVICES = [
     bullets: [
       'Soil testing & analysis',
       'East Texas grass-specific programs',
-      'Weed control treatments',
-      'Pre-emergent & post-emergent applications',
+      'Soil-tested nutrient plan',
+      'Seasonal feeding & winterizer program',
       'Aeration services',
       'Seasonal fertilization schedules'
     ],
     photoBank: ['12.jpg','8.jpg','3.jpg','7.jpg'],
     seasonText: 'Bermuda, St. Augustine, and Zoysia all do well in East Texas with a structured feeding schedule — typically four to six rounds across the growing season.',
-    cadenceFAQ: 'Our fertilization programs run on a four-to-six step schedule across the year, hitting pre-emergent in late winter, growth-season feedings in spring and summer, and a winterizer in fall.'
+    cadenceFAQ: 'Our fertilization programs run on a four-to-six step schedule across the year, starting with an early-season feeding in late winter, growth-season feedings in spring and summer, and a winterizer in fall.'
   },
   {
     slug: 'christmas-lights', display: 'Christmas Light Installation', lower: 'Christmas light installation',

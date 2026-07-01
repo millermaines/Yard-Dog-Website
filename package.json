@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "serve": "node serve.mjs",
-    "screenshot": "node screenshot.mjs"
+    "screenshot": "node screenshot.mjs",
+    "seo:upgrade": "node _scripts/geo-aeo-upgrade-2026-07.mjs",
+    "seo:upgrade:dry": "node _scripts/geo-aeo-upgrade-2026-07.mjs --dry"
   },
   "dependencies": {
     "puppeteer": "^22.15.0"

@@ -3,6 +3,10 @@
 ## Always Do First
 - **Invoke the `frontend-design` skill** before writing any frontend code, every session, no exceptions.
 
+## SEO / AEO / GEO — canonical final build step
+- After ANY page (re)generation (`_scripts/gen-niche-*.mjs`, `build-locations.mjs`, blog autopublish), run `npm run seo:upgrade` (idempotent). It enriches every page's `LocalBusiness #business` entity graph (geo, sameAs, founder, foundingDate, knowsAbout, hasOfferCatalog, contactPoint, openingHours), unifies all Yard Dog business nodes under one `@id`, injects the homepage WebSite/WebPage(speakable) anchor, and regenerates `llms.txt`, `llms-full.txt`, and `robots.txt` (AI-crawler allows). Preview with `npm run seo:upgrade:dry`.
+- Never fabricate schema data. The one missing high-value field is the Google Business Profile URL in `sameAs` — add it to `SAMEAS` in the sweep script when available.
+
 ## Reference Images
 - If a reference image is provided: match layout, spacing, typography, and color exactly. Swap in placeholder content (images via `https://placehold.co/`, generic copy). Do not improve or add to the design.
 - If no reference image: design from scratch with high craft (see guardrails below).

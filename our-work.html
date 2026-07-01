@@ -748,6 +748,8 @@
 
   <script>
     (function () {
+      var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var DELAY = 3500;
       function initScrubber(sc) {
         var imgs = Array.prototype.slice.call(sc.querySelectorAll('.ts-img'));
         var dots = Array.prototype.slice.call(sc.querySelectorAll('.ts-dot'));
@@ -758,7 +760,7 @@
         var prev = sc.querySelector('.ts-prev');
         var next = sc.querySelector('.ts-next');
         var n = imgs.length; if (!n) return;
-        var i = 0;
+        var i = 0, timer = null, idle = null, inview = false, engaged = false;
         function show(k) {
           k = Math.max(0, Math.min(n - 1, k)); i = k;
           for (var x = 0; x < n; x++) { imgs[x].classList.toggle('is-active', x === k); dots[x].classList.toggle('is-active', x === k); }
@@ -769,25 +771,38 @@
           if (labelEl) labelEl.textContent = label;
           if (track) { track.setAttribute('aria-valuenow', k + 1); track.setAttribute('aria-valuetext', 'Stage ' + (k + 1) + ' of ' + n + ': ' + label); }
         }
-        if (prev) prev.addEventListener('click', function () { show(i - 1); });
-        if (next) next.addEventListener('click', function () { show(i + 1); });
-        dots.forEach(function (d, x) { d.addEventListener('click', function () { show(x); }); });
+        function canPlay() { return !REDUCED && n > 1 && inview && !engaged; }
+        function play() { if (timer || !canPlay()) return; timer = setInterval(function () { show((i + 1) % n); }, DELAY); }
+        function stop() { if (timer) { clearInterval(timer); timer = null; } }
+        function bump() { stop(); clearTimeout(idle); idle = setTimeout(play, DELAY); }
+        function nav(dir) { show((i + dir + n) % n); bump(); }
+        if (prev) prev.addEventListener('click', function () { nav(-1); });
+        if (next) next.addEventListener('click', function () { nav(1); });
+        dots.forEach(function (d, x) { d.addEventListener('click', function () { show(x); bump(); }); });
         function posToIndex(clientX) {
           var r = track.getBoundingClientRect();
           var t = r.width ? (clientX - r.left) / r.width : 0; t = Math.max(0, Math.min(1, t));
           return Math.round(t * (n - 1));
         }
         var dragging = false;
-        track.addEventListener('pointerdown', function (e) { dragging = true; try { track.setPointerCapture(e.pointerId); } catch (err) {} show(posToIndex(e.clientX)); });
+        track.addEventListener('pointerdown', function (e) { dragging = true; try { track.setPointerCapture(e.pointerId); } catch (err) {} show(posToIndex(e.clientX)); bump(); });
         track.addEventListener('pointermove', function (e) { if (dragging) show(posToIndex(e.clientX)); });
-        track.addEventListener('pointerup', function () { dragging = false; });
+        track.addEventListener('pointerup', function () { dragging = false; bump(); });
         track.addEventListener('pointercancel', function () { dragging = false; });
         track.addEventListener('keydown', function (e) {
-          if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') { e.preventDefault(); show(i - 1); }
-          else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') { e.preventDefault(); show(i + 1); }
-          else if (e.key === 'Home') { e.preventDefault(); show(0); }
-          else if (e.key === 'End') { e.preventDefault(); show(n - 1); }
+          if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') { e.preventDefault(); show(i - 1); bump(); }
+          else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') { e.preventDefault(); show(i + 1); bump(); }
+          else if (e.key === 'Home') { e.preventDefault(); show(0); bump(); }
+          else if (e.key === 'End') { e.preventDefault(); show(n - 1); bump(); }
         });
+        sc.addEventListener('pointerenter', function () { engaged = true; stop(); });
+        sc.addEventListener('pointerleave', function () { engaged = false; clearTimeout(idle); play(); });
+        sc.addEventListener('focusin', function () { engaged = true; stop(); });
+        sc.addEventListener('focusout', function () { engaged = false; clearTimeout(idle); play(); });
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) { inview = entries[0].isIntersecting; if (inview) play(); else stop(); }, { threshold: 0.35 });
+          io.observe(sc);
+        } else { inview = true; play(); }
         show(0);
       }
       var list = document.querySelectorAll('.ts-scrubber');

@@ -88,3 +88,9 @@ a "site:" caption — those entries land at the bottom.
 - `2026-05-17-janessa-glenn-back-fence-after.jpg` — AFTER: same backyard with a long curved mulched bed running between the deck and the fence; new sandstone block edging, mature trees overhead.
 - `2026-05-17-janessa-glenn-front-roses-before.jpg` — BEFORE: front-yard knockout rose bed with bare dirt and fresh-planted liriope plugs awaiting fill and mulch.
 - `2026-05-17-janessa-glenn-front-roses-after.jpg` — AFTER: front-yard hero with globe boxwoods + red knockout rose under a tree, fresh black mulch, sandstone block edging, liriope border. Most polished shot of the set.
+- `retaining-wall-wood-to-block-east-texas-before.jpg` — BEFORE: old failing wood timber retaining wall (double tier) along a backyard privacy fence, grass strip and patio.
+- `retaining-wall-wood-to-block-east-texas-demolition.jpg` — DEMO: old wood wall being torn out, muddy trench excavated along the fence, worker on site.
+- `retaining-wall-wood-to-block-east-texas-excavation-base.jpg` — EXCAVATION: trench dug and gravel drainage base being prepped against the fence.
+- `retaining-wall-wood-to-block-east-texas-block-install.jpg` — BUILD: new segmental block wall first courses going up with gravel drainage + pipe behind, skid steer on site.
+- `retaining-wall-wood-to-block-east-texas-finished.jpg` — AFTER: finished capped segmental block retaining wall with gravel drainage strip (angle 1).
+- `retaining-wall-wood-to-block-east-texas-after.jpg` — AFTER: completed block retaining wall with capstones and gravel drainage strip (angle 2).

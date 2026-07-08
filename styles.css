@@ -2407,3 +2407,8 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 .apply-status--no { border-top: 4px solid #c8a24a; }
 .apply-status--err { border-top: 4px solid #b22222; }
 /* ============ end careers ============ */
+
+/* ---------- Answer-first callout (AEO) ---------- */
+.answer-box { max-width: 820px; margin-inline: auto; background: var(--color-bg-section); border: 1px solid var(--color-border); border-left: 5px solid var(--color-green-primary); border-radius: var(--radius-lg); padding: 28px 32px; }
+.answer-box h2 { margin-bottom: 12px; }
+.answer-box .lead { margin-bottom: 0; }

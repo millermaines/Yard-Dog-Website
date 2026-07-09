@@ -1142,8 +1142,8 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 /* Per-page hero photos */
 .page-hero--landscaping  { background-image: url('brand_photos/IMG_3738.jpg'); }
 .page-hero--lawn         { background-image: url('brand_photos/8.jpg'); }
-.page-hero--leaves       { background-image: url('brand_photos/IMG_3526.jpg'); }
-.page-hero--fertilization{ background-image: url('brand_photos/12.jpg'); }
+.page-hero--leaves       { background-image: url('brand_photos/3.jpg'); }
+.page-hero--fertilization{ background-image: url('brand_photos/bermuda-grass-closeup.jpg'); }
 .page-hero--lights       { background-image: url('brand_photos/9.jpg'); background-position: center 35%; }
 .page-hero--about        { background-image: url('brand_photos/IMG_3406.jpg'); background-position: center 42%; background-size: cover; }
 .page-hero--work         { background-image: url('brand_photos/IMG_3525.jpg'); background-position: center 60%; }

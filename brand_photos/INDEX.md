@@ -94,3 +94,13 @@ a "site:" caption — those entries land at the bottom.
 - `retaining-wall-wood-to-block-east-texas-block-install.jpg` — BUILD: new segmental block wall first courses going up with gravel drainage + pipe behind, skid steer on site.
 - `retaining-wall-wood-to-block-east-texas-finished.jpg` — AFTER: finished capped segmental block retaining wall with gravel drainage strip (angle 1).
 - `retaining-wall-wood-to-block-east-texas-after.jpg` — AFTER: completed block retaining wall with capstones and gravel drainage strip (angle 2).
+
+### Robert Jackson property — job #1019 (2026-07-08, driveway retaining wall rebuild, 7-stage progression)
+
+- `2026-07-08-robert-jackson-driveway-retaining-wall-before.jpg` — BEFORE: old failing segmental block retaining wall crumbling and leaning along a concrete RV-pad driveway, brick two-story house across the lawn.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-demolition.jpg` — DEMO: old wall blocks pulled and lined up on the grass, trench excavated along the driveway edge.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-base-drainage.jpg` — BASE/DRAINAGE: new base course set, black drainage fabric and white PVC drain pipe laid in the trench behind, crew member working.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-block-install.jpg` — BUILD: new segmental block wall several courses up with a curved run near the metal shop building.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-block-install-2.jpg` — BUILD: action shot, crew member in red YD shirt, wall going up course by course with drainage fabric behind, American-flag truck in the drive.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-finished.jpg` — AFTER: finished tan segmental block wall along the driveway with a clean gravel drainage strip (driveway angle — direct match to the BEFORE shot). Strong finished-look hero.
+- `2026-07-08-robert-jackson-driveway-retaining-wall-after.jpg` — AFTER: completed curved/tiered block wall wrapping past the shop building with a flagstone landing (wide angle). Best "show-off" finished shot.

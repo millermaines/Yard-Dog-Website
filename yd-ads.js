@@ -14,14 +14,17 @@
 (function () {
   'use strict';
 
-  /* ====== EDIT THESE AFTER CREATING CONVERSION ACTIONS IN GOOGLE ADS ====== */
-  var ADS_ID     = 'AW-XXXXXXXXXX';
-  var LABEL_LEAD = 'XXXXXXXXXXXXXXXXXX';
-  var LABEL_CALL = 'XXXXXXXXXXXXXXXXXX';
-  var LABEL_MAIL = 'XXXXXXXXXXXXXXXXXX';
+  /* ====== PASTE YOUR IDS HERE (see the PPC build sheet) =================== */
+  var GA4_ID     = 'G-S9BYKL043M';        // GA4 Measurement ID — PRIMARY. Tracks Jobber form submits.
+  var ADS_ID     = 'AW-XXXXXXXXXX';       // Google Ads conversion ID — OPTIONAL click-proxy backup.
+  var LABEL_LEAD = 'XXXXXXXXXXXXXXXXXX';  // Google Ads "Request Form" click label (only if ADS_ID set)
+  var LABEL_CALL = 'XXXXXXXXXXXXXXXXXX';  // Google Ads "Phone Call Click" label
+  var LABEL_MAIL = 'XXXXXXXXXXXXXXXXXX';  // Google Ads "Email Click" label
   /* ======================================================================= */
 
-  var CONFIGURED = ADS_ID.indexOf('XXXX') === -1;
+  var ADS_ON = ADS_ID.indexOf('XXXX') === -1;
+  var GA4_ON = GA4_ID.indexOf('XXXX') === -1;
+  var CONFIGURED = ADS_ON; // gates the Google Ads click-proxy conversions only
 
   /* ---- 1. Capture the Google click id on landing, keep it 90 days -------- */
   function dec(s) { try { return decodeURIComponent(s); } catch (_) { return s; } }
@@ -44,15 +47,17 @@
   var gclid = fresh || getCookie('yd_gclid');
 
   /* ---- 2. Google tag bootstrap (only once configured) ------------------- */
-  if (CONFIGURED) {
+  if (ADS_ON || GA4_ON) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function () { dataLayer.push(arguments); };
     var s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ADS_ID;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + (GA4_ON ? GA4_ID : ADS_ID);
     document.head.appendChild(s);
     gtag('js', new Date());
-    gtag('config', ADS_ID);
+    // GA4 with cross-domain linking so a paid click carries into the Jobber form's domain
+    if (GA4_ON) gtag('config', GA4_ID, { linker: { domains: ['yarddoglandscapes.com', 'clienthub.getjobber.com'] } });
+    if (ADS_ON) gtag('config', ADS_ID);
   }
   function fire(label) {
     if (CONFIGURED && label && label.indexOf('XXXX') === -1) {

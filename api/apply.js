@@ -67,14 +67,10 @@ const CONTACT_FIELDS = ['full_name', 'phone', 'email', 'city', 'crew_pref'];
 const SCORED_TEXT = ['sc_years_exp', 'sc_last_jobs', 'sc_tenure_reason', 'sc_pride', 'sc_scenario', 'sc_why_yarddog'];
 
 // Two industry-experience yes/no screens (added 2026-07-13, Miller's ask:
-// going forward he only hires "Yes" on both). Stored INSIDE raw_answers only,
-// NOT as top-level typed columns — there is no DB migration for them, and a
-// top-level key without a matching column makes PostgREST 400 the whole insert
-// (PGRST204) and the application is silently lost (see migration 023's note).
-// raw_answers is jsonb, so extra keys are safe. yd-applicant-triage.ts reads
-// them via answer() (raw_answers-first) and flags a "No"; the dashboard reads
-// them out of raw_answers. Promote to typed columns later with a migration if
-// analytics need it.
+// going forward he only hires "Yes" on both). Typed columns as of migration
+// 025 — sent as top-level keys like the other sc_ fields (and mirrored into
+// raw_answers below). yd-applicant-triage.ts flags a "No"; do NOT add these to
+// HARD_GATES — experience is a judgment call, not an objective eligibility gate.
 const EXP_FIELDS = ['sc_exp_landscaping', 'sc_exp_mowing_commercial'];
 
 function str(v) {
@@ -145,18 +141,14 @@ export default async function handler(req, res) {
   for (const f of CONTACT_FIELDS) record[f] = str(body[f]);
   for (const f of KO_FIELDS) record[f] = str(body[f]);
   for (const f of SCORED_TEXT) record[f] = str(body[f]);
+  for (const f of EXP_FIELDS) record[f] = str(body[f]); // typed columns as of migration 025
   record.sc_equipment = sc_equipment;
   record.attestation = attestation;
   record.phone = phoneDigits; // store the normalized 10-digit number (propagates to raw_answers below)
 
-  // The two industry-experience screens go into raw_answers ONLY, never as
-  // top-level columns (they have no DB column — see EXP_FIELDS note above).
-  const exp_answers = {};
-  for (const f of EXP_FIELDS) exp_answers[f] = str(body[f]);
-
   const row = {
     ...record,
-    raw_answers: { ...record, ...exp_answers },
+    raw_answers: { ...record },
     submitted_eligible: eligible,
     source: str(body.source) || 'careers_page',
     utm: str(body.utm) || null,

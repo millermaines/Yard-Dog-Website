@@ -70,6 +70,10 @@ a "site:" caption — those entries land at the bottom.
 - `forresterbefore.jpg` — Bare brick-ranch backyard, no patio, view of shed and bare grass. BEFORE.
 - `forresterafter.jpg` — Same backyard with curved flagstone patio + circular fire pit at sunset. AFTER (hardscape + firepit install).
 
+## Sourced (public domain) pest / turf-problem photos
+
+- `chinch-bugs-st-augustine-turf.jpg`: Macro of chinch bugs (adults with the pale folded-wing mark, plus nymphs) clustered on a green grass blade. CC0, NOT our own photo, so caption it as illustrative. Hero for blog-chinch-bugs-st-augustine. See `EXTERNAL-PHOTO-CREDITS.md`.
+
 ## DO NOT USE on the website
 
 - `cla.PNG` — Screenshot of a Google Search Console email about review-snippets structured-data issues. Not a brand photo. (Saved for reference, not for publishing.)

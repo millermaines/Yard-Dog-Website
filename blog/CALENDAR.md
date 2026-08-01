@@ -1,4 +1,4 @@
-# Yard Dog Blog — Content Calendar
+# Yard Dog Blog: Content Calendar
 
 **Cadence:** one post per week, published Saturdays.
 
@@ -18,15 +18,15 @@ in `/root/alienkind`).
 
 ---
 
-## Queue (next up — top of list ships first)
+## Queue (next up, top of list ships first)
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-08-01 | blog-fall-armyworms-east-texas | Armyworms Can Strip an East Texas Lawn Overnight in Late Summer | Lawn Maintenance | How to scout for the late-summer armyworm marches that turn green bermuda brown in a day, the bird-flocking and moth early-warning signs, and why catching them early decides whether the lawn recovers |
 | 2026-08-08 | blog-crepe-myrtle-crape-murder | Stop Topping Your Crepe Myrtles: The Case Against Crape Murder | Tree & Shrub Care | Why cutting crepe myrtles back to knuckled stubs ruins their natural shape and next year's bloom, what August's flowering reveals about which trees got butchered, and how to prune them right |
 | 2026-08-15 | blog-grub-worms-east-texas | The Late-Summer Grub Damage That Peels Up Like Carpet | Lawn Maintenance | How to tell white-grub feeding from drought stress: turf that lifts with no roots holding it down, the birds-and-armadillos digging tell, and the late-summer window when grubs do the most damage to an East Texas lawn |
 | 2026-08-22 | blog-fall-lawn-reset-east-texas | Late August Is When You Set Up Your Fall Lawn, Not September | Lawn Maintenance | Why the fall reset (aeration, the last real feeding of the year, and whether to overseed) gets planned in the final weeks of August in East Texas, what the cooling nights signal, and the tasks that decide whether a lawn greens back up or limps into winter |
 | 2026-08-29 | blog-fall-webworms-east-texas | The Webbed Nests Taking Over East Texas Pecans in Late Summer | Tree & Shrub Care | How to tell fall webworm tents from bagworms and spring tent caterpillars, why pecans, persimmons, and sweetgums get hit hardest here, when pruning out a nest is worth the trouble, and when a mature tree just shrugs it off before leaf drop |
+| 2026-09-05 | blog-fall-planting-window-east-texas | Fall Beats Spring for Planting Trees and Shrubs in East Texas | Tree Planting | Why September through November is the real planting window here: warm soil and cooling air let roots establish for months before any heat arrives, what that means for watering a new tree through winter, and why a spring-planted tree spends its first summer in survival mode instead of growing |
 
 ---
 
@@ -34,6 +34,7 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-08-01 | blog-fall-armyworms-east-texas.html | Armyworms Can Strip an East Texas Lawn Overnight in Late Summer | Lawn Maintenance |
 | 2026-07-25 | blog-chinch-bugs-st-augustine.html | Why St. Augustine Dies in the Sunniest Part of the Yard in Late Summer | Lawn Maintenance |
 | 2026-07-18 | blog-drainage-french-drain-east-texas.html | When Your East Texas Yard Needs a French Drain (And When It Doesn't) | Drainage |
 | 2026-07-11 | blog-summer-mowing-height.html | Why Mowing Shorter in Summer Backfires | Lawn Maintenance |
@@ -60,11 +61,11 @@ in `/root/alienkind`).
 - **Schema:** `BlogPosting` + `BreadcrumbList` JSON-LD in every post (copy from any existing post, swap content).
 - **CTA section:** dark background, free-quote button + phone button. Match phrasing of the existing posts.
 
-## Anchor topics by month (rough — adjust to weather and what's coming up)
+## Anchor topics by month (rough, adjust to weather and what's coming up)
 
-- **May:** spring transition — fertilization, mulch, bed prep, mowing height.
-- **June–August:** survival mode — drought, irrigation, brown patch, summer pruning, plant selection.
-- **September–October:** fall reset — overseeding, leaf prep, last-feeding, mulch top-dress.
-- **November–December:** off-season — Christmas lights (high-search months), tree pruning windows, contract planning.
-- **January–February:** planning + design — what to install in spring, landscape design, hardscape projects.
-- **March–April:** kickoff — first mow, pre-emergent, bed cleanup, sod install.
+- **May:** spring transition: fertilization, mulch, bed prep, mowing height.
+- **June–August:** survival mode: drought, irrigation, brown patch, summer pruning, plant selection.
+- **September–October:** fall reset: overseeding, leaf prep, last-feeding, mulch top-dress.
+- **November–December:** off-season: Christmas lights (high-search months), tree pruning windows, contract planning.
+- **January–February:** planning + design: what to install in spring, landscape design, hardscape projects.
+- **March–April:** kickoff: first mow, pre-emergent, bed cleanup, sod install.

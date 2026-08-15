@@ -22,11 +22,11 @@ in `/root/alienkind`).
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-08-15 | blog-grub-worms-east-texas | The Late-Summer Grub Damage That Peels Up Like Carpet | Lawn Maintenance | How to tell white-grub feeding from drought stress: turf that lifts with no roots holding it down, the birds-and-armadillos digging tell, and the late-summer window when grubs do the most damage to an East Texas lawn |
 | 2026-08-22 | blog-fall-lawn-reset-east-texas | Late August Is When You Set Up Your Fall Lawn, Not September | Lawn Maintenance | Why the fall reset (aeration, the last real feeding of the year, and whether to overseed) gets planned in the final weeks of August in East Texas, what the cooling nights signal, and the tasks that decide whether a lawn greens back up or limps into winter |
 | 2026-08-29 | blog-fall-webworms-east-texas | The Webbed Nests Taking Over East Texas Pecans in Late Summer | Tree & Shrub Care | How to tell fall webworm tents from bagworms and spring tent caterpillars, why pecans, persimmons, and sweetgums get hit hardest here, when pruning out a nest is worth the trouble, and when a mature tree just shrugs it off before leaf drop |
 | 2026-09-05 | blog-fall-planting-window-east-texas | Fall Beats Spring for Planting Trees and Shrubs in East Texas | Tree Planting | Why September through November is the real planting window here: warm soil and cooling air let roots establish for months before any heat arrives, what that means for watering a new tree through winter, and why a spring-planted tree spends its first summer in survival mode instead of growing |
 | 2026-09-12 | blog-fall-mulch-top-dress-east-texas | Beds Need a Fall Top-Dress, Not a Full Mulch Reload | Mulch Installation | Why a thin fall top-dress beats stripping and reloading a bed in September, how much of last spring's mulch has already broken down into the soil by now, what a winter mulch layer actually does for root temperature and moisture in East Texas clay, and why piling it up against stems causes more damage than it prevents |
+| 2026-09-19 | blog-fall-preemergent-east-texas | The Fall Window That Decides How Many Winter Weeds You Fight in February | Lawn Maintenance | Why fall pre-emergent timing in East Texas keys off soil temperature falling through 70 degrees instead of a date on the calendar, which winter annuals it heads off (annual bluegrass, henbit, chickweed), why watering it in is not optional, and what a missed window actually costs you come late winter. Agronomic education only, no application-service promises |
 
 ---
 
@@ -34,6 +34,7 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-08-15 | blog-grub-worms-east-texas.html | The Late-Summer Grub Damage That Peels Up Like Carpet | Lawn Maintenance |
 | 2026-08-08 | blog-crepe-myrtle-crape-murder.html | Stop Topping Your Crepe Myrtles: The Case Against Crape Murder | Tree & Shrub Care |
 | 2026-08-01 | blog-fall-armyworms-east-texas.html | Armyworms Can Strip an East Texas Lawn Overnight in Late Summer | Lawn Maintenance |
 | 2026-07-25 | blog-chinch-bugs-st-augustine.html | Why St. Augustine Dies in the Sunniest Part of the Yard in Late Summer | Lawn Maintenance |

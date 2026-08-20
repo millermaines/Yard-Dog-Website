@@ -1639,17 +1639,25 @@ footer b{color:var(--txt-mid);font-weight:600}
     </div>
 
     <div class="callout">
-      <b class="t">Two things I'd want your call on before Phase 1</b>
+      <b class="t">Both open questions — answered, and Phase 1 is built</b>
       <p>
-        <strong>1 · Pricing.</strong> The services lineup is much stronger with honest "from" prices, and
-        it's the question every visitor arrives with. The figures in the mockup are placeholders. If you'd
-        rather not publish numbers, the pattern still works with "Free estimate" in that slot — but it
-        gives up most of the advantage.
+        <strong>1 · Pricing: yes.</strong> The services lineup now carries real "from" ranges, taken
+        straight from <code>pricing.html</code> rather than invented — $50–$65 per visit for lawn
+        maintenance, $2,000–$3,750 for drainage, $3,100–$9,100 for patios, $3,000–$19,000 for retaining
+        walls. Sourcing them from the existing page means the homepage cannot drift from the pricing page
+        or from the FAQ structured data.
       </p>
       <p>
-        <strong>2 · Named customers.</strong> The Our Work section is far more persuasive with real first
-        names and cities, which is how the photos are already filed. Worth confirming those customers are
-        comfortable being named on the site before it goes live.
+        <strong>2 · Named customers: yes.</strong> Our Work runs real first names and cities — Robert's
+        driveway wall in Longview, Kerrie's flagstone patio in Hallsville, Logan's checkerboard patio in
+        Longview. Review quotes are the existing verified Google reviews, verbatim; none were written for
+        the redesign.
+      </p>
+      <p>
+        Phase 1 is deployed to this same preview — open <a href="/" style="color:var(--yd-gold);text-decoration:underline">the homepage</a>
+        to see it. One thing found while building: the page was carrying <strong>9.25 MB of images</strong>.
+        Display-size WebP derivatives brought that to roughly <strong>1 MB on mobile</strong>, via
+        <code>_scripts/gen-web-derivatives.py</code>, which leaves the originals untouched.
       </p>
     </div>
   </div>

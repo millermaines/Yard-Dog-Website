@@ -6,7 +6,11 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const files = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
 const exists = new Set(files);
-const photos = new Set(fs.existsSync(path.join(ROOT, 'brand_photos')) ? fs.readdirSync(path.join(ROOT, 'brand_photos')) : []);
+// Resolve against the filesystem so nested dirs (e.g. brand_photos/web/) work.
+const photoExists = rel => {
+  const p = path.join(ROOT, 'brand_photos', rel.split('#')[0].split('?')[0]);
+  return p.startsWith(path.join(ROOT, 'brand_photos')) && fs.existsSync(p);
+};
 
 let brokenLinks = [], brokenImgs = [], badJson = [];
 const skip = h => /^(https?:|tel:|mailto:|#|\/$)/.test(h) || h === '/';
@@ -28,9 +32,19 @@ for (const f of files) {
     if (!exists.has(h + '.html')) brokenLinks.push(`${f} -> ${m[1]} (no ${h}.html)`);
   }
 
-  // images
+  // images — src
   for (const m of html.matchAll(/src="brand_photos\/([^"]+)"/g)) {
-    if (!photos.has(m[1])) brokenImgs.push(`${f} -> ${m[1]}`);
+    if (!photoExists(m[1])) brokenImgs.push(`${f} -> ${m[1]}`);
+  }
+
+  // images — srcset candidates
+  for (const m of html.matchAll(/srcset="([^"]+)"/g)) {
+    for (const cand of m[1].split(',')) {
+      const url = cand.trim().split(/\s+/)[0];
+      if (!url.startsWith('brand_photos/')) continue;
+      const rel = url.slice('brand_photos/'.length);
+      if (!photoExists(rel)) brokenImgs.push(`${f} -> ${rel} (srcset)`);
+    }
   }
 
   // JSON-LD validity

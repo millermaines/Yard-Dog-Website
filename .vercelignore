@@ -17,3 +17,6 @@ CLAUDE.md
 # Repo metadata
 .gitignore
 .gitattributes
+
+# Redesign preview scratch
+_shot*.mjs

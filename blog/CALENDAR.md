@@ -22,11 +22,11 @@ in `/root/alienkind`).
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-08-29 | blog-fall-webworms-east-texas | The Webbed Nests Taking Over East Texas Pecans in Late Summer | Tree & Shrub Care | How to tell fall webworm tents from bagworms and spring tent caterpillars, why pecans, persimmons, and sweetgums get hit hardest here, when pruning out a nest is worth the trouble, and when a mature tree just shrugs it off before leaf drop |
 | 2026-09-05 | blog-fall-planting-window-east-texas | Fall Beats Spring for Planting Trees and Shrubs in East Texas | Tree Planting | Why September through November is the real planting window here: warm soil and cooling air let roots establish for months before any heat arrives, what that means for watering a new tree through winter, and why a spring-planted tree spends its first summer in survival mode instead of growing |
 | 2026-09-12 | blog-fall-mulch-top-dress-east-texas | Beds Need a Fall Top-Dress, Not a Full Mulch Reload | Mulch Installation | Why a thin fall top-dress beats stripping and reloading a bed in September, how much of last spring's mulch has already broken down into the soil by now, what a winter mulch layer actually does for root temperature and moisture in East Texas clay, and why piling it up against stems causes more damage than it prevents |
 | 2026-09-19 | blog-fall-preemergent-east-texas | The Fall Window That Decides How Many Winter Weeds You Fight in February | Lawn Maintenance | Why fall pre-emergent timing in East Texas keys off soil temperature falling through 70 degrees instead of a date on the calendar, which winter annuals it heads off (annual bluegrass, henbit, chickweed), why watering it in is not optional, and what a missed window actually costs you come late winter. Agronomic education only, no application-service promises |
 | 2026-09-26 | blog-fall-leaf-strategy-east-texas | Mulch the First Leaves, Rake the Last Ones | Leaf Removal | Why the first light leaf fall in early October can go straight back into an East Texas lawn through the mower deck, the point where post oak, sweetgum, and pecan litter gets thick enough to smother dormant St. Augustine and invite disease, what leaf litter does and does not do for beds, and the week in November when mulching stops working and removal starts |
+| 2026-10-03 | blog-fall-winter-color-east-texas | October Is the Planting Window for Winter Color in East Texas | Flower Bed Installation | Why pansies, violas, and snapdragons go in while the soil is still warm in October instead of after the first freeze, which cool-season annuals actually hold through a Longview winter and which ones melt in a hard one, why bed drainage matters more than plant choice in our clay, and the light feeding schedule that keeps them blooming into February instead of stalling out in December |
 
 ---
 
@@ -34,6 +34,7 @@ in `/root/alienkind`).
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-08-29 | blog-fall-webworms-east-texas.html | The Webbed Nests Taking Over East Texas Pecans in Late Summer | Tree & Shrub Care |
 | 2026-08-22 | blog-fall-lawn-reset-east-texas.html | Late August Is When You Set Up Your Fall Lawn, Not September | Lawn Maintenance |
 | 2026-08-15 | blog-grub-worms-east-texas.html | The Late-Summer Grub Damage That Peels Up Like Carpet | Lawn Maintenance |
 | 2026-08-08 | blog-crepe-myrtle-crape-murder.html | Stop Topping Your Crepe Myrtles: The Case Against Crape Murder | Tree & Shrub Care |

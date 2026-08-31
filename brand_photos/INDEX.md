@@ -122,10 +122,10 @@ full-bleed `page-hero--photo` background, and a hero-band crop also decapitates 
 
 - `2026-08-flagstone-patio-chopped-stone-base-compaction.jpg` — Crew member in red YD long-sleeve
   running a Central Machinery plate compactor over the sand base, dust kicking up, flagstone slabs
-  in the foreground. Best action/craft shot of the set. Homepage hero secondary card.
+  in the foreground. Best action/craft shot of the set. Homepage Recent Work gallery.
 - `2026-08-flagstone-patio-chopped-stone-wall-loader.jpg` — Bobcat MT100 track loader backfilling
   behind the new mortared chopped-stone wall, shot low through dappled tree light. Most cinematic
-  frame. Homepage Recent Work gallery.
+  frame. Homepage hero, main image.
 - `2026-08-flagstone-patio-crew-branded-hoodie.jpg` — Back of a crew member in the red YD hoodie
   shoveling sand, full "Yard Dog Landscapes / Sit. Stay. Perfect Landscape." logo readable. Brand /
   team shot. Homepage Why Yard Dog collage.

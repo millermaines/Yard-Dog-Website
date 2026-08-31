@@ -2412,3 +2412,64 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 .answer-box { max-width: 820px; margin-inline: auto; background: var(--color-bg-section); border: 1px solid var(--color-border); border-left: 5px solid var(--color-green-primary); border-radius: var(--radius-lg); padding: 28px 32px; }
 .answer-box h2 { margin-bottom: 12px; }
 .answer-box .lead { margin-bottom: 0; }
+
+/* ==========================================================================
+   Nav parity with the homepage  (2026-08-31)
+   index.html is built on Tailwind and every other page on this stylesheet, so
+   the two navs had drifted apart. These rules bring .navbar in line with the
+   homepage header. Markup is untouched, so all 194 pages inherit it and the
+   three page generators need no change.
+   ========================================================================== */
+
+/* 1. Scroll state. The homepage keeps its floating pill and only darkens it
+      (#siteHeader.is-stuck nav). This bar used to collapse into a full-width
+      slab with a bottom border and different padding, which is the difference
+      you actually feel when you scroll an interior page. */
+.navbar.is-stuck {
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  border-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 0;
+}
+.navbar.is-stuck .nav-inner {
+  background: rgba(7, 13, 23, 0.92);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* 2. Current-page marker: the homepage uses weight and full white only. */
+.nav-link.active::after { content: none; }
+
+/* 3. Primary CTA: homepage gradient and glow, not a flat fill. */
+.nav-cta.btn-primary {
+  background: linear-gradient(180deg, #F26D77 0%, #E63946 60%, #B22934 100%);
+  border-color: transparent;
+  box-shadow: 0 10px 24px -8px rgba(230, 57, 70, 0.75),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.nav-cta.btn-primary:hover {
+  background: linear-gradient(180deg, #F58089 0%, #E63946 60%, #B22934 100%);
+  box-shadow: 0 18px 36px -14px rgba(230, 57, 70, 0.75),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* 4. Arrow on both nav CTAs, same glyph as the homepage inline SVG. Drawn as a
+      mask so it inherits currentColor and works on the red ghost and the
+      cream-on-red primary without a second rule. */
+.nav-cta::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 5l7 7-7 7'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 5l7 7-7 7'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: transform 0.25s var(--ease-spring);
+}
+.nav-cta:hover::after { transform: translateX(3px); }
+@media (prefers-reduced-motion: reduce) {
+  .nav-cta::after { transition: none; }
+  .nav-cta:hover::after { transform: none; }
+}

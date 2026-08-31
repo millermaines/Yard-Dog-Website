@@ -370,7 +370,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 .nav-wrap.is-open .hamburger-bars span:nth-child(2) { opacity: 0; }
 .nav-wrap.is-open .hamburger-bars span:nth-child(3) { top: 7px; transform: rotate(-45deg); }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .hamburger { display: inline-flex; }
   .nav-cta { display: none; }
   .nav-links {
@@ -459,7 +459,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 
 /* Two nav CTAs (Join the Pack + Get a Free Quote) — tighten spacing on the
    narrow desktop band so the pill nav does not crowd between 901-1100px. */
-@media (min-width: 901px) and (max-width: 1100px) {
+@media (min-width: 1181px) and (max-width: 1360px) {
   .nav-links { gap: 20px; }
   .nav-cta { padding: 9px 13px; font-size: 0.82rem; }
 }
@@ -2473,3 +2473,46 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   .nav-cta::after { transition: none; }
   .nav-cta:hover::after { transform: none; }
 }
+
+/* --------------------------------------------------------------------------
+   Nav parity, round 2 (2026-08-31)
+   Two defects Miller caught on /about after round 1.
+   -------------------------------------------------------------------------- */
+
+/* A. The "Join the Pack" ghost button became unreadable: it carries both
+      .nav-cta.btn-primary and .nav-cta--ghost, and my round-1 gradient rule
+      won on specificity, painting red text onto a red gradient. Scope the
+      gradient off the ghost and restate the ghost explicitly. */
+.nav-cta.btn-primary:not(.nav-cta--ghost) {
+  background: linear-gradient(180deg, #F26D77 0%, #E63946 60%, #B22934 100%);
+  border-color: transparent;
+  box-shadow: 0 10px 24px -8px rgba(230, 57, 70, 0.75),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.nav-cta.btn-primary:not(.nav-cta--ghost):hover {
+  background: linear-gradient(180deg, #F58089 0%, #E63946 60%, #B22934 100%);
+  box-shadow: 0 18px 36px -14px rgba(230, 57, 70, 0.75),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.nav-cta.nav-cta--ghost {
+  background: transparent;
+  color: var(--color-green-light);
+  border: 1px solid var(--color-green-primary);
+  box-shadow: none;
+}
+.nav-cta.nav-cta--ghost:hover {
+  background: var(--color-green-primary);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(230, 57, 70, 0.4);
+}
+
+/* B. The pill did not enclose the CTAs. .nav-inner is the painted pill and the
+      bar's natural width exceeded it, so the buttons spilled out onto the hero.
+      Widen the bar's container to the homepage's 1280px and tighten spacing so
+      the content sits comfortably inside it. */
+.navbar > .container { max-width: 1280px; }
+.nav-inner { gap: 16px; flex-wrap: nowrap; }
+.nav-links { gap: 26px; flex-wrap: nowrap; }
+.nav-link { font-size: 0.875rem; }
+.nav-brand,
+.nav-cta { flex-shrink: 0; }

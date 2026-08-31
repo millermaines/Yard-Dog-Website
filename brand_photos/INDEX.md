@@ -109,27 +109,39 @@ a "site:" caption — those entries land at the bottom.
 - `2026-07-08-robert-jackson-driveway-retaining-wall-finished.jpg` — AFTER: finished tan segmental block wall along the driveway with a clean gravel drainage strip (driveway angle — direct match to the BEFORE shot). Strong finished-look hero.
 - `2026-07-08-robert-jackson-driveway-retaining-wall-after.jpg` — AFTER: completed curved/tiered block wall wrapping past the shop building with a flagstone landing (wide angle). Best "show-off" finished shot.
 
-### Flagstone patio with mortared chopped-stone edging (2026-08, action shots)
+### White Oak flagstone patio and fire pit (2026-08, full 7-stage set)
 
-Miller's own set, sent 2026-08-31. Client name and exact job date not supplied, so the filenames use
-a descriptive slug rather than the usual `YYYY-MM-DD-client` form. All four are MID-BUILD action
-shots — there is no finished/after frame in this set, so do not use them for a "finished look"
-placement or as a before/after pair.
+Miller's own photos, sent 2026-08-31 in two batches: four mid-build action shots and three
+finished/before frames. All seven are the SAME job. Client name and exact job date not supplied, so
+the filenames use a date + city + project slug rather than the usual `YYYY-MM-DD-client` form.
 
-Format note: these are **1125x2000 (9:16 vertical)**, lower resolution than the 1920x2560 site
-standard. They hold up in cards, collage cells and gallery figures; they are NOT sharp enough for a
-full-bleed `page-hero--photo` background, and a hero-band crop also decapitates the operator.
+The job: **475 sq ft flagstone patio in White Oak, TX** — Cherokee flagstone with chopped stone
+edging, every joint mortared, a chopped stone fire pit, and an elevated corner where the grade falls
+away. The chopped stone wall visible in the loader shots IS that elevated corner.
 
-- `2026-08-flagstone-patio-chopped-stone-base-compaction.jpg` — Crew member in red YD long-sleeve
-  running a Central Machinery plate compactor over the sand base, dust kicking up, flagstone slabs
-  in the foreground. Best action/craft shot of the set. Homepage Recent Work gallery.
-- `2026-08-flagstone-patio-chopped-stone-wall-loader.jpg` — Bobcat MT100 track loader backfilling
-  behind the new mortared chopped-stone wall, shot low through dappled tree light. Most cinematic
-  frame. Homepage hero, main image.
-- `2026-08-flagstone-patio-crew-branded-hoodie.jpg` — Back of a crew member in the red YD hoodie
-  shoveling sand, full "Yard Dog Landscapes / Sit. Stay. Perfect Landscape." logo readable. Brand /
-  team shot. Homepage Why Yard Dog collage.
-- `2026-08-flagstone-patio-chopped-stone-wall-backfill.jpg` — Bobcat MT100 with the bucket raised
-  alongside the brick house, finished chopped-stone wall running across the foreground, golden
-  light. Wide equipment + hardscape shot. NOT YET PLACED — best candidate for the retaining-walls
-  city pages (needs a generator regen cycle) or an our-work.html build scrubber (needs an after shot).
+Format note: the four action shots are **1125x2000 (9:16)** and the three finished frames are
+**1500x2000 (3:4)**, both below the 1920x2560 site standard. They hold up in cards, collage cells,
+gallery figures and the 3:4 build scrubber; they are NOT sharp enough for a full-bleed
+`page-hero--photo` background, and a hero-band crop also decapitates the operator. The three
+finished frames carry the YD watermark.
+
+In build order, which is the order the our-work.html scrubber uses:
+
+- `2026-08-white-oak-flagstone-patio-before.jpg` — BEFORE: bare backyard beside the covered porch,
+  patio edge and fire pit circle laid out in orange marking paint. 3:4, no crop needed.
+- `2026-08-white-oak-flagstone-patio-base-compaction.jpg` — Crew member running a Central Machinery
+  plate compactor over the base, dust kicking up. Best action shot of the set. Also on the homepage
+  Recent Work gallery.
+- `2026-08-white-oak-flagstone-patio-elevated-corner.jpg` — Bobcat MT100 above the mortared chopped
+  stone elevated corner, shot low through dappled tree light. Most cinematic frame. Also the
+  homepage hero main image.
+- `2026-08-white-oak-flagstone-patio-backfill-grade.jpg` — Bobcat MT100 with the bucket raised,
+  backfilling behind the chopped stone corner. Same wall as the frame above, wider angle.
+- `2026-08-white-oak-flagstone-patio-sand-setting-bed.jpg` — Back of a crew member in the red YD
+  hoodie shoveling the sand setting bed, full "Yard Dog Landscapes / Sit. Stay. Perfect Landscape."
+  logo readable. Brand/team shot. Also on the homepage Why Yard Dog collage. **Needs
+  `object-position: center 30%` in any 4:5 or 3:4 slot** or the logo gets cropped.
+- `2026-08-white-oak-flagstone-patio-mortared-joints.jpg` — Flagstone set and mortared around the
+  fire pit, joints still dusty, tools and buckets on site. Work-in-progress; not a finished-look shot.
+- `2026-08-white-oak-flagstone-patio-after.jpg` — AFTER: finished patio, swept clean, fire pit
+  capped, shot from the porch corner. The only true finished frame in the set.

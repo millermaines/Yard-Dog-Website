@@ -455,7 +455,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   }
   .nav-mobile-cta--ghost:hover { background: var(--color-green-primary); color: #ffffff; }
 }
-@media (min-width: 901px) { .nav-mobile-cta { display: none; } }
+@media (min-width: 1181px) { .nav-mobile-cta { display: none; } }
 
 /* Two nav CTAs (Join the Pack + Get a Free Quote) — tighten spacing on the
    narrow desktop band so the pill nav does not crowd between 901-1100px. */
@@ -2442,18 +2442,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 /* 2. Current-page marker: the homepage uses weight and full white only. */
 .nav-link.active::after { content: none; }
 
-/* 3. Primary CTA: homepage gradient and glow, not a flat fill. */
-.nav-cta.btn-primary {
-  background: linear-gradient(180deg, #F26D77 0%, #E63946 60%, #B22934 100%);
-  border-color: transparent;
-  box-shadow: 0 10px 24px -8px rgba(230, 57, 70, 0.75),
-              inset 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-.nav-cta.btn-primary:hover {
-  background: linear-gradient(180deg, #F58089 0%, #E63946 60%, #B22934 100%);
-  box-shadow: 0 18px 36px -14px rgba(230, 57, 70, 0.75),
-              inset 0 1px 0 rgba(255, 255, 255, 0.25);
-}
+/* 3. Primary CTA gradient: see the scoped rule in round 2 below. */
 
 /* 4. Arrow on both nav CTAs, same glyph as the homepage inline SVG. Drawn as a
       mask so it inherits currentColor and works on the red ghost and the

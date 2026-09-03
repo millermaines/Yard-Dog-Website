@@ -482,7 +482,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Jobber work request form embed styles -->
-<link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
 
 <script>
   tailwind.config = {
@@ -753,24 +752,9 @@
   .arrow-link .arrow { transition: transform 240ms cubic-bezier(.2,.8,.2,1); }
   .arrow-link:hover .arrow { transform: translateX(4px); }
 
-  /* Jobber form embed: let it fill the card edge-to-edge */
-  .jobber-form-mount {
-    position: relative;
-    min-height: 720px;
-    width: 100%;
-  }
-  .jobber-form-mount.jobber-inline-work-request {
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
-  .jobber-form-mount iframe.jobber-work-request {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 100% !important;
-    min-height: 720px;
-    padding: 0 !important;
-    border-radius: 0 !important;
-  }
+  /* Platy request-form embed: platy-form.js builds a self-sizing iframe inside the mount */
+  .platy-form-mount { position: relative; width: 100%; }
+  .platy-form-mount iframe { display: block; width: 100%; border: 0; }
 
 /* ============ Spotlight glow on photo/card hover (Kokonut UI port, brand-tuned) ============ */
 :root {
@@ -1893,7 +1877,7 @@
           </div>
         </div>
 
-        <!-- Jobber Work Request Form (live embed) -->
+        <!-- Platy request form (live embed) -->
         <div class="lg:col-span-5 bg-ydg-cream rounded-2xl shadow-card border border-black/5 jobber-form-card overflow-hidden flex flex-col">
           <div class="px-7 pt-7 pb-5">
             <div class="flex items-center gap-2 text-ydg-green-d">
@@ -1907,18 +1891,13 @@
           </div>
 
           <div class="px-7 pb-7 mt-auto">
-            <div id="1ec26b22-ac72-4231-a9fb-0208c4f65e85-2119821" class="jobber-form-mount"></div>
-            <script
-              src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
-              clienthub_id="1ec26b22-ac72-4231-a9fb-0208c4f65e85-2119821"
-              form_url="https://clienthub.getjobber.com/client_hubs/1ec26b22-ac72-4231-a9fb-0208c4f65e85/public/work_request/embedded_work_request_form?form_id=2119821"></script>
-            <noscript>
-              <a href="https://clienthub.getjobber.com/hubs/1ec26b22-ac72-4231-a9fb-0208c4f65e85/public/requests/2119821/new" class="btn-primary w-full justify-center" target="_blank" rel="noopener">Open Quote Form</a>
-            </noscript>
-            <p class="text-center text-sm mt-3"><a href="https://clienthub.getjobber.com/hubs/1ec26b22-ac72-4231-a9fb-0208c4f65e85/public/requests/2119821/new" target="_blank" rel="noopener" class="text-ydg-green-d underline">Trouble seeing the form? Open it in a new tab.</a></p>
+            <div class="platy-form-mount" data-platy-form="k10wty88jnyk6dfl2jsmve"></div>
+            <script src="https://app.getplaty.com/platy-form.js" data-platy-form="k10wty88jnyk6dfl2jsmve" data-platy-src="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve/embed"></script>
+            <noscript><a href="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve">Request a quote</a></noscript>
+            <p class="text-center text-sm mt-3"><a href="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve" target="_blank" rel="noopener" class="text-ydg-green-d underline">Trouble seeing the form? Open it in a new tab.</a></p>
           </div>
         </div>
-        <!-- end Jobber form -->
+        <!-- end Platy form -->
       </div>
     </div>
   </div>

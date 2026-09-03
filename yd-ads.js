@@ -59,7 +59,7 @@
     var links = document.querySelectorAll('a[href]');
     for (var i = 0; i < links.length; i++) {
       var h = links[i].getAttribute('href') || '';
-      if (/(^|\/)contact(\?|#|$)/.test(h) || h.indexOf('clienthub.getjobber.com') !== -1) {
+      if (/(^|\/)contact(\?|#|$)/.test(h) || h.indexOf('clienthub.getjobber.com') !== -1 || h.indexOf('app.getplaty.com/f/') !== -1) {
         links[i].setAttribute('href', withGclid(h));
       }
     }
@@ -70,7 +70,7 @@
     var h = a.getAttribute('href') || '';
     if (h.indexOf('tel:') === 0) fire(LABEL_CALL);
     else if (h.indexOf('mailto:') === 0) fire(LABEL_MAIL);
-    else if (/(^|\/)contact(\?|#|$)/.test(h) || h.indexOf('#estimate') !== -1 || h.indexOf('clienthub.getjobber.com') !== -1) fire(LABEL_LEAD);
+    else if (/(^|\/)contact(\?|#|$)/.test(h) || h.indexOf('#estimate') !== -1 || h.indexOf('clienthub.getjobber.com') !== -1 || h.indexOf('app.getplaty.com/f/') !== -1) fire(LABEL_LEAD);
   }
 
   function init() {

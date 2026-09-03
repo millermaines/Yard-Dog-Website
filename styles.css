@@ -1064,7 +1064,7 @@ p { line-height: 1.7; color: var(--color-text-mid); }
 /* small utility for stacked vertical lists */
 .stacked > * + * { margin-top: 12px; }
 
-/* ---------- Jobber Work Request Embed (contact.html) ---------- */
+/* ---------- Request form card (Platy embed; the card chrome keeps its .jobber-form-* class names) ---------- */
 .jobber-form-card {
   background: var(--color-bg-white);
   border: 1px solid var(--color-border);
@@ -1103,27 +1103,20 @@ p { line-height: 1.7; color: var(--color-text-mid); }
   max-width: 56ch;
   line-height: 1.55;
 }
-.jobber-form-mount {
+/* Platy mount: platy-form.js builds a self-sizing iframe here (height arrives by postMessage).
+   The embed body carries only 2px of side padding, so the mount pads to line up with the card head. */
+.platy-form-mount {
   position: relative;
-  min-height: 720px;
   width: 100%;
+  padding: 4px 26px 8px;
 }
-.jobber-form-mount.jobber-inline-work-request {
-  max-width: 100% !important;
-  margin: 0 !important;
+.platy-form-mount iframe {
+  display: block;
+  width: 100%;
+  border: 0;
 }
-.jobber-form-mount iframe.jobber-work-request {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 100% !important;
-  min-height: 720px;
-  padding: 0 !important;
-  border-radius: 0 !important;
-}
-.jobber-noscript-btn {
-  margin: 18px;
-  align-self: stretch;
-  justify-content: center;
+@media (max-width: 640px) {
+  .platy-form-mount { padding: 4px 12px 8px; }
 }
 
 /* ---------- Page hero photo backgrounds ---------- */

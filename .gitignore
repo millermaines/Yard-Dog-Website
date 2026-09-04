@@ -16,6 +16,15 @@ google-reviews.json
 # Screenshot scratch dir
 temporary screenshots/
 
+# Claude Design sync — staged converter scripts, build output, machine state.
+# The durable inputs under .design-sync/ (config.json, NOTES.md, conventions.md,
+# brand-tokens.css, ds-entry.mjs, fonts/) ARE committed.
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
+
 # OS junk
 .DS_Store
 Thumbs.db

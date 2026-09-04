@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Yard Dog Landscapes — brand token layer
+   ==========================================================================
+
+   Yard Dog Landscapes is a landscaping company in Longview / East Texas.
+   This layer is ADDITIVE: it names the brand truthfully without editing the
+   site's shipped CSS.
+
+   Two live sources feed it, and nothing here is invented:
+
+     A. styles.css      — the stylesheet 195 pages link. Its :root already
+                          carries colors, spacing, radii, shadows and easings.
+     B. index.html      — the homepage, which does NOT link styles.css. It is a
+                          standalone Tailwind-CDN page whose `tailwind.config`
+                          declares the `ydg` palette. Colors that live only
+                          there are copied in below and marked [homepage].
+
+   NAMING NOTE — the single most important thing to know about this brand:
+   styles.css calls the brand color `--color-green-primary`, and it holds
+   #E63946, which is RED. The company rebranded from green to red and the
+   variable names were never renamed. The `--yd-*` names below are the honest
+   ones; the `--color-green-*` names are legacy and still what the 195-page
+   stylesheet consumes internally. Both resolve to the same value.
+
+   Aliases are declared as var() references, not copied hexes, so they can
+   never drift from styles.css. Values that styles.css does not tokenize are
+   written as literals with their source noted.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand red — the primary. Legacy alias: --color-green-* ---------- */
+  --yd-red: var(--color-green-primary);          /* #E63946 */
+  --yd-red-light: var(--color-green-light);      /* #F26D77 */
+  --yd-red-dark: #B22934;                        /* styles.css x10 + [homepage] ydg.green-d */
+  --yd-red-deep: #7A1D26;                        /* styles.css, deepest gradient terminus */
+  --yd-red-accent: #C8362C;                      /* [homepage] ydg.red */
+
+  /* ---- Navy / ink — the dark ground ------------------------------------ */
+  --yd-navy: var(--color-bg-dark);               /* #0F1B2A */
+  --yd-night: #070D17;                           /* [homepage] ydg.night, deepest ground */
+
+  /* ---- Warm neutrals — the earth range --------------------------------- */
+  --yd-bone: var(--color-bg-section);            /* #f7f4ef — section ground */
+  --yd-cream: #F4EFE2;                           /* [homepage] ydg.cream — page ground */
+  --yd-sage: #E5DCB3;                            /* [homepage] ydg.sage */
+  --yd-khaki: #D9C79A;                           /* [homepage] ydg.khaki */
+  --yd-tan: var(--color-tan);                    /* #c8b89a */
+  --yd-tan-dark: #8a7d65;                        /* styles.css x4 */
+  --yd-mocha: #5A3A22;                           /* [homepage] ydg.mocha */
+  --yd-earth-dark: #4a3f2e;                      /* styles.css, gradient terminus */
+  --yd-border: var(--color-border);              /* #e0d9cf */
+
+  /* ---- Text ------------------------------------------------------------ */
+  --yd-ink: var(--color-text-dark);              /* #1a1a1a */
+  --yd-ink-mid: var(--color-text-mid);           /* #555555 */
+  --yd-white: var(--color-text-light);           /* #ffffff */
+
+  /* ---- UI state — not brand colors, but shipped -------------------------
+     Used on required-field marks and application status cards.            */
+  --yd-state-error: #b22222;                     /* styles.css .req, .apply-status--err */
+  --yd-state-warn: #c8a24a;                      /* styles.css .apply-status--no */
+
+  /* ---- Typography — verbatim from the shipped base rules ---------------- */
+  --yd-font-display: 'Anton', 'Arial Narrow', Impact, sans-serif;
+  --yd-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --yd-h1-size: clamp(2.5rem, 6vw, 4.25rem);
+  --yd-h2-size: clamp(2rem, 4vw, 3rem);
+  --yd-h3-size: 1.35rem;
+  --yd-body-size: 16px;
+
+  --yd-leading-display: 1.05;                    /* h1–h3 */
+  --yd-leading-body: 1.6;                        /* body */
+  --yd-leading-prose: 1.7;                       /* p */
+  --yd-tracking-display: 0.005em;                /* h1, h2 */
+
+  /* ---- Layout — verbatim from .container / .section --------------------- */
+  --yd-container-max: 1200px;
+  --yd-container-pad: 24px;
+  --yd-section-pad-y: 48px;
+}

@@ -1,0 +1,13 @@
+{
+  "pkg": "yard-dog-landscapes",
+  "globalName": "YardDog",
+  "shape": "package",
+  "entry": "./.design-sync/ds-entry.mjs",
+  "cssEntry": "./styles.css",
+  "extraFonts": [
+    ".design-sync/fonts/fonts.css"
+  ],
+  "guidelinesGlob": [],
+  "readmeHeader": ".design-sync/conventions.md",
+  "projectId": "e769f377-4b9a-4fa7-822c-cb204022af8b"
+}

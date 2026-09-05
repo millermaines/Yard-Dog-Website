@@ -1,0 +1,206 @@
+/* =====================================================
+   YARD DOG LANDSCAPES — redesign.css
+   Loads AFTER styles.css on every page. Restyles the
+   shared class vocabulary (.page-hero, .service-card,
+   .included-card, .cta-banner …) to the "3d" direction:
+   full-bleed photo heroes, oversized Anton headlines,
+   numbered photo tiles, white/bone bands, navy footer.
+   Zero markup changes required on the ~200 sub-pages.
+   ===================================================== */
+
+/* ---------- Tokens (honest names; aliases onto styles.css values) ---------- */
+:root{
+  --yd-red:#E63946;--yd-red-light:#F26D77;--yd-red-dark:#B22934;--yd-red-deep:#7A1D26;
+  --yd-navy:#0F1B2A;--yd-night:#070D17;
+  --yd-bone:#f7f4ef;--yd-cream:#F4EFE2;--yd-tan:#c8b89a;--yd-border:#e0d9cf;
+  --yd-ink:#1a1a1a;--yd-ink-mid:#555555;
+}
+/* Links inherit (styles.css sets a{color:inherit}); only prose links go red */
+.intro-prose a,.blog-post-body a,.faq-body a{color:#E63946}.intro-prose a:hover,.blog-post-body a:hover,.faq-body a:hover{color:#B22934}
+.btn-primary,.btn-primary:hover{color:#ffffff}
+
+/* ---------- Photo hero (interior pages) ---------- */
+.page-hero,.page-hero--photo{
+  position:relative;min-height:640px;display:flex;align-items:flex-end;
+  padding:160px 0 64px;background-color:#070D17;
+  background-size:cover;background-position:center;isolation:isolate;overflow:hidden;
+}
+.page-hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(7,13,23,.7) 0%,rgba(7,13,23,.25) 45%,rgba(7,13,23,1) 100%);
+}
+.page-hero::after{display:none}
+.page-hero h1{
+  font-size:clamp(56px,8vw,112px);line-height:.9;letter-spacing:-.03em;margin-bottom:20px;max-width:none;color:#fff;
+}
+.page-hero h1::after{content:".";color:#E63946}
+.page-hero p.lead{font-size:19px;max-width:640px;color:rgba(255,255,255,.85);margin-bottom:28px}
+.page-hero .breadcrumb{margin-bottom:20px}
+.page-hero .cta-mark{margin-top:4px}
+/* Pages without a photo (privacy, terms, careers…) still get the dark ground */
+.page-hero:not([style*="background-image"]){
+  background-image:
+    radial-gradient(50% 50% at 90% 20%,rgba(200,184,154,.16),transparent 60%),
+    radial-gradient(50% 60% at 10% 100%,rgba(230,57,70,.28),transparent 65%);
+  min-height:480px;
+}
+
+/* ---------- Answer box (AEO block directly under hero) ---------- */
+.answer-box{background:#fff;border:1px solid #e0d9cf;border-radius:24px;padding:32px 36px;max-width:960px;margin-inline:auto;box-shadow:var(--shadow-sm)}
+.answer-box h2{font-size:clamp(1.6rem,2.4vw,2.2rem);margin-bottom:12px}
+.answer-box p.lead{font-size:17px;color:#1a1a1a}
+
+/* ---------- Photo tiles (home + services; also upgrades .service-card w/ image) ---------- */
+.yd-tile{position:relative;aspect-ratio:4/5;background:#0F1B2A;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:22px;color:#fff;isolation:isolate;box-shadow:0 4px 12px rgba(15,27,42,.08),0 2px 4px rgba(230,57,70,.06);transition:transform .3s var(--ease-spring),box-shadow .3s var(--ease-smooth)}
+.yd-tile:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(15,27,42,.10),0 6px 12px rgba(230,57,70,.08)}
+.yd-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.yd-tile .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,13,23,.15),rgba(7,13,23,.94));z-index:-1}
+.yd-tile h3{color:#fff;font-size:26px;margin-bottom:4px}
+.yd-num{align-self:flex-start;background:#E63946;border-radius:999px;padding:5px 11px;font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.04em;color:#fff}
+.yd-pill{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border:1px solid #e0d9cf;border-radius:999px;color:#1a1a1a;font-weight:600;background:#fff;transition:border-color .2s}
+.yd-pill:hover{border-color:#E63946;color:#1a1a1a}
+
+/* ---------- Service cards on sub-pages: flatter, numbered ---------- */
+.service-card{border-radius:24px;padding:28px}
+.service-card .icon-swatch{display:none}
+.service-card h3{font-size:24px}
+
+/* ---------- Photo grids on sub-pages ---------- */
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.photo-figure{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/5}
+.photo-figure img,.work-photo{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:768px){.photo-grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- Trust points / why cards: drop emoji icons ---------- */
+.trust-point .tp-icon,.why-card .why-icon,.included-card .ic-check{display:none}
+.trust-point h4{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;font-size:18px;letter-spacing:.01em}
+.included-card{border-radius:18px}
+.included-card .ic-text::before{content:"— ";color:#E63946}
+
+/* ---------- FAQ ---------- */
+.faq-item{border:1px solid #e0d9cf;border-radius:18px;padding:18px 22px;background:#fff;margin-bottom:12px}
+.faq-item summary{font-weight:600;cursor:pointer;color:#1a1a1a;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-body{margin-top:10px;font-size:15px}
+
+/* ---------- Area chips ---------- */
+.also-serving h3{font-size:1.1rem;margin-bottom:14px}
+.also-chips{display:flex;flex-wrap:wrap;gap:10px}
+.also-chip{border:1px solid #e0d9cf;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:500;color:#1a1a1a;background:#fff}
+.also-chip:hover{border-color:#E63946;color:#E63946}
+.area-callout{border-radius:24px}
+
+/* ---------- CTA banner ---------- */
+.cta-banner h2{font-size:clamp(2.5rem,5vw,4rem)}
+.cta-banner .cta-mark-svg{display:none}   /* squiggle retired in the redesign */
+.cta-mark .cta-mark-svg{display:none}
+
+/* ---------- Footer: navy, hairline top ---------- */
+.footer{border-top:1px solid rgba(255,255,255,.08)}
+
+/* ---------- Request form card (Platy) ---------- */
+.contact-form{background:#fff;border:1px solid #e0d9cf;border-radius:24px;padding:32px;box-shadow:0 4px 12px rgba(15,27,42,.08),0 2px 4px rgba(230,57,70,.06);display:flex;flex-direction:column;gap:18px}
+.platy-form-mount{position:relative;width:100%}
+.platy-form-mount iframe{display:block;width:100%;border:0;min-height:520px}
+
+/* ---------- Blog cards ---------- */
+.blog-card,.post-card{border-radius:20px;overflow:hidden}
+
+/* ---------- Nav: keep links visible down to 860px ---------- */
+@media (max-width:1180px) and (min-width:860px){
+  .nav-links{display:flex!important;position:static;flex-direction:row;gap:18px;padding:0;background:transparent;border:0;box-shadow:none}
+  .nav-link{padding:0;font-size:.85rem}
+  .hamburger{display:none!important}
+  .nav-cta{display:inline-flex!important}
+  .nav-cta--ghost,.nav-mobile-cta{display:none!important}
+  .nav-item.has-dropdown .dropdown{position:absolute;max-height:none;background:rgba(15,27,42,.95);border:1px solid rgba(255,255,255,.1);border-radius:16px;margin:0;padding:14px 10px;overflow:visible;opacity:0;visibility:hidden}
+  .nav-item.has-dropdown:hover .dropdown{opacity:1;visibility:visible}
+  .dropdown--mega{display:grid;min-width:620px;grid-template-columns:repeat(4,minmax(150px,1fr))}
+}
+
+/* =====================================================
+   MOBILE — applies to every page (rebuilt + all sub-pages)
+   ===================================================== */
+html{-webkit-text-size-adjust:100%}
+body{overflow-x:hidden}
+img,video,iframe{max-width:100%}
+.container{padding-inline:clamp(16px,4vw,24px)}
+a,button,summary,.btn{-webkit-tap-highlight-color:transparent}
+.btn,.nav-mobile-cta,.also-chip,.yd-pill{min-height:44px}   /* touch targets */
+
+/* ---- ≤1024: tablets — 4-col grids to 2, 3-col to 2 ---- */
+@media (max-width:1024px){
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+  .process-grid,.services-grid,.why-grid,.included-grid,.testimonial-grid,.pricing-grid,.footer-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{gap:32px}
+  .footer-brand{grid-column:1/-1}
+}
+
+/* ---- ≤900: any 2-col inline grid stacks ---- */
+@media (max-width:900px){
+  [style*="grid-template-columns:1fr 1fr"],[style*="grid-template-columns:1.1fr 1fr"],[style*="grid-template-columns:1.2fr 1fr"],[style*="grid-template-columns:1fr 1.2fr"],
+  [style*="grid-template-columns:1.25fr 1fr"],[style*="grid-template-columns:1fr 2fr"],[style*="grid-template-columns:1fr 1.5fr"],[style*="grid-template-columns:1.3fr 1fr"],
+  [style*="grid-template-columns:1.4fr 1fr"],[style*="grid-template-columns:1fr auto"],[style*="grid-template-columns:2fr 1fr 1fr"],
+  [style*="grid-template-columns:200px 1fr"],[style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+  [style*="position:sticky"]{position:static!important}
+  [style*="grid-row:span 2"]{grid-row:auto!important}
+  .about-grid,.contact-grid,.service-detail-grid,.two-col,.split{grid-template-columns:1fr}
+  .page-hero,.page-hero--photo{min-height:480px;padding:130px 0 48px}
+  .page-hero h1{font-size:clamp(44px,11vw,80px)}
+  .page-hero p.lead{font-size:17px}
+  .section{padding-block:40px}
+  .section-head{margin-bottom:32px}
+  .cta-banner h2{font-size:clamp(2rem,8vw,3rem)}
+  .ba-stage{max-width:100%}
+}
+
+/* ---- ≤600: phones — everything single column ---- */
+@media (max-width:600px){
+  [style*="grid-template-columns:repeat(3,1fr)"],[style*="grid-template-columns:repeat(4,1fr)"],[style*="grid-template-columns:repeat(2,1fr)"]{grid-template-columns:1fr!important}
+  .process-grid,.services-grid,.why-grid,.included-grid,.testimonial-grid,.pricing-grid,.footer-grid,.trust-points,.photo-grid,.also-chips{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+  /* homepage hero */
+  h1[style*="font-size:clamp(72px"]{font-size:clamp(52px,16vw,88px)!important}
+  section[style*="min-height:880px"]{min-height:auto!important;padding-top:140px}
+  section[style*="min-height:640px"],section[style*="min-height:560px"],section[style*="min-height:520px"]{min-height:auto!important;padding-top:120px}
+  [style*="padding-bottom:72px"],[style*="padding-bottom:64px"]{padding-bottom:40px!important}
+  /* button rows wrap and go full-width */
+  [style*="display:flex;gap:12px"]{flex-wrap:wrap}
+  [style*="display:flex;gap:12px"] .btn,.hero-ctas .btn,.cta-banner .btns .btn{width:100%;justify-content:center}
+  .cta-banner .btns{flex-direction:column;gap:12px}
+  /* stat strips */
+  [style*="border-right:1px solid rgba(255,255,255,.08)"]{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.08)}
+  /* headings + copy */
+  h2{font-size:clamp(1.8rem,8vw,2.5rem)}
+  h2[style*="font-size:56px"],h2[style*="font-size:64px"],h2[style*="font-size:72px"],h2[style*="font-size:40px"]{font-size:clamp(1.9rem,8.5vw,2.75rem)!important}
+  h3[style*="font-size:26px"],h3[style*="font-size:28px"]{font-size:22px!important}
+  blockquote[style*="font-size:34px"],blockquote[style*="font-size:40px"]{font-size:26px!important}
+  p[style*="font-size:19px"],p[style*="font-size:18px"]{font-size:16px!important}
+  [style*="font-size:clamp(56px,8vw,112px)"]{font-size:clamp(44px,12vw,72px)!important}
+  /* big radii shrink */
+  [style*="border-radius:32px"],[style*="border-radius:24px"]{border-radius:18px!important}
+  [style*="padding:48px"],[style*="padding:64px"]{padding:28px 22px!important}
+  .contact-form,.side-card,.answer-box{padding:22px}
+  .service-card{padding:22px}
+  /* tables in pricing/blog scroll instead of overflow */
+  table{display:block;overflow-x:auto;white-space:nowrap}
+  /* forms */
+  .platy-form-mount iframe{min-height:620px}
+  input,select,textarea{font-size:16px}   /* prevents iOS zoom */
+  /* photo aspect: taller tiles get shorter on phones */
+  .yd-tile{aspect-ratio:4/3}
+  [style*="aspect-ratio:4/5"]{aspect-ratio:4/3!important}
+  /* nav */
+  .nav-inner{gap:8px}
+  .nav-banner{height:34px}
+  .nav-cta{display:none!important}
+  .hamburger{display:inline-flex!important}
+  .nav-links{max-height:calc(100vh - 110px);overflow-y:auto}
+  .nav-mobile-cta{display:flex!important;justify-content:center}
+  .review-bar{display:none}
+}
+@media (max-width:400px){
+  h1[style*="font-size:clamp(72px"]{font-size:48px!important}
+  .page-hero h1,[style*="font-size:clamp(56px,8vw,112px)"]{font-size:40px!important}
+}

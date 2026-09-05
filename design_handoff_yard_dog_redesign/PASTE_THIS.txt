@@ -1,0 +1,1 @@
+Read design_handoff_yard_dog_redesign/CLAUDE_CODE_PROMPT.js and follow the instructions inside it exactly, start to finish, without asking me questions. Reply with the Vercel preview URL when done.

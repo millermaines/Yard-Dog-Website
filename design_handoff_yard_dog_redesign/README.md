@@ -24,7 +24,7 @@ numbered photo tiles, white/bone content bands, navy footer, Platy request forms
 - Nav: pill navbar, links visible ≥860px, hamburger below. Ghost "Join the Pack" → `/careers`.
 
 ## Mobile
-`redesign.css` carries the whole responsive layer (≤1024 / ≤900 / ≤600 / ≤400 breakpoints): inline grids collapse, heroes lose their fixed min-height, buttons go full-width, 4-col stat strips stack, nav collapses to the hamburger with the mobile CTAs, inputs stay at 16px so iOS won't zoom. Sub-pages inherit all of it because they load the same file. Run the scripted mobile QA in `CLAUDE_CODE_PROMPT.txt` step 5 across every page before merging.
+`redesign.css` carries the whole responsive layer (≤1024 / ≤900 / ≤600 / ≤400 breakpoints): inline grids collapse, heroes lose their fixed min-height, buttons go full-width, 4-col stat strips stack, nav collapses to the hamburger with the mobile CTAs, inputs stay at 16px so iOS won't zoom. Sub-pages inherit all of it because they load the same file. Run the scripted mobile QA in `CLAUDE_CODE_PROMPT.js` step 5 across every page before merging.
 
 ## What changed in v2 (color fix)
 - Root cause of the white-on-white bug: the repo's `styles.css` has no `--yd-*` CSS variables, and the preview pages were loading the live site's CSS. Every color in the 8 pages is now a literal hex; `redesign.css` no longer restyles `.btn` or global `a` (that was turning primary-button text dark).

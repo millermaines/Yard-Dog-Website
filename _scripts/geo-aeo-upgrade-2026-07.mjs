@@ -233,7 +233,7 @@ function buildLlmsTxt() {
 
 > Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 143 Google reviews, fully insured, with free written quotes. Request a quote at ${BASE}/contact.
 
-Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, leaf removal with a leaf vacuum (no bags), irrigation and sprinkler systems (under Texas Licensed Irrigator Matthew Maines, LI0006657), and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
+Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, leaf removal with a leaf vacuum (no bags), irrigation and sprinkler systems (Texas Licensed Irrigator LI0006657), and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
 
 ## Services
 ${services}

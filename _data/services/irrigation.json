@@ -3,14 +3,14 @@
   "name": "Irrigation & Sprinkler Systems",
   "short": "irrigation",
   "title": "Sprinkler System Installation & Repair in Longview, TX | Yard Dog",
-  "meta": "Sprinkler system installation and repair in Longview, TX by a Texas licensed irrigator (LI0006657). Permits pulled, zones designed for East Texas yards. Free walkthrough.",
+  "meta": "Sprinkler system installation and repair in Longview, TX by a Texas licensed irrigator. Permits pulled, zones designed for East Texas yards. Free walkthrough.",
   "h1": "Irrigation & sprinkler systems in Longview",
   "kicker": "Irrigation",
   "lede": "New sprinkler systems and repairs to the one you have, designed and installed under a Texas licensed irrigator, with the permits pulled. Priced after a free walkthrough.",
-  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that designs, installs and repairs lawn sprinkler systems across East Texas. Irrigation work is done under Texas Licensed Irrigator Matthew Maines, LI0006657, who checks every system, and we pull the permits the job requires. We've worked East Texas yards since 2017 and hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day.",
+  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that designs, installs and repairs lawn sprinkler systems across East Texas. Irrigation work is done under a Texas licensed irrigator who checks every system, and we pull the permits the job requires. We've worked East Texas yards since 2017 and hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day.",
   "overview": [
     "A sprinkler system in East Texas has one job: put the right amount of water on each part of the yard and nothing on the driveway. Sun and shade, turf and beds, flat ground and slopes all drink differently, so we lay out zones around how the yard actually behaves instead of running one big loop and hoping. Lawns get heads spaced for full coverage, and beds get drip so the water goes to the roots instead of the leaves and the siding.",
-    "Texas treats irrigation as licensed work. A licensed irrigator has to design and install a system put in for hire, systems tied to city water need a backflow prevention device, and new automatic systems need a rain or freeze sensor so they don't run in a storm or a hard freeze. Our irrigation work is done under Matthew Maines, Texas Licensed Irrigator LI0006657, and we pull whatever permit the city or county requires before we dig.",
+    "Texas treats irrigation as licensed work. A licensed irrigator has to design and install a system put in for hire, systems tied to city water need a backflow prevention device, and new automatic systems need a rain or freeze sensor so they don't run in a storm or a hard freeze. Our irrigation work is done under a Texas licensed irrigator, and we pull whatever permit the city or county requires before we dig.",
     "Already have a system that isn't working right? We fix broken heads and lines, leaking valves, zones that won't come on, heads spraying the street, and controllers nobody has set since the house was built."
   ],
   "included": [
@@ -69,7 +69,7 @@
   "faq": [
     {
       "q": "Are you licensed to install sprinkler systems in Texas?",
-      "a": "Yes. Our irrigation work is designed and installed under Texas Licensed Irrigator Matthew Maines, license LI0006657, issued by the Texas Commission on Environmental Quality. He checks every system, and we pull the permits the job requires."
+      "a": "Yes. Our irrigation work is designed and installed under a Texas licensed irrigator, licensed by the Texas Commission on Environmental Quality, who checks every system. We pull the permits the job requires."
     },
     {
       "q": "How much does a sprinkler system cost in Longview, TX?",
@@ -99,8 +99,8 @@
   "town_template": {
     "h1": "Irrigation & sprinkler systems in {town}",
     "title": "Sprinkler System Installation in {town}, TX | Yard Dog Landscapes",
-    "meta": "Sprinkler system installation and repair in {town}, TX by a Texas licensed irrigator (LI0006657). Permits pulled, free walkthrough and written quote.",
+    "meta": "Sprinkler system installation and repair in {town}, TX by a Texas licensed irrigator. Permits pulled, free walkthrough and written quote.",
     "lede": "New sprinkler systems and repairs for {town} yards, designed and installed under a Texas licensed irrigator, with the permits pulled.",
-    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, installs and repairs sprinkler systems in {town} and around {county}. Irrigation work is done under Texas Licensed Irrigator Matthew Maines, LI0006657, who checks every system, and we pull the permits the job requires. We hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day."
+    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, installs and repairs sprinkler systems in {town} and around {county}. Irrigation work is done under a Texas licensed irrigator who checks every system, and we pull the permits the job requires. We hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day."
   }
 }

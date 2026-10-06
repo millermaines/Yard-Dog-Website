@@ -83,15 +83,9 @@ def quote_section(s=None, town=None, fid='q'):
             f'{quote_form(fid, preselect=pre, town=town["name"] if town else None)}</div></section>')
 
 # ======================================================================= service pages
-def lic_card():
-    """TCEQ: irrigation advertising has to show the licensed irrigator's name and license number."""
-    return ('<aside class="lcard"><p class="lk">Texas Licensed Irrigator</p><b>LI0006657</b>'
-            '<p class="ln">Matthew Maines</p><p class="lt">Licensed by the Texas Commission on Environmental Quality</p>'
-            '<ul><li>Permits pulled</li><li>Backflow prevention on city water</li><li>Rain and freeze sensors on new systems</li></ul></aside>')
+LIC_NOTE = '<p class="licn">Texas Licensed Irrigator LI0006657</p>'  # TCEQ: irrigation ads show the license number
 
 def plain_hero(slug):
-    if slug == 'irrigation':
-        return '<section class="hero plain split2">', lic_card()
     return '<section class="hero plain solo">', ''
 
 def service_page(slug):
@@ -107,7 +101,7 @@ def service_page(slug):
     hero = (crumb([('Services', 'services'), (s['name'], slug)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(s["kicker"])}</p><h1>{e(s["h1"])}</h1><p class="lede">{e(s["lede"])}</p>'
             f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div>'
-            f'{facts_list(STD_FACTS)}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
+            f'{facts_list(STD_FACTS)}{LIC_NOTE if slug == "irrigation" else ""}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
     q = s['faq'][0]['q'] if False else None
     answer_q = {'christmas-lights': 'Who installs Christmas lights in Longview, TX?'}.get(slug) or f"Who does {s['short']} in Longview, TX?"
     if slug in ('hardscaping',):
@@ -265,7 +259,7 @@ def combo_page(slug, tslug, tidx):
     hero = (crumb([(f"{t['name']}, TX", tslug), (s['name'], name)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(t["name"])}, Texas</p><h1>{e(h1)}</h1><p class="lede">{e(fill(tt["lede"], t))}</p>'
             f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div>'
-            f'{facts_list([e(t["county"]) + ", Texas", STD_FACTS[1], STD_FACTS[2]])}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
+            f'{facts_list([e(t["county"]) + ", Texas", STD_FACTS[1], STD_FACTS[2]])}{LIC_NOTE if slug == "irrigation" else ""}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
     aq = {'hardscaping': f"Who builds patios and walkways in {t['name']}, TX?", 'retaining-walls': f"Who builds retaining walls in {t['name']}, TX?",
           'christmas-lights': f"Who installs Christmas lights in {t['name']}, TX?"}.get(slug, f"Who does {s['short']} in {t['name']}, TX?")
     body = hero + (f'<section class="sec"><div class="w"><div class="answer"><h2>{e(aq)}</h2><p>{e(fill(tt["answer"], t))}</p></div></div></section>'

@@ -244,7 +244,7 @@ def footer():
 <div><h3>Services</h3><ul>{svc}</ul></div>
 <div><h3>Service areas</h3><ul>{towns}</ul></div>
 <div><h3>Company</h3><ul><li><a href="/about">About us</a></li><li><a href="/our-work">Our work</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/design-preview">Design preview</a></li><li><a href="/blog">Blog</a></li><li><a href="/careers">Careers</a></li><li><a href="/contact">Free quote</a></li></ul></div>
-</div><p class="lic">Irrigation work is performed under Texas Licensed Irrigator Matthew Maines, LI0006657 (TCEQ).</p><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
+</div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
 <div class="mcta"><a class="q" href="/contact">Get a free quote</a></div>'''
 
 def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js='', robots='index, follow, max-image-preview:large',

@@ -15,9 +15,9 @@ SRC = os.path.join(ROOT, '_data', 'blog-src')   # original post HTML, kept as th
 FIXES = {
     'blog-east-texas-spring-fertilization': [('spring slow-release with pre-emergent for crabgrass', 'spring slow-release feeding')],
     'blog-mulch-depth-east-texas': [("""            <li><strong>Pre-emergent (optional).</strong> If you're fighting heavy weed pressure, a granular pre-emergent under the mulch buys you another two months of clean beds.</li>\n""", '')],
-    # Irrigation is offered now (Oct 2026), under Texas Licensed Irrigator Matthew Maines, LI0006657.
+    # Irrigation is offered now (Oct 2026).
     'blog-irrigation-mistakes-east-texas': [('and when a yard needs a system repaired, rerouted, or installed from scratch, we handle that too.',
-                                             'and when a yard needs a system repaired, rerouted, or installed from scratch, <a href="/irrigation">we handle that too</a>, under Texas Licensed Irrigator Matthew Maines, LI0006657.')],
+                                             'and when a yard needs a system repaired, rerouted, or installed from scratch, <a href="/irrigation">we handle that too</a>.')],
 }
 
 def txt(s):

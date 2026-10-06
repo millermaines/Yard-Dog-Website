@@ -1,0 +1,153 @@
+{
+  "slug": "marshall-tx",
+  "name": "Marshall",
+  "county": "Harrison County",
+  "counties_note": "",
+  "lat": null,
+  "lng": null,
+  "drive": "east of Longview on I-20 or US 80, past Hallsville",
+  "hub_title": "Landscaping & Lawn Care in Marshall, TX | Yard Dog Landscapes",
+  "hub_meta": "Lawn care, landscaping, hedge and shrub care, drainage and Christmas lights in Marshall, TX. Family-owned, same crew every visit. Call (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Marshall",
+  "lede": "Marshall is the Harrison County seat, east of Longview past Hallsville. We handle everything from weekly mowing to slow, careful work on older properties with established beds and big trees.",
+  "intro": [
+    "Yard Dog Landscapes does landscaping and lawn care in Marshall from our home base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and every job is done by Miller and a crew of four. The same crew shows up each visit, and we never hand the work off to anyone else. We carry full insurance, and our Google rating is 5.0 stars across 111 reviews. The walkthrough and the written, itemized estimate are free, usually within a day. Call or text (903) 844-6877 anytime.",
+    "Marshall is the Harrison County seat, and a lot of its homes have been standing a long time. Near downtown and in the older neighborhoods you find mature magnolias, pecans and oaks, azaleas that have been in the ground for decades, and beds that have been replanted over and over. Those yards need patient work: shaping old shrubs instead of shearing them, edging around big roots, and pruning at the right time of year. Newer homes and country lots on the edges of town are a different job, with more open turf and more sun.",
+    "The ground here is the same sandy topsoil over red clay as the rest of our area, so water that can't soak in sits on top. We look at drainage and shade on every walkthrough, then quote the work in writing. Marshall is part of our regular service area along with Hallsville, so getting out to see your yard is easy. We set the schedule after we've seen the property, rather than promising a day of the week up front."
+  ],
+  "areas": [
+    "Downtown Marshall",
+    "East Texas Baptist University area",
+    "Scottsville",
+    "Karnack"
+  ],
+  "landmarks": [
+    "Harrison County Courthouse on the downtown square",
+    "East Texas Baptist University",
+    "Wonderland of Lights",
+    "Caddo Lake"
+  ],
+  "yard_notes": [
+    {
+      "title": "Old plantings near downtown",
+      "text": "Older Marshall homes often have azaleas, camellias, boxwoods and magnolias that went in the ground decades ago. They get pruned by hand at the right time, not sheared flat in one pass."
+    },
+    {
+      "title": "Heavy shade, thin grass",
+      "text": "Big oaks and pecans shade a lot of older Marshall lawns, and bermuda gives up under that kind of canopy. Under the deepest trees, St. Augustine, a shade bed or plain mulch is usually the honest answer."
+    },
+    {
+      "title": "Sandy top, red clay below",
+      "text": "Rain soaks into the sandy topsoil fast, then stops at the clay and spreads sideways. That's why low corners and flat beds near the foundation stay wet after a storm."
+    },
+    {
+      "title": "More room outside town",
+      "text": "Toward Scottsville, Karnack and the county roads, lots open up into acreage with pasture and woods. Those get priced on the walkthrough because the time on site is so different."
+    }
+  ],
+  "popular": [
+    "hedge-trimming",
+    "tree-shrub-care",
+    "lawn-maintenance",
+    "landscaping",
+    "drainage",
+    "christmas-lights"
+  ],
+  "faq": [
+    {
+      "q": "Do you work in Marshall regularly, or is it a special trip?",
+      "a": "Marshall is part of our regular service area. It's east of Longview past Hallsville, an easy drive for us. We don't promise a set day of the week before we've seen your yard, but once you're on the schedule, the same crew comes every visit."
+    },
+    {
+      "q": "Do you work on older homes and established landscapes in Marshall?",
+      "a": "Yes, and we take our time on them. Old azaleas, boxwoods and magnolias get pruned by hand at the right time of year, and we edge around roots instead of tearing through them. We'll tell you what's worth saving and what's past it before we touch anything."
+    },
+    {
+      "q": "What does lawn and landscape work cost in Marshall?",
+      "a": "The same published ranges as the rest of our area. Weekly mowing on a typical lot runs about $50 to $65 per visit, hedge trimming is $150 to $800 for most jobs, and most landscaping and planting projects run $900 to $3,600. Every Marshall job still gets a free walkthrough and a written, itemized quote."
+    },
+    {
+      "q": "Do you go out toward Caddo Lake or the Louisiana line?",
+      "a": "Call and ask. Harrison County is in our service area, but the farther east you get past Marshall, the more it depends on the job. A patio, a wall or a Christmas light install is easier to schedule out there than weekly mowing, and we'll give you a straight answer on the phone at (903) 844-6877."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "In Marshall's older, shaded neighborhoods, lawns are mostly St. Augustine, and that grass thins out fast if it's mowed like bermuda. We keep it at three and a half to four inches through summer and only take the top third of the blade at a time. Sunny lots on the edges of town are more often bermuda, cut lower in spring and fall and raised to about two inches in the heat.",
+    "leaf-removal": "Old pecans, oaks and magnolias make for a long leaf season in Marshall, and magnolias drop leaves on and off all year. We plan a pass in mid-November and another in mid-December, and heavy-canopy lots may need a third. Leaves come out of the beds and off the lawn and get hauled away, because St. Augustine left under a wet mat all winter is how a lawn picks up fungus.",
+    "fertilization": "Shaded Marshall lawns need a lighter hand than open bermuda, since pushing a lot of nitrogen into St. Augustine that's short on sun just grows soft grass. Our four feedings land in late April after nights hold above 60 degrees, early July, early September, and late October, when a potassium winterizer goes down. Visits start from about $190, with soil testing and lime where the pH has dropped.",
+    "hedge-trimming": "Marshall has a lot of formal plantings around older homes, like boxwood borders, holly foundation hedges and big ligustrums along property lines. We trim by hand where the shape matters, keep the base wider than the top so the bottom doesn't go bare, and time hard rejuvenation cuts so overgrown hedges fill back in. Most jobs run $150 to $800, with every clipping hauled off.",
+    "tree-shrub-care": "Old crepe myrtles, azaleas and camellias show up all over Marshall, and topped crepe myrtles are as common here as anywhere in East Texas. We thin crepe myrtles in February instead of cutting them to knuckles, prune azaleas and camellias right after they bloom, and leave healthy oaks alone until the cold months. Tree and shrub care is quoted after a walkthrough, based on how many plants there are and their condition.",
+    "tree-planting": "When an old Marshall shade tree comes down in a storm, the yard changes overnight, and beds and grass that grew up in shade suddenly get full sun. We plant replacement trees from October through February when we can, matched to the spot, and adjust the plants underneath for the new light. Tree planting is quoted after we see the site, since the species, the size and the access set the price.",
+    "sod-installation": "Sod in Marshall often means replacing grass that thinned out under shade, so we map the sun before we pick the grass. St. Augustine goes under trees that let through four to six hours of light, bermuda goes where there's six or more, and below that we'd talk about a bed instead of turf. Most projects run $1,500 to $4,700, priced by the pallet.",
+    "landscaping": "Landscaping an older Marshall home usually means working with what's already there: keeping the camellias and magnolias worth saving, pulling what's overgrown or dying, and planting new beds that suit the age and style of the house. We'd rather tell you a 40-year-old azalea can come back with the right pruning than sell you a replacement. Most projects run $900 to $3,600, and refreshes start at a few hundred.",
+    "flower-bed-installation": "Marshall beds under old trees fight root competition and shade, so we pick plants that can handle it and amend the soil without chopping through big roots. In the sunnier spots we lean on knockout roses, salvia, lantana and plumbago that hold up through August. Every bed gets a clean edge and mulch at an inch to an inch and a half, not the three inches the bag calculators suggest.",
+    "mulch-installation": "Older beds can end up with years of mulch piled against trunks and siding, which holds moisture where you don't want it and does the plants no good. In Marshall we pull that buildup back, re-cut the edge, and lay fresh mulch at an inch to an inch and a half with no fabric underneath. Most bed refreshes run $600 to $2,400, depending on the number of beds and the yards of mulch.",
+    "hardscaping": "Around Marshall's older homes, we build walkways and patios that fit the house, like natural flagstone or pavers in a color that sits right next to old brick. Big tree roots near the patio site change the layout, so we plan around them instead of cutting them out. Every patio goes on a compacted crushed stone base pitched away from the house, and most projects run $3,100 to $9,100.",
+    "retaining-walls": "Walls in Marshall come up on sloped lots, along driveways cut into a bank, and around old beds where the soil has washed down over the years. Every wall we build starts below grade on a compacted base, with gravel and a perforated drain behind it carried to daylight, because water trapped in the clay behind a wall is what pushes it over. Height and length set the price, and most Marshall walls land between $3,000 and $19,000.",
+    "drainage": "Marshall's sandy topsoil over red clay means rain soaks in fast and then stops, so water spreads across the yard and sits in low corners and against foundations. Older homes add their own problems, like downspouts that empty into beds or a yard that has settled over the years. Small fixes run $450 to $1,000, and most drainage projects fall between $2,000 and $3,750.",
+    "christmas-lights": "Marshall already does Christmas big with the Wonderland of Lights downtown, and if you want your own house to match the season, we can handle it. We supply the lights, custom-cut C9 lines to the roofline, take everything down after the season and store it. Marshall is well within an hour of Longview, so most homes start at $900, and we can quote from a photo without a visit."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Why does my St. Augustine keep thinning under the trees in Marshall?",
+      "a": "Usually it isn't getting enough sun, and it's being mowed too short. St. Augustine needs four to six hours of light and should stay at three and a half to four inches in summer. Under the deepest shade, no turf holds up for long, and a shade bed or mulch is the better fix."
+    },
+    "leaf-removal": {
+      "q": "Can I just mulch my leaves with the mower in Marshall?",
+      "a": "Early in the season, yes. A light leaf drop in October can be mowed back into the lawn with the deck raised a half inch, as long as the leaves are dry. Once the big oaks and pecans unload in November and you can't see grass after a pass, it's time for removal."
+    },
+    "fertilization": {
+      "q": "When should I fertilize my lawn in Marshall?",
+      "a": "Not in March. Soil in Harrison County usually doesn't reach 65 degrees until mid-April, and fertilizer put down earlier mostly washes out or feeds the weeds. The first feeding goes down around late April once nights hold above 60 degrees, and our program continues in early July, early September and late October."
+    },
+    "hedge-trimming": {
+      "q": "My old boxwoods in Marshall are bare at the bottom. Can they be saved?",
+      "a": "Often, yes. Bare bottoms usually come from years of shearing the top wider than the base, which shades out the lower branches. We reshape them with a narrower top so light reaches the bottom again. Badly overgrown shrubs may need a harder rejuvenation cut and a season to fill back in."
+    },
+    "tree-shrub-care": {
+      "q": "When should I prune the azaleas at my Marshall house?",
+      "a": "Right after they finish blooming in spring, and no later than about mid-June. Azaleas set next year's buds in summer, so cutting them in fall or winter takes off the flowers. Camellias also get pruned right after they bloom. If you've missed the window, leave them alone until after next spring's bloom."
+    },
+    "tree-planting": {
+      "q": "What should I plant to replace a big tree I lost in Marshall?",
+      "a": "It depends on the spot. Live oak, post oak and southern magnolia make long-lived shade if they have room, and bald cypress and river birch handle wetter ground. We plant in fall or winter when we can and set the root flare at grade, since trees planted too deep in our clay slowly decline over their first few years."
+    },
+    "sod-installation": {
+      "q": "Can you sod over ground that was dug up for a foundation or drainage repair in Marshall?",
+      "a": "Yes. We clear out debris, settle and level the fill, work in two to three inches of compost or topsoil, and lay sod with tight, staggered seams. Fill that hasn't settled sinks later and leaves low spots, so we take the time to get the grade right first."
+    },
+    "landscaping": {
+      "q": "Will you keep my existing plants when you landscape my Marshall yard?",
+      "a": "Where they're healthy and in the right spot, yes. Established shrubs and trees are worth a lot, and many come back with good pruning. We'll walk the beds with you, mark what stays, what gets moved and what goes, and put all of it in the written estimate."
+    },
+    "flower-bed-installation": {
+      "q": "What flowers do well in a shady Marshall bed?",
+      "a": "Azaleas and hydrangeas are the backbone of most shaded East Texas beds, as long as they get morning sun and afternoon shade. For deep shade under big trees, we lean on ferns and other shade plants instead of fighting for flowers. We match the plant list to the light you actually have."
+    },
+    "mulch-installation": {
+      "q": "How often should I re-mulch beds in Marshall?",
+      "a": "Most beds need a thin top-off each spring, and a light fall top-dress keeps them looking finished through winter. Shredded hardwood breaks down in about a year, which is the point, since it feeds the soil. We keep the total depth at an inch to an inch and a half rather than piling on more."
+    },
+    "hardscaping": {
+      "q": "Can you build a patio near a big oak in Marshall without hurting the tree?",
+      "a": "Usually, if we plan for it. We keep excavation away from the area closest to the trunk where the main roots run, adjust the patio shape if needed, and avoid cutting large roots. If a design would mean cutting through big roots, we'll tell you and suggest another layout."
+    },
+    "retaining-walls": {
+      "q": "My old retaining wall in Marshall is leaning. Can you rebuild it?",
+      "a": "Yes. Leaning walls almost always failed because water built up behind them or the base wasn't compacted. We tear out the old wall, dig below grade, compact a crushed stone base, and rebuild with gravel backfill and a drain to daylight. Taller walls get geogrid tied back into the slope."
+    },
+    "drainage": {
+      "q": "How much does it cost to fix drainage at a Marshall house?",
+      "a": "Small fixes like rerouting a downspout or draining one low spot run $450 to $1,000. A standard single French drain run is usually $1,900 to $3,000, a full system runs $3,000 to $4,500, and large jobs go past $4,500. We price yours after walking it, ideally during or right after a rain."
+    },
+    "christmas-lights": {
+      "q": "Can you put Christmas lights on a commercial building in Marshall?",
+      "a": "Yes. We do residential and commercial installs, in warm white or color. We supply the lights, custom-cut them to the roofline, take them down after the season and store them. Send us photos of the building and we'll quote it remotely with a mock-up."
+    }
+  },
+  "nearby": [
+    "hallsville-tx",
+    "longview-tx",
+    "carthage-tx"
+  ]
+}

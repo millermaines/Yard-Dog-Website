@@ -1,0 +1,69 @@
+{
+  "slug": "sod-installation",
+  "name": "Sod Installation",
+  "short": "sod installation",
+  "title": "Sod Installation Longview TX | Yard Dog Landscapes",
+  "meta": "Sod installation in Longview, TX. Bermuda, St. Augustine or Zoysia matched to your sun, laid tight over prepped soil. Most projects $1,500 to $4,700.",
+  "h1": "Sod installation in Longview & East Texas",
+  "kicker": "Sod installation",
+  "lede": "Bermuda, St. Augustine or Zoysia matched to how much sun your yard gets, laid over soil we prep first. Most projects run $1,500 to $4,700.",
+  "answer": "Yard Dog Landscapes is a family-owned crew in Longview, TX, founded in 2017 and rated 5.0 stars across 111 Google reviews. We strip old turf, level and amend the soil, then lay bermuda, St. Augustine or Zoysia with tight, staggered seams and starter fertilizer, and leave you a watering plan. Most projects run $1,500 to $4,700, priced by the pallet. Square footage, grass type and how much prep the ground needs set the price. Call (903) 844-6877.",
+  "overview": [
+    "Sod takes or fails because of what happens before the pallets show up. We strip whatever is there down to bare dirt, dead turf and weeds included, regrade where water needs to move, and till in two to three inches of compost or topsoil. Then we level and roll the bed so the sod sits flat.",
+    "We lay it tight with staggered seams and no gaps, put down starter fertilizer, and hand you a watering schedule you can actually follow. Picking the right grass matters just as much. Bermuda needs six to eight hours of direct sun. St. Augustine holds on with four to six. Zoysia sits in between. A lot of yards should be split, bermuda in the sunny front and St. Augustine under the trees out back. We'll tell you which fits before we price it."
+  ],
+  "included": [
+    "Old turf and weeds stripped to bare soil",
+    "Regrading and leveling",
+    "Two to three inches of compost or topsoil tilled in",
+    "Bermuda, St. Augustine or Zoysia matched to your sun",
+    "Tight, staggered seams with full coverage",
+    "Starter fertilizer at install",
+    "Written watering schedule",
+    "Patch repairs, plugs and full-yard installs"
+  ],
+  "process": [
+    {"title": "Map the sun", "text": "We walk the yard, note where the sun actually falls in summer, and recommend a grass, or a split, for each area."},
+    {"title": "Measure and quote", "text": "We measure the square footage and send a written quote priced by the pallet."},
+    {"title": "Prep the ground", "text": "Old turf and weeds come out, the grade gets set, and compost or topsoil is tilled in, leveled and rolled."},
+    {"title": "Lay it tight", "text": "Sod goes down with staggered seams and no gaps, over starter fertilizer."},
+    {"title": "Water it in", "text": "You get a daily morning watering schedule for the first two weeks, then a taper to deep, less frequent soaks once the roots take hold."}
+  ],
+  "price": {
+    "range": "$1,500–$4,700",
+    "unit": "most projects",
+    "note": "Sod is priced by the pallet based on the square footage you're covering. Small patch repairs cost less, and large full-yard installs with heavy prep cost more.",
+    "factors": [
+      "Square footage",
+      "Grass type",
+      "Removal of old turf",
+      "Grading and soil amendment",
+      "How the site drains",
+      "Access for pallets"
+    ]
+  },
+  "timing": "Bermuda goes down best from late April through August, and St. Augustine from May through September, when the ground is warm. St. Augustine needs four to six weeks of root growth before dormancy, so get it in by the end of September. Laid in November, it sits on the ground like a rug.",
+  "east_texas": {
+    "title": "Sun picks the grass, not the price",
+    "text": [
+      "The most common mistake we see is bermuda sodded in a shady yard because it's cheaper and people hear it's tough. In shade, bermuda quits. Under a pine canopy or on the north side of a two-story house it thins to dirt by August no matter how it's fed.",
+      "For sun we usually lay Tif419 bermuda. For shade it's St. Augustine, in Floratam, Palmetto or Raleigh depending on how much shade tolerance the spot needs. Under about four hours of sun no turf thrives long-term, and that spot is better as a shade bed or mulch. Watering is the other half. New sod needs a deep morning soak every day for the first two weeks. Skip that in July heat and a $4,000 install can brown out in two weeks."
+    ]
+  },
+  "faq": [
+    {"q": "How much does sod installation cost in Longview, TX?", "a": "Most sod projects in Longview run $1,500 to $4,700. Sod is priced by the pallet based on the square footage you're covering, so a patch repair costs less and a full-yard install costs more. Removing old turf, grading and soil amendment add to the total. We measure on site and send a written quote. Call (903) 844-6877."},
+    {"q": "Which sod is best for East Texas?", "a": "It depends on sun. Bermuda needs six to eight hours of direct sun and handles heat, kids and dogs better than anything. St. Augustine is the shade grass and holds on with four to six hours. Zoysia sits in between. Under four hours, no turf lasts. Plenty of yards should be split, and we map the sun before we recommend one."},
+    {"q": "How often should I water new sod?", "a": "Every morning for the first two weeks or so, deep enough to soak through the sod into the soil below, until the roots grab. After that, taper to two deep waterings a week that finish around sunrise, about an inch a week in summer. Evening watering keeps the blades wet all night, which invites fungus. We leave you a written schedule."},
+    {"q": "Do you prep the yard before laying sod?", "a": "Yes, and it's the most important part of the job. We strip old turf and weeds to bare dirt, regrade where needed, till in two to three inches of compost or topsoil, then level and roll. Prep is the difference between sod that holds for ten years and sod that thins out by year two."},
+    {"q": "Can you repair bare or dead patches with sod?", "a": "Yes. We do patch repairs with sod or plugs as well as full yards. St. Augustine has no seed and spreads only by surface runners, so a dead spot bigger than a few feet across won't close on its own before weeds find the bare dirt. Late summer is still a fine time to patch it. Waiting until October pushes it to next spring."}
+  ],
+  "related": ["lawn-maintenance", "fertilization", "drainage"],
+  "blog": ["blog-bermuda-vs-st-augustine-east-texas", "blog-fall-lawn-reset-east-texas", "blog-chinch-bugs-st-augustine"],
+  "town_template": {
+    "h1": "Sod installation in {town}",
+    "title": "Sod Installation in {town}, TX | Yard Dog Landscapes",
+    "meta": "Sod installation in {town}, TX. Bermuda, St. Augustine or Zoysia laid on prepped soil with tight seams and a watering plan. Most projects $1,500 to $4,700.",
+    "lede": "Bermuda, St. Augustine or Zoysia for {town} yards, matched to your sun and laid over soil we prep first.",
+    "answer": "Yard Dog Landscapes is a family-owned crew based in Longview that installs sod in {town} and around {county}. Founded in 2017, we hold a 5.0 rating across 111 Google reviews. We strip old turf, level and amend the soil, and lay bermuda, St. Augustine or Zoysia with tight seams, starter fertilizer and a watering plan. Most projects run $1,500 to $4,700, priced by the pallet based on square footage and prep. Call (903) 844-6877 for a free quote."
+  }
+}

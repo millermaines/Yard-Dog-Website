@@ -1,0 +1,149 @@
+{
+  "slug": "kilgore-tx",
+  "name": "Kilgore",
+  "county": "Gregg County",
+  "counties_note": "Kilgore also reaches into Rusk County.",
+  "lat": null,
+  "lng": null,
+  "drive": "a short drive southwest of Longview",
+  "hub_title": "Landscaping & Lawn Care in Kilgore, TX | Yard Dog Landscapes",
+  "hub_meta": "Landscaping and lawn care in Kilgore, TX: mowing, leaf cleanup, flagstone walkways, paver patios and drainage. Family-owned, 5.0 on Google. (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Kilgore",
+  "lede": "From weekly mowing under Kilgore's big pecans and pines to flagstone walkways and paver patios, the same Yard Dog crew does the work from the first walkthrough to the last cleanup.",
+  "intro": [
+    "Yard Dog Landscapes does landscaping and lawn care in Kilgore, TX, a short drive southwest of our home base in Longview. We're family-owned and have worked East Texas yards since 2017. Owner Miller Maines and the same crew of four handle every visit, and we never subcontract. We're fully insured and rated 5.0 on Google from 111 reviews, and every job starts with a free walkthrough and a written, itemized estimate, usually within a day. Call or text (903) 844-6877 anytime.",
+    "Kilgore is an oil town at heart, from the derricks downtown on the World's Richest Acre to the East Texas Oil Museum at Kilgore College. Its older neighborhoods carry heavy tree cover: big pecans, post oaks and loblolly pines that shade the lawns and drop leaves well into December. Under that canopy St. Augustine does better than Bermuda. The soil leans sandy and acidic after decades of pine needles, so it drains fast and runs low on nutrients.",
+    "This year we built two hardscapes here: a checkerboard concrete paver patio off a covered porch in April and a flagstone walkway with chopped stone borders and path lighting in September. We also handle the steady work in Kilgore, like mowing, leaf cleanup, hedges and fresh mulch. The town sits on the Gregg and Rusk county line, and we cover both sides. If you're in Kilgore and need anything from weekly mowing to a full backyard rebuild, the walkthrough and estimate are free."
+  ],
+  "areas": [
+    "Downtown Kilgore",
+    "Around Kilgore College",
+    "US 259 corridor",
+    "Rusk County side of Kilgore"
+  ],
+  "landmarks": [
+    "World's Richest Acre",
+    "Kilgore College",
+    "East Texas Oil Museum"
+  ],
+  "yard_notes": [
+    {
+      "title": "Heavy canopy",
+      "text": "Pecans, post oaks and pines cover a lot of Kilgore's older streets. That shade thins Bermuda, so most of those lawns are St. Augustine, and it means a big leaf drop every fall."
+    },
+    {
+      "title": "Sandy, acidic soil",
+      "text": "Decades of pine needles push Kilgore soil acidic, and the sand lets water and fertilizer wash through quickly. Soil tests and compost in the beds make a real difference here."
+    },
+    {
+      "title": "Water on flat ground",
+      "text": "Sandy topsoil drains well, but flat lots with clay or a hardpan layer underneath still pond after heavy storms, especially where downspouts empty."
+    }
+  ],
+  "popular": [
+    "lawn-maintenance",
+    "hardscaping",
+    "leaf-removal",
+    "landscaping",
+    "mulch-installation",
+    "drainage"
+  ],
+  "faq": [
+    {
+      "q": "Do you cover both the Gregg and Rusk County sides of Kilgore?",
+      "a": "Yes. Kilgore sits on the county line, and we work on both sides, from the neighborhoods around Kilgore College and downtown to homes off US 259. Call or text (903) 844-6877 if you're not sure you're in range."
+    },
+    {
+      "q": "How much does a paver patio or walkway cost in Kilgore?",
+      "a": "Most patio and hardscape projects run $3,100 to $9,100. Size, the stone or paver you pick, borders, lighting and how much base prep the ground needs all move the number. After a walkthrough we send a written, itemized estimate."
+    },
+    {
+      "q": "What have you built in Kilgore recently?",
+      "a": "In September 2026 we built a flagstone walkway with chopped stone borders and path lighting. In April 2026 we built a checkerboard concrete paver patio with gravel joints off a covered porch. Both sit on a dug-out, compacted base."
+    },
+    {
+      "q": "Why is my Kilgore lawn thin under the trees?",
+      "a": "Usually shade. Bermuda needs full sun, and under Kilgore's pecans and pines it fades out. St. Augustine handles partial shade better, and a higher mowing height helps any lawn hold on. Where the canopy is too dense for any grass, a bed with mulch and shade plants is the better answer."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Mowing in Kilgore often means working around trees: surface roots from pecans and oaks, low limbs, and shade that keeps one corner of the lawn growing slower than the rest. We keep St. Augustine tall, string-trim around trunks without nicking the bark and blow off walks and drives every visit. Weekly mowing for a typical yard runs about $50 to $65 a visit.",
+    "leaf-removal": "Kilgore's pecans and post oaks drop heavy through November and into December, and the pines add needles on top. Left on St. Augustine through a wet winter, that layer smothers the grass, so on wooded lots we usually plan two passes and haul it all off. Pricing comes after we see how much canopy you have.",
+    "fertilization": "Kilgore's sandy soil, after years of pine needles, tends to test acidic and low on nutrients. We start with a soil test, add lime where the numbers call for it and use slower-release nitrogen so the feeding doesn't wash straight through the sand. Programs follow the season, with visits starting from about $190.",
+    "hedge-trimming": "Kilgore's long, humid growing season keeps boxwoods, hollies and ligustrums pushing new growth from spring into fall. We shape them often enough to stay tight without cutting back into bare wood, and keep foundation hedges clear of windows and walkways. Hedge trimming here usually runs $150 to $800.",
+    "tree-shrub-care": "Under Kilgore's mature canopy, shrubs and understory trees compete for light and grow lopsided. We prune for shape and health, thin crepe myrtles instead of topping them and lift low limbs that block sun from the lawn, and small trees and shrubs that have outgrown their spot can come out. Every job is quoted after a walkthrough.",
+    "tree-planting": "Kilgore's sandy ground is easy to dig and drains freely, so new trees here mostly need steady water their first couple of summers. We plant in fall when we can, set the root ball at grade or a touch high and finish with a basin and mulch ring. Tree planting is priced once we've walked the site with you.",
+    "sod-installation": "In Kilgore the sod question is usually how much shade the trees throw. We lay St. Augustine where the canopy covers the yard and Bermuda only where it gets full sun, amending and leveling the fast-draining sand first and leaving a watering plan for the first weeks. Expect most jobs to fall between $1,500 and $4,700, priced by the pallet.",
+    "landscaping": "A Kilgore landscaping job might pair shade plantings with hardscape: a new walk to the front door, a bed reshaped around an old pecan, lighting along a path. We amend the sandy soil for moisture, pick plants that like acidic ground and finish with a clean edge. Most planting projects run $900 to $3,600, and refreshes start at a few hundred.",
+    "flower-bed-installation": "Kilgore's sandy, acidic beds are good ground for azaleas, camellias and other plants that like a lower pH, and harder on plants that want richer soil. We amend with compost, set the bed so water drains away from the house and pick plants for the light under the trees. Fall and early spring are the best times to plant.",
+    "mulch-installation": "With heavy pine and oak cover over a lot of Kilgore, beds catch leaves and needles all year. We clear the old debris, re-cut the edges and lay a fresh, even layer that holds moisture in the fast-draining sand. Bed refreshes here mostly run $600 to $2,400, and pine straw is available to match the trees overhead.",
+    "hardscaping": "We built two Kilgore hardscapes this year: a checkerboard concrete paver patio with gravel joints off a covered porch, and a flagstone walkway with chopped stone borders and path lighting. Both sit on a dug-out, compacted base so the sandy ground doesn't shift them. Patio and walkway projects mostly fall between $3,100 and $9,100.",
+    "retaining-walls": "Kilgore's sandy soil erodes and slumps once it's cut into a slope, so a wall here needs a compacted base set below grade, gravel backfill and weep outlets that let water out before it undercuts the footing. We build segmental block and natural stone walls, and most run $3,000 to $19,000 depending on height and length.",
+    "drainage": "Kilgore's sandy topsoil hides the problem: water soaks in fast, hits clay or a hardpan layer, then spreads across flat lots or pools against the slab. We trace where it goes after a storm, then regrade, extend downspouts or run French drains to a real outlet. Small fixes start around $450, and most projects run $2,000 to $3,750.",
+    "christmas-lights": "Kilgore is a short drive from our Longview shop, inside our standard install area. We supply warm white or color C9 lines custom-cut to the roofline, hang them, take them down after the season and store them, for homes and businesses alike. Most homes start at $900, quoted from a photo mock-up of the house."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "How high should St. Augustine be mowed in Kilgore?",
+      "a": "Never below three inches, and three and a half to four through the summer. Kilgore's shaded St. Augustine lawns need every bit of leaf they can keep. Cut it short and the runners scorch and thin out."
+    },
+    "leaf-removal": {
+      "q": "Can I just mulch the leaves into my Kilgore lawn?",
+      "a": "A light layer, yes. The heavy drop under Kilgore's pecans and oaks is too much to mulch in place, and it mats down over the grass. On those lots we collect and haul it off, then come back for the late leaves."
+    },
+    "fertilization": {
+      "q": "Do Kilgore lawns need lime?",
+      "a": "Often, but not always. Pine needles and sandy soil push a lot of Kilgore yards acidic, and low pH keeps grass from using the fertilizer you put down. A soil test tells us if lime is needed and how much."
+    },
+    "hedge-trimming": {
+      "q": "When should I trim hedges in Kilgore?",
+      "a": "Most evergreen hedges get shaped in early summer after the spring flush, then lightly through the growing season. Spring bloomers like azaleas get trimmed right after they flower, or you cut off next year's blooms."
+    },
+    "tree-shrub-care": {
+      "q": "Will you top my crepe myrtles in Kilgore?",
+      "a": "No. Topping leaves knuckles and a crop of weak shoots that flop under the weight of the blooms. We thin crepe myrtles in late winter instead, cutting back to a branch or the trunk, so they keep a natural shape and bloom well."
+    },
+    "tree-planting": {
+      "q": "Can I plant a tree under the big pecans in my Kilgore yard?",
+      "a": "Small understory trees like redbud or dogwood can work at the edge of a canopy. Planting tight under a mature pecan or oak means fighting its roots for water and light, and digging there can damage those roots. We'll find a spot where the new tree can grow without hurting the old one."
+    },
+    "sod-installation": {
+      "q": "Will new sod grow under the trees in my Kilgore yard?",
+      "a": "St. Augustine needs roughly four hours of direct sun to hold up. In deep shade under a dense canopy, no turf does well, and we'll tell you so before you pay for sod. Those spots usually do better as beds."
+    },
+    "landscaping": {
+      "q": "Can you add path lighting to a Kilgore landscaping project?",
+      "a": "Yes. The flagstone walkway we built in Kilgore in September 2026 included path lighting. We plan fixtures along with the layout so the light falls where you actually walk."
+    },
+    "flower-bed-installation": {
+      "q": "What grows well in Kilgore's acidic soil?",
+      "a": "Azaleas, camellias, gardenias and hydrangeas all handle acidic ground well, and so do many native shrubs. Plants that want neutral soil struggle unless the bed is amended. We pick for the soil and the sun you actually have."
+    },
+    "mulch-installation": {
+      "q": "How often should Kilgore beds get new mulch?",
+      "a": "Once a year in spring for most beds, with a light fall top-off if leaves and needles have broken the old layer down. Under heavy pine cover the old mulch disappears faster, so some beds need it twice."
+    },
+    "hardscaping": {
+      "q": "What are gravel joints on a paver patio?",
+      "a": "Instead of tight joints filled with sand, the pavers are spaced and the gaps are filled with gravel. On the checkerboard patio we built in Kilgore, that gravel gives the pattern its look and lets rain soak through instead of running off toward the house."
+    },
+    "retaining-walls": {
+      "q": "Do I need a retaining wall or just a regrade in Kilgore?",
+      "a": "If the slope is gentle, a regrade with plants or sod to hold the soil may be enough. Once the ground drops more than you can mow, or the soil keeps washing onto a walk or drive, a wall is usually the fix. We'll measure the grade and give you both options when both make sense."
+    },
+    "drainage": {
+      "q": "Can you fix drainage without tearing up my Kilgore yard?",
+      "a": "Most of the time. Downspout extensions, a regrade of one low spot or a single French drain run go in with limited digging, and we put the sod or stone back over the trench. Small fixes like these usually run $450 to $1,000."
+    },
+    "christmas-lights": {
+      "q": "Do you hang Christmas lights on businesses in Kilgore?",
+      "a": "Yes. We do residential and commercial installs. Commercial jobs are quoted the same way, from a photo mock-up of the building, and we handle install, takedown and storage."
+    }
+  },
+  "nearby": [
+    "longview-tx",
+    "white-oak-tx",
+    "henderson-tx",
+    "lake-cherokee-tx"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "slug": "carthage-tx",
+  "name": "Carthage",
+  "county": "Panola County",
+  "counties_note": "",
+  "lat": null,
+  "lng": null,
+  "drive": "a little over 30 miles southeast of Longview, in Panola County",
+  "hub_title": "Landscaping & Lawn Care in Carthage, TX | Yard Dog Landscapes",
+  "hub_meta": "Yard Dog Landscapes serves Carthage and Panola County with mowing, beds, sod, drainage, patios and Christmas lights. Free written quote: (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Carthage",
+  "lede": "Carthage is the Panola County seat, a little over 30 miles southeast of our Longview shop. We handle mowing, beds, sod, drainage, patios and Christmas lights for homes in town and out on the county roads.",
+  "intro": [
+    "Yard Dog Landscapes is a family-owned landscaping and lawn care company based in Longview, and Carthage is part of our East Texas service area. Miller Maines started the business in 2017. Today it is Miller plus a crew of four, the same crew every visit, and we never subcontract the work. We are fully insured and hold a 5.0 rating from 111 Google reviews. Call or text (903) 844-6877 any time, and we will set up a free walkthrough and send a written, itemized estimate, usually within a day.",
+    "Carthage yards tend to fall into two groups. In town, around the courthouse square and the older streets, you get established lots under big pines and hardwoods, with St. Augustine in the shade and foundation beds that have filled in over the years. Out past the city limits, toward Lake Murvaul, Beckville or Gary, it is more often an acre or more, a long drive, a pasture edge, and a lawn that is part Bermuda and part whatever came up on its own. Under all of it is Piney Woods sand over red clay, so the top dries out fast and the subsoil holds water.",
+    "Carthage is a longer run than Kilgore or White Oak, so we plan the work around the drive. Bigger installs like sod, drainage, patios and walls are where the trip pays off, and we set the walkthrough up so we see the whole property, including where the water goes after a rain. For weekly mowing, we will tell you on the first call how scheduling works for your address before you sign up for anything."
+  ],
+  "areas": [
+    "Downtown Carthage",
+    "Lake Murvaul",
+    "Beckville",
+    "Gary",
+    "US 59 and US 79 out of town"
+  ],
+  "landmarks": [
+    "Panola County Courthouse",
+    "Texas Country Music Hall of Fame",
+    "Panola College",
+    "Lake Murvaul"
+  ],
+  "yard_notes": [
+    {
+      "title": "Sand on top, red clay below",
+      "text": "Most Carthage lots have sandy loam over red clay. The surface dries out fast in July, and the clay underneath keeps low spots soggy after a long rain."
+    },
+    {
+      "title": "Acreage changes the job",
+      "text": "Homes outside town often sit on an acre or more. Fence lines, outbuildings and long drives take more time than the open turf, so that is what we look at when we price mowing."
+    },
+    {
+      "title": "Pines drop all year",
+      "text": "Loblolly pines drop needles year-round, heaviest in spring and fall, and the hardwoods unload in November. Beds under pines can take pine straw as mulch, but lawns under them need the needles cleared."
+    },
+    {
+      "title": "Shade and sun on one lot",
+      "text": "Plenty of in-town lots have mature trees shading one part of the yard and open sun on another. That usually means St. Augustine in the shade and Bermuda in the sun, each mowed at its own height."
+    }
+  ],
+  "popular": [
+    "lawn-maintenance",
+    "drainage",
+    "sod-installation",
+    "landscaping",
+    "leaf-removal",
+    "christmas-lights"
+  ],
+  "faq": [
+    {
+      "q": "Do you work in Carthage, or just Longview?",
+      "a": "We work in Carthage and around Panola County. Our shop is in Longview, a little over 30 miles northwest, and we drive out for walkthroughs, installs and maintenance. If you are out toward Lake Murvaul, Beckville or Gary, call or text with the address and we will tell you straight whether it fits."
+    },
+    {
+      "q": "What does landscaping cost in Carthage?",
+      "a": "Our published ranges are a good starting point. Weekly mowing runs about $50 to $65 a visit for a typical yard, with acreage priced after we walk it. Most landscaping and planting projects land between $900 and $3,600, sod between $1,500 and $4,700, and drainage between $2,000 and $3,750. Your number comes from a free walkthrough and a written estimate."
+    },
+    {
+      "q": "How much are Christmas lights in Carthage?",
+      "a": "Most homes start at $900. We supply the lights, custom-cut professional C9 lines to your roofline, install them, take them down after the season and store them until next year. We quote from a photo mock-up of your house, so you do not have to wait on a site visit to get a price."
+    },
+    {
+      "q": "My Carthage yard holds water after every rain. Can you fix that?",
+      "a": "Usually, yes. Sandy topsoil over red clay lets water soak in fast and then stall on the clay, so it spreads sideways toward the slab or the low corner. We walk the yard, find where the water starts and where it can outlet, then price a regrade, a French drain or a downspout reroute. Most drainage projects run $2,000 to $3,750."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Carthage lawns are often a mix: St. Augustine under the trees out front, Bermuda in the open back, and on bigger lots a pasture edge that never got sodded. We mow each grass at its own height, edge the drive and walks, and blow clippings back into the turf instead of bagging them. Weekly mowing runs about $50 to $65 a visit for a typical yard, with acreage priced after we walk it.",
+    "leaf-removal": "Between the pines, post oaks and pecans in older Carthage yards, leaf season starts in October and does not really end until February. We mulch the light early drop back into the lawn with the mower, then switch to full cleanup and haul-off once the November drop buries the grass, especially over St. Augustine, which suffers under a wet leaf mat. Leaf removal is quoted after a walkthrough.",
+    "fertilization": "On Carthage lots that run St. Augustine under the trees and Bermuda in the open, one bag rate across the whole yard does not work, because shaded St. Augustine needs a lighter hand while sunny Bermuda can use more. We feed on the four-step East Texas schedule, late April through a late October winterizer, and adjust the rate by area. Fertilization starts from about $190 per visit.",
+    "hedge-trimming": "Older Carthage homes often have foundation hedges of holly, ligustrum or boxwood that were sheared into boxes for years and went thin at the bottom. We shape them so light reaches the lower branches, and we time hollies and boxwoods for early summer after the spring flush. Most hedge jobs run $150 to $800, and we haul off every clipping.",
+    "tree-shrub-care": "Mature Carthage yards tend to have crepe myrtles, azaleas and big shade trees, and each one wants pruning at a different time of year. We thin crepe myrtles in February instead of topping them, prune azaleas right after they bloom, clear dead lower limbs that keep the lawn in shade, and take out small trees and overgrown shrubs that have outlived their spot. This work is quoted after a walkthrough.",
+    "tree-planting": "On open Carthage lots, a shade tree on the west side of the house does the most work. We match the tree to the sun, the drainage and the room overhead, plant it with the root flare at grade, and mulch a wide ring pulled back off the trunk, ideally between October and February so the roots grow all winter. Tree planting is quoted after a walkthrough.",
+    "sod-installation": "If your Carthage lawn thinned out as the trees grew in, or you are starting from bare dirt on a new build, sod is the fast fix. We read the sun first, then lay St. Augustine in the shade and Bermuda in full sun over ground that has been stripped, amended and leveled. Sod is priced by the pallet, and most projects run $1,500 to $4,700.",
+    "landscaping": "On older Carthage homes, the usual story is good bones and tired beds: overgrown foundation shrubs, edges that melted into the lawn, and plants that quit years ago. We pull what is not working, reshape the beds and replant with things that handle our heat and sand. Most projects run $900 to $3,600, and smaller refreshes start at a few hundred dollars.",
+    "flower-bed-installation": "Carthage beds either bake in full afternoon sun on open lots or sit in heavy shade under pines, so one plant list does not fit every yard. We build new beds with clean edges and loosened soil, plant sun beds with heat-tough picks like lantana, salvia and knockout roses, and fill shade beds with azaleas and hollies. Most planting projects land between $900 and $3,600.",
+    "mulch-installation": "With pines on so many Carthage lots, a lot of beds already collect needles, and pine straw makes a fine mulch on its own. For hardwood mulch, we re-cut the edges, pull the weeds by hand and lay 1 to 1.5 inches over a clean bed, with no landscape fabric underneath. Most bed refreshes run $600 to $2,400.",
+    "hardscaping": "Patios in Carthage sink when they are laid on topsoil over clay that swells and shrinks with the weather. We dig past the topsoil, build and compact a crushed stone base, and pitch the surface so water runs off and away from the house, and flagstone, pavers, walkways and fire pits all start from that same base. Most hardscape projects run $3,100 to $9,100.",
+    "retaining-walls": "Even a modest slope behind a Carthage house can wash out a bed or push soil against a fence after a few hard rains. We build segmental block and stone walls on a compacted base with gravel and a drain behind them, because water trapped in clay is what tips a wall over. Most walls run $3,000 to $19,000 depending on height and length.",
+    "drainage": "Carthage soil is the classic East Texas setup, sandy loam on top and red clay underneath, so rain soaks in fast, hits the clay and moves sideways toward the slab and the low corner of the yard. We fix it with regrading, French drains in sock-wrapped pipe and clean stone, and downspout reroutes that run to a real outlet. Most projects run $2,000 to $3,750.",
+    "christmas-lights": "Carthage sits inside our standard Christmas light range, so most homes start at $900. We light homes and businesses in warm white or color, with professional C9 lines custom-cut to the roofline, then take everything down after the season and store it. Send a photo and we will quote it from a mock-up, no site visit needed."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Can you mow a few acres outside Carthage?",
+      "a": "Yes, the lawn part. We mow, trim and edge the turf around the house and along the drive. Open pasture and brush is a different job with different equipment, so we will tell you on the walkthrough what we can take on and price the lawn on its own."
+    },
+    "leaf-removal": {
+      "q": "How many leaf cleanups does a Carthage yard need?",
+      "a": "It depends on the trees. A yard with a couple of pecans may need one or two passes. A lot under post oaks, sweetgums and pines often needs one in mid-November, one in mid-December and a last pass before spring green-up, because post oaks hold leaves into February."
+    },
+    "fertilization": {
+      "q": "Should I fertilize my shady St. Augustine as much as my sunny Bermuda?",
+      "a": "No. Grass in shade grows slower and uses less, and pushing heavy feedings into shaded St. Augustine mostly makes soft growth. Sunny Bermuda can handle more. We test the soil, check whether lime is needed for the pH, and set the rate by area instead of one number for the whole yard."
+    },
+    "hedge-trimming": {
+      "q": "When should hedges be trimmed in Carthage?",
+      "a": "Hollies, boxwoods and ligustrum get their main shaping in early summer after the spring flush, with a lighter touch-up in early fall if needed. Azaleas get trimmed right after they bloom so you do not cut off next spring's flowers. We avoid hard cuts in August, since new growth will not harden off before the first freeze."
+    },
+    "tree-shrub-care": {
+      "q": "Can you bring back crepe myrtles that were topped?",
+      "a": "Usually, yes. Each February we keep the two or three best shoots on each knuckle and cut the rest flush. After a few seasons the knuckles disappear into the canopy and the tree looks like a crepe myrtle again. If the knuckles have rot in them, cutting it to the ground and regrowing the trunks can be the better call."
+    },
+    "tree-planting": {
+      "q": "What trees do well in Carthage yards?",
+      "a": "Native and well-adapted trees: live oak, Shumard oak, southern magnolia, redbud, bald cypress in wetter spots, and crepe myrtles sized for the space. We look at the sun, the drainage and the room overhead before we pick, so nothing has to be cut back to fit later."
+    },
+    "sod-installation": {
+      "q": "Should my Carthage yard be Bermuda or St. Augustine?",
+      "a": "That comes down to sun. Bermuda needs six to eight hours of direct sun and takes heavy traffic. St. Augustine will grow on four to five hours and handles the shade under pines and oaks. A lot of yards here need both, and we map the sun before we order a single pallet."
+    },
+    "landscaping": {
+      "q": "Can you redo the beds on an older Carthage home without starting over?",
+      "a": "Often, yes. We keep the healthy shrubs that fit their spot, pull the ones that outgrew it, reshape the bed lines and replant around what stays. A refresh like that can start at a few hundred dollars. Bigger redesigns usually land between $900 and $3,600."
+    },
+    "flower-bed-installation": {
+      "q": "What flowers survive a Carthage summer?",
+      "a": "In full sun, lantana, annual vinca, salvia, plumbago and knockout roses hold up through July and August. They all want good drainage and hate soggy roots, so we loosen the soil and build the bed to drain. In shade, we lean on azaleas, hollies and other shrubs that like acidic soil."
+    },
+    "mulch-installation": {
+      "q": "Is pine straw or hardwood mulch better in Carthage?",
+      "a": "Both work here. Pine straw looks natural under pines and knits together on a slope. Hardwood gives a darker, finished look and builds the soil as it breaks down. Either way, we keep hardwood around 1 to 1.5 inches deep and pull everything back off plant stems."
+    },
+    "hardscaping": {
+      "q": "Can you add a fire pit next to an existing patio?",
+      "a": "Usually, yes, if the patio is sound and there is room. A stone or block fire pit gets its own compacted base beside the patio, tied in with a short walkway or seating wall. We look at the setup on the walkthrough and price it in writing before any digging."
+    },
+    "retaining-walls": {
+      "q": "Do I need a retaining wall or just better drainage?",
+      "a": "Sometimes the answer is drainage. If soil is washing because water runs across the slope, a swale or French drain may fix it for less. If the grade itself is moving, or you want flat, usable ground, that is a wall. We walk the slope and tell you which one you actually need."
+    },
+    "drainage": {
+      "q": "What does a French drain cost in Carthage?",
+      "a": "Small fixes like a downspout reroute run about $450 to $1,000. A standard single run is about $1,900 to $3,000, and full systems run $3,000 to $4,500. Most projects land between $2,000 and $3,750, depending on pipe length, depth and where the water can outlet."
+    },
+    "christmas-lights": {
+      "q": "Do I have to be home for a Christmas light quote in Carthage?",
+      "a": "No. We quote from a photo mock-up of your house, so you can text us a picture and get a price without a site visit. Most homes start at $900. We supply the lights, install them, take them down after the season and store them."
+    }
+  },
+  "nearby": [
+    "henderson-tx",
+    "marshall-tx",
+    "longview-tx",
+    "lake-cherokee-tx"
+  ]
+}

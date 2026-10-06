@@ -1,0 +1,107 @@
+{
+  "slug": "landscaping",
+  "name": "Landscaping",
+  "short": "landscaping",
+  "title": "Landscaping Services Longview TX | Yard Dog Landscapes",
+  "meta": "Landscaping in Longview, TX: beds, shrubs, trees, sod and rock borders built for East Texas clay. Most projects $900 to $3,600. Free walkthrough and quote.",
+  "h1": "Landscaping in Longview & East Texas",
+  "kicker": "Landscaping",
+  "lede": "Beds, shrubs, trees, sod and borders planned around East Texas clay and summer heat, and installed by the same family-owned crew from start to finish. Most projects run $900 to $3,600, and small refreshes start at a few hundred.",
+  "answer": "Yard Dog Landscapes is a family-owned, fully insured landscaping company in Longview, TX, working East Texas yards since 2017 with a 5.0 rating across 111 Google reviews. Miller and a crew of four handle design, bed prep, planting, trees and shrubs, sod, rock beds, edging and cleanup, and we never subcontract the work. Most projects run $900 to $3,600, with small refreshes starting at a few hundred. Size, plant choices and site access set the price. Call (903) 844-6877 for a free walkthrough.",
+  "overview": [
+    "Good landscaping here starts below the mulch. Most Longview yards sit on sandy loam over red clay, and plenty of them have deep pine shade in one spot and full afternoon sun in another. We walk the property, note where water runs and where the light falls, and lay out beds that fit the house and the way you use the yard. Plants get picked for that exact spot, not for whatever was on sale at the big-box store that week.",
+    "Then we build it. Beds get edged and prepped, heavy clay gets amended where it needs it, plants go in at the right depth, and every bed is finished with mulch or rock. We buy from regional growers, so the material is healthy and suited to the area. It's the same crew from the first shovel to the last rake, and we haul off the mess before we leave."
+  ],
+  "included": [
+    "Custom bed layout and design",
+    "Bed prep, edging and soil amendment",
+    "Native and adapted shrubs, perennials and seasonal color",
+    "Tree and shrub planting",
+    "Mulch and river rock beds with stone borders",
+    "Flagstone stepping-stone paths",
+    "Retaining walls and drainage where the site needs them",
+    "Full front and back yard installs"
+  ],
+  "process": [
+    {
+      "title": "Walk the property",
+      "text": "We look at sun, shade, slope and where water goes after a rain, and talk through what you want the yard to do."
+    },
+    {
+      "title": "Write the plan and price",
+      "text": "You get a written, itemized estimate with plants, sizes and materials, usually within a day. If you want to see it drawn first, a Design Preview gives you renderings before anything goes in the ground."
+    },
+    {
+      "title": "Prep the ground",
+      "text": "We cut the bed lines, pull weeds by the root, loosen compacted soil and work compost into heavy clay where it needs it."
+    },
+    {
+      "title": "Plant and finish",
+      "text": "Trees and shrubs go in with the root flare at grade, never buried. Then the beds get mulch or rock and a clean edge."
+    },
+    {
+      "title": "Clean up and walk it with you",
+      "text": "We haul off the debris, blow off the walks and drive, and go over how to water the new plants through their first season."
+    }
+  ],
+  "price": {
+    "range": "$900–$3,600",
+    "unit": "most projects",
+    "note": "That is our published range for landscaping and planting work. Small bed refreshes start at a few hundred dollars, and large custom designs run more.",
+    "factors": [
+      "Size of the area and number of beds",
+      "Number and size of plants",
+      "Mulch, rock and edging materials",
+      "How much the soil needs amending or regrading",
+      "Access for equipment and wheelbarrows",
+      "Add-ons like sod, walls or drainage"
+    ]
+  },
+  "timing": "Fall is the best planting window in East Texas. From September to about Thanksgiving the soil stays warm while the air cools, so trees and shrubs build roots for months before they see summer heat. Spring works for summer color once the soil warms up, but anything woody planted in April spends its first summer just trying to survive.",
+  "east_texas": {
+    "title": "Built for clay, pine shade and a Longview July",
+    "text": [
+      "Most of what we plant around Longview goes into sandy loam over red clay. Clay holds water for days after a soaking rain and bakes hard in a dry spell, so plants die from wet feet as often as from drought. We set trees and shrubs with the root flare at grade and backfill with native soil, not a pocket of bagged mix that turns into a bathtub.",
+      "Then there's the heat. A Longview July means weeks in the high 90s and soupy humidity, and petunias and impatiens are done by the Fourth. In the sun we lean on lantana, salvia, plumbago, vinca and knockout roses. Azaleas and hydrangeas go only where they're sited right, out of the worst afternoon sun."
+    ]
+  },
+  "faq": [
+    {
+      "q": "How much does landscaping cost in Longview, TX?",
+      "a": "Most landscaping and planting projects we do run $900 to $3,600. A small bed refresh starts at a few hundred dollars, and large custom designs run more. The size of the area, the plants and materials you pick, and how easy the site is to get into set the number. We walk it for free and send a written, itemized estimate, usually within a day."
+    },
+    {
+      "q": "What does a landscaping project with Yard Dog include?",
+      "a": "The whole job: layout, bed prep and edging, soil amendment, planting trees, shrubs and color, mulch or rock, and cleanup. If the plan needs sod, a wall or drainage to work, we build that too. You get a clear scope in writing before we start, and the same crew does the work from the first day to the last."
+    },
+    {
+      "q": "When is the best time to plant shrubs and trees in East Texas?",
+      "a": "Fall. From September through November the soil is still warm while the air cools off, and roots keep growing through most of our mild winter. A shrub planted in early October gets months of root growth before summer. One planted in April gets about eight weeks before the first 100-degree day. Keep watering through winter, especially before a hard freeze."
+    },
+    {
+      "q": "Do you put landscape fabric under mulch?",
+      "a": "No. Mulch breaks down into soil, and on top of fabric that new soil becomes a seed bed. In two or three years weeds root through the sheet and the bed is a mess to pull. We edge clean and mulch at 1 to 1.5 inches instead. Fabric does belong under river rock and gravel, and we install it there."
+    },
+    {
+      "q": "Can I see a design before you build?",
+      "a": "Yes. Our Landscape Design Preview gives you renderings of the space with a plant list and bed layout before anything goes in the ground. It's $199 for flower beds, $449 for hardscape and $999 for the full property, with one round of revisions. The fee is credited toward a qualifying install booked within 90 days."
+    }
+  ],
+  "related": [
+    "flower-bed-installation",
+    "hardscaping",
+    "tree-planting"
+  ],
+  "blog": [
+    "blog-fall-planting-window-east-texas",
+    "blog-flower-beds-that-survive-july",
+    "blog-landscape-fabric-under-mulch-east-texas"
+  ],
+  "town_template": {
+    "h1": "Landscaping in {town}",
+    "title": "Landscaping in {town}, TX | Yard Dog Landscapes",
+    "meta": "Landscaping in {town}, TX: beds, shrubs, trees, sod and rock borders built for East Texas clay by family-owned Yard Dog Landscapes. Free walkthrough.",
+    "lede": "Beds, shrubs, trees and borders for {town} yards, planned around East Texas clay and summer heat and installed by the same crew from start to finish.",
+    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, does landscaping in {town} and across {county}. We've worked East Texas yards since 2017 and hold a 5.0 rating across 111 Google reviews. We design and install beds, shrubs, trees, sod, rock borders and edging, with the same crew on every visit and nothing subcontracted. Most projects run $900 to $3,600, set by size, plants and access. Call (903) 844-6877 for a free walkthrough in {town}."
+  }
+}

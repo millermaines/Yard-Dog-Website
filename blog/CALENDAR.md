@@ -16,6 +16,27 @@ A Thursday-afternoon cron pings Miller on Telegram if the upcoming Saturday's
 slot hasn't been drafted yet (see `scripts/tools/yd-blog-due-reminder.ts`
 in `/root/alienkind`).
 
+## Publishing a post in the 2026 site design (read this first)
+
+The site was rebuilt in October 2026. Posts now use the new design, and the live site deploys from
+the `main` branch only. (Posts pushed to `feat/design-sync` in September never went live; they were
+folded into the rebuild.) To publish:
+
+1. Copy the newest `blog-*.html` in the repo root to `blog-<slug>.html`.
+2. Replace the `<title>`, meta description, canonical/og URLs, the `<h1>`, the `<p class="lead">`,
+   the `<time datetime>` + tag line, the hero `<figure class="afig">` (image in `img/blog/`, 1100px webp,
+   real alt text and caption), the article body between `<!-- POST_BODY:START -->` and
+   `<!-- POST_BODY:END -->`, the dark CTA (`<aside class="acta">`), the related service cards between
+   `<!-- RELATED:START -->` and `<!-- RELATED:END -->`, and the BlogPosting JSON-LD.
+3. Add a card at the top of the list between `<!-- BLOG_CARDS:START -->` and `<!-- BLOG_CARDS:END -->`
+   in `blog.html` (or run `python3 _scripts/site/build.py`, which rebuilds blog.html and every page).
+4. Run `node _scripts/gen-feeds.mjs`, add the URL to `sitemap.xml` (the build script does this too).
+5. Commit and push to `main`.
+
+Legal limit for every post: Yard Dog does not hold a TDA pesticide applicator license and does not
+install irrigation. Explaining a pest or weed is fine; never say or imply we apply weed control,
+pre-emergent, insecticide or fungicide, or install or repair irrigation.
+
 ---
 
 ## Queue (next up, top of list ships first)

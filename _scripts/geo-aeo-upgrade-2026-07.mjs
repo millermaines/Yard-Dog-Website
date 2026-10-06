@@ -66,6 +66,7 @@ const OPENING = ['Mo-Su 00:00-23:59'];
 const AREA_SERVED = [
   'Longview, TX', 'White Oak, TX', 'Kilgore, TX', 'Gladewater, TX', 'Hallsville, TX',
   'Marshall, TX', 'Tyler, TX', 'Henderson, TX', 'Carthage, TX', 'Nacogdoches, TX',
+  'Lake Cherokee, TX', 'Gilmer, TX', 'Big Sandy, TX',
 ];
 const CONTACT_POINT = {
   '@type': 'ContactPoint', telephone: PHONE, contactType: 'customer service',
@@ -99,6 +100,9 @@ const CITIES = [
   { slug: 'henderson-tx', name: 'Henderson', county: 'Rusk County' },
   { slug: 'carthage-tx', name: 'Carthage', county: 'Panola County' },
   { slug: 'nacogdoches-tx', name: 'Nacogdoches', county: 'Nacogdoches County' },
+  { slug: 'lake-cherokee-tx', name: 'Lake Cherokee', county: 'Gregg & Rusk Counties' },
+  { slug: 'gilmer-tx', name: 'Gilmer', county: 'Upshur County' },
+  { slug: 'big-sandy-tx', name: 'Big Sandy', county: 'Upshur County' },
 ];
 
 function offerCatalog() {
@@ -224,9 +228,9 @@ function buildLlmsTxt() {
   const cities = CITIES.map((c) => `- [${c.name}, TX](${BASE}/${c.slug}) (${c.county})`).join('\n');
   return `# Yard Dog Landscapes
 
-> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 110+ Google reviews, fully insured, free quotes, and 24-hour availability. Call (903) 844-6877.
+> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 111 Google reviews, fully insured, free quotes, and 24-hour availability. Call (903) 844-6877.
 
-Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, seasonal cleanups, and Christmas light installation across Gregg, Harrison, Smith, Rusk, Panola, and Nacogdoches counties in East Texas.
+Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, seasonal cleanups, and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
 
 ## Services
 ${services}
@@ -236,7 +240,10 @@ ${cities}
 
 ## Company
 - [About Yard Dog Landscapes](${BASE}/about): Family-owned in Longview since 2017, owned by Miller Maines. Built on showing up, doing the work right, and giving customers more than they pay for.
-- [Our Work](${BASE}/our-work): Photos of completed East Texas landscaping and hardscaping projects.
+- [Our Work](${BASE}/our-work): 111 photos and crew videos of real East Texas projects, including a flagstone walkway and a checkerboard paver patio in Kilgore, a raised boat and RV pad and a flagstone patio with fire pit in White Oak, and a driveway retaining wall rebuild at Lake Cherokee.
+- [Pricing](${BASE}/pricing): Published price ranges. Weekly mowing about $50 to $65 per visit; landscaping $900 to $3,600; patios $3,100 to $9,100; retaining walls $3,000 to $19,000; drainage $2,000 to $3,750; sod $1,500 to $4,700; Christmas lights from $900 (from $1,800 more than an hour from Longview).
+- [Service areas](${BASE}/service-areas): All 13 East Texas towns we serve, each with its own page.
+- [Design Preview](${BASE}/design-preview): Flat-rate landscape design renderings ($199, $449, $999).
 - [Contact / Free Quote](${BASE}/contact): Call or text (903) 844-6877, or email ${EMAIL}.
 - [Careers](${BASE}/careers)
 
@@ -249,7 +256,7 @@ ${cities}
 - Founded: 2017 (family-owned)
 - Owner: Miller Maines
 - Location: Longview, Texas (serving East Texas / Gregg County and surrounding counties)
-- Rating: 5.0 stars, 110+ Google reviews
+- Rating: 5.0 stars, 111 Google reviews
 - Phone: (903) 844-6877
 - Email: ${EMAIL}
 - Hours: Open 24 hours (call or text anytime)
@@ -288,7 +295,7 @@ ${cityBlocks}
 
 ## Common questions
 Q: What areas does Yard Dog Landscapes serve?
-A: Longview, White Oak, Kilgore, Gladewater, Hallsville, Marshall, Tyler, Henderson, Carthage, and Nacogdoches, Texas — across Gregg, Harrison, Smith, Rusk, Panola, and Nacogdoches counties in East Texas.
+A: Longview, White Oak, Kilgore, Gladewater, Hallsville, Marshall, Tyler, Henderson, Carthage, and Nacogdoches, Texas — across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
 
 Q: Is Yard Dog Landscapes insured?
 A: Yes. Yard Dog Landscapes is fully insured.

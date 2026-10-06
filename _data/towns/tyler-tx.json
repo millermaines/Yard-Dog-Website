@@ -1,0 +1,155 @@
+{
+  "slug": "tyler-tx",
+  "name": "Tyler",
+  "county": "Smith County",
+  "counties_note": "",
+  "lat": null,
+  "lng": null,
+  "drive": "out I-20 past Kilgore, roughly 40 miles west of Longview",
+  "hub_title": "Landscaping & Lawn Care in Tyler, TX | Yard Dog Landscapes",
+  "hub_meta": "Patios, retaining walls, drainage, landscaping and Christmas lights in Tyler, TX from a family-owned Longview crew. Free written quotes. (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Tyler",
+  "lede": "Tyler is the biggest city we work in and the far western edge of our regular area. Project work like patios, walls, drainage and new beds fits best here, and we'll tell you straight about the rest.",
+  "intro": [
+    "Yard Dog Landscapes takes on landscaping, hardscaping and lawn care work in Tyler from our base in Longview. We're a family-owned company started in 2017 by owner Miller Maines, and Miller and a crew of four do every job, the same crew every visit, with nothing subcontracted. We're fully insured, and Google reviewers have rated us 5.0 stars across 111 reviews. Call or text (903) 844-6877 anytime for a free on-site walkthrough and a written, itemized estimate.",
+    "Tyler is the Smith County seat and the biggest city in this part of East Texas, and its yards cover a wide range. The Azalea District has older brick homes with azaleas and dogwoods that have been shaped for decades. Newer subdivisions come with builder beds and young trees. Out past Loop 323, toward Lake Tyler, Whitehouse and Chapel Hill, lots get bigger and more wooded. The soil is the familiar East Texas sandy loam over red clay, and in the Rose Capital, plenty of homeowners take their roses and azaleas seriously.",
+    "To be straight about the drive: Tyler is roughly 40 miles west of Longview, the far edge of our regular area. For one-time projects like a patio, a retaining wall, a drainage fix, new sod or a full landscape, that distance doesn't change much, and we're glad to take the work. Weekly mowing and other recurring visits depend on what else we have going in Tyler, so call with your address and we'll tell you where it stands."
+  ],
+  "areas": [
+    "Azalea District",
+    "South Tyler",
+    "Chapel Hill",
+    "Whitehouse",
+    "Lake Tyler"
+  ],
+  "landmarks": [
+    "Tyler Rose Garden",
+    "University of Texas at Tyler",
+    "Tyler Junior College",
+    "Caldwell Zoo"
+  ],
+  "yard_notes": [
+    {
+      "title": "Azaleas with decades on them",
+      "text": "Older Tyler neighborhoods, the Azalea District most of all, have azaleas and dogwoods that have been growing for decades. Azaleas get pruned right after the spring bloom, never sheared in fall."
+    },
+    {
+      "title": "Roses in the beds",
+      "text": "If you've got roses in a Tyler bed, give them six or more hours of sun and room for air to move. Knockout roses get cut back hard in February."
+    },
+    {
+      "title": "Builder beds on newer lots",
+      "text": "Newer Tyler subdivisions often come with shrubs planted too close to the foundation and thin mulch over compacted fill. Rebuilding those beds starts with the soil, not the plants."
+    },
+    {
+      "title": "Slopes that need holding",
+      "text": "Where a lot drops toward the street or the back fence, rain washes out beds and undercuts walkways. That's where a retaining wall or a terraced bed earns its cost."
+    }
+  ],
+  "popular": [
+    "hardscaping",
+    "retaining-walls",
+    "landscaping",
+    "drainage",
+    "flower-bed-installation",
+    "christmas-lights"
+  ],
+  "faq": [
+    {
+      "q": "Do you really work in Tyler, or just Longview?",
+      "a": "We work in Tyler. It's roughly 40 miles west of Longview, the far edge of our regular area, so we're upfront about what fits. Patios, retaining walls, drainage, sod, landscaping and Christmas lights are all easy to schedule here. Weekly mowing depends on what else we have in Tyler at the time, so call (903) 844-6877 and ask."
+    },
+    {
+      "q": "Does Christmas light pricing change for Tyler?",
+      "a": "It can. Most homes start at $900, and installs more than an hour from Longview start at $1,800. Where your house sits in or around Tyler decides which one applies, and your quote will say so plainly. We quote from a photo of the house, so you don't have to wait on a visit."
+    },
+    {
+      "q": "What does a patio or retaining wall cost in Tyler?",
+      "a": "Patios and other hardscape projects mostly land between $3,100 and $9,100. Most retaining walls run $3,000 to $19,000 by height and length, with short garden walls starting at a few thousand and tall structural walls at $20,000 and up. The walkthrough and the written, itemized estimate are free."
+    },
+    {
+      "q": "Can I see a design before I commit to a big project in Tyler?",
+      "a": "Yes. Our paid Landscape Design Preview is $199 for flower beds, $449 for hardscape and $999 for a full property, and the fee is credited toward the install if you book within 90 days. On a bigger Tyler project it's a good way to settle the plan before anything gets dug."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Weekly mowing in Tyler is the one service where the distance matters most, since it means a trip every week through the growing season. When we can take it on, you get the same crew and the same standards as our Longview yards, with the deck set for your grass: St. Augustine at three and a half to four inches in summer, bermuda around two. Call and we'll tell you if your address fits the schedule.",
+    "leaf-removal": "Tyler's older neighborhoods carry big oaks, pecans and pines, and the leaves end up in the lawn and the azalea beds alike. We schedule cleanups as set visits, usually mid-November and mid-December, and clear beds as carefully as the lawn so shallow-rooted azaleas don't get raked up. Leaf removal is quoted after we see how much canopy you have.",
+    "fertilization": "Our fertilization program is four visits a year: late April once nights hold above 60 degrees, early July, early September, and a potassium winterizer in late October. That's a set number of trips, so it works in Tyler more easily than weekly service does. Visits start from about $190, and we soil test on bigger lawns and add lime when the pH calls for it.",
+    "hedge-trimming": "Older Tyler homes often have formal foundation hedges and boxwood borders that need a steady hand, not a fast pass with a power trimmer. We shape from the bottom up, keep the natural form of the plant, and haul off every clipping. We can come once to get things back in shape or set up recurring trims, and most jobs run $150 to $800.",
+    "tree-shrub-care": "In the Azalea District and other older Tyler neighborhoods, the shrubs are the landscape, so the timing of every cut matters. Azaleas and camellias get pruned right after bloom, crepe myrtles get thinned in February instead of topped, and hollies get shaped in early summer. Healthy oaks wait until the cold months, and we quote the work after a walkthrough.",
+    "tree-planting": "Dogwoods and redbuds are a big part of a Tyler spring, and both do best in the dappled light at the edge of bigger trees. For long-lived shade, live oak, post oak and southern magnolia are the usual picks. We plant from October through February when we can and quote each job after looking at the spot, the soil and the access.",
+    "sod-installation": "Sod is a good fit for Tyler because it's a one-time job, and we prep it the same way we do at home: strip the old turf, till in two to three inches of compost or topsoil, level and roll, then lay tight staggered seams. Bermuda goes in from late April through August and St. Augustine from May through September. Most Tyler sod jobs fall between $1,500 and $4,700, since sod is priced by the pallet.",
+    "landscaping": "A full landscape in Tyler is project work, so the drive isn't an issue. We design around the light and the drainage, use healthy stock from regional growers, and can start with a paid Design Preview so you see the plan before we dig. Most projects run $900 to $3,600, larger custom designs run more, and small refreshes start at a few hundred.",
+    "flower-bed-installation": "If you want roses in a Tyler bed, we give them full sun and pair them with tough performers like salvia, lantana and dwarf yaupon. Shadier beds under pines are better suited to azaleas and hydrangeas. Either way we prep the soil first, cut a clean edge and finish with an inch to an inch and a half of mulch.",
+    "mulch-installation": "In Tyler, a mulch refresh pairs well with a hedge trim or bed cleanup on the same trip, so the whole yard gets finished at once. We edge, pull out old buildup, and lay shredded hardwood or pine straw at an inch to an inch and a half, with no fabric underneath. Most bed refreshes run $600 to $2,400.",
+    "hardscaping": "Patios and walkways are some of the best fits for Tyler, since each one is a single project where the drive is a small part of the job. Around older brick homes, flagstone and warm-toned pavers sit well, and every build goes on an excavated, compacted crushed stone base pitched away from the house. Most projects run $3,100 to $9,100.",
+    "retaining-walls": "Tyler lots with a drop toward the street or a back fence are where walls make the most sense, turning a slope you can't use into level yard. We build segmental block or natural stone on a compacted base set below grade, with gravel backfill, a drain to daylight and geogrid on taller walls. Most walls fall between $3,000 and $19,000, with height and length setting the number.",
+    "drainage": "Drainage in Tyler follows the same rules as the rest of East Texas: sandy loam on top, clay underneath, and water that moves sideways once the top foot is full. We track down the source, which is usually roof water, a wrong-way grade or trapped subsurface water, and build the fix for that one. A small fix runs $450 to $1,000, and most full drainage projects come in at $2,000 to $3,750.",
+    "christmas-lights": "We install Christmas lights in Tyler for homes and businesses, in warm white or color. We supply the lights, custom-cut C9 lines to the roofline, take them down after the season and store them until next year. Because of the distance, your quote will say plainly which pricing applies to your address, the standard rate or the rate for installs more than an hour out."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Will you do weekly mowing at my house in Tyler?",
+      "a": "Maybe. Weekly service means a trip every week through the growing season, so it depends on what else we have in Tyler and where you are. Call or text (903) 844-6877 with your address and we'll give you a straight answer. Our published range for a typical lot is about $50 to $65 per visit, and your written quote gives the exact number."
+    },
+    "leaf-removal": {
+      "q": "How many leaf cleanups does a Tyler yard need?",
+      "a": "Most need two: one in mid-November after the oaks and pecans drop, and one in mid-December for the late leaves and pine straw. Heavy-canopy lots may need a third. Leaving a wet mat of leaves on St. Augustine through winter is one of the fastest ways to lose it to fungus."
+    },
+    "fertilization": {
+      "q": "Can you fertilize my Tyler lawn even if you don't mow it?",
+      "a": "Yes. Fertilization is four scheduled visits a year, so it doesn't depend on weekly mowing. We'll lay out the plan for your grass after seeing the lawn, and each visit starts from about $190."
+    },
+    "hedge-trimming": {
+      "q": "When should I trim the hollies and boxwoods at my Tyler house?",
+      "a": "Early summer, after the spring flush of growth. That gives new growth time to harden off before cold weather. Trimming late in fall pushes out tender shoots that the first hard freeze burns brown, and you end up looking at scorched tips all winter."
+    },
+    "tree-shrub-care": {
+      "q": "Can you bring back azaleas that have gotten leggy in Tyler?",
+      "a": "Usually. Right after they bloom, we cut back the longest stems and thin out dead wood, and on very overgrown plants we may spread a harder cut over two seasons. Azaleas set next year's buds in summer, so cutting much past mid-June costs you flowers."
+    },
+    "tree-planting": {
+      "q": "Is fall really better than spring for planting a tree in Tyler?",
+      "a": "Yes. The soil stays warm well into fall, so a tree planted in October gets about six months of root growth before summer, while one planted in April gets about eight weeks. Spring planting can work, but it takes steady watering right on the root ball through the first summer."
+    },
+    "sod-installation": {
+      "q": "How long does new sod need daily water in Tyler?",
+      "a": "Plan on watering deep every morning for the first two weeks, until the roots take hold, then taper off. Sod laid in July without a watering plan can brown out in two weeks, which is why we set the plan with you before install."
+    },
+    "landscaping": {
+      "q": "Do you take on full landscape projects in Tyler, or just small jobs?",
+      "a": "Full projects. A complete landscape is some of the best work for us in Tyler, because it's one job with a clear start and finish. Most run $900 to $3,600, with larger custom designs running more, and every one starts with a free walkthrough and a written, itemized estimate."
+    },
+    "flower-bed-installation": {
+      "q": "What will bloom through a Tyler summer?",
+      "a": "Knockout roses, salvia, lantana and plumbago all handle the heat when they're sited right, and dwarf yaupon gives a bed a backbone that stays green. Hydrangeas and azaleas want afternoon shade. We plant for the light your bed actually gets, not whatever looks good on the store rack that week."
+    },
+    "mulch-installation": {
+      "q": "Do you put landscape fabric under mulch in Tyler beds?",
+      "a": "No. Mulch breaks down into soil, and within a few years fabric under it ends up with weeds rooted on top and through it. We edge the bed clean and lay mulch at an inch to an inch and a half instead. Fabric does belong under rock beds, and we use it there."
+    },
+    "hardscaping": {
+      "q": "What makes a patio in Tyler last?",
+      "a": "The base. We dig to the right depth, lay crushed stone, compact it in lifts, and pitch the surface so water runs away from the house. The stone or pavers on top are the part you see, but the base under them is what keeps the patio flat."
+    },
+    "retaining-walls": {
+      "q": "Do taller retaining walls in Tyler need an engineer?",
+      "a": "Walls over about four feet usually need engineered design and reinforcement. We handle the base prep, geogrid and drainage those walls need, and if your project calls for a stamped engineering plan, we'll tell you during the walkthrough."
+    },
+    "drainage": {
+      "q": "Why does water pool against my foundation in Tyler?",
+      "a": "Usually one of three things: downspouts dumping into a flat bed, a grade that settled toward the house, or water stopping on the clay layer and spreading sideways. Each one has a different fix. We find the real source before we price anything, ideally during or right after a rain."
+    },
+    "christmas-lights": {
+      "q": "When should I book Christmas lights in Tyler?",
+      "a": "As early in the fall as you can, since install dates fill up. Send a photo of the house and we'll quote it with a mock-up, so there's no waiting on a visit. Everything comes down in January, and we store the lights for next season."
+    }
+  },
+  "nearby": [
+    "kilgore-tx",
+    "henderson-tx",
+    "big-sandy-tx",
+    "longview-tx"
+  ]
+}

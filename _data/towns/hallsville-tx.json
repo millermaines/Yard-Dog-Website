@@ -1,0 +1,152 @@
+{
+  "slug": "hallsville-tx",
+  "name": "Hallsville",
+  "county": "Harrison County",
+  "counties_note": "",
+  "lat": null,
+  "lng": null,
+  "drive": "a short drive east of Longview on US 80",
+  "hub_title": "Landscaping & Lawn Care in Hallsville, TX | Yard Dog Landscapes",
+  "hub_meta": "Lawn care, landscaping, sod, drainage and patios in Hallsville, TX from a family-owned Longview crew. Free walkthrough and written quote. (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Hallsville",
+  "lede": "Hallsville is one of the closest towns to our Longview base, just east on US 80. We mow, plant, fix drainage and build patios here with the same crew every visit.",
+  "intro": [
+    "Yard Dog Landscapes handles lawn care and landscaping in Hallsville from our base in Longview, a short drive west on US 80. We're a family-owned company started in 2017 by owner Miller Maines. Miller and a crew of four do the work themselves, the same crew every visit, and we never subcontract a job. We're fully insured and rated 5.0 stars on Google from 111 reviews. Call or text (903) 844-6877 anytime for a free on-site walkthrough and a written, itemized estimate, usually within a day.",
+    "Hallsville yards cover a wide range. In town and in the newer subdivisions you get standard lots with builder beds and a line of pines or hardwoods along the back. A little farther out, lots open up into acreage that runs against pasture or woods, and mowing, edging and leaf work on that kind of ground takes a different setup than a quarter-acre yard. The soil changes across a single property too. Higher spots tend to be sandy and dry out fast in July, while the low spots sit on heavier clay that holds water after a hard rain.",
+    "Because Hallsville sits between Longview and Marshall, it's easy for us to fit Hallsville jobs in alongside our work in both towns. We walk the property first, look at where the water goes and where the sun falls, and then put the price in writing. Standing water after spring storms is one of the things Hallsville homeowners ask us about most, along with weekly mowing through the growing season."
+  ],
+  "areas": [
+    "US 80 between Longview and Marshall",
+    "Harleton",
+    "Hallsville ISD area"
+  ],
+  "landmarks": [
+    "Hallsville ISD",
+    "US 80",
+    "Interstate 20"
+  ],
+  "yard_notes": [
+    {
+      "title": "Subdivision lots next to acreage",
+      "text": "Hallsville has newer neighborhood lots and country acreage that backs up to pasture or woods. Mowing, edging and leaf work get priced to the actual ground, not a flat town rate."
+    },
+    {
+      "title": "Flat backyards that hold water",
+      "text": "Newer homes sit on graded pads, and once the topsoil settles, a flat backyard can hold water for a day after a hard rain. That usually calls for regrading, a swale and a pop-up emitter before anyone needs a French drain."
+    },
+    {
+      "title": "Sandy high ground, clay low spots",
+      "text": "Higher ground tends to be sandy loam that drains quickly and dries out in summer. Low spots sit on heavier clay, which changes how we prep the ground for sod and new beds."
+    },
+    {
+      "title": "Tree lines on the back of the lot",
+      "text": "Many Hallsville lots have pines and hardwoods along the back or side lines. They shade the grass closest to them and drop needles and leaves into the lawn from fall into winter."
+    }
+  ],
+  "popular": [
+    "lawn-maintenance",
+    "drainage",
+    "sod-installation",
+    "landscaping",
+    "leaf-removal",
+    "hardscaping"
+  ],
+  "faq": [
+    {
+      "q": "Do you cover all of Hallsville, including places out in the county?",
+      "a": "Yes. We work in town, in the newer subdivisions and on country lots around Hallsville in Harrison County. If you're out toward Harleton or along US 80 toward Marshall, call or text (903) 844-6877 and tell us where you are. We'll walk the property and tell you straight what we can do there."
+    },
+    {
+      "q": "How much does weekly mowing cost in Hallsville?",
+      "a": "On a typical residential lot, weekly mowing runs about $50 to $65 per visit. Acreage, heavy tree lines and a lot of trimming along fences move that number, so bigger Hallsville properties get priced after we walk them. Either way you get a flat per-visit price in writing before we start."
+    },
+    {
+      "q": "My backyard stays soggy after it rains. Is that something you fix?",
+      "a": "Yes, and it's common on newer Hallsville lots. Standing water usually comes from roof runoff, a grade that slopes the wrong way, or water trapped on the clay layer, and we find out which before we price anything. Small fixes like rerouting a downspout run $450 to $1,000, and most drainage projects run $2,000 to $3,750."
+    },
+    {
+      "q": "How soon can you come look at my Hallsville yard?",
+      "a": "Usually within a day. Hallsville is a short drive east of Longview, so getting out for a walkthrough is easy. The walkthrough and the written, itemized estimate are both free. We don't promise a set mowing day before we've seen the yard, but we'll tell you what the schedule looks like when we quote it."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Hallsville lawns are mostly bermuda in the open, sunny yards and St. Augustine where the tree lines throw shade, and plenty of lots have both. We set the deck for each grass instead of splitting the difference, so St. Augustine stays at three and a half to four inches in summer while bermuda runs around two. Country lots get a mower sized for the ground, plus trimming along fences and ditch lines.",
+    "leaf-removal": "The pines and hardwoods along Hallsville lot lines drop from fall into winter, and the leaves pile up hardest in the shady strip where St. Augustine is already weakest. We usually plan two passes, one in mid-November and one in mid-December, with a third on heavy-canopy lots. Everything gets collected and hauled off, not blown into the woods or the ditch.",
+    "fertilization": "Newer Hallsville homes often have builder sod laid over thin topsoil, and that grass runs hungry. Our program feeds in late April once nights stay above 60 degrees, again in early July and early September, then finishes with a potassium winterizer in late October. Visits start from about $190, and we can soil test and add lime where the pH has drifted low.",
+    "hedge-trimming": "Foundation hedges on newer Hallsville homes are often builder plantings, hollies and ligustrums set too close to the brick and left to grow up over the windows. We shape them from the bottom up so light reaches the lower branches, and we haul off every clipping. Most hedge jobs run $150 to $800, depending on how many shrubs there are and how overgrown they've gotten.",
+    "tree-shrub-care": "On acreage around Hallsville, the work is usually limbing up pines and hardwoods that crowd the yard, clearing storm limbs and pulling out small volunteer trees along fence lines. Closer in, it's crepe myrtles, hollies and boxwoods that need the right cut at the right time of year. We price it after a walkthrough, because the job depends on how many trees and shrubs there are and their size.",
+    "tree-planting": "Newer Hallsville lots often come with little shade, and the usual ask is a tree that will cover the back patio someday. We plant from October through February when we can, so roots get months to settle before summer, and we set every tree with the root flare at grade so it isn't buried in the clay. Tree planting is quoted after we see the spot, since species, size and access set the price.",
+    "sod-installation": "Before we lay sod in Hallsville, we check where the yard sits on the sandy-to-clay range, because that decides how much amendment and leveling it needs. Bermuda goes down best from late April through August, and St. Augustine from May through September. Most sod projects run $1,500 to $4,700, priced by the pallet, and you get a daily watering plan for the first two weeks.",
+    "landscaping": "A typical Hallsville landscaping job starts with a builder's front bed, a few shrubs in a straight line, and turns it into something that fits the house and holds up through July. We pick plants for the actual light on that side of the house and fix the grade so water moves away from the slab. Most projects run $900 to $3,600, and small refreshes start at a few hundred.",
+    "flower-bed-installation": "We build Hallsville beds around plants that take East Texas heat, like knockout roses, salvia, lantana, dwarf yaupon and plumbago, and we put hydrangeas and azaleas where they get afternoon shade. Prep is the part that matters: a clean edge, roots pulled, soil turned and amended, then mulch at an inch to an inch and a half. On the low, clay end of a lot, we raise the bed so roots aren't sitting wet.",
+    "mulch-installation": "Mulch goes down at an inch to an inch and a half over a clean, edged bed, and we don't put landscape fabric under it. In Hallsville, where needles and leaves from the tree line land in the beds every fall, a light fall top-dress keeps beds looking finished through winter. Most bed refreshes run $600 to $2,400, depending on how many beds and how many yards of mulch they take.",
+    "hardscaping": "Patios in Hallsville usually go off the back of a newer home, where the yard is flat and water already has trouble moving. We dig out, compact a crushed stone base and pitch the patio away from the house, so the new surface doesn't send more water toward the slab. Most patio and hardscape projects run $3,100 to $9,100, depending on the size and the choice of pavers or flagstone.",
+    "retaining-walls": "On Hallsville lots, walls usually come up where a builder pad left a steep edge or the back of the yard drops toward a creek or ditch. Every wall we build sits on a compacted base set below grade, with gravel backfill and a drain behind it carried to daylight. Most walls run $3,000 to $19,000 by height and length, and short garden walls start at a few thousand.",
+    "drainage": "In Hallsville, the usual problem is a flat backyard holding water after a storm or a downspout dumping against the foundation. A lot of those get fixed with regrading, a swale and a pop-up emitter rather than a full French drain, and we'll tell you which one your yard needs. Small fixes run $450 to $1,000, and most drainage projects land between $2,000 and $3,750.",
+    "christmas-lights": "Hallsville is close to Longview, so it falls under our standard Christmas light pricing, where most homes start at $900. We supply the lights, custom-cut C9 lines to your roofline, then take everything down after the season and store it for next year. You can get a quote without a visit: send a photo of the house and we'll send back a mock-up in warm white or color."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Can you mow acreage outside Hallsville, or just neighborhood lots?",
+      "a": "Both. Neighborhood lots usually fall around $50 to $65 per visit for weekly mowing. Acreage gets priced after we walk it, since the size, the obstacles and how much trimming there is along fences and tree lines all change the time it takes."
+    },
+    "leaf-removal": {
+      "q": "When should I book fall leaf cleanup in Hallsville?",
+      "a": "Call in October if you can. Most yards need a pass in mid-November after the oaks and pecans let go and another in mid-December for the stragglers and pine straw. Lots with heavy tree lines may need a third. We quote leaf removal after seeing how much canopy you have."
+    },
+    "fertilization": {
+      "q": "Do I need a soil test before you fertilize my Hallsville lawn?",
+      "a": "It helps, especially on newer lots where the topsoil was thin to start. Pine needles and acidic rain push a lot of East Texas yards a little low on pH, and fertilizer works poorly when the pH is off. We test on bigger jobs and add lime when the numbers call for it."
+    },
+    "hedge-trimming": {
+      "q": "When is the right time to trim the shrubs in front of my Hallsville house?",
+      "a": "It depends on the plant. Hollies and boxwoods get shaped in early summer after the spring flush, azaleas right after they bloom, and knockout roses get cut back hard in February. Shearing everything on one Saturday in fall is how shrubs lose next year's blooms or get burned by the first hard cold."
+    },
+    "tree-shrub-care": {
+      "q": "Will you clear small trees and brush along my fence line in Hallsville?",
+      "a": "Yes. We remove small trees and shrubs, prune limbs that hang over the yard, and haul off storm debris. We don't take down large trees close to the house, and we'll tell you up front if a job is bigger than what we handle."
+    },
+    "tree-planting": {
+      "q": "What shade tree grows well on a Hallsville lot?",
+      "a": "For big shade, live oak, post oak and southern magnolia all do well here, and red maple, river birch and bald cypress handle the wetter, lower spots. We match the tree to its mature size and the drainage before we plant. A smaller tree planted in fall often outgrows a bigger one planted the same day, because it settles in faster."
+    },
+    "sod-installation": {
+      "q": "Should I put down bermuda or St. Augustine in my Hallsville yard?",
+      "a": "It comes down to sun. Bermuda needs six or more hours of direct sun and handles kids and dogs well. St. Augustine gets by on four to six hours of dappled light, which is what you get near a tree line. Plenty of yards end up with bermuda out front and St. Augustine in the shaded back."
+    },
+    "landscaping": {
+      "q": "Can I see a design before you landscape my Hallsville yard?",
+      "a": "Yes. Our paid Landscape Design Preview shows you the plan before we dig: $199 for flower beds, $449 for hardscape and $999 for a full property. The fee is credited toward the install if you book within 90 days. A simple bed refresh usually doesn't need one, and we can go straight to a written quote."
+    },
+    "flower-bed-installation": {
+      "q": "How do you keep a new flower bed from drowning in Hallsville clay?",
+      "a": "We set the grade so water drains away, work compost into the top of the soil, and raise the bed a few inches in low spots. Then we plant things that handle wet springs and hot summers. Most failed beds we're asked to redo had fine plants sitting in bad soil."
+    },
+    "mulch-installation": {
+      "q": "Pine straw or hardwood: which mulch suits a Hallsville yard?",
+      "a": "Both work. Shredded hardwood is what most beds get, and it breaks down into better soil over about a year. Pine straw is available if you like that look, and it suits beds under pines. Either way we keep it at an inch to an inch and a half and pull it back off trunks and siding."
+    },
+    "hardscaping": {
+      "q": "Pavers or flagstone for a patio in Hallsville?",
+      "a": "Pavers give you a clean, even surface that's easy to put furniture on. Flagstone looks more natural and works well with a fire pit or a path out to the yard. Either one only lasts if the base is right, so we dig out, compact crushed stone in lifts and pitch it away from the house."
+    },
+    "retaining-walls": {
+      "q": "Do I need a retaining wall or just regrading on my Hallsville lot?",
+      "a": "If the slope is gentle, regrading and a planted bank can handle it. Once you're trying to hold back a real drop, like a cut along a driveway or the edge of a builder pad, a wall makes sense. We walk it, measure the height and length, and tell you which way we'd go."
+    },
+    "drainage": {
+      "q": "Do I need a French drain for the water in my Hallsville yard?",
+      "a": "Maybe not. Standing water usually comes from roof runoff, a wrong-way slope or water trapped on the clay layer, and only that last one really calls for a French drain. When one is needed, we use sock-wrapped 4-inch perforated pipe in #57 stone and tie it to daylight or a pop-up emitter."
+    },
+    "christmas-lights": {
+      "q": "Does someone need to come out to my Hallsville house to quote Christmas lights?",
+      "a": "No. Text a photo of the front of your house to (903) 844-6877 and we'll send back a mock-up with a price. We provide the lights, hang them, pull them down after the season and keep them in storage until next year. Most homes start at $900, and booking early in the fall gets you more choice of install dates."
+    }
+  },
+  "nearby": [
+    "longview-tx",
+    "marshall-tx",
+    "white-oak-tx",
+    "lake-cherokee-tx"
+  ]
+}

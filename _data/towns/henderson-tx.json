@@ -1,0 +1,154 @@
+{
+  "slug": "henderson-tx",
+  "name": "Henderson",
+  "county": "Rusk County",
+  "counties_note": "",
+  "lat": null,
+  "lng": null,
+  "drive": "south of Longview, down US 259 past Kilgore",
+  "hub_title": "Landscaping & Lawn Care in Henderson, TX | Yard Dog Landscapes",
+  "hub_meta": "Lawn care, landscaping, tree and shrub care, drainage and patios in Henderson, TX. Family-owned Longview crew, free written quotes. Call (903) 844-6877.",
+  "h1": "Landscaping & lawn care in Henderson",
+  "lede": "Henderson is the Rusk County seat, south of Longview past Kilgore. We take care of older yards with established trees, newer lots, and country properties outside town.",
+  "intro": [
+    "Yard Dog Landscapes does landscaping and lawn care in Henderson from our base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and Miller and a crew of four do every job themselves. You get the same crew every visit, and we never subcontract. We're fully insured, with a 5.0-star Google rating from 111 reviews. You can call or text (903) 844-6877 at any hour, and we'll set up a free walkthrough and a written, itemized estimate, usually within a day.",
+    "Henderson is the Rusk County seat and sits in the old East Texas Oil Field country, and a lot of its neighborhoods have been settling in for decades. Older lots tend to be generous, with established oaks, pines and dogwoods, and azalea and camellia beds that need real pruning rather than a quick shear. Outside town, properties open up into acreage with pasture and pine woods, and the mowing and leaf work out there is a different job from an in-town yard.",
+    "The soil runs sandy over clay like the rest of our area, and low spots hold water after a storm. Henderson is down US 259 from Kilgore, so getting out to walk a yard is easy for us. We look at the sun, the slope and where the water goes, then put the price in writing. We set the schedule once we've seen the property instead of promising a mowing day up front, and the same crew does the work every time."
+  ],
+  "areas": [
+    "Downtown Henderson",
+    "Lake Cherokee",
+    "Tatum",
+    "Overton",
+    "New London"
+  ],
+  "landmarks": [
+    "Rusk County Courthouse",
+    "East Texas Oil Field",
+    "Martin Creek Lake State Park"
+  ],
+  "yard_notes": [
+    {
+      "title": "Established trees on older lots",
+      "text": "Older Henderson neighborhoods have big oaks, pines and dogwoods that shade the lawn and drop a lot of litter. The grass under them is usually St. Augustine, and it thins wherever the light runs short."
+    },
+    {
+      "title": "Azaleas and camellias that need a plan",
+      "text": "Mature azaleas and camellias show up in a lot of Henderson beds. They get pruned right after bloom, because a shear in fall or winter costs you next spring's flowers."
+    },
+    {
+      "title": "Acreage outside town",
+      "text": "Past the edge of town, Henderson properties open into acreage with pasture and pine woods. We price those on the walkthrough, since mowing and leaf work scale with the ground, not the house."
+    },
+    {
+      "title": "Low spots that stay wet",
+      "text": "Sandy topsoil over clay drains fast until the clay stops it. Low corners, flat backyards and beds against the slab are where Henderson yards hold water after a storm."
+    }
+  ],
+  "popular": [
+    "lawn-maintenance",
+    "tree-shrub-care",
+    "hedge-trimming",
+    "leaf-removal",
+    "drainage",
+    "landscaping"
+  ],
+  "faq": [
+    {
+      "q": "Do you cover Henderson and the rest of Rusk County?",
+      "a": "We cover Henderson and the communities around it in Rusk County. If you're out toward Tatum, Overton or New London, call or text (903) 844-6877 with your address and we'll tell you straight what fits. The walkthrough and the written estimate are free either way."
+    },
+    {
+      "q": "What does a typical Henderson job cost?",
+      "a": "It depends on the work. Weekly mowing on a typical lot runs about $50 to $65 per visit, hedge trimming is $150 to $800 for most jobs, and landscaping projects mostly run $900 to $3,600. Tree and shrub care and leaf removal get quoted after we walk the yard, since they depend on what's growing there."
+    },
+    {
+      "q": "Can you help with an older Henderson yard that's gotten away from the owner?",
+      "a": "Yes. Overgrown older yards are good work for us. We start with the big picture, deciding which shrubs and trees are worth saving, then prune, clear beds, haul off debris and get the lawn back on a mowing schedule. You'll get the whole plan and the price in writing before we start."
+    },
+    {
+      "q": "How soon can you get to Henderson for a walkthrough?",
+      "a": "Usually within a day. Henderson is south of Longview, down US 259 past Kilgore, an easy trip for us. We'll walk the yard, talk through what you want, and send a written, itemized estimate. If you want to see a design first, our paid Design Preview starts at $199 for flower beds."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Henderson lawns run from shaded St. Augustine in the older neighborhoods to open bermuda on newer and country lots, and each one gets mowed at its own height. On acreage we bring equipment sized for the ground and still trim fence lines and edges clean. Weekly mowing on a typical in-town lot runs about $50 to $65 per visit, and larger properties get priced after a walkthrough.",
+    "leaf-removal": "Between the oaks, pecans and pines on older Henderson lots, leaf season runs from October into winter, and pine straw keeps coming after the hardwoods are bare. We plan passes for mid-November and mid-December, add a third for heavy canopy, and clear the beds as well as the lawn. Leaf removal is quoted after we see the yard, since tree cover decides how much work it is.",
+    "fertilization": "Like most of East Texas, Henderson lawns tend to run a little acidic from pine needles and rain, and fertilizer doesn't do much when the pH is off. We soil test on bigger lawns, add lime when it's needed, and feed on a four-visit schedule from late April through a potassium winterizer in late October. Each visit starts from about $190.",
+    "hedge-trimming": "Older Henderson foundation hedges, like hollies, ligustrums and photinias, often get sheared flat on top until the bottoms go bare. We reshape them narrower at the top so light gets back to the lower branches, and we haul off everything we cut. Hedge trimming here runs $150 to $800 for most jobs, depending on the number of shrubs and how far they've grown out.",
+    "tree-shrub-care": "Mature azaleas, camellias and dogwoods are a big part of Henderson yards, and they reward patience more than a hard hack. We prune azaleas and camellias right after bloom, thin crepe myrtles in February, clear dead lower limbs off shade trees so light reaches the lawn, and remove small trees and shrubs that have outgrown their spot. Pricing comes after a walkthrough.",
+    "tree-planting": "When an older Henderson yard loses a big tree, the replacement should be picked for the next 50 years, not the next two. We plant live oak, post oak, southern magnolia and other trees suited to East Texas from October through February when we can, set the root flare at grade, and build a watering basin and mulch ring. Each job is quoted after we see the spot.",
+    "sod-installation": "Sod in Henderson usually comes down to sun, with bermuda on the open lots and St. Augustine under the older trees. We strip the old turf, work in compost or topsoil, level and roll the ground, then lay tight staggered seams and hand you a daily watering plan for the first two weeks. Sod projects here mostly run $1,500 to $4,700, priced by the pallet.",
+    "landscaping": "Landscaping an older Henderson home is often renovation: beds planted decades ago that have grown into the windows, lost their edges or thinned out under shade. We keep what's healthy, pull what's past saving, and replant with things that fit the light. Most projects come in between $900 and $3,600, and a simple refresh can start at a few hundred.",
+    "flower-bed-installation": "For shady Henderson beds under pines and oaks, azaleas and hydrangeas do well when they get morning sun and afternoon shade. Sunny beds get knockout roses, salvia, lantana and plumbago that hold up through August. Every new bed gets a clean edge, amended soil, a grade that moves water away from the house, and mulch at an inch to an inch and a half.",
+    "mulch-installation": "Under Henderson's pines, a pine straw bed fits the look and the trees keep resupplying it, while shredded hardwood gives a cleaner, darker finish near the house. We re-cut edges, pull old buildup back from trunks and siding, and keep the depth at an inch to an inch and a half. A full bed refresh mostly runs $600 to $2,400.",
+    "hardscaping": "On the bigger Henderson lots there's room to add a fire pit area or a flagstone path out into the yard along with the patio. Every build gets an excavated, compacted crushed stone base, pitched away from the house so the new surface doesn't send water toward the slab. Most Henderson patio and hardscape projects come in between $3,100 and $9,100.",
+    "retaining-walls": "Retaining walls around Henderson hold back slopes along driveways, around raised beds, and on lots where the ground falls off toward a creek or the back fence. We set every wall on a compacted base below grade with gravel backfill and a drain to daylight, and add geogrid on taller walls. Walls here mostly run $3,000 to $19,000, depending on height and length.",
+    "drainage": "Henderson's low spots and flat backyards hold water because rain stops at the clay under the sandy topsoil and has nowhere to go. We check downspouts and grade first, then add swales, pop-up emitters or a French drain only where the water calls for it. Fixing a single problem spot runs $450 to $1,000, while most drainage projects cost $2,000 to $3,750.",
+    "christmas-lights": "On a Henderson house with a long roofline, a clean C9 outline cut to fit does most of the work. We supply the lights, cut each line to your house, hang it, and come back in January to take it down and store it. Henderson is inside an hour from Longview, so most homes start at $900, and the quote comes from a photo mock-up in warm white or color."
+  },
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Do you mow larger country properties around Henderson?",
+      "a": "Yes. Acreage gets priced on the walkthrough, because the time it takes depends on the size, the slope, and how much trimming there is around fences, trees and outbuildings. Typical in-town lots run about $50 to $65 per visit for weekly mowing."
+    },
+    "leaf-removal": {
+      "q": "Should I leave pine straw on the lawn in Henderson?",
+      "a": "Not a thick layer. A light scatter breaks down fine, but a mat of needles and leaves on St. Augustine through a wet winter shades it out and invites fungus. Clear it off the lawn and, if you like, use it in the beds under the pines."
+    },
+    "fertilization": {
+      "q": "Will lime help my Henderson lawn?",
+      "a": "Only if the soil test says so. Many East Texas yards run a little acidic from pine needles and rain, and lime brings the pH back up so fertilizer can do its job. We test on bigger jobs before adding anything, rather than guessing."
+    },
+    "hedge-trimming": {
+      "q": "Can you cut back an overgrown hedge hard at my Henderson house?",
+      "a": "Many hedges, like ligustrum and photinia, handle a hard rejuvenation cut and fill back in over a season or two. Timing matters, so we plan the cut for when the plant will recover best. We'll tell you on the walkthrough if a shrub is too far gone and better replaced."
+    },
+    "tree-shrub-care": {
+      "q": "When should I prune the crepe myrtles at my Henderson house?",
+      "a": "February, before bud break, and by thinning, not topping. Take out crossing branches, suckers and weak growth so the tree is cleaner and more open in the middle. Cutting every trunk back to the same knuckle each winter makes it grow back taller and weaker, not shorter."
+    },
+    "tree-planting": {
+      "q": "Can you plant a new tree where an old one came down in my Henderson yard?",
+      "a": "Usually, though we often shift it a few feet off the old spot where the old roots are still breaking down. We pick the location for the new tree's mature size, then plant it with the root flare at grade, a watering basin and a mulch ring kept off the trunk."
+    },
+    "sod-installation": {
+      "q": "When is the best time to lay sod in Henderson?",
+      "a": "Late spring through summer, while the ground is warm. Bermuda does best laid between late April and August, and St. Augustine between May and September. Sod laid in a dry July can work, but only with deep morning watering every day for the first two weeks. We set that plan with you before install."
+    },
+    "landscaping": {
+      "q": "Can you redo the landscaping on a house I just bought in Henderson?",
+      "a": "Yes. We'll walk it with you, sort out what's worth keeping, and lay out a plan for beds, plants and any grading. If you want to see it first, our Design Preview is $199 for flower beds, $449 for hardscape and $999 for a full property, credited toward the install if you book within 90 days."
+    },
+    "flower-bed-installation": {
+      "q": "Why do my flower beds in Henderson die every August?",
+      "a": "Usually it's the soil, not the plants. Compacted ground, beds that hold water, or mulch piled too deep will finish off plants in our heat. We fix the prep first, then plant for the sun the bed actually gets."
+    },
+    "mulch-installation": {
+      "q": "How much mulch do my Henderson beds need?",
+      "a": "Less than most people think. We keep mulch at an inch to an inch and a half over a clean, edged bed, since deeper than that holds too much moisture against roots in our wet springs. The three-inch rule on the bag is a northern spec that doesn't fit East Texas."
+    },
+    "hardscaping": {
+      "q": "Can you build a fire pit with my patio in Henderson?",
+      "a": "Yes. Fire pits, seating walls and flagstone paths can all go in with a patio. We lay out the whole space first so the fire pit sits a safe distance from the house and trees, and we build everything on the same compacted base."
+    },
+    "retaining-walls": {
+      "q": "What retaining wall material works best in Henderson?",
+      "a": "Segmental block is our usual pick because it locks together, flexes with the ground and goes up clean. Natural stone and boulder walls cost more but suit some properties. What matters more than the face is the base and the drain behind it, and every wall we build gets both."
+    },
+    "drainage": {
+      "q": "Do you install French drains in Henderson?",
+      "a": "Yes, when a French drain is the right fix. We use sock-wrapped 4-inch perforated PVC set in #57 stone and tie it to a daylight outlet or a pop-up emitter. A standard single run usually costs $1,900 to $3,000, and sometimes a downspout reroute or a regrade solves the problem for less."
+    },
+    "christmas-lights": {
+      "q": "Do you take the Christmas lights down after the season in Henderson?",
+      "a": "Yes. We take everything down in January and store the lights for you, so they're ready for next year. You don't touch a ladder or deal with tangled strands in the attic."
+    }
+  },
+  "nearby": [
+    "kilgore-tx",
+    "lake-cherokee-tx",
+    "carthage-tx",
+    "longview-tx"
+  ]
+}

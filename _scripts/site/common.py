@@ -105,9 +105,13 @@ def hero_fig(key=None, src=None, w=None, h=None, alt='', cap=''):
         p = photo(key)
         src, w, h, alt = p['full'], p['w'], p['h'], p['alt']
         cap = cap or (p['caption'] + (', ' + p['place'] if p['place'] and p['place'] != 'East Texas' else ''))
-        if key in BYKEY and BYKEY[key]['gw'] < w:
-            srcset = (f' srcset="{p["src"]} {BYKEY[key]["gw"]}w, {src} {w}w"'
-                      f' sizes="(max-width: 900px) calc(100vw - 40px), {560 if w > h else 440}px"')
+        if key in BYKEY:
+            b = BYKEY[key]
+            w, h = b['w'], b['h']   # the full file's real size (photo() reports the grid size)
+            cands = sorted({(b['tw'], f"/img/work/thumb/{b['file']}"), (b['gw'], p['src']), (b['mw'], f"/img/work/md/{b['file']}"), (b['w'], src)})
+            srcset = (' srcset="' + ', '.join(f'{u} {cw}w' for cw, u in cands) + '"'
+                      f' sizes="(max-width: 900px) calc(100vw - 54px), {560 if w > h else 440}px"')
+            src = f"/img/work/md/{b['file']}"
     land = ' land' if w > h else ''
     return (f'<figure class="hfig{land}"><img src="{src}"{srcset} width="{w}" height="{h}" alt="{e(alt)}" fetchpriority="high" decoding="async">'
             f'<figcaption>Pictured: {e(cap)}</figcaption></figure>')

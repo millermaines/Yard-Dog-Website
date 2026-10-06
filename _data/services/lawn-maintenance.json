@@ -2,12 +2,12 @@
   "slug": "lawn-maintenance",
   "name": "Lawn Maintenance",
   "short": "lawn maintenance",
-  "title": "Lawn Maintenance Longview TX | Yard Dog Landscapes",
-  "meta": "Weekly and bi-weekly mowing, edging, trimming and blowing in Longview, TX. Same Yard Dog crew every visit, most yards about $50 to $65 per visit. Free quote.",
-  "h1": "Lawn maintenance in Longview & East Texas",
+  "title": "Lawn Care & Mowing Service in Longview, TX | Yard Dog Landscapes",
+  "meta": "Weekly and bi-weekly mowing, edging, trimming and blowing in Longview, TX. Same Yard Dog crew every visit, starting at $65 per visit. Free quote.",
+  "h1": "Lawn care & mowing in Longview",
   "kicker": "Lawn maintenance",
-  "lede": "Weekly and bi-weekly mowing, edging, trimming and blowing by the same crew every visit. Most residential yards run about $50 to $65 per visit.",
-  "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview, TX, founded in 2017 and rated 5.0 stars across 111 Google reviews. Miller Maines and the same crew of four mow, edge, string-trim and blow off every visit on a weekly or bi-weekly schedule, and we never subcontract the work. Most residential yards run about $50 to $65 per visit. Lot size, how the yard is laid out and how often you want us out set your price. Call (903) 844-6877 for a free quote.",
+  "lede": "Weekly and bi-weekly mowing, edging, trimming and blowing by the same crew every visit. Most residential yards start at $65 per visit.",
+  "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview, TX, founded in 2017 and rated 5.0 stars across {{REVIEWS}} Google reviews. Miller Maines and the same crew of four mow, edge, string-trim and blow off every visit on a weekly or bi-weekly schedule, and we never subcontract the work. Most residential yards start at $65 per visit. Lot size, how the yard is laid out and how often you want us out set your price. Request a free quote online.",
   "overview": [
     "Lawn maintenance is the basics done the same way every week. We mow, edge along the walks, driveway and beds, string-trim around everything the mower can't reach, and blow every hard surface clean. Clippings go back into the turf instead of into bags, where they hand a little nitrogen and moisture back to the soil.",
     "The part most crews skip is the cut itself. We set the deck for the grass you have, not one height for every yard. Bermuda runs lower, St. Augustine never drops under three inches, and both go up in July. We take no more than a third of the blade at a time, keep blades sharp so the grass is sliced instead of torn, and change mowing direction so the turf doesn't rut. Same crew every visit, so the people mowing your yard in August are the ones who noticed the thin spot in May."
@@ -23,16 +23,31 @@
     "The same crew on the same schedule"
   ],
   "process": [
-    {"title": "Walk the yard", "text": "We look at your grass type, the sun, the slopes and the obstacles, then send a written per-visit price, usually within a day."},
-    {"title": "Set the schedule", "text": "Most yards go weekly from late March through October and every other week as growth slows. The same crew works your yard every time."},
-    {"title": "Mow, edge, trim, blow", "text": "Every visit gets the full routine: deck set for your grass, clean edges, trimmed obstacles and hard surfaces blown off."},
-    {"title": "Adjust with the season", "text": "We raise the deck for summer heat, mulch the first fall leaves back into the lawn, and drop to every other week when the grass slows down."},
-    {"title": "Flag what we see", "text": "Thin spots, standing water or a patch that keeps browning. We tell you while it is still small and cheap to fix."}
+    {
+      "title": "Walk the yard",
+      "text": "We look at your grass type, the sun, the slopes and the obstacles, then send a written per-visit price, usually within a day."
+    },
+    {
+      "title": "Set the schedule",
+      "text": "Most yards go weekly from late March through October and every other week as growth slows. The same crew works your yard every time."
+    },
+    {
+      "title": "Mow, edge, trim, blow",
+      "text": "Every visit gets the full routine: deck set for your grass, clean edges, trimmed obstacles and hard surfaces blown off."
+    },
+    {
+      "title": "Adjust with the season",
+      "text": "We raise the deck for summer heat, mulch the first fall leaves back into the lawn, and drop to every other week when the grass slows down."
+    },
+    {
+      "title": "Flag what we see",
+      "text": "Thin spots, standing water or a patch that keeps browning. We tell you while it is still small and cheap to fix."
+    }
   ],
   "price": {
-    "range": "$50–$65",
+    "range": "From $65",
     "unit": "per visit",
-    "note": "That is the typical weekly price for a standard residential yard, billed on a recurring schedule. You get a flat per-visit price in writing before the first mow.",
+    "note": "Starting price for a standard residential yard on a weekly or bi-weekly schedule. You get a flat per-visit price in writing before the first mow.",
     "factors": [
       "Lot size",
       "Weekly or bi-weekly schedule",
@@ -50,19 +65,42 @@
     ]
   },
   "faq": [
-    {"q": "How much does lawn maintenance cost in Longview, TX?", "a": "Most weekly mowing for a typical Longview yard runs about $50 to $65 per visit, billed on a recurring schedule. Larger lots, heavy tree cover or a lot of extra trimming can move that number. We walk the yard and give you a flat per-visit price in writing before the first mow, so there are no surprises on the bill."},
-    {"q": "How often should my lawn be mowed in East Texas?", "a": "Weekly from about late March through October for most yards, when bermuda and St. Augustine put on the most growth, then every other week as things slow down. In peak growing weather a lawn wants a cut every five to seven days so you never take more than a third of the blade at once. We'll recommend a schedule after we walk your yard."},
-    {"q": "What height should I mow bermuda and St. Augustine?", "a": "Bermuda can run one to one and a half inches in spring and fall, but in a July heat wave hold it around two to two and a half inches. St. Augustine should never go below three inches and wants three and a half to four through summer. Cutting St. Augustine like bermuda is one of the surest ways to open a bare patch."},
-    {"q": "Do you bag the grass clippings?", "a": "No. We blow clippings back into the turf instead of bagging or hauling them off. Dry clippings break down fast and hand a little nitrogen and moisture back to the soil. Walks, drives and patios get blown clean every visit, so nothing ends up tracked into the house or washed into the street."},
-    {"q": "Will it be the same crew every time?", "a": "Yes. Yard Dog is Miller Maines and a crew of four, and the same people work your yard every visit. We never subcontract. That matters for mowing more than people expect, because a crew that knows your yard knows where the soft spots are, which beds need a careful edge and how high your grass should be cut. We're family-owned and fully insured."}
+    {
+      "q": "How much does lawn maintenance cost in Longview, TX?",
+      "a": "Most weekly mowing for a typical Longview yard starts at $65 per visit, billed on a recurring schedule. Larger lots, heavy tree cover or a lot of extra trimming can move that number. We walk the yard and give you a flat per-visit price in writing before the first mow, so there are no surprises on the bill."
+    },
+    {
+      "q": "How often should my lawn be mowed in East Texas?",
+      "a": "Weekly from about late March through October for most yards, when bermuda and St. Augustine put on the most growth, then every other week as things slow down. In peak growing weather a lawn wants a cut every five to seven days so you never take more than a third of the blade at once. We'll recommend a schedule after we walk your yard."
+    },
+    {
+      "q": "What height should I mow bermuda and St. Augustine?",
+      "a": "Bermuda can run one to one and a half inches in spring and fall, but in a July heat wave hold it around two to two and a half inches. St. Augustine should never go below three inches and wants three and a half to four through summer. Cutting St. Augustine like bermuda is one of the surest ways to open a bare patch."
+    },
+    {
+      "q": "Do you bag the grass clippings?",
+      "a": "No. We blow clippings back into the turf instead of bagging or hauling them off. Dry clippings break down fast and hand a little nitrogen and moisture back to the soil. Walks, drives and patios get blown clean every visit, so nothing ends up tracked into the house or washed into the street."
+    },
+    {
+      "q": "Will it be the same crew every time?",
+      "a": "Yes. Yard Dog is Miller Maines and a crew of four, and the same people work your yard every visit. We never subcontract. That matters for mowing more than people expect, because a crew that knows your yard knows where the soft spots are, which beds need a careful edge and how high your grass should be cut. We're family-owned and fully insured."
+    }
   ],
-  "related": ["fertilization", "leaf-removal", "sod-installation"],
-  "blog": ["blog-summer-mowing-height", "blog-bermuda-vs-st-augustine-east-texas", "blog-east-texas-summer-lawn"],
+  "related": [
+    "fertilization",
+    "leaf-removal",
+    "sod-installation"
+  ],
+  "blog": [
+    "blog-summer-mowing-height",
+    "blog-bermuda-vs-st-augustine-east-texas",
+    "blog-east-texas-summer-lawn"
+  ],
   "town_template": {
-    "h1": "Lawn maintenance in {town}",
-    "title": "Lawn Maintenance in {town}, TX | Yard Dog Landscapes",
+    "h1": "Lawn care & mowing in {town}",
+    "title": "Lawn Care & Mowing in {town}, TX | Yard Dog Landscapes",
     "meta": "Weekly and bi-weekly lawn maintenance in {town}, TX. Mowing, edging, trimming and blowing by the same Yard Dog crew every visit. Call for a free quote.",
     "lede": "Weekly and bi-weekly mowing, edging and trimming in {town}, done by the same crew every visit at the right height for your grass.",
-    "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview that mows yards in {town} and around {county}. We've been in business since 2017 and hold a 5.0 rating across 111 Google reviews. The same crew mows, edges, trims and blows off every visit on a weekly or bi-weekly schedule, and we never subcontract. Most yards run about $50 to $65 per visit, depending on lot size and how often we come. Call (903) 844-6877 for a free quote."
+    "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview that mows yards in {town} and around {county}. We've been in business since 2017 and hold a 5.0 rating across {{REVIEWS}} Google reviews. The same crew mows, edges, trims and blows off every visit on a weekly or bi-weekly schedule, and we never subcontract. Most yards start at $65 per visit, depending on lot size and how often we come. Request a free quote online."
   }
 }

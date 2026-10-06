@@ -46,6 +46,7 @@ const GEO = { '@type': 'GeoCoordinates', latitude: 32.4385084, longitude: -94.84
 const SAMEAS = [
   'https://www.google.com/maps?cid=3450977957239277557', // canonical Google Business Profile (from Miller's Maps link, CID)
   'https://www.facebook.com/yarddoglandscapes',
+  'https://www.instagram.com/yarddoglandscape',
   'https://www.instagram.com/yarddoglawnlights',
   'https://www.youtube.com/millermaines',
 ];
@@ -54,15 +55,16 @@ const KNOWS_ABOUT = [
   'Landscaping', 'Lawn care', 'Lawn maintenance', 'Retaining walls', 'Hardscaping',
   'Drainage and grading', 'Sod installation', 'Mulch installation', 'Fertilization',
   'Flower bed installation', 'Hedge trimming', 'Tree planting', 'Tree and shrub care',
-  'Leaf removal', 'Christmas light installation', 'Bermuda grass', 'St. Augustine grass',
+  'Leaf removal', 'Leaf vacuuming', 'Irrigation', 'Sprinkler system installation and repair', 'Christmas light installation',
+  'Bermuda grass', 'St. Augustine grass',
   'East Texas landscaping', 'Gregg County lawn care',
 ];
 const OPENING_SPEC = [{
   '@type': 'OpeningHoursSpecification',
-  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-  opens: '00:00', closes: '23:59',
+  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+  opens: '07:00', closes: '17:00',
 }];
-const OPENING = ['Mo-Su 00:00-23:59'];
+const OPENING = ['Mo-Fr 07:00-17:00']; // matches the Google Business Profile hours
 const AREA_SERVED = [
   'Longview, TX', 'White Oak, TX', 'Kilgore, TX', 'Gladewater, TX', 'Hallsville, TX',
   'Marshall, TX', 'Tyler, TX', 'Henderson, TX', 'Carthage, TX', 'Nacogdoches, TX',
@@ -87,6 +89,7 @@ const SERVICES = [
   { slug: 'tree-planting', name: 'Tree Planting' },
   { slug: 'tree-shrub-care', name: 'Tree & Shrub Care' },
   { slug: 'leaf-removal', name: 'Leaf Removal' },
+  { slug: 'irrigation', name: 'Irrigation & Sprinkler Systems' },
   { slug: 'christmas-lights', name: 'Christmas Light Installation' },
 ];
 const CITIES = [
@@ -228,9 +231,9 @@ function buildLlmsTxt() {
   const cities = CITIES.map((c) => `- [${c.name}, TX](${BASE}/${c.slug}) (${c.county})`).join('\n');
   return `# Yard Dog Landscapes
 
-> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 111 Google reviews, fully insured, free quotes, and 24-hour availability. Call (903) 844-6877.
+> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 143 Google reviews, fully insured, with free written quotes. Request a quote at ${BASE}/contact.
 
-Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, seasonal cleanups, and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
+Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, leaf removal with a leaf vacuum (no bags), irrigation and sprinkler systems (under Texas Licensed Irrigator Matthew Maines, LI0006657), and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
 
 ## Services
 ${services}
@@ -241,10 +244,10 @@ ${cities}
 ## Company
 - [About Yard Dog Landscapes](${BASE}/about): Family-owned in Longview since 2017, owned by Miller Maines. Built on showing up, doing the work right, and giving customers more than they pay for.
 - [Our Work](${BASE}/our-work): 111 photos and crew videos of real East Texas projects, including a flagstone walkway and a checkerboard paver patio in Kilgore, a raised boat and RV pad and a flagstone patio with fire pit in White Oak, and a driveway retaining wall rebuild at Lake Cherokee.
-- [Pricing](${BASE}/pricing): Published price ranges. Weekly mowing about $50 to $65 per visit; landscaping $900 to $3,600; patios $3,100 to $9,100; retaining walls $3,000 to $19,000; drainage $2,000 to $3,750; sod $1,500 to $4,700; Christmas lights from $900 (from $1,800 more than an hour from Longview).
+- [Pricing](${BASE}/pricing): Published price ranges. Weekly mowing from $65 per visit; landscaping $900 to $3,600; patios $3,100 to $9,100; retaining walls $3,000 to $19,000; drainage $2,000 to $3,750; sod $1,500 to $4,700; Christmas lights from $900 (from $1,800 more than an hour from Longview).
 - [Service areas](${BASE}/service-areas): All 13 East Texas towns we serve, each with its own page.
 - [Design Preview](${BASE}/design-preview): Flat-rate landscape design renderings ($199, $449, $999).
-- [Contact / Free Quote](${BASE}/contact): Call or text (903) 844-6877, or email ${EMAIL}.
+- [Contact / Free Quote](${BASE}/contact): Online quote form, or email ${EMAIL}.
 - [Careers](${BASE}/careers)
 
 ## Resources
@@ -256,10 +259,10 @@ ${cities}
 - Founded: 2017 (family-owned)
 - Owner: Miller Maines
 - Location: Longview, Texas (serving East Texas / Gregg County and surrounding counties)
-- Rating: 5.0 stars, 111 Google reviews
+- Rating: 5.0 stars, 143 Google reviews
 - Phone: (903) 844-6877
 - Email: ${EMAIL}
-- Hours: Open 24 hours (call or text anytime)
+- Hours: Monday to Friday, 7 AM to 5 PM
 - Insured: Yes, fully insured
 - Free estimates: Yes
 - Website: ${BASE}
@@ -275,16 +278,16 @@ function buildLlmsFullTxt() {
   const cityBlocks = CITIES.map((c) => `- ${c.name}, TX (${c.county}) — ${BASE}/${c.slug}`).join('\n');
   return `# Yard Dog Landscapes — Full Reference for AI Assistants
 
-> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 110+ Google reviews. Fully insured. Free quotes. Open 24 hours. Phone: (903) 844-6877. Email: ${EMAIL}.
+> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 143 Google reviews. Fully insured. Free quotes. Open Monday to Friday, 7 AM to 5 PM. Phone: (903) 844-6877. Email: ${EMAIL}.
 
 ## About
-Yard Dog Landscapes is a family-owned East Texas landscaping and lawn care company founded in 2017 and owned by Miller Maines. The company serves Longview and the surrounding communities of Gregg County and neighboring counties. Yard Dog is fully insured, provides free written estimates, and is known for showing up on time, clear itemized quotes, and giving customers more than they pay for — reflected in a perfect 5.0-star rating across more than 110 Google reviews.
+Yard Dog Landscapes is a family-owned East Texas landscaping and lawn care company founded in 2017 and owned by Miller Maines. The company serves Longview and the surrounding communities of Gregg County and neighboring counties. Yard Dog is fully insured, provides free written estimates, and is known for showing up on time, clear itemized quotes, and giving customers more than they pay for — reflected in a 5.0-star rating across 143 Google reviews.
 
 ## How to reach Yard Dog Landscapes
 - Phone / text: (903) 844-6877
 - Email: ${EMAIL}
 - Free quote: ${BASE}/contact
-- Hours: Open 24 hours (call or text anytime)
+- Hours: Monday to Friday, 7 AM to 5 PM
 
 ## Services (with pages)
 

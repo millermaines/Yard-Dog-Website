@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "about 70 miles south of Longview, down past Henderson",
   "hub_title": "Landscaping & Lawn Care in Nacogdoches, TX | Yard Dog Landscapes",
-  "hub_meta": "Patios, retaining walls, drainage, landscape installs and Christmas lights in Nacogdoches, TX by Yard Dog Landscapes. Free written quote: (903) 844-6877.",
+  "hub_meta": "Patios, retaining walls, drainage, landscape installs and Christmas lights in Nacogdoches, TX by Yard Dog Landscapes. Free written quotes.",
   "h1": "Landscaping & lawn care in Nacogdoches",
   "lede": "Nacogdoches is about 70 miles south of our Longview shop. That drive makes the most sense for bigger projects like patios, walls, drainage and full landscape installs, and for Christmas lights.",
   "intro": [
-    "Yard Dog Landscapes is a family-owned landscaping company based in Longview that takes on projects in Nacogdoches and around Nacogdoches County. Miller Maines founded it in 2017, and the work is done by Miller and a crew of four, never a subcontractor. We are fully insured and rated 5.0 on Google across 111 reviews. Call or text (903) 844-6877 any time to set up a free walkthrough and a written, itemized estimate.",
+    "Yard Dog Landscapes is a family-owned landscaping company based in Longview that takes on projects in Nacogdoches and around Nacogdoches County. Miller Maines founded it in 2017, and the work is done by Miller and a crew of four, never a subcontractor. We are fully insured and rated 5.0 on Google across {{REVIEWS}} reviews. Send a quote request any time to set up a free walkthrough and a written, itemized estimate.",
     "Nacogdoches is deeper in the Piney Woods than Longview, and the yards show it. The town is hillier, with streets that roll down toward La Nana and Banita creeks, and plenty of lots have a real grade to them. Tall pines and hardwoods shade the older neighborhoods around downtown and the Stephen F. Austin campus, and the soil runs acidic. This is the town of the Azalea Trail and the big azalea garden at SFA, and azaleas, dogwoods and camellias do well here for good reason. St. Augustine carries the lawns in the shade, and Bermuda only holds on the open, sunny lots.",
     "We will be straight about the distance. Nacogdoches is well over an hour from Longview, so the work we usually make the trip for is the bigger kind: patios and walkways, retaining walls on those slopes, drainage, sod and full landscape installs. Christmas lights too, which start at $1,800 for installs more than an hour from Longview. Weekly mowing this far out is not our usual work, but if you have something smaller in mind, call anyway. We will tell you honestly what we can take on."
   ],
@@ -65,7 +65,7 @@
     },
     {
       "q": "Do you offer weekly mowing in Nacogdoches?",
-      "a": "It is not something we usually do this far from Longview, and we would rather say that up front than miss visits. If we install sod or a landscape for you, we will leave written mowing heights and a care schedule so whoever mows it can keep it healthy. If you want to ask about your address, call or text any time."
+      "a": "It is not something we usually do this far from Longview, and we would rather say that up front than miss visits. If we install sod or a landscape for you, we will leave written mowing heights and a care schedule so whoever mows it can keep it healthy. If you want to ask about your address, send it with a quote request any time."
     },
     {
       "q": "Can I see a design before I commit to a big project?",
@@ -86,7 +86,8 @@
     "hardscaping": "Patios and walkways are one of the main reasons we make the drive to Nacogdoches. On a hilly lot, a patio often needs the ground cut and leveled first, sometimes with a short wall on the low side to hold the fill, and then we build a compacted crushed stone base and pitch the surface away from the house. Most patio projects run $3,100 to $9,100.",
     "retaining-walls": "Plenty of Nacogdoches yards slope hard toward the street or down toward a creek, and a retaining wall turns that slope into flat, usable ground and stops beds from washing out. We build on a compacted base with gravel and a drain behind every wall, so water never builds pressure against it. Most walls run $3,000 to $19,000 by height and length.",
     "drainage": "On a sloped Nacogdoches lot, water picks up speed coming downhill and dumps against whatever sits at the bottom, often a slab or a back patio. We slow it and steer it with swales, French drains and downspout reroutes that outlet to daylight or a pop-up emitter. Most drainage projects run $2,000 to $3,750, with full systems running $3,000 to $4,500.",
-    "christmas-lights": "Christmas lights are one of the main jobs we travel down to Nacogdoches for, and installs more than an hour from Longview start at $1,800. We supply the lights, custom-cut C9 lines to your roofline, take them down after the season and store them for next year. Quotes come from a photo mock-up, in warm white or color, for homes and businesses."
+    "christmas-lights": "Christmas lights are one of the main jobs we travel down to Nacogdoches for, and installs more than an hour from Longview start at $1,800. We supply the lights, custom-cut C9 lines to your roofline, take them down after the season and store them for next year. Quotes come from a photo mock-up, in warm white or color, for homes and businesses.",
+    "irrigation": "Nacogdoches lots are hilly, and water on a slope runs off before it soaks in. We zone slopes on their own, run shorter cycles so water has time to sink in, and put the beds on drip."
   },
   "service_faq": {
     "lawn-maintenance": {
@@ -144,6 +145,10 @@
     "christmas-lights": {
       "q": "Do you hang Christmas lights in Nacogdoches?",
       "a": "Yes. It is one of the main things we travel that far for. Installs more than an hour from Longview start at $1,800. We quote from a photo mock-up, supply the lights, install custom-cut C9 lines, take them down after the season and store them. Book early, since the season fills up."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Nacogdoches?",
+      "a": "Yes, as scheduled projects. Nacogdoches is about 70 miles south of Longview, so we take on new installs there rather than small service calls. The work is done under Texas Licensed Irrigator Matthew Maines, LI0006657, with the permit pulled. The walkthrough and quote are free."
     }
   },
   "nearby": [

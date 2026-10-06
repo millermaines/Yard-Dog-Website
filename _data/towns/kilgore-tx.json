@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "a short drive southwest of Longview",
   "hub_title": "Landscaping & Lawn Care in Kilgore, TX | Yard Dog Landscapes",
-  "hub_meta": "Landscaping and lawn care in Kilgore, TX: mowing, leaf cleanup, flagstone walkways, paver patios and drainage. Family-owned, 5.0 on Google. (903) 844-6877.",
+  "hub_meta": "Landscaping and lawn care in Kilgore, TX: mowing, leaf cleanup, flagstone walkways, paver patios and drainage. Family-owned, 5.0 on Google. Free written quotes.",
   "h1": "Landscaping & lawn care in Kilgore",
   "lede": "From weekly mowing under Kilgore's big pecans and pines to flagstone walkways and paver patios, the same Yard Dog crew does the work from the first walkthrough to the last cleanup.",
   "intro": [
-    "Yard Dog Landscapes does landscaping and lawn care in Kilgore, TX, a short drive southwest of our home base in Longview. We're family-owned and have worked East Texas yards since 2017. Owner Miller Maines and the same crew of four handle every visit, and we never subcontract. We're fully insured and rated 5.0 on Google from 111 reviews, and every job starts with a free walkthrough and a written, itemized estimate, usually within a day. Call or text (903) 844-6877 anytime.",
+    "Yard Dog Landscapes does landscaping and lawn care in Kilgore, TX, a short drive southwest of our home base in Longview. We're family-owned and have worked East Texas yards since 2017. Owner Miller Maines and the same crew of four handle every visit, and we never subcontract. We're fully insured and rated 5.0 on Google from {{REVIEWS}} reviews, and every job starts with a free walkthrough and a written, itemized estimate, usually within a day. Request a free quote anytime.",
     "Kilgore is an oil town at heart, from the derricks downtown on the World's Richest Acre to the East Texas Oil Museum at Kilgore College. Its older neighborhoods carry heavy tree cover: big pecans, post oaks and loblolly pines that shade the lawns and drop leaves well into December. Under that canopy St. Augustine does better than Bermuda. The soil leans sandy and acidic after decades of pine needles, so it drains fast and runs low on nutrients.",
     "This year we built two hardscapes here: a checkerboard concrete paver patio off a covered porch in April and a flagstone walkway with chopped stone borders and path lighting in September. We also handle the steady work in Kilgore, like mowing, leaf cleanup, hedges and fresh mulch. The town sits on the Gregg and Rusk county line, and we cover both sides. If you're in Kilgore and need anything from weekly mowing to a full backyard rebuild, the walkthrough and estimate are free."
   ],
@@ -51,7 +51,7 @@
   "faq": [
     {
       "q": "Do you cover both the Gregg and Rusk County sides of Kilgore?",
-      "a": "Yes. Kilgore sits on the county line, and we work on both sides, from the neighborhoods around Kilgore College and downtown to homes off US 259. Call or text (903) 844-6877 if you're not sure you're in range."
+      "a": "Yes. Kilgore sits on the county line, and we work on both sides, from the neighborhoods around Kilgore College and downtown to homes off US 259. Send a quote request if you're not sure you're in range."
     },
     {
       "q": "How much does a paver patio or walkway cost in Kilgore?",
@@ -67,7 +67,7 @@
     }
   ],
   "service_angles": {
-    "lawn-maintenance": "Mowing in Kilgore often means working around trees: surface roots from pecans and oaks, low limbs, and shade that keeps one corner of the lawn growing slower than the rest. We keep St. Augustine tall, string-trim around trunks without nicking the bark and blow off walks and drives every visit. Weekly mowing for a typical yard runs about $50 to $65 a visit.",
+    "lawn-maintenance": "Mowing in Kilgore often means working around trees: surface roots from pecans and oaks, low limbs, and shade that keeps one corner of the lawn growing slower than the rest. We keep St. Augustine tall, string-trim around trunks without nicking the bark and blow off walks and drives every visit. Weekly mowing for a typical yard starts at $65 a visit.",
     "leaf-removal": "Kilgore's pecans and post oaks drop heavy through November and into December, and the pines add needles on top. Left on St. Augustine through a wet winter, that layer smothers the grass, so on wooded lots we usually plan two passes and haul it all off. Pricing comes after we see how much canopy you have.",
     "fertilization": "Kilgore's sandy soil, after years of pine needles, tends to test acidic and low on nutrients. We start with a soil test, add lime where the numbers call for it and use slower-release nitrogen so the feeding doesn't wash straight through the sand. Programs follow the season, with visits starting from about $190.",
     "hedge-trimming": "Kilgore's long, humid growing season keeps boxwoods, hollies and ligustrums pushing new growth from spring into fall. We shape them often enough to stay tight without cutting back into bare wood, and keep foundation hedges clear of windows and walkways. Hedge trimming here usually runs $150 to $800.",
@@ -80,7 +80,8 @@
     "hardscaping": "We built two Kilgore hardscapes this year: a checkerboard concrete paver patio with gravel joints off a covered porch, and a flagstone walkway with chopped stone borders and path lighting. Both sit on a dug-out, compacted base so the sandy ground doesn't shift them. Patio and walkway projects mostly fall between $3,100 and $9,100.",
     "retaining-walls": "Kilgore's sandy soil erodes and slumps once it's cut into a slope, so a wall here needs a compacted base set below grade, gravel backfill and weep outlets that let water out before it undercuts the footing. We build segmental block and natural stone walls, and most run $3,000 to $19,000 depending on height and length.",
     "drainage": "Kilgore's sandy topsoil hides the problem: water soaks in fast, hits clay or a hardpan layer, then spreads across flat lots or pools against the slab. We trace where it goes after a storm, then regrade, extend downspouts or run French drains to a real outlet. Small fixes start around $450, and most projects run $2,000 to $3,750.",
-    "christmas-lights": "Kilgore is a short drive from our Longview shop, inside our standard install area. We supply warm white or color C9 lines custom-cut to the roofline, hang them, take them down after the season and store them, for homes and businesses alike. Most homes start at $900, quoted from a photo mock-up of the house."
+    "christmas-lights": "Kilgore is a short drive from our Longview shop, inside our standard install area. We supply warm white or color C9 lines custom-cut to the roofline, hang them, take them down after the season and store them, for homes and businesses alike. Most homes start at $900, quoted from a photo mock-up of the house.",
+    "irrigation": "Kilgore's sandy topsoil sits on clay or hardpan, so water soaks in fast and then spreads sideways. Shorter cycles that let each zone soak in, heads spaced for full coverage and drip on the beds keep the yard even instead of soggy in one corner and dry in another."
   },
   "service_faq": {
     "lawn-maintenance": {
@@ -138,6 +139,10 @@
     "christmas-lights": {
       "q": "Do you hang Christmas lights on businesses in Kilgore?",
       "a": "Yes. We do residential and commercial installs. Commercial jobs are quoted the same way, from a photo mock-up of the building, and we handle install, takedown and storage."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Kilgore?",
+      "a": "Yes. We install new systems and fix existing ones in Kilgore and the Rusk County side of town, under Texas Licensed Irrigator Matthew Maines, LI0006657. We pull the permit the job requires, and pricing comes after a free walkthrough."
     }
   },
   "nearby": [

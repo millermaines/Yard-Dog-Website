@@ -8,7 +8,7 @@ WITHOUT thin, spun, or doorway-style content. Every page must read like a local 
 ## Business facts you may use (do not invent others)
 - Yard Dog Landscapes, family-owned, based in Longview, TX (Gregg County). Founded 2017. Owner: Miller Maines.
 - Crew: Miller plus a crew of four. Same crew every visit. Work is never subcontracted.
-- 5.0 stars on Google from 111 reviews. Fully insured. (Do NOT say "licensed".)
+- 5.0 stars on Google (review count lives in REVIEW_COUNT in _scripts/site/common.py; data files use {{REVIEWS}}). Fully insured. (Do NOT say "licensed".)
 - Phone (903) 844-6877, info@yarddoglandscapes.com. Open 24 hours (call or text anytime).
 - Free on-site walkthrough and written, itemized estimate, usually within 24 hours / within a day.
 - Service area: Longview, White Oak, Kilgore, Gladewater, Hallsville, Marshall, Tyler, Henderson, Carthage,

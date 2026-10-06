@@ -10,19 +10,34 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "yarddoglandscapes.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "yarddoglandscapes.com"
+        }
+      ],
       "destination": "https://www.yarddoglandscapes.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "yarddoglawncare.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "yarddoglawncare.com"
+        }
+      ],
       "destination": "https://www.yarddoglandscapes.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.yarddoglawncare.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.yarddoglawncare.com"
+        }
+      ],
       "destination": "https://www.yarddoglandscapes.com/:path*",
       "permanent": true
     },
@@ -304,6 +319,131 @@
     {
       "source": "/feed/:type*",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services-2",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/services-2/:path*",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/blog-brown-patch-heat-stress",
+      "destination": "/blog-brown-patch-vs-heat-stress",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brown-patch-vs-heat-stress",
+      "destination": "/blog-brown-patch-vs-heat-stress",
+      "permanent": true
+    },
+    {
+      "source": "/irrigation-repair",
+      "destination": "/irrigation",
+      "permanent": true
+    },
+    {
+      "source": "/sprinkler-repair",
+      "destination": "/irrigation",
+      "permanent": true
+    },
+    {
+      "source": "/sprinkler-systems",
+      "destination": "/irrigation",
+      "permanent": true
+    },
+    {
+      "source": "/french-drains",
+      "destination": "/drainage",
+      "permanent": true
+    },
+    {
+      "source": "/review",
+      "destination": "https://g.page/r/CfVH8wQrVuQvEBM/review",
+      "permanent": false
+    },
+    {
+      "source": "/reviews",
+      "destination": "https://g.page/r/CfVH8wQrVuQvEBM/review",
+      "permanent": false
+    },
+    {
+      "source": "/lawn-maintenance-longview-tx",
+      "destination": "/lawn-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/leaf-removal-longview-tx",
+      "destination": "/leaf-removal",
+      "permanent": true
+    },
+    {
+      "source": "/fertilization-longview-tx",
+      "destination": "/fertilization",
+      "permanent": true
+    },
+    {
+      "source": "/hedge-trimming-longview-tx",
+      "destination": "/hedge-trimming",
+      "permanent": true
+    },
+    {
+      "source": "/tree-shrub-care-longview-tx",
+      "destination": "/tree-shrub-care",
+      "permanent": true
+    },
+    {
+      "source": "/tree-planting-longview-tx",
+      "destination": "/tree-planting",
+      "permanent": true
+    },
+    {
+      "source": "/landscaping-longview-tx",
+      "destination": "/landscaping",
+      "permanent": true
+    },
+    {
+      "source": "/flower-bed-installation-longview-tx",
+      "destination": "/flower-bed-installation",
+      "permanent": true
+    },
+    {
+      "source": "/mulch-installation-longview-tx",
+      "destination": "/mulch-installation",
+      "permanent": true
+    },
+    {
+      "source": "/sod-installation-longview-tx",
+      "destination": "/sod-installation",
+      "permanent": true
+    },
+    {
+      "source": "/irrigation-longview-tx",
+      "destination": "/irrigation",
+      "permanent": true
+    },
+    {
+      "source": "/hardscaping-longview-tx",
+      "destination": "/hardscaping",
+      "permanent": true
+    },
+    {
+      "source": "/retaining-walls-longview-tx",
+      "destination": "/retaining-walls",
+      "permanent": true
+    },
+    {
+      "source": "/drainage-longview-tx",
+      "destination": "/drainage",
+      "permanent": true
+    },
+    {
+      "source": "/christmas-lights-longview-tx",
+      "destination": "/christmas-lights",
       "permanent": true
     }
   ]

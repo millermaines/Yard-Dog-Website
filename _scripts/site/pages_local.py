@@ -14,7 +14,7 @@ def first_sentence(t):
 def facts_list(items):
     return '<ul class="facts">' + ''.join(f'<li>{x}</li>' for x in items) + '</ul>'
 
-STD_FACTS = ['5.0 on Google from 111 reviews', 'Free written estimate within a day', 'Same crew every visit, never subcontracted']
+STD_FACTS = ['5.0 on Google from {REVIEW_COUNT} reviews', 'Free written estimate within a day', 'Same crew every visit, never subcontracted']
 
 def city_place(t):
     d = {'@type': 'City' if t['slug'] != 'lake-cherokee-tx' else 'Place', 'name': f"{t['name']}, TX",
@@ -52,7 +52,7 @@ def pricecard(s, town=None, fid='q'):
     top = top.replace('&amp;ndash;', '&ndash;')
     fac = ''.join(f'<li>{e(x)}</li>' for x in p.get('factors', [])[:6])
     return (f'<div class="pricecard">{top}<p class="pn">{e(p.get("note") or "")}</p><ul>{fac}</ul>'
-            f'<a class="btn" href="#{fid}">Get my exact price</a><a class="tl" href="tel:{PHONE_TEL}">or call {PHONE}</a></div>')
+            f'<a class="btn" href="#{fid}">Get my exact price</a></div>')
 
 def steps_html(s, light=True):
     pr = s['process']
@@ -78,11 +78,22 @@ def quote_section(s=None, town=None, fid='q'):
     copy = (f"<h2 class='h2'>{e(title)}</h2><p class='lead2'>Tell us what you need and where. We call within a day, walk the property with you and send a "
             f"written, itemized estimate. No pressure and no surprise add-ons.</p>"
             f"<ul class='chk one' style='margin-top:24px'><li>Free on-site walkthrough</li><li>Written estimate, usually within a day</li>"
-            f"<li>Same crew every visit, never subcontracted</li><li>Fully insured, 5.0 on Google from 111 reviews</li></ul>")
+            f"<li>Same crew every visit, never subcontracted</li><li>Fully insured, 5.0 on Google from {REVIEW_COUNT} reviews</li></ul>")
     return (f'<section class="sec stone" id="{fid}-s"><div class="w qwrap"><div class="qcopy">{copy}</div>'
             f'{quote_form(fid, preselect=pre, town=town["name"] if town else None)}</div></section>')
 
 # ======================================================================= service pages
+def lic_card():
+    """TCEQ: irrigation advertising has to show the licensed irrigator's name and license number."""
+    return ('<aside class="lcard"><p class="lk">Texas Licensed Irrigator</p><b>LI0006657</b>'
+            '<p class="ln">Matthew Maines</p><p class="lt">Licensed by the Texas Commission on Environmental Quality</p>'
+            '<ul><li>Permits pulled</li><li>Backflow prevention on city water</li><li>Rain and freeze sensors on new systems</li></ul></aside>')
+
+def plain_hero(slug):
+    if slug == 'irrigation':
+        return '<section class="hero plain split2">', lic_card()
+    return '<section class="hero plain solo">', ''
+
 def service_page(slug):
     s = SERVICES[slug]
     url = BASE + '/' + slug
@@ -90,15 +101,13 @@ def service_page(slug):
     ph = pool(slug)
     gallery = [k for k in ph if k != hk][:8]
     if hk:
-        hero_open = f'<section class="hero photo" style="--bg:url({hero_bg(hk)});--bp:center 55%">'
-        pic = photo(hk)
-        tag = f'<p class="tag">Pictured: {e(pic["caption"])}{", " + e(pic["place"]) if pic["place"] and pic["place"] != "East Texas" else ""}</p>'
+        hero_open, fig = f'<section class="{hero_cls(hk)}">', hero_fig(hk)
     else:
-        hero_open, tag = '<section class="hero plain">', ''
+        hero_open, fig = plain_hero(slug)
     hero = (crumb([('Services', 'services'), (s['name'], slug)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(s["kicker"])}</p><h1>{e(s["h1"])}</h1><p class="lede">{e(s["lede"])}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
-            f'{facts_list(STD_FACTS)}{tag}</div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div>'
+            f'{facts_list(STD_FACTS)}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
     q = s['faq'][0]['q'] if False else None
     answer_q = {'christmas-lights': 'Who installs Christmas lights in Longview, TX?'}.get(slug) or f"Who does {s['short']} in Longview, TX?"
     if slug in ('hardscaping',):
@@ -121,9 +130,9 @@ def service_page(slug):
              + ''.join(f'<p>{e(p)}</p>' for p in et['text']) + '</div></div></section>')
     qas = [(x['q'], x['a']) for x in s['faq']]
     body += (f'<section class="sec stone"><div class="w faqw"><div><h2 class="h2">{e(s["name"])} questions</h2>'
-             f'<p class="sub">Something else on your mind? Call or text <a href="tel:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a>.</p></div>'
+             f'<p class="sub">Something else on your mind? <a href="#q" style="font-weight:700;color:var(--ink)">Ask us in the quote form</a>.</p></div>'
              f'<div class="faq">{faq_html(qas)}</div></div></section>')
-    tg = ''.join(f'<a href="/{slug}-{t}">{e(TOWNS[t]["name"])}<small>{e(TOWNS[t]["county"])}</small></a>' for t in TOWN_ORDER)
+    tg = ''.join(f'<a href="{combo_href(slug, t)}">{e(TOWNS[t]["name"])}<small>{e(TOWNS[t]["county"])}</small></a>' for t in TOWN_ORDER)
     body += (f'<section class="sec"><div class="w"><h2 class="h2">{e(s["name"])} near you</h2>'
              f'<p class="sub">We work all over East Texas from our home base in Longview. Pick your town for local details and answers.</p>'
              f'<div class="tgrid" style="margin-top:28px">{tg}</div></div></section>')
@@ -179,16 +188,18 @@ def town_page(tslug, idx):
     url = BASE + '/' + tslug
     hk = 'TRUCK' if tslug == 'longview-tx' else town_hero_key(tslug, idx)
     if hk == 'TRUCK':
-        bg, tag = '/img/yard-dog-truck-and-track-loader.webp', '<p class="tag">Pictured: a Yard Dog truck and track loader on a job</p>'
+        bg = '/img/yard-dog-truck-and-track-loader.webp'
+        cls = hero_cls(w=1400, h=931)
+        fig = hero_fig(src='/img/yard-dog-truck-and-track-loader.webp', w=1400, h=931,
+                       alt='Yard Dog Landscapes truck and track loader on a job', cap='A Yard Dog truck and track loader on a job')
     else:
-        p = photo(hk); bg = p['full']
-        tag = f'<p class="tag">Pictured: {e(p["caption"])}{", " + e(p["place"]) if p["place"] and p["place"] != "East Texas" else ""}</p>'
-    facts = [e(t['county']) + (', Texas' if True else ''), e(t['drive'][0].upper() + t['drive'][1:]), '5.0 on Google from 111 reviews']
+        cls, fig, bg = hero_cls(hk), hero_fig(hk), photo(hk)['full']
+    facts = [e(t['county']) + (', Texas' if True else ''), e(t['drive'][0].upper() + t['drive'][1:]), '5.0 on Google from {REVIEW_COUNT} reviews']
     hero = (crumb([('Service areas', 'service-areas'), (f"{t['name']}, TX", tslug)]) +
-            f'<section class="hero photo" style="--bg:url({bg});--bp:center 55%"><div class="w"><div><p class="kick">{e(t["name"])}, Texas</p>'
+            f'<section class="{cls}"><div class="w"><div><p class="kick">{e(t["name"])}, Texas</p>'
             f'<h1>{e(t["h1"])}</h1><p class="lede">{e(t["lede"])}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
-            f'{facts_list(facts)}{tag}</div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div>'
+            f'{facts_list(facts)}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
     intro = t['intro']
     body = hero + (f'<section class="sec"><div class="w"><div class="answer"><h2>Who does landscaping and lawn care in {e(t["name"])}, TX?</h2><p>{e(intro[0])}</p></div>'
             f'<div class="doc" style="margin-top:32px;max-width:780px">' + ''.join(f'<p>{e(p)}</p>' for p in intro[1:]) + '</div>')
@@ -201,7 +212,7 @@ def town_page(tslug, idx):
     pop = t.get('popular', [])
     order = [s for s in pop if s in SERVICES] + [s for s in SERVICE_ORDER if s not in pop]
     tiles = ''.join(
-        f'<a class="stile{" pop" if s in pop else ""}" href="/{s}-{tslug}"><h3>{e(SERVICES[s]["name"])}</h3>'
+        f'<a class="stile{" pop" if s in pop else ""}" href="{combo_href(s, tslug)}"><h3>{e(SERVICES[s]["name"])}</h3>'
         f'<p>{e(first_sentence(t["service_angles"][s]))}</p>'
         f'<span class="pr">{e(SERVICES[s]["price"]["range"].replace("–", " to ") + " " + (SERVICES[s]["price"].get("unit") or "")) if SERVICES[s]["price"].get("range") else "Free quote"}</span></a>'
         for s in order)
@@ -241,21 +252,20 @@ def combo_page(slug, tslug, tidx):
     if local:
         hk = local[0]
     elif ph:
-        hk = ph[tidx % len(ph)]  # each town leads with a different real photo of this work
+        good = [k for k in ph if hero_ok(k)] or ph
+        hk = good[tidx % len(good)]  # each town leads with a different real photo of this work
     if slug == 'christmas-lights':
         hk = SERVICE_HERO[slug]
     if hk:
-        p = photo(hk)
-        hero_open = f'<section class="hero photo" style="--bg:url({p["full"]});--bp:center 55%">'
-        tag = f'<p class="tag">Pictured: {e(p["caption"])}{", " + e(p["place"]) if p["place"] and p["place"] != "East Texas" else ""}</p>'
+        hero_open, fig = f'<section class="{hero_cls(hk)}">', hero_fig(hk)
     else:
-        hero_open, tag = '<section class="hero plain">', ''
+        hero_open, fig = plain_hero(slug)
     title, meta = fill(tt['title'], t), fill(tt['meta'], t)
     h1 = fill(tt['h1'], t)
     hero = (crumb([(f"{t['name']}, TX", tslug), (s['name'], name)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(t["name"])}, Texas</p><h1>{e(h1)}</h1><p class="lede">{e(fill(tt["lede"], t))}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
-            f'{facts_list([e(t["county"]) + ", Texas", STD_FACTS[1], STD_FACTS[2]])}{tag}</div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div>'
+            f'{facts_list([e(t["county"]) + ", Texas", STD_FACTS[1], STD_FACTS[2]])}</div>{fig}</div>{GRAIN}{swoosh()}</section>')
     aq = {'hardscaping': f"Who builds patios and walkways in {t['name']}, TX?", 'retaining-walls': f"Who builds retaining walls in {t['name']}, TX?",
           'christmas-lights': f"Who installs Christmas lights in {t['name']}, TX?"}.get(slug, f"Who does {s['short']} in {t['name']}, TX?")
     body = hero + (f'<section class="sec"><div class="w"><div class="answer"><h2>{e(aq)}</h2><p>{e(fill(tt["answer"], t))}</p></div></div></section>'
@@ -282,10 +292,10 @@ def combo_page(slug, tslug, tidx):
              f'<div class="faq">{faq_html(qas)}</div></div></section>')
     others = [x for x in ([p for p in t.get('popular', []) if p in SERVICES] + SERVICE_ORDER) if x != slug]
     others = list(dict.fromkeys(others))
-    tiles = ''.join(f'<a class="stile" href="/{o}-{tslug}"><h3>{e(SERVICES[o]["name"])}</h3><p>{e(first_sentence(t["service_angles"][o]))}</p></a>' for o in others[:8])
+    tiles = ''.join(f'<a class="stile" href="{combo_href(o, tslug)}"><h3>{e(SERVICES[o]["name"])}</h3><p>{e(first_sentence(t["service_angles"][o]))}</p></a>' for o in others[:8])
     body += (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">More we do in {e(t["name"])}</h2></div>'
              f'<a class="more" href="/{tslug}">Everything in {e(t["name"])}</a></div><div class="stiles">{tiles}</div></div></section>')
-    near = ''.join(f'<a href="/{slug}-{n}">{e(TOWNS[n]["name"])}<small>{e(s["name"])}</small></a>' for n in t['nearby'] if n in TOWNS)
+    near = ''.join(f'<a href="{combo_href(slug, n)}">{e(TOWNS[n]["name"])}<small>{e(s["name"])}</small></a>' for n in t['nearby'] if n in TOWNS)
     body += (f'<section class="sec stone"><div class="w"><h2 class="h2">{e(s["name"])} in nearby towns</h2><div class="tgrid" style="margin-top:24px">{near}'
              f'<a href="/{slug}">{e(s["name"])} overview<small>Prices, process, FAQ</small></a></div></div></section>')
     body += quote_section(s, t)
@@ -298,5 +308,7 @@ def build():
         service_page(s)
     for i, t in enumerate(TOWN_ORDER):
         town_page(t, i)
+        if t == 'longview-tx':
+            continue  # the main service pages are the Longview pages
         for s in SERVICE_ORDER:
             combo_page(s, t, i)

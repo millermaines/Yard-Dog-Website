@@ -1,0 +1,106 @@
+{
+  "slug": "irrigation",
+  "name": "Irrigation & Sprinkler Systems",
+  "short": "irrigation",
+  "title": "Sprinkler System Installation & Repair in Longview, TX | Yard Dog",
+  "meta": "Sprinkler system installation and repair in Longview, TX by a Texas licensed irrigator (LI0006657). Permits pulled, zones designed for East Texas yards. Free walkthrough.",
+  "h1": "Irrigation & sprinkler systems in Longview",
+  "kicker": "Irrigation",
+  "lede": "New sprinkler systems and repairs to the one you have, designed and installed under a Texas licensed irrigator, with the permits pulled. Priced after a free walkthrough.",
+  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that designs, installs and repairs lawn sprinkler systems across East Texas. Irrigation work is done under Texas Licensed Irrigator Matthew Maines, LI0006657, who checks every system, and we pull the permits the job requires. We've worked East Texas yards since 2017 and hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day.",
+  "overview": [
+    "A sprinkler system in East Texas has one job: put the right amount of water on each part of the yard and nothing on the driveway. Sun and shade, turf and beds, flat ground and slopes all drink differently, so we lay out zones around how the yard actually behaves instead of running one big loop and hoping. Lawns get heads spaced for full coverage, and beds get drip so the water goes to the roots instead of the leaves and the siding.",
+    "Texas treats irrigation as licensed work. A licensed irrigator has to design and install a system put in for hire, systems tied to city water need a backflow prevention device, and new automatic systems need a rain or freeze sensor so they don't run in a storm or a hard freeze. Our irrigation work is done under Matthew Maines, Texas Licensed Irrigator LI0006657, and we pull whatever permit the city or county requires before we dig.",
+    "Already have a system that isn't working right? We fix broken heads and lines, leaking valves, zones that won't come on, heads spraying the street, and controllers nobody has set since the house was built."
+  ],
+  "included": [
+    "New sprinkler system design and installation",
+    "Zones laid out by sun, shade, turf and beds",
+    "Drip irrigation for flower beds and shrubs",
+    "Backflow prevention device on city water",
+    "Rain or freeze sensor on new automatic systems",
+    "Permits pulled where the job requires them",
+    "Repairs: heads, lines, valves and wiring",
+    "Controller setup and seasonal schedule"
+  ],
+  "process": [
+    {
+      "title": "Walk the yard",
+      "text": "We look at the lawn, the beds, the slope and the water source, or at the system you have and what it's doing wrong, then send a written quote."
+    },
+    {
+      "title": "Design the zones",
+      "text": "Turf, beds, sun and shade each get their own zones so every part of the yard gets the water it needs and nothing more."
+    },
+    {
+      "title": "Permit and install",
+      "text": "We pull the permit, trench, lay pipe, set heads, drip and valves, and tie in the backflow device and controller."
+    },
+    {
+      "title": "Check every zone",
+      "text": "Every zone is run and adjusted for coverage, and the licensed irrigator checks the system before we call it done."
+    },
+    {
+      "title": "Set the schedule",
+      "text": "We program the controller for the season and show you how to change it, so you aren't watering in the rain."
+    }
+  ],
+  "price": {
+    "range": null,
+    "unit": null,
+    "note": "Every yard and water source is different, so irrigation is priced after a free walkthrough. You get a written, itemized quote, usually within a day.",
+    "factors": [
+      "Size of the area to water",
+      "Number of zones",
+      "Turf heads versus bed drip",
+      "Water source and pressure",
+      "Slopes, trees and existing beds",
+      "Permit requirements"
+    ]
+  },
+  "timing": "New systems go in best in spring or fall, when the ground is workable and the lawn recovers fast from trenching. Repairs happen year-round. Before the first hard freeze, make sure the system has a working freeze sensor or is shut off, and check every zone again when you turn it back on in spring.",
+  "east_texas": {
+    "title": "Sand on top, clay underneath, and water that won't wait",
+    "text": [
+      "Most East Texas yards are sandy loam over red clay. The sand takes water fast and dries out fast, then the clay underneath stops it and pushes it sideways. A system that runs one long cycle floods the low corner and leaves the high side dry. Shorter cycles that let the water soak in, with zones split by slope and sun, keep the whole yard even.",
+      "Beds are the other mistake we see. Spray heads in a flower bed soak the leaves, the mulch and the side of the house and still leave the roots thirsty. Drip puts the water at the roots, wastes almost none, and keeps foliage dry, which matters with the fungus that shows up here in a wet, warm spring."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Are you licensed to install sprinkler systems in Texas?",
+      "a": "Yes. Our irrigation work is designed and installed under Texas Licensed Irrigator Matthew Maines, license LI0006657, issued by the Texas Commission on Environmental Quality. He checks every system, and we pull the permits the job requires."
+    },
+    {
+      "q": "How much does a sprinkler system cost in Longview, TX?",
+      "a": "It depends on how much of the yard you want watered, how many zones that takes, whether beds need drip, and your water source. We price irrigation after a free walkthrough and send a written, itemized quote, usually within a day."
+    },
+    {
+      "q": "Do you repair sprinkler systems you didn't install?",
+      "a": "Yes. We fix broken heads and lines, leaking valves, zones that won't come on, bad wiring and heads spraying the street, on systems we put in and systems we didn't."
+    },
+    {
+      "q": "Do I need a permit for a sprinkler system?",
+      "a": "Many East Texas cities require one for a new irrigation system, and the rules vary by city. We check what your address requires and pull the permit before we start."
+    },
+    {
+      "q": "Should my flower beds be on drip or spray?",
+      "a": "Drip, almost always. Spray heads in a bed wet the leaves, the mulch and the house and waste water to wind and evaporation. Drip puts water at the roots and keeps foliage dry, which helps keep fungus down in our humid springs."
+    }
+  ],
+  "related": [
+    "lawn-maintenance",
+    "sod-installation",
+    "drainage"
+  ],
+  "blog": [
+    "blog-irrigation-mistakes-east-texas"
+  ],
+  "town_template": {
+    "h1": "Irrigation & sprinkler systems in {town}",
+    "title": "Sprinkler System Installation in {town}, TX | Yard Dog Landscapes",
+    "meta": "Sprinkler system installation and repair in {town}, TX by a Texas licensed irrigator (LI0006657). Permits pulled, free walkthrough and written quote.",
+    "lede": "New sprinkler systems and repairs for {town} yards, designed and installed under a Texas licensed irrigator, with the permits pulled.",
+    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, installs and repairs sprinkler systems in {town} and around {county}. Irrigation work is done under Texas Licensed Irrigator Matthew Maines, LI0006657, who checks every system, and we pull the permits the job requires. We hold a 5.0 rating across {{REVIEWS}} Google reviews. Irrigation is priced after a free walkthrough. Send a quote request and we'll get back to you within a day."
+  }
+}

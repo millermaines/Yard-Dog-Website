@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "south of Longview, down US 259 past Kilgore",
   "hub_title": "Landscaping & Lawn Care in Henderson, TX | Yard Dog Landscapes",
-  "hub_meta": "Lawn care, landscaping, tree and shrub care, drainage and patios in Henderson, TX. Family-owned Longview crew, free written quotes. Call (903) 844-6877.",
+  "hub_meta": "Lawn care, landscaping, tree and shrub care, drainage and patios in Henderson, TX. Family-owned Longview crew, free written quotes. Send a quote request and we'll get back to you within a day.",
   "h1": "Landscaping & lawn care in Henderson",
   "lede": "Henderson is the Rusk County seat, south of Longview past Kilgore. We take care of older yards with established trees, newer lots, and country properties outside town.",
   "intro": [
-    "Yard Dog Landscapes does landscaping and lawn care in Henderson from our base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and Miller and a crew of four do every job themselves. You get the same crew every visit, and we never subcontract. We're fully insured, with a 5.0-star Google rating from 111 reviews. You can call or text (903) 844-6877 at any hour, and we'll set up a free walkthrough and a written, itemized estimate, usually within a day.",
+    "Yard Dog Landscapes does landscaping and lawn care in Henderson from our base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and Miller and a crew of four do every job themselves. You get the same crew every visit, and we never subcontract. We're fully insured, with a 5.0-star Google rating from {{REVIEWS}} reviews. You can send a quote request at any hour, and we'll set up a free walkthrough and a written, itemized estimate, usually within a day.",
     "Henderson is the Rusk County seat and sits in the old East Texas Oil Field country, and a lot of its neighborhoods have been settling in for decades. Older lots tend to be generous, with established oaks, pines and dogwoods, and azalea and camellia beds that need real pruning rather than a quick shear. Outside town, properties open up into acreage with pasture and pine woods, and the mowing and leaf work out there is a different job from an in-town yard.",
     "The soil runs sandy over clay like the rest of our area, and low spots hold water after a storm. Henderson is down US 259 from Kilgore, so getting out to walk a yard is easy for us. We look at the sun, the slope and where the water goes, then put the price in writing. We set the schedule once we've seen the property instead of promising a mowing day up front, and the same crew does the work every time."
   ],
@@ -56,11 +56,11 @@
   "faq": [
     {
       "q": "Do you cover Henderson and the rest of Rusk County?",
-      "a": "We cover Henderson and the communities around it in Rusk County. If you're out toward Tatum, Overton or New London, call or text (903) 844-6877 with your address and we'll tell you straight what fits. The walkthrough and the written estimate are free either way."
+      "a": "We cover Henderson and the communities around it in Rusk County. If you're out toward Tatum, Overton or New London, send your address with a quote request and we'll tell you straight what fits. The walkthrough and the written estimate are free either way."
     },
     {
       "q": "What does a typical Henderson job cost?",
-      "a": "It depends on the work. Weekly mowing on a typical lot runs about $50 to $65 per visit, hedge trimming is $150 to $800 for most jobs, and landscaping projects mostly run $900 to $3,600. Tree and shrub care and leaf removal get quoted after we walk the yard, since they depend on what's growing there."
+      "a": "It depends on the work. Weekly mowing on a typical lot starts at $65 per visit, hedge trimming is $150 to $800 for most jobs, and landscaping projects mostly run $900 to $3,600. Tree and shrub care and leaf removal get quoted after we walk the yard, since they depend on what's growing there."
     },
     {
       "q": "Can you help with an older Henderson yard that's gotten away from the owner?",
@@ -72,7 +72,7 @@
     }
   ],
   "service_angles": {
-    "lawn-maintenance": "Henderson lawns run from shaded St. Augustine in the older neighborhoods to open bermuda on newer and country lots, and each one gets mowed at its own height. On acreage we bring equipment sized for the ground and still trim fence lines and edges clean. Weekly mowing on a typical in-town lot runs about $50 to $65 per visit, and larger properties get priced after a walkthrough.",
+    "lawn-maintenance": "Henderson lawns run from shaded St. Augustine in the older neighborhoods to open bermuda on newer and country lots, and each one gets mowed at its own height. On acreage we bring equipment sized for the ground and still trim fence lines and edges clean. Weekly mowing on a typical in-town lot starts at $65 per visit, and larger properties get priced after a walkthrough.",
     "leaf-removal": "Between the oaks, pecans and pines on older Henderson lots, leaf season runs from October into winter, and pine straw keeps coming after the hardwoods are bare. We plan passes for mid-November and mid-December, add a third for heavy canopy, and clear the beds as well as the lawn. Leaf removal is quoted after we see the yard, since tree cover decides how much work it is.",
     "fertilization": "Like most of East Texas, Henderson lawns tend to run a little acidic from pine needles and rain, and fertilizer doesn't do much when the pH is off. We soil test on bigger lawns, add lime when it's needed, and feed on a four-visit schedule from late April through a potassium winterizer in late October. Each visit starts from about $190.",
     "hedge-trimming": "Older Henderson foundation hedges, like hollies, ligustrums and photinias, often get sheared flat on top until the bottoms go bare. We reshape them narrower at the top so light gets back to the lower branches, and we haul off everything we cut. Hedge trimming here runs $150 to $800 for most jobs, depending on the number of shrubs and how far they've grown out.",
@@ -85,12 +85,13 @@
     "hardscaping": "On the bigger Henderson lots there's room to add a fire pit area or a flagstone path out into the yard along with the patio. Every build gets an excavated, compacted crushed stone base, pitched away from the house so the new surface doesn't send water toward the slab. Most Henderson patio and hardscape projects come in between $3,100 and $9,100.",
     "retaining-walls": "Retaining walls around Henderson hold back slopes along driveways, around raised beds, and on lots where the ground falls off toward a creek or the back fence. We set every wall on a compacted base below grade with gravel backfill and a drain to daylight, and add geogrid on taller walls. Walls here mostly run $3,000 to $19,000, depending on height and length.",
     "drainage": "Henderson's low spots and flat backyards hold water because rain stops at the clay under the sandy topsoil and has nowhere to go. We check downspouts and grade first, then add swales, pop-up emitters or a French drain only where the water calls for it. Fixing a single problem spot runs $450 to $1,000, while most drainage projects cost $2,000 to $3,750.",
-    "christmas-lights": "On a Henderson house with a long roofline, a clean C9 outline cut to fit does most of the work. We supply the lights, cut each line to your house, hang it, and come back in January to take it down and store it. Henderson is inside an hour from Longview, so most homes start at $900, and the quote comes from a photo mock-up in warm white or color."
+    "christmas-lights": "On a Henderson house with a long roofline, a clean C9 outline cut to fit does most of the work. We supply the lights, cut each line to your house, hang it, and come back in January to take it down and store it. Henderson is inside an hour from Longview, so most homes start at $900, and the quote comes from a photo mock-up in warm white or color.",
+    "irrigation": "Henderson yards are sandy on top with clay underneath, so water soaks in and then stops. We run shorter cycles that let each zone soak in, split sunny and shaded lawn into separate zones, and put the beds on drip."
   },
   "service_faq": {
     "lawn-maintenance": {
       "q": "Do you mow larger country properties around Henderson?",
-      "a": "Yes. Acreage gets priced on the walkthrough, because the time it takes depends on the size, the slope, and how much trimming there is around fences, trees and outbuildings. Typical in-town lots run about $50 to $65 per visit for weekly mowing."
+      "a": "Yes. Acreage gets priced on the walkthrough, because the time it takes depends on the size, the slope, and how much trimming there is around fences, trees and outbuildings. Typical in-town lots start at $65 per visit for weekly mowing."
     },
     "leaf-removal": {
       "q": "Should I leave pine straw on the lawn in Henderson?",
@@ -143,6 +144,10 @@
     "christmas-lights": {
       "q": "Do you take the Christmas lights down after the season in Henderson?",
       "a": "Yes. We take everything down in January and store the lights for you, so they're ready for next year. You don't touch a ladder or deal with tangled strands in the attic."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Henderson?",
+      "a": "Yes. We install and repair sprinkler systems in Henderson and around Rusk County, under Texas Licensed Irrigator Matthew Maines, LI0006657, and pull the permit the job requires. Pricing comes after a free walkthrough."
     }
   },
   "nearby": [

@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "east of Longview on I-20 or US 80, past Hallsville",
   "hub_title": "Landscaping & Lawn Care in Marshall, TX | Yard Dog Landscapes",
-  "hub_meta": "Lawn care, landscaping, hedge and shrub care, drainage and Christmas lights in Marshall, TX. Family-owned, same crew every visit. Call (903) 844-6877.",
+  "hub_meta": "Lawn care, landscaping, hedge and shrub care, drainage and Christmas lights in Marshall, TX. Family-owned, same crew every visit. Send a quote request and we'll get back to you within a day.",
   "h1": "Landscaping & lawn care in Marshall",
   "lede": "Marshall is the Harrison County seat, east of Longview past Hallsville. We handle everything from weekly mowing to slow, careful work on older properties with established beds and big trees.",
   "intro": [
-    "Yard Dog Landscapes does landscaping and lawn care in Marshall from our home base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and every job is done by Miller and a crew of four. The same crew shows up each visit, and we never hand the work off to anyone else. We carry full insurance, and our Google rating is 5.0 stars across 111 reviews. The walkthrough and the written, itemized estimate are free, usually within a day. Call or text (903) 844-6877 anytime.",
+    "Yard Dog Landscapes does landscaping and lawn care in Marshall from our home base in Longview. We're family-owned, started in 2017 by owner Miller Maines, and every job is done by Miller and a crew of four. The same crew shows up each visit, and we never hand the work off to anyone else. We carry full insurance, and our Google rating is 5.0 stars across {{REVIEWS}} reviews. The walkthrough and the written, itemized estimate are free, usually within a day. Request a free quote anytime.",
     "Marshall is the Harrison County seat, and a lot of its homes have been standing a long time. Near downtown and in the older neighborhoods you find mature magnolias, pecans and oaks, azaleas that have been in the ground for decades, and beds that have been replanted over and over. Those yards need patient work: shaping old shrubs instead of shearing them, edging around big roots, and pruning at the right time of year. Newer homes and country lots on the edges of town are a different job, with more open turf and more sun.",
     "The ground here is the same sandy topsoil over red clay as the rest of our area, so water that can't soak in sits on top. We look at drainage and shade on every walkthrough, then quote the work in writing. Marshall is part of our regular service area along with Hallsville, so getting out to see your yard is easy. We set the schedule after we've seen the property, rather than promising a day of the week up front."
   ],
@@ -64,11 +64,11 @@
     },
     {
       "q": "What does lawn and landscape work cost in Marshall?",
-      "a": "The same published ranges as the rest of our area. Weekly mowing on a typical lot runs about $50 to $65 per visit, hedge trimming is $150 to $800 for most jobs, and most landscaping and planting projects run $900 to $3,600. Every Marshall job still gets a free walkthrough and a written, itemized quote."
+      "a": "The same published ranges as the rest of our area. Weekly mowing on a typical lot starts at $65 per visit, hedge trimming is $150 to $800 for most jobs, and most landscaping and planting projects run $900 to $3,600. Every Marshall job still gets a free walkthrough and a written, itemized quote."
     },
     {
       "q": "Do you go out toward Caddo Lake or the Louisiana line?",
-      "a": "Call and ask. Harrison County is in our service area, but the farther east you get past Marshall, the more it depends on the job. A patio, a wall or a Christmas light install is easier to schedule out there than weekly mowing, and we'll give you a straight answer on the phone at (903) 844-6877."
+      "a": "Call and ask. Harrison County is in our service area, but the farther east you get past Marshall, the more it depends on the job. A patio, a wall or a Christmas light install is easier to schedule out there than weekly mowing, and we'll give you a straight answer when you send a quote request."
     }
   ],
   "service_angles": {
@@ -85,7 +85,8 @@
     "hardscaping": "Around Marshall's older homes, we build walkways and patios that fit the house, like natural flagstone or pavers in a color that sits right next to old brick. Big tree roots near the patio site change the layout, so we plan around them instead of cutting them out. Every patio goes on a compacted crushed stone base pitched away from the house, and most projects run $3,100 to $9,100.",
     "retaining-walls": "Walls in Marshall come up on sloped lots, along driveways cut into a bank, and around old beds where the soil has washed down over the years. Every wall we build starts below grade on a compacted base, with gravel and a perforated drain behind it carried to daylight, because water trapped in the clay behind a wall is what pushes it over. Height and length set the price, and most Marshall walls land between $3,000 and $19,000.",
     "drainage": "Marshall's sandy topsoil over red clay means rain soaks in fast and then stops, so water spreads across the yard and sits in low corners and against foundations. Older homes add their own problems, like downspouts that empty into beds or a yard that has settled over the years. Small fixes run $450 to $1,000, and most drainage projects fall between $2,000 and $3,750.",
-    "christmas-lights": "Marshall already does Christmas big with the Wonderland of Lights downtown, and if you want your own house to match the season, we can handle it. We supply the lights, custom-cut C9 lines to the roofline, take everything down after the season and store it. Marshall is well within an hour of Longview, so most homes start at $900, and we can quote from a photo without a visit."
+    "christmas-lights": "Marshall already does Christmas big with the Wonderland of Lights downtown, and if you want your own house to match the season, we can handle it. We supply the lights, custom-cut C9 lines to the roofline, take everything down after the season and store it. Marshall is well within an hour of Longview, so most homes start at $900, and we can quote from a photo without a visit.",
+    "irrigation": "Older Marshall homes often have older sprinkler systems: cracked heads, leaking valves and zones laid out before the trees grew in. We fix what's worth fixing, re-zone shade that used to be sun, and install new systems with drip in the beds where starting over makes more sense."
   },
   "service_faq": {
     "lawn-maintenance": {
@@ -143,6 +144,10 @@
     "christmas-lights": {
       "q": "Can you put Christmas lights on a commercial building in Marshall?",
       "a": "Yes. We do residential and commercial installs, in warm white or color. We supply the lights, custom-cut them to the roofline, take them down after the season and store them. Send us photos of the building and we'll quote it remotely with a mock-up."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Marshall?",
+      "a": "Yes. We install and repair sprinkler systems in Marshall and around Harrison County, under Texas Licensed Irrigator Matthew Maines, LI0006657, and pull the permit the job requires. Pricing comes after a free walkthrough."
     }
   },
   "nearby": [

@@ -19,7 +19,7 @@
   "addressCountry": "US"
  },
  "openingHours": [
-  "Mo-Su 00:00-23:59"
+  "Mo-Fr 07:00-17:00"
  ],
  "areaServed": [
   "Longview, TX",
@@ -35,6 +35,7 @@
  ],
  "sameAs": [
   "https://www.facebook.com/yarddoglandscapes",
+  "https://www.instagram.com/yarddoglandscape",
   "https://www.instagram.com/yarddoglawnlights",
   "https://www.youtube.com/millermaines",
   "https://www.google.com/maps?cid=3450977957239277557"
@@ -174,7 +175,7 @@
  "aggregateRating": {
   "@type": "AggregateRating",
   "ratingValue": "5.0",
-  "reviewCount": "111",
+  "reviewCount": "{{REVIEWS}}",
   "bestRating": "5"
  },
  "foundingDate": "2017",
@@ -343,12 +344,10 @@
     "Tuesday",
     "Wednesday",
     "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday"
+    "Friday"
    ],
-   "opens": "00:00",
-   "closes": "23:59"
+   "opens": "07:00",
+   "closes": "17:00"
   }
  ]
 }

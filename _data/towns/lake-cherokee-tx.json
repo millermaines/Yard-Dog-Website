@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "a short drive southeast of Longview",
   "hub_title": "Lake Cherokee Landscaping, Walls & Drainage | Yard Dog Landscapes",
-  "hub_meta": "Landscaping for Lake Cherokee lots: retaining walls, drainage, erosion fixes, beds, sod and mowing. Family-owned Longview crew, 5.0 on Google. (903) 844-6877.",
+  "hub_meta": "Landscaping for Lake Cherokee lots: retaining walls, drainage, erosion fixes, beds, sod and mowing. Family-owned Longview crew, 5.0 on Google. Free written quotes.",
   "h1": "Landscaping & lawn care at Lake Cherokee",
   "lede": "Lake lots slope, wash out and hold water in the wrong places. We build the walls, drains, beds and lawns that keep a Lake Cherokee yard where it belongs, from the house down toward the water.",
   "intro": [
-    "Yard Dog Landscapes handles landscaping and lawn care for homes on Lake Cherokee, a short drive southeast of our Longview base. We're family-owned, started by Miller Maines in 2017, and Miller and the same crew of four do every job. We never subcontract. We're fully insured, rated 5.0 on Google from 111 reviews, and every project starts with a free walkthrough and a written, itemized estimate, usually within a day. Call or text (903) 844-6877 anytime.",
+    "Yard Dog Landscapes handles landscaping and lawn care for homes on Lake Cherokee, a short drive southeast of our Longview base. We're family-owned, started by Miller Maines in 2017, and Miller and the same crew of four do every job. We never subcontract. We're fully insured, rated 5.0 on Google from {{REVIEWS}} reviews, and every project starts with a free walkthrough and a written, itemized estimate, usually within a day. Request a free quote anytime.",
     "Lake lots work differently from town lots. Most yards on the lake fall toward the water, so every hard rain runs across the lawn, carries sandy topsoil with it and cuts ruts along drives and paths. Pines and hardwoods shade a lot of the ground, and grass thins out on the steeper banks where it's hard to mow. The fix is usually some mix of retaining walls, grading, drains, beds and ground cover that hold the soil in place.",
     "In July 2026 we rebuilt a leaning block retaining wall along a Lake Cherokee driveway. We took it down, set a compacted base and put it back up course by course with drainage fabric and pipe behind it, so water has a way out instead of pushing on the block. Docks, boathouses and seawalls are not our work. We stay on the land side and handle the yard from the house down."
   ],
@@ -64,11 +64,11 @@
     },
     {
       "q": "Do you mow and maintain lake lots too?",
-      "a": "Yes. We mow, trim, clean up leaves and keep beds in shape at Lake Cherokee. Banks too steep for a mower get string-trimmed, and we'll tell you where a bed or ground cover would make more sense than grass. Weekly mowing for a typical yard runs about $50 to $65 a visit, and larger lots or heavy trimming can move that number."
+      "a": "Yes. We mow, trim, clean up leaves and keep beds in shape at Lake Cherokee. Banks too steep for a mower get string-trimmed, and we'll tell you where a bed or ground cover would make more sense than grass. Weekly mowing for a typical yard starts at $65 a visit, and larger lots or heavy trimming can move that number."
     }
   ],
   "service_angles": {
-    "lawn-maintenance": "Mowing a Lake Cherokee lot means working slopes. We mow the level ground and gentle grades, string-trim the banks too steep for a mower and blow clippings back onto the lawn instead of down toward the water. Typical yards run about $50 to $65 per visit, and if a bank keeps scalping or sliding, we'll suggest turning it into a bed.",
+    "lawn-maintenance": "Mowing a Lake Cherokee lot means working slopes. We mow the level ground and gentle grades, string-trim the banks too steep for a mower and blow clippings back onto the lawn instead of down toward the water. Typical yards start at $65 per visit, and if a bank keeps scalping or sliding, we'll suggest turning it into a bed.",
     "leaf-removal": "Trees around Lake Cherokee drop leaves and pine needles that slide down the slope, pile against walls, clog drains and wash toward the water. We clear the lawn, beds and drive, clean out drain inlets and haul it all away. Pricing depends on tree cover and how steep the lot is, so it's set after a walkthrough.",
     "fertilization": "On a lake lot, fertilizer that washes off a slope ends up in the water and does the lawn no good. We soil test first, use slower-release products, keep the spreader off drives and away from the shoreline and time feedings around the forecast. Feedings start from about $190 per visit.",
     "hedge-trimming": "Hedges on lake lots often double as screens from the road or the neighbors without blocking the view of the water. We hold them at the height you want, keep them full from the ground up and haul every clipping off instead of leaving it on the slope. Lake lot hedge jobs usually run $150 to $800.",
@@ -81,7 +81,8 @@
     "hardscaping": "Patios and walkways on a lake lot have to deal with grade. We cut and fill to make level ground, build up the low side with a wall where needed and set everything on a compacted base pitched to drain, with steps down the slope for a safe way toward the water. Patio and path projects mostly run $3,100 to $9,100.",
     "retaining-walls": "Retaining walls do the heavy lifting on a lake lot. In July 2026 we rebuilt a leaning block wall along a Lake Cherokee driveway course by course, on a compacted base with drainage fabric and pipe behind it so water drains out instead of building pressure. Walls here run $3,000 to $19,000 for most jobs, depending on height and length.",
     "drainage": "Water on a lake lot always heads downhill, and the trick is getting it there without taking the yard along. We use swales, French drains, downspout runs and dry creek beds to slow it down and carry it past the house and down the slope on a controlled path. Small fixes start around $450, and most lake lot projects fall between $2,000 and $3,750.",
-    "christmas-lights": "Lake houses at Lake Cherokee often have long rooflines, gables and porches on both the road side and the water side. We supply the lights, custom-cut professional C9 lines to fit, install them, take them down after the season and store them. Quotes come from a photo mock-up, and most homes start at $900."
+    "christmas-lights": "Lake houses at Lake Cherokee often have long rooflines, gables and porches on both the road side and the water side. We supply the lights, custom-cut professional C9 lines to fit, install them, take them down after the season and store them. Quotes come from a photo mock-up, and most homes start at $900.",
+    "irrigation": "Lake Cherokee lots slope toward the water, and a sprinkler that runs too long just sends runoff down the bank. We zone the slope separately from the flat ground near the house, run shorter cycles, and put beds and banks on drip so the water stays where it lands."
   },
   "service_faq": {
     "lawn-maintenance": {
@@ -139,6 +140,10 @@
     "christmas-lights": {
       "q": "Can you light the lake side of the house?",
       "a": "Yes. We can outline the roofline on the road side, the water side or both. Each side shows up on the photo mock-up we quote from, so you can pick before you book."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems at Lake Cherokee?",
+      "a": "Yes. We install and repair sprinkler systems on both the Gregg County and Rusk County sides of the lake, under Texas Licensed Irrigator Matthew Maines, LI0006657. Sloped lake lots get zoned so water soaks in instead of running to the shoreline. Pricing comes after a free walkthrough."
     }
   },
   "nearby": [

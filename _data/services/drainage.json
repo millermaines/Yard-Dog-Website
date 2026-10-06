@@ -2,12 +2,12 @@
   "slug": "drainage",
   "name": "Drainage & Grading",
   "short": "drainage and grading",
-  "title": "Drainage & Grading Longview TX | Yard Dog Landscapes",
+  "title": "French Drains & Yard Drainage in Longview, TX | Yard Dog Landscapes",
   "meta": "Yard drainage in Longview, TX: French drains, regrading and downspout reroutes for soggy East Texas clay. Most projects $2,000 to $3,750. Free walkthrough.",
-  "h1": "Yard drainage in Longview & East Texas",
+  "h1": "French drains & yard drainage in Longview",
   "kicker": "Drainage & grading",
   "lede": "French drains, regrading, downspout reroutes and swales for yards that hold water after every rain. Most projects run $2,000 to $3,750, and small single-spot fixes start around $450.",
-  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that has fixed yard drainage across East Texas since 2017, with a 5.0 rating across 111 Google reviews. We find where the water is really coming from, then regrade, reroute downspouts, cut swales or install French drains. Most projects run $2,000 to $3,750, and small fixes start around $450. Pipe length, dig depth and where the water can outlet set the price. Call (903) 844-6877 for a free walkthrough.",
+  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that has fixed yard drainage across East Texas since 2017, with a 5.0 rating across {{REVIEWS}} Google reviews. We find where the water is really coming from, then regrade, reroute downspouts, cut swales or install French drains. Most projects run $2,000 to $3,750, and small fixes start around $450. Pipe length, dig depth and where the water can outlet set the price. Request a free walkthrough online.",
   "overview": [
     "Half the yards we get called to for a French drain don't need one. Standing water is a symptom, so we start by finding the source. Roof water dumping at the foundation gets rerouted in solid pipe. Ground that tips back toward the house gets regraded to fall away, about six inches over the first ten feet. Only water that's trapped in the ground calls for a French drain.",
     "When it does, we build it once. That means sock-wrapped 4-inch perforated pipe over 4 inches of #57 stone, backfilled with the same stone to a few inches below grade, then capped with soil and sod. Every drain ties to a daylighted outlet or a pop-up emitter, never a buried dead end that backs up the first time the ground saturates."
@@ -97,10 +97,10 @@
     "blog-landscape-fabric-under-mulch-east-texas"
   ],
   "town_template": {
-    "h1": "Drainage and grading in {town}",
-    "title": "Drainage & Grading in {town}, TX | Yard Dog Landscapes",
+    "h1": "French drains & drainage in {town}",
+    "title": "French Drains & Drainage in {town}, TX | Yard Dog Landscapes",
     "meta": "Soggy yard in {town}, TX? French drains, regrading and downspout reroutes built for East Texas clay. Most projects $2,000 to $3,750. Free walkthrough.",
     "lede": "French drains, regrading and downspout fixes for {town} yards that hold water, starting with finding where the water really comes from.",
-    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, fixes yard drainage in {town} and across {county}. We've worked East Texas yards since 2017 and hold a 5.0 rating across 111 Google reviews. We trace the water first, then regrade, reroute downspouts, cut swales or install French drains with sock-wrapped pipe and #57 stone. Most projects run $2,000 to $3,750. Call (903) 844-6877 for a free walkthrough in {town}."
+    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, fixes yard drainage in {town} and across {county}. We've worked East Texas yards since 2017 and hold a 5.0 rating across {{REVIEWS}} Google reviews. We trace the water first, then regrade, reroute downspouts, cut swales or install French drains with sock-wrapped pipe and #57 stone. Most projects run $2,000 to $3,750. Request a free walkthrough in {town} online."
   }
 }

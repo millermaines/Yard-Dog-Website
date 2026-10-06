@@ -12,15 +12,21 @@ EMAIL = 'info@yarddoglandscapes.com'
 GA_ID = 'G-3WN8YFJRKC'
 GBP = 'https://www.google.com/maps?cid=3450977957239277557'
 TODAY = '2026-10-05'
+# Google review count, as shown on the Business Profile. Update here only: data files use {{REVIEWS}},
+# templates use {REVIEW_COUNT}, and both are filled in at build time.
+REVIEW_COUNT = '143'
 e = html.escape
 
 # ---------------------------------------------------------------- data
+def _read(path):
+    return json.loads(open(path).read().replace('{{REVIEWS}}', REVIEW_COUNT))
+
 def load(name):
-    return json.load(open(os.path.join(DATA, name)))
+    return _read(os.path.join(DATA, name))
 
 def load_dir(sub):
     d = os.path.join(DATA, sub)
-    return {f[:-5]: json.load(open(os.path.join(d, f))) for f in sorted(os.listdir(d)) if f.endswith('.json')}
+    return {f[:-5]: _read(os.path.join(d, f)) for f in sorted(os.listdir(d)) if f.endswith('.json')}
 
 PHOTOS = load('photos.json')
 BYKEY = {p['key']: p for p in PHOTOS}
@@ -30,9 +36,9 @@ TOWNS = load_dir('towns')
 # Display order
 SERVICE_ORDER = ['lawn-maintenance', 'leaf-removal', 'fertilization', 'hedge-trimming', 'tree-shrub-care', 'tree-planting',
                  'landscaping', 'flower-bed-installation', 'mulch-installation', 'sod-installation',
-                 'hardscaping', 'retaining-walls', 'drainage', 'christmas-lights']
+                 'irrigation', 'hardscaping', 'retaining-walls', 'drainage', 'christmas-lights']
 GROUPS = [('Maintenance', ['lawn-maintenance', 'leaf-removal', 'fertilization', 'hedge-trimming', 'tree-shrub-care']),
-          ('Installation', ['landscaping', 'flower-bed-installation', 'mulch-installation', 'sod-installation', 'tree-planting']),
+          ('Installation', ['landscaping', 'flower-bed-installation', 'mulch-installation', 'sod-installation', 'tree-planting', 'irrigation']),
           ('Hardscape & specialty', ['hardscaping', 'retaining-walls', 'drainage', 'christmas-lights'])]
 TOWN_ORDER = ['longview-tx', 'white-oak-tx', 'kilgore-tx', 'lake-cherokee-tx', 'gladewater-tx', 'hallsville-tx', 'marshall-tx',
               'tyler-tx', 'henderson-tx', 'gilmer-tx', 'big-sandy-tx', 'carthage-tx', 'nacogdoches-tx']
@@ -48,7 +54,7 @@ SHORT = {  # short service names for chips and nav
     'hedge-trimming': 'Hedge trimming', 'tree-shrub-care': 'Tree & shrub care', 'tree-planting': 'Tree planting',
     'landscaping': 'Landscaping', 'flower-bed-installation': 'Flower beds', 'mulch-installation': 'Mulch',
     'sod-installation': 'Sod installation', 'hardscaping': 'Patios & hardscaping', 'retaining-walls': 'Retaining walls',
-    'drainage': 'Drainage & grading', 'christmas-lights': 'Christmas lights'}
+    'drainage': 'Drainage & grading', 'irrigation': 'Irrigation & sprinklers', 'christmas-lights': 'Christmas lights'}
 
 # Hero photo per service (None = honest typographic hero; there is no real photo of that work yet)
 SERVICE_HERO = {
@@ -56,7 +62,7 @@ SERVICE_HERO = {
     'hedge-trimming': 'front-roses-after', 'tree-shrub-care': 'side-hydrangeas-after', 'tree-planting': None,
     'landscaping': 'img-3738', 'flower-bed-installation': '1', 'mulch-installation': 'back-fence-after',
     'sod-installation': None, 'hardscaping': 'd:walk-dsc03930', 'retaining-walls': 'driveway-retaining-wall-after',
-    'drainage': 'img-3736', 'christmas-lights': 'X:christmas-lights-roofline-aerial-east-texas.webp'}
+    'drainage': 'img-3736', 'irrigation': None, 'christmas-lights': 'X:christmas-lights-roofline-aerial-east-texas.webp'}
 EXTRAS = {  # photos outside the work gallery
     'X:healthy-striped-bermuda-lawn-east-texas.webp': dict(file='/img/extra/healthy-striped-bermuda-lawn-east-texas.webp', w=640, h=1011,
         caption='A thick, evenly fed bermuda lawn on one of our routes', alt='Thick striped bermuda lawn in East Texas', services=['fertilization']),
@@ -88,6 +94,34 @@ def img(key, cls='', lazy=True, full=False, sizes=None):
     c = f' class="{cls}"' if cls else ''
     return f'<img src="{src}" width="{p["w"]}" height="{p["h"]}" alt="{e(p["alt"])}"{attrs} decoding="async"{c}>'
 
+def hero_ok(key):
+    """Only photos with enough pixels to stay sharp in the hero frame (video stills are too small)."""
+    return key in EXTRAS or (key in BYKEY and min(BYKEY[key]['w'], BYKEY[key]['h']) >= 900)
+
+def hero_fig(key=None, src=None, w=None, h=None, alt='', cap=''):
+    """The hero photo, shown crisp in its own frame beside the headline (never stretched across the screen)."""
+    srcset = ''
+    if key:
+        p = photo(key)
+        src, w, h, alt = p['full'], p['w'], p['h'], p['alt']
+        cap = cap or (p['caption'] + (', ' + p['place'] if p['place'] and p['place'] != 'East Texas' else ''))
+        if key in BYKEY and BYKEY[key]['gw'] < w:
+            srcset = (f' srcset="{p["src"]} {BYKEY[key]["gw"]}w, {src} {w}w"'
+                      f' sizes="(max-width: 900px) calc(100vw - 40px), {560 if w > h else 440}px"')
+    land = ' land' if w > h else ''
+    return (f'<figure class="hfig{land}"><img src="{src}"{srcset} width="{w}" height="{h}" alt="{e(alt)}" fetchpriority="high" decoding="async">'
+            f'<figcaption>Pictured: {e(cap)}</figcaption></figure>')
+
+def hero_cls(key=None, w=None, h=None):
+    if key:
+        p = photo(key); w, h = p['w'], p['h']
+    return 'hero plain shot' + (' wide' if w > h else '')
+
+def combo_href(service, town):
+    """Longview is home base: the main service page IS the Longview page, so /{service}-longview-tx
+    301s to /{service} (vercel.json) instead of competing with it."""
+    return f'/{service}' if town == 'longview-tx' else f'/{service}-{town}'
+
 def pool(service, town=None):
     """Photos that genuinely show this service. Local ones (same town) first, then finished before in-progress."""
     ps = [p for p in PHOTOS if service in p['services']]
@@ -98,7 +132,7 @@ def pool(service, town=None):
 
 # ---------------------------------------------------------------- schema
 def business_node(path='business.json'):
-    d = json.loads(open(os.path.join(ROOT, '_data', path)).read())
+    d = _read(os.path.join(ROOT, '_data', path))
     d['areaServed'] = [f"{TOWNS[t]['name']}, TX" for t in TOWN_ORDER]
     d['hasMap'] = GBP
     d['slogan'] = 'Sit. Stay. Perfect Landscape.'
@@ -148,7 +182,7 @@ def faq_html(qas):
 
 def cta(h="Ready when you are.", p="Tell us about your property. We'll walk it with you and send a written estimate within a day."):
     return (f'<section class="cta"><div class="w"><div><h2>{e(h)}</h2><p>{e(p)}</p></div><div class="act">'
-            f'<a class="btn lg" href="/contact">Get a free quote</a><a class="tel" href="tel:{PHONE_TEL}">{PHONE}</a></div></div></section>')
+            f'<a class="btn lg" href="/contact">Get a free quote</a><a class="tel" href="/pricing">See pricing</a></div></div></section>')
 
 REVIEWS = {
     'ashley': ('Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future.', 'Ashley Riley', 'Lawn maintenance'),
@@ -172,7 +206,7 @@ def revs(keys):
         f'<figure class="rev">{STARS}<blockquote>&ldquo;{e(REVIEWS[k][0])}&rdquo;</blockquote>'
         f'<figcaption>{e(REVIEWS[k][1])}<span>{e(REVIEWS[k][2])} &middot; Google review</span></figcaption></figure>' for k in keys) + '</div>'
 
-GBADGE = (f'<a class="gbadge" href="{GBP}" target="_blank" rel="noopener"><b>5.0</b><span>{STARS}<br>111 Google reviews</span></a>')
+GBADGE = (f'<a class="gbadge" href="{GBP}" target="_blank" rel="noopener"><b>5.0</b><span>{STARS}<br>{REVIEW_COUNT} Google reviews</span></a>')
 
 # ---------------------------------------------------------------- shell
 def header(cur):
@@ -191,13 +225,13 @@ def header(cur):
 <div class="dd"><a href="/longview-tx" class="ddt">Service areas</a><div class="ddp ddp-town">{towns}</div></div>
 {top("our-work", "Our Work")}{top("pricing", "Pricing")}{top("about", "About")}{top("blog", "Blog")}
 </nav>
-<a class="ph" href="tel:{PHONE_TEL}">{PHONE}</a><a class="btn hb" href="/contact">Get a free quote</a>
+<a class="btn hb" href="/contact">Get a free quote</a>
 <button class="mb" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button></div>
 <nav class="mnav" id="mnav" hidden aria-label="Mobile">
 <details><summary>Services</summary><div class="msub">{m_svcs}<a href="/services">All services</a></div></details>
 <details><summary>Service areas</summary><div class="msub">{m_towns}</div></details>
 <a href="/our-work">Our Work</a><a href="/pricing">Pricing</a><a href="/about">About</a><a href="/blog">Blog</a><a href="/careers">Careers</a><a href="/contact">Contact</a>
-<a class="btn" href="/contact">Get a free quote</a><a class="mt" href="tel:{PHONE_TEL}">or call {PHONE}</a></nav></header>'''
+<a class="btn" href="/contact">Get a free quote</a></nav></header>'''
 
 def footer():
     svc = ''.join(f'<li><a href="/{s}">{e(SHORT[s])}</a></li>' for s in SERVICE_ORDER)
@@ -205,13 +239,13 @@ def footer():
     return f'''<footer class="ft"><div class="w"><div class="fg">
 <div><a class="lk2" href="/" aria-label="Yard Dog Landscapes home"><img src="/img/lockup.webp" width="405" height="120" alt="Yard Dog Landscapes" loading="lazy"></a>
 <p>Sit. Stay. Perfect Landscape.<br>Family-owned lawn care, landscaping and hardscaping from Longview, Texas, since 2017.</p>
-<a class="big" href="tel:{PHONE_TEL}">{PHONE}</a><p><a href="mailto:{EMAIL}">{EMAIL}</a><br>Longview, TX. Call or text anytime.</p>
-<p class="soc"><a href="{GBP}" target="_blank" rel="noopener">Google reviews</a><a href="https://www.facebook.com/yarddoglandscapes" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/yarddoglawnlights" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/millermaines" target="_blank" rel="noopener">YouTube</a></p></div>
+<p class="nap">Yard Dog Landscapes<br>Longview, TX<br><a href="tel:{PHONE_TEL}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+<p class="soc"><a href="{GBP}" target="_blank" rel="noopener">Google reviews</a><a href="https://www.facebook.com/yarddoglandscapes" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/yarddoglandscape" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/millermaines" target="_blank" rel="noopener">YouTube</a></p></div>
 <div><h3>Services</h3><ul>{svc}</ul></div>
 <div><h3>Service areas</h3><ul>{towns}</ul></div>
 <div><h3>Company</h3><ul><li><a href="/about">About us</a></li><li><a href="/our-work">Our work</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/design-preview">Design preview</a></li><li><a href="/blog">Blog</a></li><li><a href="/careers">Careers</a></li><li><a href="/contact">Free quote</a></li></ul></div>
-</div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
-<div class="mcta"><a class="c" href="tel:{PHONE_TEL}">Call</a><a class="q" href="/contact">Get a free quote</a></div>'''
+</div><p class="lic">Irrigation work is performed under Texas Licensed Irrigator Matthew Maines, LI0006657 (TCEQ).</p><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
+<div class="mcta"><a class="q" href="/contact">Get a free quote</a></div>'''
 
 def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js='', robots='index, follow, max-image-preview:large',
          og_type='website', canonical=None):
@@ -261,6 +295,8 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
 </html>
 '''
     out = os.path.join(ROOT, f'{slug}.html')
+    doc = doc.replace('{REVIEW_COUNT}', REVIEW_COUNT)
+    doc = re.sub(r'href="/(' + '|'.join(map(re.escape, SERVICE_ORDER)) + r')-longview-tx"', r'href="/\1"', doc)
     open(out, 'w').write(doc)
     return doc
 
@@ -268,12 +304,12 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
 QUOTE_CHOICES = [  # (label, how it is sent to Platy)
     ('Mowing & maintenance', 'svc'), ('Flower beds & mulch', 'svc'), ('Sod installation', 'svc'),
     ('Patios & hardscape', 'svc'), ('Retaining walls', 'svc'), ('Drainage', 'svc'),
-    ('Christmas lights', 'other'), ('Leaf cleanup', 'other'), ('Something else', 'other')]
+    ('Irrigation', 'other'), ('Christmas lights', 'other'), ('Leaf cleanup', 'other'), ('Something else', 'other')]
 PRESELECT = {'lawn-maintenance': 'Mowing & maintenance', 'fertilization': 'Mowing & maintenance', 'hedge-trimming': 'Mowing & maintenance',
              'tree-shrub-care': 'Mowing & maintenance', 'leaf-removal': 'Leaf cleanup', 'tree-planting': 'Flower beds & mulch',
              'landscaping': 'Flower beds & mulch', 'flower-bed-installation': 'Flower beds & mulch', 'mulch-installation': 'Flower beds & mulch',
              'sod-installation': 'Sod installation', 'hardscaping': 'Patios & hardscape', 'retaining-walls': 'Retaining walls',
-             'drainage': 'Drainage', 'christmas-lights': 'Christmas lights'}
+             'drainage': 'Drainage', 'irrigation': 'Irrigation', 'christmas-lights': 'Christmas lights'}
 HOW_HEARD = ['Google', 'Instagram', 'Facebook', 'YouTube', 'Vehicle wrap', 'Yard sign', 'Mailer', 'Other']
 SMS_CONSENT = ('I agree to receive service-related text messages from Yard Dog Landscapes about my quote, appointments and '
                'scheduled work at the mobile number I provide. Consent is not a condition of purchase. Message frequency varies. '
@@ -305,7 +341,7 @@ def quote_form(fid='q', preselect=None, town=None, heading='Get a free quote', s
 <input class="hp" name="pf_ref" tabindex="-1" autocomplete="off" aria-hidden="true">
 <p class="qerr" role="alert" hidden></p>
 <div class="qrow"><button class="qback" type="button">Back</button><button class="btn qsend" type="submit">Send my request</button></div>
-<p class="fine">No spam and no pushy follow-ups. Prefer to talk? Call or text <a href="tel:{PHONE_TEL}">{PHONE}</a>.</p></fieldset>
+<p class="fine">No spam and no pushy follow-ups.</p></fieldset>
 <div class="qdone" hidden><div class="ok" aria-hidden="true"><svg width="28" height="22" viewBox="0 0 28 22"><path d="M2 11l8 8L26 3" fill="none" stroke="#fff" stroke-width="4"/></svg></div>
-<h2>Request sent</h2><p>Thanks, <span class="qn"></span>. We'll call you within a day to set up your free walkthrough. Need us sooner? Call or text <a href="tel:{PHONE_TEL}">{PHONE}</a>.</p></div>
+<h2>Request sent</h2><p>Thanks, <span class="qn"></span>. We'll call you within a day to set up your free walkthrough.</p></div>
 </form>'''

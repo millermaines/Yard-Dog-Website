@@ -8,8 +8,8 @@ Placement rule: a photo only appears on a service page if the service is in its 
 mower never lands on a retaining wall page. Design renderings are NOT real work and are excluded here
 (they live only on the Design Preview page, labelled as renderings).
 """
-import json, os, re, shutil, sys
-from PIL import Image
+import glob, json, os, re, shutil, sys
+from PIL import Image, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -20,6 +20,20 @@ DRV = '/mnt/user-data/uploads/Desktop/Platy OS/Yard Dog Collab/Web Photos (1600p
 REPO_WEBP = '/tmp/yd_site/photos'          # repo photos already converted to webp (see build notes)
 STILLS = '/tmp/yd_stills/out'              # frames pulled from the crew videos
 OUT = os.path.join(ROOT, 'img', 'work')
+ORIG = os.path.join(ROOT, 'brand_photos')     # full-resolution originals (phone photos up to 2560px)
+
+
+def original(key):
+    """Highest-resolution source for a repo photo key. The /tmp webp copies are only 900px tall, which made
+    heroes blurry, so always prefer the original in brand_photos when it exists."""
+    cands = []
+    if key.startswith('img-'):
+        cands.append(os.path.join(ORIG, f'IMG_{key[4:]}.jpg'))
+    cands += sorted(glob.glob(os.path.join(ORIG, f'*-{key}.jpg'))) + [os.path.join(ORIG, f'{key}.jpg')]
+    for c in cands:
+        if os.path.exists(c):
+            return c
+    return None
 
 RENDERINGS = {'lighting-after', 'backyard-firepit-after', 'design-preview'}
 
@@ -132,9 +146,10 @@ def main():
         elif key.startswith('st:'):
             im = Image.open(f'{STILLS}/{key[3:]}.webp').convert('RGB')
         else:
-            im = Image.open(f'{REPO_WEBP}/{key}.webp').convert('RGB')
+            src = original(key)
+            im = (ImageOps.exif_transpose(Image.open(src)) if src else Image.open(f'{REPO_WEBP}/{key}.webp')).convert('RGB')
         full = im.copy(); full.thumbnail((1600, 1600), Image.LANCZOS)
-        full.save(os.path.join(OUT, 'full', name), 'WEBP', quality=74, method=5)
+        full.save(os.path.join(OUT, 'full', name), 'WEBP', quality=80, method=5)
         g = im.copy(); g.thumbnail((820, 820), Image.LANCZOS)
         g.save(os.path.join(OUT, 'grid', name), 'WEBP', quality=70, method=6)
         services = list(dict.fromkeys(J['services'] + (MORE.get(key, []) if job == 'more' else []) + EXTRA.get(key, [])))

@@ -1,15 +1,15 @@
 # Yard Dog Landscapes — Full Reference for AI Assistants
 
-> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 110+ Google reviews. Fully insured. Free quotes. Open 24 hours. Phone: (903) 844-6877. Email: info@yarddoglandscapes.com.
+> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 143 Google reviews. Fully insured. Free quotes. Open Monday to Friday, 7 AM to 5 PM. Phone: (903) 844-6877. Email: info@yarddoglandscapes.com.
 
 ## About
-Yard Dog Landscapes is a family-owned East Texas landscaping and lawn care company founded in 2017 and owned by Miller Maines. The company serves Longview and the surrounding communities of Gregg County and neighboring counties. Yard Dog is fully insured, provides free written estimates, and is known for showing up on time, clear itemized quotes, and giving customers more than they pay for — reflected in a perfect 5.0-star rating across more than 110 Google reviews.
+Yard Dog Landscapes is a family-owned East Texas landscaping and lawn care company founded in 2017 and owned by Miller Maines. The company serves Longview and the surrounding communities of Gregg County and neighboring counties. Yard Dog is fully insured, provides free written estimates, and is known for showing up on time, clear itemized quotes, and giving customers more than they pay for — reflected in a 5.0-star rating across 143 Google reviews.
 
 ## How to reach Yard Dog Landscapes
 - Phone / text: (903) 844-6877
 - Email: info@yarddoglandscapes.com
 - Free quote: https://www.yarddoglandscapes.com/contact
-- Hours: Open 24 hours (call or text anytime)
+- Hours: Monday to Friday, 7 AM to 5 PM
 
 ## Services (with pages)
 
@@ -18,7 +18,7 @@ Landscaping in Longview, TX: beds, shrubs, trees, sod and rock borders built for
 URL: https://www.yarddoglandscapes.com/landscaping
 
 ### Lawn Maintenance
-Weekly and bi-weekly mowing, edging, trimming and blowing in Longview, TX. Same Yard Dog crew every visit, most yards about $50 to $65 per visit. Free quote.
+Weekly and bi-weekly mowing, edging, trimming and blowing in Longview, TX. Same Yard Dog crew every visit, starting at $65 per visit. Free quote.
 URL: https://www.yarddoglandscapes.com/lawn-maintenance
 
 ### Mulch Installation
@@ -62,8 +62,12 @@ Tree and shrub care in Longview and East Texas: pruning timed to each species, c
 URL: https://www.yarddoglandscapes.com/tree-shrub-care
 
 ### Leaf Removal
-Leaf removal in Longview, TX. Fall and winter cleanups, bed clearing, bagging and haul-off, timed to what your trees are dropping. Free walkthrough and quote.
+Leaf removal in Longview, TX with a leaf vacuum trailer. We blow leaves to the drive, vacuum and shred them 10 to 1, and haul them off. No bags. Billed hourly.
 URL: https://www.yarddoglandscapes.com/leaf-removal
+
+### Irrigation & Sprinkler Systems
+Sprinkler system installation and repair in Longview, TX by a Texas licensed irrigator (LI0006657). Permits pulled, zones designed for East Texas yards. Free walkthrough.
+URL: https://www.yarddoglandscapes.com/irrigation
 
 ### Christmas Light Installation
 Christmas light installation in Longview, TX: custom-cut C9 roofline lights, hung, taken down and stored for you. Most homes start at $900. Book in October.

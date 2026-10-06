@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "west of Longview, past White Oak on US 80",
   "hub_title": "Landscaping & Lawn Care in Gladewater, TX | Yard Dog Landscapes",
-  "hub_meta": "Lawn care, leaf cleanup, hedges, beds and drainage in Gladewater, TX, in town or on acreage. Family-owned Longview crew, 5.0 on Google. Call (903) 844-6877.",
+  "hub_meta": "Lawn care, leaf cleanup, hedges, beds and drainage in Gladewater, TX, in town or on acreage. Family-owned Longview crew, 5.0 on Google. Send a quote request and we'll get back to you within a day.",
   "h1": "Landscaping & lawn care in Gladewater",
   "lede": "Gladewater is a straight shot west on US 80 from our Longview base. We mow, trim, plant, build and fix drainage here with the same crew every time.",
   "intro": [
-    "Yard Dog Landscapes provides landscaping and lawn care in Gladewater, TX, out of our home base in Longview. We're a family-owned company started in 2017 by Miller Maines, and Miller and the same crew of four do every job themselves, with no subcontractors. We carry full insurance and a 5.0 Google rating across 111 reviews. A free walkthrough and a written, itemized estimate usually come within a day. Call or text (903) 844-6877 anytime.",
+    "Yard Dog Landscapes provides landscaping and lawn care in Gladewater, TX, out of our home base in Longview. We're a family-owned company started in 2017 by Miller Maines, and Miller and the same crew of four do every job themselves, with no subcontractors. We carry full insurance and a 5.0 Google rating across {{REVIEWS}} reviews. A free walkthrough and a written, itemized estimate usually come within a day. Request a free quote anytime.",
     "Gladewater sits where US 80 crosses US 271, mostly in Gregg County with part of town in Upshur County. The older homes around downtown sit under mature pines and hardwoods, with shaded lawns and leaf-filled beds every fall. Outside town the lots open up into acreage with woods, fence lines and long drives, and some properties sit out toward Lake Gladewater. The ground is the same sandy loam over clay found across this part of East Texas.",
     "That mix shapes the work. In town that usually means mowing, hedges, leaf cleanup and bed refreshes under big trees. On the larger properties it's more about keeping a big lawn cut on a steady schedule, trimming along fences and ditches and solving drainage across a whole lot instead of one corner. Gladewater is a little farther out than White Oak, so we'll be straight with you about how often we can be there before you sign up."
   ],
@@ -56,7 +56,7 @@
     },
     {
       "q": "Is Gladewater too far out for weekly mowing?",
-      "a": "No. It's an easy drive west on US 80 from Longview. Weekly mowing runs about $50 to $65 per visit for a typical yard, and larger acreage is priced on its own after we walk it."
+      "a": "No. It's an easy drive west on US 80 from Longview. Weekly mowing starts at $65 per visit for a typical yard, and larger acreage is priced on its own after we walk it."
     },
     {
       "q": "How much does landscaping cost in Gladewater?",
@@ -68,7 +68,7 @@
     }
   ],
   "service_angles": {
-    "lawn-maintenance": "Gladewater lawns run from small in-town yards to acreage outside town, and we price and schedule each one on its own. In town we mow, edge and blow clean around beds and walks, and on bigger properties we add string trimming along fence lines, ditches and outbuildings. Typical residential yards run about $50 to $65 per visit.",
+    "lawn-maintenance": "Gladewater lawns run from small in-town yards to acreage outside town, and we price and schedule each one on its own. In town we mow, edge and blow clean around beds and walks, and on bigger properties we add string trimming along fence lines, ditches and outbuildings. Typical residential yards start at $65 per visit.",
     "leaf-removal": "Gladewater's older streets and wooded lots get buried in oak leaves and pine straw every fall, and leaves settle in ditches and along fence lines where they block water. We clear lawns, beds, drives and those edges, then haul it away, and big wooded properties may need more than one pass. Leaf removal is priced after a walkthrough.",
     "fertilization": "Gladewater's sandy topsoil lets nutrients wash through quickly, especially after a long rain. We test the soil, correct pH with lime when it's needed and spread feedings through the season instead of one heavy shot, finishing with a fall winterizer. Visits start from about $190, and bigger lawns are priced by size.",
     "hedge-trimming": "Older Gladewater homes often have long-established hedges along property lines, foundations and front walks. We shape them on a steady schedule, take overgrown ones back in stages when they need it and haul off every clipping. Most hedge trimming jobs in town land between $150 and $800.",
@@ -81,12 +81,13 @@
     "hardscaping": "Gladewater patios and walkways get the same build we use everywhere: dig out, compact a crushed stone base, set the stone or pavers level and pitch them away from the house. On larger lots that might be a path from the drive to the back door or a patio with a fire pit. Hardscape projects mostly run $3,100 to $9,100.",
     "retaining-walls": "Where a Gladewater yard slopes toward the house or a drive cuts into a bank, a wall holds the soil and creates level ground. We build segmental block and natural stone walls on a compacted base below grade, with gravel backfill and a drain behind them. Short garden walls start at a few thousand dollars, and most walls run $3,000 to $19,000.",
     "drainage": "On bigger Gladewater properties, water problems often start upslope: a neighboring field, a road ditch or a long drive sending runoff toward the house. We find where it starts, then cut swales, regrade or run French drains to carry it past the house to a real outlet. Most drainage projects here run $2,000 to $3,750, with small fixes from about $450.",
-    "christmas-lights": "Gladewater sits well within our install range from Longview. We supply warm white or color C9 lines custom-cut to the roofline, install them, take them down after the season and store them, for homes and storefronts. Quotes come from a photo mock-up of the building, and most homes start at $900."
+    "christmas-lights": "Gladewater sits well within our install range from Longview. We supply warm white or color C9 lines custom-cut to the roofline, install them, take them down after the season and store them, for homes and storefronts. Quotes come from a photo mock-up of the building, and most homes start at $900.",
+    "irrigation": "Gladewater properties often have more ground than anyone wants to water, so we focus the system where it counts: the lawn and beds around the house, zoned by sun and shade, with drip in the beds. The open acreage stays on rain."
   },
   "service_faq": {
     "lawn-maintenance": {
       "q": "Do you mow larger acreage around Gladewater?",
-      "a": "Yes. Larger lots get priced after a walkthrough, since the $50 to $65 per visit range is for a typical residential yard. We'll look at how much is lawn, how much is trim work along fences and ditches, and how often it needs cutting."
+      "a": "Yes. Larger lots get priced after a walkthrough, since the $65-per-visit starting price is for a typical residential yard. We'll look at how much is lawn, how much is trim work along fences and ditches, and how often it needs cutting."
     },
     "leaf-removal": {
       "q": "Will you clear leaves out of my ditch in Gladewater?",
@@ -139,6 +140,10 @@
     "christmas-lights": {
       "q": "Is Gladewater close enough for standard Christmas light pricing?",
       "a": "Yes. Gladewater falls inside our standard install range, so most homes start at $900. The higher $1,800 starting price only applies to installs more than an hour from Longview."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Gladewater?",
+      "a": "Yes. We install and repair sprinkler systems in Gladewater and out toward the lake, under Texas Licensed Irrigator Matthew Maines, LI0006657, and we pull the permit the job requires. Pricing comes after a free walkthrough."
     }
   },
   "nearby": [

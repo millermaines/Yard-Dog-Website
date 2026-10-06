@@ -2,15 +2,15 @@
   "slug": "christmas-lights",
   "name": "Christmas Lights",
   "short": "Christmas light installation",
-  "title": "Christmas Light Installation Longview TX | Yard Dog Landscapes",
+  "title": "Christmas Light Installation in Longview, TX | Yard Dog Landscapes",
   "meta": "Christmas light installation in Longview, TX: custom-cut C9 roofline lights, hung, taken down and stored for you. Most homes start at $900. Book in October.",
   "h1": "Christmas lights in Longview & East Texas",
   "kicker": "Christmas lights",
   "lede": "We supply the lights, custom-cut professional C9 lines to your roofline, hang them, take them down after the season and store them. Most homes start at $900.",
-  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that hangs professional Christmas lights across East Texas, with a 5.0 rating across 111 Google reviews. We supply commercial-grade C9 lights, custom-cut them to your roofline, install them, take them down after the season and store them. Most homes start at $900, and installs more than an hour from Longview start at $1,800. We quote from a photo mock-up of your house. Call (903) 844-6877.",
+  "answer": "Yard Dog Landscapes is a family-owned, fully insured company in Longview, TX that hangs professional Christmas lights across East Texas, with a 5.0 rating across {{REVIEWS}} Google reviews. We supply commercial-grade C9 lights, custom-cut them to your roofline, install them, take them down after the season and store them. Most homes start at $900, and installs more than an hour from Longview start at $1,800. We quote from a photo mock-up of your house. Send a quote request and we'll get back to you within a day.",
   "overview": [
     "You don't touch a ladder and you don't store a tangled mess in the attic. We build a mock-up from a photo of your house so you can see the design before you book, then custom-cut C9 lines to fit every run of your roofline. Warm white, full color or a custom mix. Roofline only, or add tree wraps, ground stakes, garland and wreaths.",
-    "Everything runs through timers and weatherproof connections and stays up through the season. If a section goes out, call us and we come back. In January we take it all down and store it for next year. We light homes and businesses, and we travel about an hour to an hour and a half from Longview for installs."
+    "Everything runs through timers and weatherproof connections and stays up through the season. If a section goes out, let us know and we come back. In January we take it all down and store it for next year. We light homes and businesses, and we travel about an hour to an hour and a half from Longview for installs."
   ],
   "included": [
     "Photo mock-up and remote quote",
@@ -37,7 +37,7 @@
     },
     {
       "title": "Keep it lit",
-      "text": "If a section goes out during the season, call us and we come back to fix it."
+      "text": "If a section goes out during the season, let us know and we come back to fix it."
     },
     {
       "title": "Take down and store",
@@ -79,11 +79,11 @@
     },
     {
       "q": "Do you take the lights down and store them?",
-      "a": "Yes. Takedown in January and storage until next season are part of the job, so you never touch a ladder or dig a tangled box out of the attic. If a section goes out during the season, call us and we come back. Return clients who reuse the same install get a discounted rate."
+      "a": "Yes. Takedown in January and storage until next season are part of the job, so you never touch a ladder or dig a tangled box out of the attic. If a section goes out during the season, let us know and we come back. Return clients who reuse the same install get a discounted rate."
     },
     {
       "q": "How far from Longview do you install Christmas lights?",
-      "a": "We travel about an hour to an hour and a half from Longview for installs, and we light both homes and businesses. Installs more than an hour from Longview start at $1,800, and most homes closer in start at $900. Call or text (903) 844-6877 and we'll tell you where you land."
+      "a": "We travel about an hour to an hour and a half from Longview for installs, and we light both homes and businesses. Installs more than an hour from Longview start at $1,800, and most homes closer in start at $900. Send your address with a quote request and we'll tell you where you land."
     }
   ],
   "related": [
@@ -97,6 +97,6 @@
     "title": "Christmas Light Installation in {town}, TX | Yard Dog Landscapes",
     "meta": "Christmas light installation in {town}, TX: custom-cut C9 roofline lights, hung, taken down and stored by Yard Dog Landscapes. Quoted from a photo.",
     "lede": "Professional C9 roofline lights for {town} homes and businesses, custom-cut, installed, taken down in January and stored for next year.",
-    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, hangs professional Christmas lights in {town} and across {county}, with a 5.0 rating across 111 Google reviews. We supply C9 lights, custom-cut them to your roofline, install them, take them down after the season and store them. Most homes start at $900, and installs more than an hour from Longview start at $1,800. We quote from a photo mock-up of your house. Call (903) 844-6877."
+    "answer": "Yard Dog Landscapes, a family-owned, fully insured company based in Longview, hangs professional Christmas lights in {town} and across {county}, with a 5.0 rating across {{REVIEWS}} Google reviews. We supply C9 lights, custom-cut them to your roofline, install them, take them down after the season and store them. Most homes start at $900, and installs more than an hour from Longview start at $1,800. We quote from a photo mock-up of your house. Send a quote request and we'll get back to you within a day."
   }
 }

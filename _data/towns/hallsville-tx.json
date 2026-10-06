@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "a short drive east of Longview on US 80",
   "hub_title": "Landscaping & Lawn Care in Hallsville, TX | Yard Dog Landscapes",
-  "hub_meta": "Lawn care, landscaping, sod, drainage and patios in Hallsville, TX from a family-owned Longview crew. Free walkthrough and written quote. (903) 844-6877.",
+  "hub_meta": "Lawn care, landscaping, sod, drainage and patios in Hallsville, TX from a family-owned Longview crew. Free walkthrough and written quote.",
   "h1": "Landscaping & lawn care in Hallsville",
   "lede": "Hallsville is one of the closest towns to our Longview base, just east on US 80. We mow, plant, fix drainage and build patios here with the same crew every visit.",
   "intro": [
-    "Yard Dog Landscapes handles lawn care and landscaping in Hallsville from our base in Longview, a short drive west on US 80. We're a family-owned company started in 2017 by owner Miller Maines. Miller and a crew of four do the work themselves, the same crew every visit, and we never subcontract a job. We're fully insured and rated 5.0 stars on Google from 111 reviews. Call or text (903) 844-6877 anytime for a free on-site walkthrough and a written, itemized estimate, usually within a day.",
+    "Yard Dog Landscapes handles lawn care and landscaping in Hallsville from our base in Longview, a short drive west on US 80. We're a family-owned company started in 2017 by owner Miller Maines. Miller and a crew of four do the work themselves, the same crew every visit, and we never subcontract a job. We're fully insured and rated 5.0 stars on Google from {{REVIEWS}} reviews. Request a free on-site walkthrough anytime and get a written, itemized estimate, usually within a day.",
     "Hallsville yards cover a wide range. In town and in the newer subdivisions you get standard lots with builder beds and a line of pines or hardwoods along the back. A little farther out, lots open up into acreage that runs against pasture or woods, and mowing, edging and leaf work on that kind of ground takes a different setup than a quarter-acre yard. The soil changes across a single property too. Higher spots tend to be sandy and dry out fast in July, while the low spots sit on heavier clay that holds water after a hard rain.",
     "Because Hallsville sits between Longview and Marshall, it's easy for us to fit Hallsville jobs in alongside our work in both towns. We walk the property first, look at where the water goes and where the sun falls, and then put the price in writing. Standing water after spring storms is one of the things Hallsville homeowners ask us about most, along with weekly mowing through the growing season."
   ],
@@ -54,11 +54,11 @@
   "faq": [
     {
       "q": "Do you cover all of Hallsville, including places out in the county?",
-      "a": "Yes. We work in town, in the newer subdivisions and on country lots around Hallsville in Harrison County. If you're out toward Harleton or along US 80 toward Marshall, call or text (903) 844-6877 and tell us where you are. We'll walk the property and tell you straight what we can do there."
+      "a": "Yes. We work in town, in the newer subdivisions and on country lots around Hallsville in Harrison County. If you're out toward Harleton or along US 80 toward Marshall, send a quote request and tell us where you are. We'll walk the property and tell you straight what we can do there."
     },
     {
       "q": "How much does weekly mowing cost in Hallsville?",
-      "a": "On a typical residential lot, weekly mowing runs about $50 to $65 per visit. Acreage, heavy tree lines and a lot of trimming along fences move that number, so bigger Hallsville properties get priced after we walk them. Either way you get a flat per-visit price in writing before we start."
+      "a": "On a typical residential lot, weekly mowing starts at $65 per visit. Acreage, heavy tree lines and a lot of trimming along fences move that number, so bigger Hallsville properties get priced after we walk them. Either way you get a flat per-visit price in writing before we start."
     },
     {
       "q": "My backyard stays soggy after it rains. Is that something you fix?",
@@ -83,12 +83,13 @@
     "hardscaping": "Patios in Hallsville usually go off the back of a newer home, where the yard is flat and water already has trouble moving. We dig out, compact a crushed stone base and pitch the patio away from the house, so the new surface doesn't send more water toward the slab. Most patio and hardscape projects run $3,100 to $9,100, depending on the size and the choice of pavers or flagstone.",
     "retaining-walls": "On Hallsville lots, walls usually come up where a builder pad left a steep edge or the back of the yard drops toward a creek or ditch. Every wall we build sits on a compacted base set below grade, with gravel backfill and a drain behind it carried to daylight. Most walls run $3,000 to $19,000 by height and length, and short garden walls start at a few thousand.",
     "drainage": "In Hallsville, the usual problem is a flat backyard holding water after a storm or a downspout dumping against the foundation. A lot of those get fixed with regrading, a swale and a pop-up emitter rather than a full French drain, and we'll tell you which one your yard needs. Small fixes run $450 to $1,000, and most drainage projects land between $2,000 and $3,750.",
-    "christmas-lights": "Hallsville is close to Longview, so it falls under our standard Christmas light pricing, where most homes start at $900. We supply the lights, custom-cut C9 lines to your roofline, then take everything down after the season and store it for next year. You can get a quote without a visit: send a photo of the house and we'll send back a mock-up in warm white or color."
+    "christmas-lights": "Hallsville is close to Longview, so it falls under our standard Christmas light pricing, where most homes start at $900. We supply the lights, custom-cut C9 lines to your roofline, then take everything down after the season and store it for next year. You can get a quote without a visit: send a photo of the house and we'll send back a mock-up in warm white or color.",
+    "irrigation": "A lot of Hallsville homes are newer builds with flat lots, and builder sprinkler systems tend to be one-size-fits-all: heads spraying the sidewalk, beds on spray instead of drip, and zones that ignore where the shade falls. We repair, re-zone or install new systems that fit the yard."
   },
   "service_faq": {
     "lawn-maintenance": {
       "q": "Can you mow acreage outside Hallsville, or just neighborhood lots?",
-      "a": "Both. Neighborhood lots usually fall around $50 to $65 per visit for weekly mowing. Acreage gets priced after we walk it, since the size, the obstacles and how much trimming there is along fences and tree lines all change the time it takes."
+      "a": "Both. Neighborhood lots usually start at $65 per visit for weekly mowing. Acreage gets priced after we walk it, since the size, the obstacles and how much trimming there is along fences and tree lines all change the time it takes."
     },
     "leaf-removal": {
       "q": "When should I book fall leaf cleanup in Hallsville?",
@@ -140,7 +141,11 @@
     },
     "christmas-lights": {
       "q": "Does someone need to come out to my Hallsville house to quote Christmas lights?",
-      "a": "No. Text a photo of the front of your house to (903) 844-6877 and we'll send back a mock-up with a price. We provide the lights, hang them, pull them down after the season and keep them in storage until next year. Most homes start at $900, and booking early in the fall gets you more choice of install dates."
+      "a": "No. Attach a photo of the front of your house on our contact page and we'll send back a mock-up with a price. We provide the lights, hang them, pull them down after the season and keep them in storage until next year. Most homes start at $900, and booking early in the fall gets you more choice of install dates."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Hallsville?",
+      "a": "Yes. We install new systems and fix builder systems that never worked right, under Texas Licensed Irrigator Matthew Maines, LI0006657. Hallsville is a short drive east on US 80, and the walkthrough and quote are free."
     }
   },
   "nearby": [

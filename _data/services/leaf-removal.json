@@ -2,44 +2,60 @@
   "slug": "leaf-removal",
   "name": "Leaf Removal",
   "short": "leaf removal",
-  "title": "Leaf Removal Longview TX | Yard Dog Landscapes",
-  "meta": "Leaf removal in Longview, TX. Fall and winter cleanups, bed clearing, bagging and haul-off, timed to what your trees are dropping. Free walkthrough and quote.",
+  "title": "Leaf Removal & Leaf Vacuuming in Longview, TX | Yard Dog Landscapes",
+  "meta": "Leaf removal in Longview, TX with a leaf vacuum trailer. We blow leaves to the drive, vacuum and shred them 10 to 1, and haul them off. No bags. Billed hourly.",
   "h1": "Leaf removal in Longview & East Texas",
   "kicker": "Leaf removal",
-  "lede": "Fall and winter leaf cleanups that clear the lawn, beds and hard surfaces and haul it all off. Quoted after a free walkthrough, since every canopy drops differently.",
-  "answer": "Yard Dog Landscapes is a family-owned crew in Longview, TX, founded in 2017 and rated 5.0 stars across 111 Google reviews. We clear leaves and pine straw off lawns, beds, walks and driveways, then bag and haul them away, in one cleanup or several passes through the season. The price depends on lot size, how many trees you have and how deep the leaves have piled, so we quote it after a free walkthrough. Call (903) 844-6877.",
+  "lede": "We blow the leaves out of your lawn and beds onto the driveway, vacuum them into our trailer and haul them off. The vacuum shreds them about 10 to 1, so there are no bags and nothing left at the curb. Billed by the hour.",
+  "answer": "Yard Dog Landscapes is a family-owned crew in Longview, TX, founded in 2017 and rated 5.0 stars across {{REVIEWS}} Google reviews. We remove leaves with a leaf vacuum trailer. The crew blows leaves and pine straw out of the lawn and beds onto a paved surface, then vacuums them up. The vacuum shreds the leaves about 10 to 1, so roughly 10 yards of leaves hauls off as 1 yard, with no bags. Leaf removal is billed by the hour, and you get an estimate of the hours up front after a free walkthrough. Send a quote request and we'll get back to you within a day.",
   "overview": [
     "Leaf removal here is not one Saturday with a rake. Pecans drop first, sweetgums let go in early November, and post oaks and water oaks hang on to dead leaves and drop them a few at a time into February. We time cleanups to what is actually falling on your lot, not to a date on the calendar.",
-    "A visit clears the lawn, the beds, the walks and the driveway. We blow and rake leaves out of shrub beds and rock beds, re-edge where the leaves buried the line, and bag or haul everything off. Nothing gets blown into the neighbor's yard or the storm drain. On bigger properties it is a full haul-off. On smaller ones the light early drop can go back into the lawn through the mower, which feeds the soil instead of filling bags."
+    "Here is how a visit works. The crew blows leaves out of the lawn, the shrub beds and the rock beds onto the driveway or another paved surface. We pull the vacuum trailer up to that spot and vacuum everything up. The vacuum shreds as it goes, roughly 10 yards of leaves down to 1, so one trailer hauls off what would otherwise be a curb full of bags. Nothing gets blown into the neighbor's yard or the storm drain, and we re-edge the bed lines the leaves buried before we leave.",
+    "Because nothing gets bagged, you aren't paying for bags or for the time it takes to fill them. Leaf removal is straight labor, billed by the hour, and we tell you how many hours we expect before we start. On smaller lots the light early drop can go back into the lawn through the mower, which feeds the soil instead of filling the trailer."
   ],
   "included": [
     "Full-property leaf and pine straw cleanup",
-    "Shrub bed and rock bed clearing, re-edged where needed",
+    "Leaves blown out of shrub beds and rock beds, bed lines re-edged",
     "Driveway, walk and patio clearing",
-    "Bagging and haul-off",
+    "Leaf vacuum trailer that shreds leaves about 10 to 1",
+    "Haul-off with no bags left at the curb",
     "Fall and winter passes timed to the drop",
-    "Pre-winter and late-winter cleanups",
     "Post-storm cleanups",
     "Exterior gutter clearing"
   ],
   "process": [
-    {"title": "Walk the lot", "text": "We look at the trees, the grass under them and how much is already down, then send a written quote, usually within a day."},
-    {"title": "Plan the passes", "text": "Most lots need a pass in mid-November and another in mid-December. Heavy canopy over St. Augustine can need weekly clearing for three or four weeks."},
-    {"title": "Clear and collect", "text": "Lawn, beds, walks and drives get cleared, and everything is bagged or hauled off the property."},
-    {"title": "Clean up the edges", "text": "We blow out rock beds, re-edge bed lines the leaves buried and leave the hard surfaces clean."},
-    {"title": "Last pass before green-up", "text": "Post oaks and water oaks keep dropping into February, so a late pass uncovers the lawn before spring."}
+    {
+      "title": "Walk the lot",
+      "text": "We look at the trees, the beds and how much is already down, then send a written estimate of the hours, usually within a day."
+    },
+    {
+      "title": "Plan the passes",
+      "text": "Most lots need a pass in mid-November, another in mid-December and a last one before spring green-up. Heavy canopy over St. Augustine can need weekly clearing for three or four weeks."
+    },
+    {
+      "title": "Blow it to the drive",
+      "text": "The crew blows leaves out of the lawn, the beds and the rock beds onto the driveway or another paved surface the trailer can reach."
+    },
+    {
+      "title": "Vacuum and haul",
+      "text": "We pull the vacuum trailer up, vacuum the leaves, shred them about 10 to 1 and haul them off. No bags."
+    },
+    {
+      "title": "Clean up the edges",
+      "text": "We re-edge the bed lines the leaves buried and leave the drive and walks clean."
+    }
   ],
   "price": {
-    "range": null,
-    "unit": null,
-    "note": "We don't publish a leaf removal price because no two canopies drop the same. We walk the lot and give you a written, itemized quote, usually within a day.",
+    "range": "By the hour",
+    "unit": "",
+    "note": "Leaf removal is straight labor. We bill by the hour, and after a free walkthrough you get a written estimate of how many hours the job should take. No bag fees.",
     "factors": [
       "Lot size",
       "Number and type of trees",
       "How deep the leaves have piled",
-      "Number of passes through the season",
       "Beds and rock beds to clear",
-      "Haul-off volume"
+      "Number of passes through the season",
+      "How far the leaves are from the driveway"
     ]
   },
   "timing": "Removal starts in the first half of November, when the sweetgums let go and the volume roughly triples in a few days. Plan on another pass in mid-December and a last one before spring green-up, because post oaks and water oaks drop into February. Before November, the light drop is usually better mulched into the lawn with the mower.",
@@ -51,19 +67,45 @@
     ]
   },
   "faq": [
-    {"q": "How much does leaf removal cost in Longview, TX?", "a": "We quote leaf removal after a walkthrough instead of publishing a price, because the job swings with lot size, how many trees you have, how deep the leaves are and how many passes the season takes. The walkthrough is free, and you get a written, itemized quote, usually within a day. Call or text (903) 844-6877 to set it up."},
-    {"q": "When should leaves be removed in East Texas?", "a": "Start collecting in the first half of November, when the sweetgums drop and a mower can't keep up anymore. Plan on another pass in mid-December. Post oaks and water oaks hold dead leaves all winter and let them go into February, so a final cleanup before spring green-up is worth it. The light October drop can just be mulched in."},
-    {"q": "Can I just mulch my leaves with the mower?", "a": "Early in the season, yes. The first light drop in October can go back into the lawn with two passes of the mower while the leaves are dry. The test is simple: if you can still see green grass when you're done, you did it right. If it reads brown, you put a blanket on the lawn and it's time to pick them up."},
-    {"q": "Is it OK to leave leaves in my flower beds?", "a": "A few inches of loose leaves on a bed of established shrubs is fine, but it doesn't replace mulch. Whole leaves mat into shingled layers after a good rain and shed water sideways, and they blow back onto the lawn by February. Keep them off perennial crowns and shrub stems, and don't bury pansies or other winter color."},
-    {"q": "Do you haul the leaves off?", "a": "Yes. We bag or haul off everything we collect, and we don't blow leaves into the street, the storm drain or the neighbor's yard. The one exception is pine straw. It makes good mulch in beds, so if you'd rather keep it there, we leave it in the beds and only clear it off the lawn."}
+    {
+      "q": "How much does leaf removal cost in Longview, TX?",
+      "a": "We bill leaf removal by the hour. It is straight labor, with no bag fees. After a free walkthrough you get a written estimate of how many hours your lot should take, based on lot size, how many trees you have, how deep the leaves are and how many beds need clearing. Send a quote request to set it up."
+    },
+    {
+      "q": "When should leaves be removed in East Texas?",
+      "a": "Start collecting in the first half of November, when the sweetgums drop and a mower can't keep up anymore. Plan on another pass in mid-December. Post oaks and water oaks hold dead leaves all winter and let them go into February, so a final cleanup before spring green-up is worth it. The light October drop can just be mulched in."
+    },
+    {
+      "q": "Can I just mulch my leaves with the mower?",
+      "a": "Early in the season, yes. The first light drop in October can go back into the lawn with two passes of the mower while the leaves are dry. The test is simple: if you can still see green grass when you're done, you did it right. If it reads brown, you put a blanket on the lawn and it's time to pick them up."
+    },
+    {
+      "q": "Is it OK to leave leaves in my flower beds?",
+      "a": "A few inches of loose leaves on a bed of established shrubs is fine, but it doesn't replace mulch. Whole leaves mat into shingled layers after a good rain and shed water sideways, and they blow back onto the lawn by February. Keep them off perennial crowns and shrub stems, and don't bury pansies or other winter color."
+    },
+    {
+      "q": "Do you bag the leaves?",
+      "a": "No. We vacuum them. The crew blows the leaves onto your driveway or another paved surface, and we vacuum them into our trailer and haul them off. The vacuum shreds them about 10 to 1, so roughly 10 yards of leaves leaves your property as 1 yard. We don't blow leaves into the street, the storm drain or the neighbor's yard. Pine straw is the one exception: it makes good mulch, so if you want it kept in the beds, we leave it there and only clear it off the lawn."
+    },
+    {
+      "q": "Do I need a driveway for the leaf vacuum?",
+      "a": "It helps. We blow the leaves onto a driveway or another paved surface where the trailer can pull up. On the walkthrough we look at where the trailer can reach and plan the job around it, and that is part of the hour estimate we give you."
+    }
   ],
-  "related": ["lawn-maintenance", "mulch-installation", "tree-shrub-care"],
-  "blog": ["blog-fall-leaf-strategy-east-texas", "blog-fall-mulch-top-dress-east-texas"],
+  "related": [
+    "lawn-maintenance",
+    "mulch-installation",
+    "tree-shrub-care"
+  ],
+  "blog": [
+    "blog-fall-leaf-strategy-east-texas",
+    "blog-fall-mulch-top-dress-east-texas"
+  ],
   "town_template": {
     "h1": "Leaf removal in {town}",
-    "title": "Leaf Removal in {town}, TX | Yard Dog Landscapes",
-    "meta": "Leaf removal in {town}, TX. Fall and winter cleanups, bed clearing, bagging and haul-off timed to what your trees are dropping. Free walkthrough and quote.",
-    "lede": "Fall and winter leaf cleanups in {town}, timed to what your trees are actually dropping and hauled off when we're done.",
-    "answer": "Yard Dog Landscapes is a family-owned crew based in Longview that does leaf removal in {town} and around {county}. Founded in 2017, we hold a 5.0 rating across 111 Google reviews. We clear leaves and pine straw off lawns, beds and hard surfaces and bag or haul them away, in one cleanup or several passes through the season. Price depends on lot size, tree cover and how deep the leaves are, so we quote after a free walkthrough. Call (903) 844-6877."
+    "title": "Leaf Removal in {town}, TX | Leaf Vacuum Service | Yard Dog",
+    "meta": "Leaf removal in {town}, TX with a leaf vacuum trailer: blown to the drive, shredded 10 to 1 and hauled off. No bags. Billed by the hour.",
+    "lede": "Fall and winter leaf cleanups in {town}, blown to the drive, vacuumed up and hauled off. No bags, billed by the hour.",
+    "answer": "Yard Dog Landscapes is a family-owned crew based in Longview that does leaf removal in {town} and around {county}. Founded in 2017, we hold a 5.0 rating across {{REVIEWS}} Google reviews. We blow leaves and pine straw out of lawns and beds onto a paved surface, vacuum them into our trailer, which shreds them about 10 to 1, and haul them off with no bags. Leaf removal is billed by the hour, with an estimate of the hours up front after a free walkthrough. Send a quote request and we'll get back to you within a day."
   }
 }

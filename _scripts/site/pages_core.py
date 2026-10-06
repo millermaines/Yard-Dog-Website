@@ -12,16 +12,17 @@ def svc_price(s):
 
 # ======================================================================= home
 def home():
-    hero = (f'<section class="hero photo" style="--bg:url(/img/bg-home.jpg);--bp:center 68%;--bpm:62% 70%"><div class="w">'
+    recent = ''.join(f'<span class="th">{img(k)}</span>' for k in ('d:walk-dsc03930', 'white-oak-flagstone-patio-after', 'driveway-retaining-wall-after'))
+    hero = (f'<section class="hero plain home"><div class="w">'
             f'<div><p class="kick">Longview, Texas. Family-owned since 2017.</p><h1>Sit. Stay.<br>Perfect<br>Landscape.</h1>'
             f'<p class="lede">Lawn care, landscaping, patios, retaining walls and drainage across Longview and East Texas. One local crew that shows up when it says it will, builds it right, and cleans up before it leaves.</p>'
-            f'<div class="acts"><a class="btn lg" href="/our-work" style="background:#fff;color:#111">See our work</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
-            f'<p class="stars">{STARS}<span><b>5.0</b> from 111 Google reviews</span></p>'
-            f'<p class="tag">Pictured: a flagstone walkway with path lights we built in Kilgore</p></div>'
+            f'<div class="acts"><a class="btn lg" href="/our-work" style="background:#fff;color:#111">See our work</a></div>'
+            f'<p class="stars">{STARS}<span><b>5.0</b> from {REVIEW_COUNT} Google reviews</span></p>'
+            f'<a class="recent" href="/our-work">{recent}<span class="rl">Recent jobs in Kilgore, White Oak and Lake Cherokee</span></a></div>'
             f'{quote_form("q", heading="Get a free quote", sub="Two quick steps. It goes straight to our office, and we call you within a day.")}'
             f'</div>{GRAIN}{swoosh()}</section>')
     trust = ('<section class="trust" aria-label="Why homeowners pick Yard Dog"><div class="w">'
-             '<div><b>5.0 <span>&#9733;</span></b><small>111 Google reviews</small></div>'
+             '<div><b>5.0 <span>&#9733;</span></b><small>{REVIEW_COUNT} Google reviews</small></div>'
              '<div><b>Since 2017</b><small>Family-owned, based in Longview</small></div>'
              '<div><b>Same crew</b><small>Every visit. We never subcontract.</small></div>'
              '<div><b>Within a day</b><small>Free, written, itemized estimate</small></div></div></section>')
@@ -42,13 +43,13 @@ def home():
              f'<div><h2 class="h2">Loyal as a hound.<br>Sharp as a spade.</h2><p>Yard Dog started in 2017 with one truck, one trailer and a stubborn belief that lawn care should feel personal. Almost a decade later we still answer our own phone, still walk every property before we price it, and still treat your yard like our own front lawn.</p>'
              f'<div class="acts"><a class="btn ghost" href="/about">Our story</a><a class="more" href="/careers">Join the pack</a></div></div></div></section>')
     reviews = f'<section class="sec stone"><div class="w"><div class="head"><div><h2 class="h2">What our neighbors say</h2></div>{GBADGE}</div>{revs(["anna", "staci", "ashley", "travis", "david", "john"])}</div></section>'
-    qas = [('How do I pick the best landscaping company in Longview, TX?', 'Look for a local crew with a track record you can check. Yard Dog Landscapes is family-owned, has worked East Texas yards since 2017 and holds a 5.0 rating across 111 Google reviews. We walk every property in person before we quote it, send a written, itemized estimate, and our own crew does the work. We never subcontract.'),
+    qas = [('How do I pick the best landscaping company in Longview, TX?', 'Look for a local crew with a track record you can check. Yard Dog Landscapes is family-owned, has worked East Texas yards since 2017 and holds a 5.0 rating across {REVIEW_COUNT} Google reviews. We walk every property in person before we quote it, send a written, itemized estimate, and our own crew does the work. We never subcontract.'),
            ('What services does Yard Dog Landscapes offer?', 'Weekly and bi-weekly lawn maintenance, leaf removal, fertilization, hedge trimming, tree and shrub care, tree planting, landscaping, flower beds, mulch, sod, patios and walkways, retaining walls, drainage and grading, and Christmas light installation.'),
            ('What areas do you serve?', 'We are based in Longview and work across East Texas: White Oak, Kilgore, Lake Cherokee, Gladewater, Hallsville, Marshall, Tyler, Henderson, Gilmer, Big Sandy, Carthage, Nacogdoches and the communities around them.'),
-           ('Do you offer free estimates?', f'Yes. Send the quote form or call {PHONE} and we will get back to you within a day to set up a free on-site walkthrough. You get a written estimate with no pressure and no upsells.'),
-           ('How much does landscaping cost in Longview, TX?', 'Weekly mowing for a typical Longview yard runs about $50 to $65 a visit. Most landscaping and planting projects run $900 to $3,600, patios and hardscaping $3,100 to $9,100, and retaining walls $3,000 to $19,000. Your free, written quote gives you the exact number.'),
+           ('Do you offer free estimates?', f'Yes. Send the quote form and we will get back to you within a day to set up a free on-site walkthrough. You get a written estimate with no pressure and no upsells.'),
+           ('How much does landscaping cost in Longview, TX?', 'Weekly mowing for a typical Longview yard starts at $65 a visit. Most landscaping and planting projects run $900 to $3,600, patios and hardscaping $3,100 to $9,100, and retaining walls $3,000 to $19,000. Your free, written quote gives you the exact number.'),
            ('Is Yard Dog Landscapes insured?', 'Yes. We are a family-owned, fully insured company based in Longview, TX, and the same crew does every job.')]
-    faq = (f'<section class="sec"><div class="w faqw"><div><h2 class="h2">Straight answers</h2><p class="sub">The questions East Texans ask us most. Something else on your mind? Call <a href="tel:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a>.</p></div><div class="faq">{faq_html(qas)}</div></div></section>')
+    faq = (f'<section class="sec"><div class="w faqw"><div><h2 class="h2">Straight answers</h2><p class="sub">The questions East Texans ask us most. Something else on your mind? <a href="/contact" style="font-weight:700;color:var(--ink)">Ask us here</a>.</p></div><div class="faq">{faq_html(qas)}</div></div></section>')
     tg = ''.join(f'<a href="/{t}">{e(TOWNS[t]["name"])}<small>{e(TOWNS[t]["county"])}</small></a>' for t in TOWN_ORDER)
     area = f'<section class="sec stone"><div class="w"><h2 class="h2">Where we work</h2><p class="sub">From our home base in Longview across East Texas. Pick your town for local details, prices and answers.</p><div class="tgrid" style="margin-top:28px">{tg}</div></div></section>'
     posts = pages_blog.ORDERED[:3]
@@ -60,7 +61,7 @@ def home():
           'url': BASE + '/', 'inLanguage': 'en-US', 'publisher': {'@id': BIZ_ID}}
     wp = webpage_ld('index', 'Yard Dog Landscapes | Landscaping, Lawn Care & Patios in Longview, TX', 'x', BASE + '/img/bg-home.jpg')
     wp['speakable'] = {'@type': 'SpeakableSpecification', 'cssSelector': ['h1', '.hero .lede', '.faq']}
-    desc = 'Family-owned landscaping, lawn care, patios, walls and drainage in Longview and East Texas since 2017. Rated 5.0 from 111 Google reviews. Free written quotes.'
+    desc = 'Family-owned landscaping, lawn care, patios, walls and drainage in Longview and East Texas since 2017. Rated 5.0 from {REVIEW_COUNT} Google reviews. Free written quotes.'
     wp['description'] = desc
     page('index', 'Yard Dog Landscapes | Landscaping, Lawn Care & Patios in Longview, TX', desc, body, [biz, ws, wp, faq_ld(qas)],
          og_img='/img/bg-home.jpg', extra_js='<script src="/quote.js?v=1" defer></script>')
@@ -74,13 +75,13 @@ def about():
     hero = (crumb([('About', 'about')]) +
             f'<section class="hero blur" style="--bg:url(/img/bg-about.jpg)"><div class="w"><div><p class="kick">About Yard Dog</p><h1>Same crew.<br>Same standards.<br>Since 2017.</h1>'
             f'<p class="lede">Yard Dog Landscapes is a family-owned lawn care and landscaping company in Longview, Texas. Miller Maines started it with one truck and one trailer. The trucks are nicer now and the crew is bigger. How we work hasn\'t changed.</p>'
-            f'<div class="acts"><a class="btn lg" href="/contact">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div></div>'
+            f'<div class="acts"><a class="btn lg" href="/contact">Get a free quote</a><a class="tel2" href="/our-work">See our work</a></div></div>'
             f'<figure class="portrait" style="margin:0;justify-self:center"><img src="/img/miller-maines-owner-yard-dog-truck.webp" width="1000" height="1333" alt="Miller Maines, owner of Yard Dog Landscapes, leaning on the Yard Dog Ford F-350" fetchpriority="high"><figcaption>Miller Maines<span>Owner &amp; founder</span></figcaption></figure></div>{GRAIN}{swoosh()}</section>')
     story = ('<section class="sec"><div class="w split" style="align-items:start"><div><h2 class="h2">One truck, one trailer, and a stubborn idea</h2>'
              '<p>In 2017 Yard Dog was one truck, one trailer and the belief that lawn care should feel personal. The first yards were neighbors and friends. We mowed, we edged, we showed up when we said we would, and word got around Longview.</p>'
              '<p>Almost a decade later we still answer our own phone, still walk every property before we price it, and still treat your yard like our own front lawn. We don\'t subcontract, so the people you meet at the walkthrough are the people who do the job.</p>'
              '<p>Today our crews run weekly lawn routes and build patios, flagstone walkways, retaining walls, boat and RV pads, flower beds and drainage across Longview, White Oak, Kilgore, Lake Cherokee, Hallsville, Marshall, Tyler and the rest of East Texas. In the fall and winter, Yard Dog Lights hangs Christmas lights on homes across the area.</p></div>'
-             '<div class="stats" style="margin-top:8px"><div><b>2017</b><small>Founded in Longview, TX</small></div><div><b>5.0 &#9733;</b><small>From 111 Google reviews</small></div><div><b>13</b><small>East Texas towns served</small></div><div><b>0</b><small>Subcontractors. Our crew does the work.</small></div></div></div></section>')
+             '<div class="stats" style="margin-top:8px"><div><b>2017</b><small>Founded in Longview, TX</small></div><div><b>5.0 &#9733;</b><small>From {REVIEW_COUNT} Google reviews</small></div><div><b>13</b><small>East Texas towns served</small></div><div><b>0</b><small>Subcontractors. Our crew does the work.</small></div></div></div></section>')
     mos = ''.join(f'<figure class="{c}">{img(k)}<figcaption>{e(cap)}</figcaption></figure>' for k, cap, c in CREW)
     crew = (f'<section class="sec stone"><div class="w"><div class="head"><div><h2 class="h2">Four guys in red.<br>You\'ll get to know them.</h2><p class="sub">The same crew runs the trucks, the install, the cleanup and the follow-up call. Here they are on a few recent jobs.</p></div>'
             f'<a class="more" href="/our-work">See more of their work</a></div><div class="mos">{mos}</div></div></section>')
@@ -148,7 +149,7 @@ def our_work():
     body = hero + (f'<section class="gal" aria-labelledby="galh"><div class="w"><h2 id="galh" class="sr">Project photos</h2><div class="fl" role="group" aria-label="Filter photos">{chips}<button type="button" class="f jobchip" hidden aria-pressed="true"></button></div><div class="grid" id="grid">{"".join(tiles)}</div></div></section>'
                    f'<section class="projects" aria-labelledby="pjh"><div class="w"><h2 id="pjh">Recent projects</h2><p class="pi">What we built, where, and what went into it. Tap a project to see its photos.</p><div class="pg">{"".join(proj)}</div>'
                    f'<p class="area"><strong>Service area:</strong> {towns}.</p></div></section>'
-                   + cta('Want this at your place?', "We'll walk the property with you and send a written estimate within a day. 5.0 stars on Google from 111 reviews.") +
+                   + cta('Want this at your place?', "We'll walk the property with you and send a written estimate within a day. 5.0 stars on Google from {REVIEW_COUNT} reviews.") +
                    '<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo"><button class="cl" type="button" aria-label="Close">&times;</button><button class="pv" type="button" aria-label="Previous photo">&lsaquo;</button><img id="lbi" alt=""><p><span id="lbc"></span><small id="lbn"></small></p><button class="nx" type="button" aria-label="Next photo">&rsaquo;</button></div>')
     desc = 'Photos and video of real patios, flagstone walkways, retaining walls, RV pads, beds and lawn care by Yard Dog Landscapes in Longview, White Oak and Kilgore, TX.'
     gal = {'@context': 'https://schema.org', '@type': ['CollectionPage', 'ImageGallery'], '@id': BASE + '/our-work#gallery', 'url': BASE + '/our-work',
@@ -169,9 +170,9 @@ def our_work():
 # ======================================================================= services hub
 def services_hub():
     hero = (crumb([('Services', 'services')]) +
-            f'<section class="hero photo solo" style="--bg:url(/img/bg-services.jpg);--bp:center 40%"><div class="w"><div><p class="kick">Longview &amp; East Texas</p><h1>Services</h1>'
+            f'<section class="{hero_cls("d:walk-dsc03710")}"><div class="w"><div><p class="kick">Longview &amp; East Texas</p><h1>Services</h1>'
             f'<p class="lede">Weekly lawn care, new landscaping, patios, walls and drainage. One local crew, a written quote, and nothing subcontracted.</p>'
-            f'<div class="acts"><a class="btn lg" href="/contact">Get a free quote</a><a class="tel2" href="/pricing">See price ranges</a></div>{facts_list(STD_FACTS)}</div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="/contact">Get a free quote</a><a class="tel2" href="/pricing">See price ranges</a></div>{facts_list(STD_FACTS)}</div>{hero_fig("d:walk-dsc03710")}</div>{GRAIN}{swoosh()}</section>')
     heroes = {'Maintenance': 'd:crew-dsc04063', 'Installation': 'front-roses-after', 'Hardscape & specialty': 'd:walk-dsc03930'}
     gs = ''
     for g, ss in GROUPS:
@@ -197,7 +198,7 @@ def service_areas():
     hero = (crumb([('Service areas', 'service-areas')]) +
             f'<section class="hero blur solo" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><div><h1>Where we work</h1>'
             f'<p class="lede">Yard Dog works out of Longview across seven East Texas counties: Gregg, Harrison, Smith, Rusk, Upshur, Panola and Nacogdoches. Pick your town for local details, recent jobs, prices and answers.</p></div></div>{GRAIN}{swoosh()}</section>')
-    body = hero + f'<section class="sec"><div class="w"><div class="stiles">{tiles}</div><p class="sub" style="margin-top:28px">Close by but don\'t see your town? Call or text <a href="tel:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a> and ask. We cover most of East Texas.</p></div></section>' + cta()
+    body = hero + f'<section class="sec"><div class="w"><div class="stiles">{tiles}</div><p class="sub" style="margin-top:28px">Close by but don\'t see your town? <a href="/contact" style="font-weight:700;color:var(--ink)">Send us your address</a> and ask. We cover most of East Texas.</p></div></section>' + cta()
     desc = 'Towns Yard Dog Landscapes serves: Longview, White Oak, Kilgore, Lake Cherokee, Gladewater, Hallsville, Marshall, Tyler, Henderson, Gilmer and more in East Texas.'
     lst = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'Yard Dog Landscapes service areas', 'itemListElement': [
         {'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/' + t, 'name': f"{TOWNS[t]['name']}, TX"} for i, t in enumerate(TOWN_ORDER)]}
@@ -216,15 +217,15 @@ def pricing():
         rows += f'<a class="prow" href="/{s}"><div><h3>{e(SERVICES[s]["name"])}</h3><p>{e(first_sentence(SERVICES[s]["lede"]))}</p></div><span class="amt">{amt}<small>{unit}</small></span><span class="ar" aria-hidden="true">&rarr;</span></a>'
     hero = (crumb([('Pricing', 'pricing')]) +
             f'<section class="hero blur solo" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><div><p class="kick">Pricing for Longview &amp; East Texas</p><h1>What it costs</h1>'
-            f'<p class="lede">Weekly mowing runs about $50 to $65 a visit. One-time projects run from a few hundred dollars up into five figures. Below are honest ranges from our own Longview-area quotes, so you have a number before you call.</p>'
-            f'<div class="acts"><a class="btn lg" href="/contact">Get my exact price</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div></div></div>{GRAIN}{swoosh()}</section>')
+            f'<p class="lede">Weekly mowing starts at $65 a visit. One-time projects run from a few hundred dollars up into five figures. Below are honest ranges from our own Longview-area quotes, so you have a number before you call.</p>'
+            f'<div class="acts"><a class="btn lg" href="/contact">Get my exact price</a></div></div></div>{GRAIN}{swoosh()}</section>')
     body = hero + (f'<section class="sec"><div class="w"><h2 class="h2">The ballpark</h2><p class="sub">Totals homeowners pay, pulled from our own quotes around Longview, White Oak, Kilgore and Hallsville. Your free quote is the exact number.</p><div class="plist" style="margin-top:32px">{rows}</div>'
                    f'<p class="sub" style="margin-top:20px">Christmas lights more than an hour from Longview start at $1,800. Drainage details are in our <a href="/french-drain-cost-east-texas" style="color:var(--ink);font-weight:700">French drain cost guide</a>.</p></div></section>')
     body += ('<section class="sec stone"><div class="w split" style="align-items:start"><div><h2 class="h2">Why two yards get two numbers</h2><p>A range moves with a handful of real things. We measure them when we walk your property and put every line in writing. If the ground turns up a surprise, we show you and get your okay before we keep going.</p></div>'
              '<ul class="chk one" style="margin-top:8px"><li>Yard and area size, the biggest driver on most jobs</li><li>Materials: sod type, mulch, pavers, plants or stone</li><li>Site access: tight back gate or open drive-up lot</li><li>Plant size: mature plants cost more than starters</li><li>Wall height and length</li><li>Ground prep: leveling, grading or drainage first</li></ul></div></section>')
     body += ('<section class="sec dark" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><h2 class="h2">Design preview</h2><p class="sub">See your yard before we break ground. Flat-rate renderings, credited toward a qualifying install booked within 90 days.</p><div class="tiers"><div class="tier"><b>$199</b><h3>Flower beds</h3><p>Credited on installs of $1,500 or more.</p></div><div class="tier"><b>$449</b><h3>Hardscape</h3><p>Credited on installs of $3,000 or more.</p></div><div class="tier"><b>$999</b><h3>Full property</h3><p>Credited on installs of $5,000 or more.</p></div></div><p style="margin-top:30px"><a class="btn" href="/design-preview">How the design preview works</a></p></div></section>')
-    qas = [('How much does landscaping cost in Longview, TX?', 'Routine lawn maintenance in Longview typically runs about $50 to $65 per visit for a standard yard. Most landscaping and planting projects run $900 to $3,600, and bigger builds like patios ($3,100 to $9,100) and retaining walls ($3,000 to $19,000) run more. We walk your property and send an exact, itemized quote before any work starts.'),
-           ('How much does weekly mowing cost in Longview?', 'About $50 to $65 per visit for a typical residential yard, billed on a recurring schedule. Larger lots, heavy tree cover or extra trimming can move that. You get a flat per-visit price up front.'),
+    qas = [('How much does landscaping cost in Longview, TX?', 'Routine lawn maintenance in Longview typically starts at $65 per visit for a standard yard. Most landscaping and planting projects run $900 to $3,600, and bigger builds like patios ($3,100 to $9,100) and retaining walls ($3,000 to $19,000) run more. We walk your property and send an exact, itemized quote before any work starts.'),
+           ('How much does weekly mowing cost in Longview?', 'From $65 per visit for a typical residential yard, billed on a recurring schedule. Larger lots, heavy tree cover or extra trimming can move that. You get a flat per-visit price up front.'),
            ('How much does a paver patio or retaining wall cost in East Texas?', 'Most patios and hardscaping projects run $3,100 to $9,100. Retaining walls run from a few thousand dollars for a short garden wall to $20,000 or more for a tall structural wall, with most between $3,000 and $19,000.'),
            ('How much do Christmas lights cost?', 'Most homes start at $900 for professional lights we supply, install, take down and store. Installs more than an hour from Longview start at $1,800. We quote from a photo mock-up of your house.'),
            ('Why do you give ranges instead of a flat rate?', 'No two yards are the same. Size, materials, access, wall height and ground prep all change what a job takes. A flat rate would overcharge simple jobs or shortchange complex ones.'),
@@ -241,12 +242,12 @@ def contact():
     embed = ('<div class="embedcard"><div class="platy-form-mount" data-platy-form="k10wty88jnyk6dfl2jsmve"></div>'
              '<script src="https://app.getplaty.com/platy-form.js" data-platy-form="k10wty88jnyk6dfl2jsmve" data-platy-src="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve/embed"></script>'
              '<p class="fb">Trouble seeing the form? <a href="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:+19038446877">(903) 844-6877</a>.</p></div>')
-    info = (f'<div class="cinfo"><div><small>Call or text</small><a href="tel:{PHONE_TEL}">{PHONE}</a></div><div><small>Email</small><a href="mailto:{EMAIL}">{EMAIL}</a></div>'
-            f'<div><small>Hours</small><span>Open 24 hours. Call or text anytime.</span></div><div><small>Service area</small><span>Longview, Kilgore, White Oak, Hallsville, Marshall, Tyler and the rest of East Texas</span></div></div>')
+    info = (f'<div class="cinfo"><div><small>Phone</small><a href="tel:{PHONE_TEL}">{PHONE}</a></div><div><small>Email</small><a href="mailto:{EMAIL}">{EMAIL}</a></div>'
+            f'<div><small>Hours</small><span>Monday to Friday, 7 AM to 5 PM. Quote requests anytime online.</span></div><div><small>Service area</small><span>Longview, Kilgore, White Oak, Hallsville, Marshall, Tyler and the rest of East Texas</span></div></div>')
     hero = (crumb([('Contact', 'contact')]) +
             f'<section class="hero blur contact" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><div><p class="kick">Free quote</p><h1>Get a free quote</h1>'
             f'<p class="lede">Tell us about your yard and add photos if you have them. We call within a day, walk the property with you, and send a written estimate. No pressure and no upsells.</p>'
-            f'<p class="stars" style="margin-top:0">{STARS}<span><b>5.0</b> from 111 Google reviews</span></p>{info}</div>{embed}</div>{GRAIN}{swoosh()}</section>')
+            f'<p class="stars" style="margin-top:0">{STARS}<span><b>5.0</b> from {REVIEW_COUNT} Google reviews</span></p>{info}</div>{embed}</div>{GRAIN}{swoosh()}</section>')
     nxt = ('<section class="sec"><div class="w"><h2 class="h2" style="margin-bottom:40px">What happens next</h2><div class="prom p3">'
            '<div><h3>We call you</h3><p>Within a day, from a real person in Longview. The same family that runs the company answers the phone.</p></div>'
            '<div><h3>We walk it together</h3><p>We meet at the property, listen to what you want and measure what matters.</p></div>'
@@ -266,8 +267,8 @@ def careers():
     js = scripts[-1]
     js = js[js.find('// ---- Careers application submit ----'):]
     hero = (crumb([('Careers', 'careers')]) +
-            f'<section class="hero photo solo" style="--bg:url(/img/bg-careers.jpg);--bp:center 35%"><div class="w"><div><p class="kick">Careers in Longview, TX</p><h1>Join the pack</h1>'
-            f'<p class="lede">Good pay, a paid day to prove it, and a crew that takes care of each other. Get on the short list and you get the call first.</p><div class="acts"><a class="btn lg" href="#careersForm">Apply in 2 minutes</a></div></div></div>{GRAIN}{swoosh()}</section>')
+            f'<section class="{hero_cls("d:rvpad-dsc03158")}"><div class="w"><div><p class="kick">Careers in Longview, TX</p><h1>Join the pack</h1>'
+            f'<p class="lede">Good pay, a paid day to prove it, and a crew that takes care of each other. Get on the short list and you get the call first.</p><div class="acts"><a class="btn lg" href="#careersForm">Apply in 2 minutes</a></div></div>{hero_fig("d:rvpad-dsc03158")}</div>{GRAIN}{swoosh()}</section>')
     perks = ('<section class="sec"><div class="w"><h2 class="h2" style="margin-bottom:44px">Good hands get called first</h2><div class="prom">'
              '<div><h3>Top-of-market pay</h3><p>We pay above the going rate for good hands in East Texas, with room to earn more as you raise your game.</p></div>'
              '<div><h3>A paid trial day</h3><p>Your first day running the gear is paid. No free tryouts.</p></div>'
@@ -312,7 +313,7 @@ def design_preview():
     hero = (crumb([('Services', 'services'), ('Design preview', 'design-preview')]) +
             f'<section class="hero blur solo" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><div><p class="kick">Landscape design preview</p><h1>See your yard before we dig</h1>'
             f'<p class="lede">Not sure what you want yet? Send us your property and we send back one or two custom design renderings, so you can see the finished yard before anything is built. Flat rate, credited toward a qualifying install.</p>'
-            f'<div class="acts"><a class="btn lg" href="/contact">Start a design preview</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div></div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="/contact">Start a design preview</a></div></div></div>{GRAIN}{swoosh()}</section>')
     body = hero + f'<section class="sec"><div class="w"><h2 class="h2">Drag the slider</h2><p class="sub">These are real renderings we sent homeowners before work started. They are design previews, not finished builds.</p><div class="bagrid" style="margin-top:40px">{bas}</div></div></section>'
     body += ('<section class="sec stone"><div class="w split" style="align-items:start"><div><h2 class="h2">Built for the homeowner who knows something needs to change</h2>'
              '<p>Most homeowners we meet start in the same place: "I know I want this yard to look better, but I don\'t know what I actually want." That\'s what the design preview is for. Point at the area you want covered, a front yard, a back yard, a single bed or the whole property, and we turn it into a plan you can react to.</p>'
@@ -367,9 +368,9 @@ def cost_guide():
                ('Combined work', 'Drainage behind a new retaining wall or under a bed rebuild shares labor, but adds scope to the overall number.')]
     drv = '<div class="notes" style="margin-top:28px">' + ''.join(f'<div><h3>{e(a)}</h3><p>{e(b)}</p></div>' for a, b in drivers) + '</div>'
     hero = (crumb([('Drainage', 'drainage'), ('Cost guide', 'french-drain-cost-east-texas')]) +
-            f'<section class="hero photo solo" style="--bg:url({photo("img-3452")["full"]});--bp:center 50%"><div class="w"><div><p class="kick">2026 cost guide</p><h1>French drain &amp; yard drainage cost in East Texas</h1>'
+            f'<section class="{hero_cls("img-3452")}"><div class="w"><div><p class="kick">2026 cost guide</p><h1>French drain &amp; yard drainage cost in East Texas</h1>'
             f'<p class="lede">Real price ranges for French drains, surface drainage and regrading in Longview and across East Texas: what they cost, what drives the number, and why the cheapest drain is rarely the cheapest in the long run.</p>'
-            f'<div class="acts"><a class="btn lg" href="/contact">Get a free drainage quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div><p class="tag">Pictured: drain tubing going in on one of our jobs</p></div></div>{GRAIN}{swoosh()}</section>')
+            f'<div class="acts"><a class="btn lg" href="/contact">Get a free drainage quote</a></div></div>{hero_fig("img-3452", cap="Drain tubing going in on one of our jobs")}</div>{GRAIN}{swoosh()}</section>')
     body = hero + ('<section class="sec"><div class="w"><div class="answer"><h2>How much does a French drain cost in East Texas?</h2><p>Most French drain systems in the Longview and East Texas area run $2,000 to $4,500 installed. Small, single-problem fixes like rerouting a downspout or draining one low spot start around $450 to $1,000, while larger whole-property systems, or drainage bundled with regrading and landscape work, run $4,500 and up. The price depends on how many feet of pipe the yard needs, how deep the crew has to dig, where the water can be sent, and how much sod or stone goes back on top. Call (903) 844-6877 for a free assessment.</p></div>'
                    f'<div class="doc" style="margin-top:44px;max-width:980px"><h2>What drainage costs in East Texas</h2>{table}<p>Ranges reflect real Yard Dog drainage jobs across Gregg, Harrison, Smith and Upshur counties. Your yard drains its own way, so the only accurate number is a free on-site quote.</p></div></div></section>')
     body += f'<section class="sec stone"><div class="w"><h2 class="h2">What moves the price</h2>{drv}</div></section>'
@@ -423,7 +424,7 @@ def not_found():
     body = (f'<section class="sec nf"><div class="w"><h1>That page wandered off</h1><p class="lead2">The link may be old or mistyped. Here is where most people are headed:</p>'
             f'<div class="stiles" style="margin-top:28px"><a class="stile" href="/"><h3>Home</h3><p>Start over from the top.</p></a><a class="stile" href="/services"><h3>Services</h3><p>Everything we do, with prices.</p></a>'
             f'<a class="stile" href="/our-work"><h3>Our work</h3><p>{len(PHOTOS)} photos from real jobs.</p></a><a class="stile" href="/contact"><h3>Free quote</h3><p>Tell us what you need.</p></a></div>'
-            f'<p class="sub" style="margin-top:28px">Or call or text <a href="tel:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a>.</p></div></section>')
+            f'</div></section>')
     page('404', 'Page not found | Yard Dog Landscapes', 'This page could not be found.', body, [], robots='noindex, follow', canonical=BASE + '/404')
 
 def build():

@@ -11,12 +11,13 @@ from common import *  # noqa
 
 SRC = os.path.join(ROOT, '_data', 'blog-src')   # original post HTML, kept as the source of truth
 
-# Lines in older posts that read as offering services we don't provide (pesticide / irrigation work).
+# Lines in older posts that read as offering services we don't provide (pesticide work), plus the irrigation line.
 FIXES = {
     'blog-east-texas-spring-fertilization': [('spring slow-release with pre-emergent for crabgrass', 'spring slow-release feeding')],
     'blog-mulch-depth-east-texas': [("""            <li><strong>Pre-emergent (optional).</strong> If you're fighting heavy weed pressure, a granular pre-emergent under the mulch buys you another two months of clean beds.</li>\n""", '')],
+    # Irrigation is offered now (Oct 2026), under Texas Licensed Irrigator Matthew Maines, LI0006657.
     'blog-irrigation-mistakes-east-texas': [('and when a yard needs a system repaired, rerouted, or installed from scratch, we handle that too.',
-                                             'and when a system needs repair or a reroute, we tell you exactly what we found so your irrigation tech can fix it fast.')],
+                                             'and when a yard needs a system repaired, rerouted, or installed from scratch, <a href="/irrigation">we handle that too</a>, under Texas Licensed Irrigator Matthew Maines, LI0006657.')],
 }
 
 def txt(s):
@@ -109,7 +110,7 @@ def post_page(p):
             f'<div class="by"><img src="/img/miller-maines-owner-yard-dog-truck.webp" width="1000" height="1333" alt="" aria-hidden="true"><div><b>Miller Maines</b><span>Owner, Yard Dog Landscapes</span></div></div></div></header>'
             f'<figure class="afig"><img src="{src}" width="{w}" height="{h}" alt="{e(p["img_alt"])}" fetchpriority="high"><figcaption>{e(p["caption"])}</figcaption></figure>'
             f'<div class="w"><div class="art prose" style="padding-top:28px"><!-- POST_BODY:START -->\n{clean_body(p["body"])}\n<!-- POST_BODY:END -->'
-            f'<div class="author"><img src="/img/miller-maines-owner-yard-dog-truck.webp" width="1000" height="1333" alt="Miller Maines" loading="lazy"><p><b>Miller Maines</b> owns Yard Dog Landscapes in Longview, TX. He has worked East Texas yards since 2017 and still walks every property himself. {PHONE}.</p></div>'
+            f'<div class="author"><img src="/img/miller-maines-owner-yard-dog-truck.webp" width="1000" height="1333" alt="Miller Maines" loading="lazy"><p><b>Miller Maines</b> owns Yard Dog Landscapes in Longview, TX. He has worked East Texas yards since 2017 and still walks every property himself.</p></div>'
             f'<aside class="acta"><div><h2>{e(p["cta_h"])}</h2><p>{e(p["cta_p"])}</p></div><a class="btn" href="/contact">Get a free quote</a></aside></div></div></article>')
     if rel:
         body += f'<section class="sec stone" style="margin-top:72px"><div class="w"><h2 class="h2">Services we mentioned in this post</h2><div class="stiles" style="margin-top:28px"><!-- RELATED:START -->{rel}<!-- RELATED:END --></div></div></section>'

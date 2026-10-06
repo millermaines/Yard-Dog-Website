@@ -1,157 +1,162 @@
 {
- "slug": "longview-tx",
- "name": "Longview",
- "county": "Gregg County",
- "counties_note": "Longview is the Gregg County seat, and the east side of the city reaches into Harrison County.",
- "lat": null,
- "lng": null,
- "drive": "our home base",
- "hub_title": "Lawn Care & Landscaping in Longview, TX | Yard Dog Landscapes",
- "hub_meta": "Landscaping and lawn care in Longview, TX from a family-owned local crew. Mowing, beds, patios, drainage and walls. 5.0 on Google. Call (903) 844-6877.",
- "h1": "Landscaping & lawn care in Longview",
- "lede": "Longview is home. We're a family-owned crew based here since 2017, handling weekly mowing, new beds, patios, drainage and retaining walls with Miller and the same crew of four on every job.",
- "intro": [
-  "Yard Dog Landscapes is a family-owned landscaping and lawn care company based in Longview, TX. Miller Maines started it in 2017, and Miller and the same crew of four still do every job. We never subcontract. We're fully insured and hold a 5.0 rating on Google from 111 reviews. Every project starts with a free walkthrough and a written, itemized estimate, usually within a day, and you can call or text (903) 844-6877 anytime.",
-  "Longview is the Gregg County seat, and the east side of town crosses into Harrison County. Most yards here are sandy loam with red clay underneath. The sand dries out fast in August and the clay holds water after a spring storm, so the same lot can be thirsty in summer and soggy in April. Older streets around downtown sit under tall pines, post oaks and pecans that shade the grass and fill the beds every fall. Newer lots on the edges of town start with thin topsoil over a graded pad, young trees and full sun, and they shed a lot of water when it rains.",
-  "Longview is home base, so the shop is never far from your yard. We work Spring Hill, Pine Tree, Greggton, the neighborhoods around downtown and everywhere in between. Being close keeps estimates quick and makes it easy to stop back after a heavy rain to check a new drain or a fresh bed. We don't promise a fixed route day, but we'll tell you up front how often we'll be out and hold to it."
- ],
- "areas": [
-  "Spring Hill",
-  "Pine Tree",
-  "Greggton",
-  "Downtown Longview",
-  "Judson Road",
-  "Gilmer Road",
-  "Loop 281"
- ],
- "landmarks": [
-  "LeTourneau University",
-  "Gregg County Courthouse",
-  "Longview Mall",
-  "Sabine River"
- ],
- "yard_notes": [
-  {
-   "title": "Sand on top, red clay underneath",
-   "text": "Water runs through Longview's sandy topsoil fast, then stalls on the clay below. That's why low spots stay soggy for days after a storm while beds dry out after a single week of August heat."
+  "slug": "longview-tx",
+  "name": "Longview",
+  "county": "Gregg County",
+  "counties_note": "Longview is the Gregg County seat, and the east side of the city reaches into Harrison County.",
+  "lat": null,
+  "lng": null,
+  "drive": "our home base",
+  "hub_title": "Lawn Care & Landscaping in Longview, TX | Yard Dog Landscapes",
+  "hub_meta": "Landscaping and lawn care in Longview, TX from a family-owned local crew. Mowing, beds, patios, drainage and walls. 5.0 on Google. Send a quote request and we'll get back to you within a day.",
+  "h1": "Landscaping & lawn care in Longview",
+  "lede": "Longview is home. We're a family-owned crew based here since 2017, handling weekly mowing, new beds, patios, drainage and retaining walls with Miller and the same crew of four on every job.",
+  "intro": [
+    "Yard Dog Landscapes is a family-owned landscaping and lawn care company based in Longview, TX. Miller Maines started it in 2017, and Miller and the same crew of four still do every job. We never subcontract. We're fully insured and hold a 5.0 rating on Google from {{REVIEWS}} reviews. Every project starts with a free walkthrough and a written, itemized estimate, usually within a day, and you can request one anytime.",
+    "Longview is the Gregg County seat, and the east side of town crosses into Harrison County. Most yards here are sandy loam with red clay underneath. The sand dries out fast in August and the clay holds water after a spring storm, so the same lot can be thirsty in summer and soggy in April. Older streets around downtown sit under tall pines, post oaks and pecans that shade the grass and fill the beds every fall. Newer lots on the edges of town start with thin topsoil over a graded pad, young trees and full sun, and they shed a lot of water when it rains.",
+    "Longview is home base, so the shop is never far from your yard. We work Spring Hill, Pine Tree, Greggton, the neighborhoods around downtown and everywhere in between. Being close keeps estimates quick and makes it easy to stop back after a heavy rain to check a new drain or a fresh bed. We don't promise a fixed route day, but we'll tell you up front how often we'll be out and hold to it."
+  ],
+  "areas": [
+    "Spring Hill",
+    "Pine Tree",
+    "Greggton",
+    "Downtown Longview",
+    "Judson Road",
+    "Gilmer Road",
+    "Loop 281"
+  ],
+  "landmarks": [
+    "LeTourneau University",
+    "Gregg County Courthouse",
+    "Longview Mall",
+    "Sabine River"
+  ],
+  "yard_notes": [
+    {
+      "title": "Sand on top, red clay underneath",
+      "text": "Water runs through Longview's sandy topsoil fast, then stalls on the clay below. That's why low spots stay soggy for days after a storm while beds dry out after a single week of August heat."
+    },
+    {
+      "title": "Shade from old pines and oaks",
+      "text": "Established neighborhoods carry tall pines, post oaks and pecans. St. Augustine holds up in that shade far better than Bermuda, and beds under the canopy need shade plants and more mulch."
+    },
+    {
+      "title": "Rolling lots move water",
+      "text": "Longview isn't flat. Runoff from the street or the lot next door often ends up against a foundation or in a back corner, which is where regrading, French drains and short walls pay for themselves."
+    },
+    {
+      "title": "Leaves and needles most of the year",
+      "text": "Pines drop needles off and on all year, then oaks, pecans and sweetgums let go from November into December. Beds and lawns under them fill up faster than most people plan for."
+    }
+  ],
+  "popular": [
+    "landscaping",
+    "lawn-maintenance",
+    "drainage",
+    "hardscaping",
+    "flower-bed-installation",
+    "christmas-lights"
+  ],
+  "faq": [
+    {
+      "q": "Do you cover all of Longview?",
+      "a": "Yes. Longview is our home base, and we work across the whole city, from Spring Hill on the north side to Pine Tree and Greggton on the west side, the neighborhoods around downtown and the part of town in Harrison County. We also work nearby White Oak, Hallsville and Lake Cherokee. If you're not sure, send your address with a quote request."
+    },
+    {
+      "q": "How much does landscaping cost in Longview?",
+      "a": "Weekly mowing starts at $65 per visit for a typical yard. Most landscaping and planting projects land between $900 and $3,600, and simple refreshes start at a few hundred. Patios usually run $3,100 to $9,100, drainage $2,000 to $3,750, and retaining walls $3,000 to $19,000 depending on height and length. Your exact number comes on a written, itemized estimate after we walk the yard."
+    },
+    {
+      "q": "What do Longview homeowners call you for most?",
+      "a": "Weekly mowing keeps us in Longview yards all season. French drains and regrading are some of our most requested work here, because the red clay under the sand holds water after spring storms and sends it toward foundations. Beyond that it's usually bed refreshes, sod, patios and retaining walls."
+    },
+    {
+      "q": "Can I see a design before I commit to a Longview project?",
+      "a": "Yes. Our Landscape Design Preview shows you the plan before we break ground. It's $199 for flower beds, $449 for hardscape and $999 for a full property, and the fee is credited toward the install if you book within 90 days."
+    }
+  ],
+  "service_angles": {
+    "lawn-maintenance": "Longview lawns are mostly St. Augustine under the trees and Bermuda out in the sun, and plenty of yards have both. We mow each one at its own height, raise the deck through the July and August heat, and edge the drive, walks and beds every visit. Weekly mowing starts at $65 per visit for a typical residential yard.",
+    "leaf-removal": "Leaf season in Longview runs long: pines shed needles all year, then oaks, pecans and sweetgums drop from November into December, and the older streets with big trees get buried. We clear lawns, beds and hard surfaces and haul it all off instead of blowing it into the street. It's quoted after a walkthrough, since tree cover drives the price.",
+    "fertilization": "Longview's sandy topsoil doesn't hold nutrients long, and years of pine needles push a lot of yards acidic. We soil test, add lime when the numbers call for it, and time feedings to the season, starting in late April once nights hold above 60 degrees and finishing with a fall winterizer. Visits start from about $190.",
+    "hedge-trimming": "Foundation shrubs in Longview grow hard from spring into late summer, and ligustrum, holly and boxwood can swallow a window in one season. We shape them often enough to stay full without shearing them bare, keep them off the brick and haul off every clipping. Most hedge jobs run $150 to $800, depending on how many shrubs and how tall.",
+    "tree-shrub-care": "Plenty of Longview crepe myrtles have been topped for years and need to be brought back with thinning cuts in late winter. We prune shrubs and ornamental trees by species and season, raise low limbs that shade out the lawn, and remove small trees and shrubs that have outgrown their spot. Tree and shrub care is quoted after we walk the yard.",
+    "tree-planting": "Planting in Longview means digging wide, not deep, because a root ball set too low sits in the red clay and drowns, so we set it slightly high, build a watering basin and finish with a mulch ring. The best window runs from September to around Thanksgiving, while the soil is still warm and the air has cooled. Each planting is quoted once we've seen the spot, the soil and what's overhead.",
+    "sod-installation": "New sod roots in the top few inches, and in Longview that's sandy ground that dries out fast. We clear the old turf, level and amend before any sod goes down, lay St. Augustine on the shaded lots and Bermuda in full sun, and leave you a watering plan for the first few weeks. Because sod is priced by the pallet, cost tracks square footage, and most jobs run $1,500 to $4,700.",
+    "landscaping": "Most Longview landscaping starts with what's already there: tired foundation beds, a bare corner under a pine, a front walk with no edge. We lay it out, amend the sandy soil, plant for the sun each bed actually gets and finish it clean. Most projects run $900 to $3,600, and a Design Preview lets you see the plan first.",
+    "flower-bed-installation": "Longview beds fail two ways: sandy soil that won't hold water in July, or clay pockets that stay wet and rot roots. We amend each bed, set the grade so water runs away from the brick and choose plants that take East Texas heat and humidity. Fall and early spring are the best planting windows, when new roots can settle before summer.",
+    "mulch-installation": "In Longview the mulch fight is with the trees overhead, since pine straw and oak leaves pile into beds every fall and the sandy soil dries out quickly once the cover thins. We re-cut the edges, clean out the bed, loosen the crusted top inch and lay an even 1 to 1.5 inches, kept back off trunks and siding. Depending on how many beds and how much mulch, a refresh usually runs $600 to $2,400.",
+    "hardscaping": "A Longview patio has to sit on something better than the clay under the sand, or it settles and cracks within a few summers. We dig out, compact a crushed stone base and pitch every patio, walkway and fire pit pad so water runs away from the house. Depending on size and stone, most builds run $3,100 to $9,100.",
+    "retaining-walls": "Longview's rolling lots give walls plenty of work: a backyard that falls toward the house, a drive cut into a hill, a bed sliding onto a walk. Every wall gets a compacted base below grade, gravel backfill and a drain to daylight, since red clay holds water and pushes. Height and length set the price, and most walls land between $3,000 and $19,000.",
+    "drainage": "Water in Longview sheets off the slopes, soaks through the sand and stops on the clay, so it ends up against foundations and in back corners. We watch where it goes, then fix it with regrading, French drains, downspout runs or pop-up emitters tied to a real outlet. A downspout reroute or a single low spot starts around $450, and most full projects run $2,000 to $3,750.",
+    "christmas-lights": "We hang lights all over Longview, from single-story ranch homes to two-story houses with steep gables. We supply the lights, custom-cut professional C9 lines to your roofline, install them, take them down after the season and store them until next year. Quotes are done remotely from a photo mock-up of your house, and most homes start at $900.",
+    "irrigation": "Longview yards from Spring Hill to Pine Tree run on sandy slopes over clay, so one long sprinkler cycle sends water down the hill and leaves the top of the yard dry. We split zones by slope, sun and shade, put beds on drip, and pull the City of Longview permit before we dig."
   },
-  {
-   "title": "Shade from old pines and oaks",
-   "text": "Established neighborhoods carry tall pines, post oaks and pecans. St. Augustine holds up in that shade far better than Bermuda, and beds under the canopy need shade plants and more mulch."
+  "service_faq": {
+    "lawn-maintenance": {
+      "q": "Should my Longview lawn be mowed weekly or every other week?",
+      "a": "Weekly keeps a growing-season lawn sharp, especially Bermuda in full sun. Every other week can work for shaded St. Augustine or the slower months. We'll look at your yard and tell you which fits, and the per-visit price is in writing before we start."
+    },
+    "leaf-removal": {
+      "q": "When should I book leaf removal in Longview?",
+      "a": "Most Longview yards do best with two passes: one after the oaks and pecans drop in November and one in December for the stragglers and pine straw. Heavily wooded lots may need a third. Leaves left on St. Augustine through a wet winter can smother it, so don't wait until spring."
+    },
+    "fertilization": {
+      "q": "Do you aerate lawns in Longview?",
+      "a": "Yes. Core aeration pulls plugs out of compacted ground so water, air and fertilizer reach the roots. It does the most good on heavier clay spots and high-traffic areas, and we do it from late August to mid-September, with a feeding right behind it."
+    },
+    "hedge-trimming": {
+      "q": "How often do Longview hedges need trimming?",
+      "a": "Most need shaping every four to six weeks from spring through late summer, then less often as growth slows in fall. Ligustrum and photinia push the hardest. Waiting too long means a heavier cut that can leave bare spots."
+    },
+    "tree-shrub-care": {
+      "q": "Can you fix crepe myrtles that were topped?",
+      "a": "Usually, yes. We pick the strongest shoots off each knuckle, thin out the rest and let the tree grow back a natural shape over a few seasons. That work happens in late winter, before bud break."
+    },
+    "tree-planting": {
+      "q": "What trees do well in Longview yards?",
+      "a": "Native oaks for shade, bald cypress for wetter ground, and smaller trees like redbud and crepe myrtle near the house all do well here. Placement matters as much as the tree: far enough from the foundation, the drive and overhead lines for its full size. We'll walk it with you before anything goes in the ground."
+    },
+    "sod-installation": {
+      "q": "St. Augustine or Bermuda for my Longview yard?",
+      "a": "It comes down to sun. Bermuda wants full sun most of the day and fades out under pines and oaks. St. Augustine handles partial shade better, which is why you see it in so many shaded Longview yards. Plenty of lots need both, and we lay each one where it fits."
+    },
+    "landscaping": {
+      "q": "Can you work within my HOA's rules in Longview?",
+      "a": "Yes. Send us your HOA guidelines or approval form and we'll plan the beds, plants and any hardscape around them. Your itemized estimate lists the materials and layout, which helps with the submission."
+    },
+    "flower-bed-installation": {
+      "q": "When is the best time to plant new beds in Longview?",
+      "a": "Fall and early spring. Cooler weather lets new plants root in before the summer heat. We can plant in summer, but those beds need closer watering until they settle in."
+    },
+    "mulch-installation": {
+      "q": "What mulch works best in Longview?",
+      "a": "Hardwood and cypress hold up well and break down slowly. Pine straw fits the look of a lot of wooded Longview lots and stays put on slopes. Whatever the material, we lay it 1 to 1.5 inches deep over a prepped bed."
+    },
+    "hardscaping": {
+      "q": "Will a new patio make my Longview drainage worse?",
+      "a": "It can if it's built flat or pitched toward the house. We set every patio with a slight fall away from the foundation and plan where that runoff goes, into a bed, a swale or a drain. If the yard already holds water, we fix that first."
+    },
+    "retaining-walls": {
+      "q": "Why is my Longview retaining wall leaning?",
+      "a": "Almost always water. Red clay behind a wall soaks up rain, swells and pushes, and walls built without gravel backfill or a drain lean first and crack later. Some can be reset, and others need to come down and go back up on a proper base. We'll tell you which after we look at it."
+    },
+    "drainage": {
+      "q": "How much does a French drain cost in Longview?",
+      "a": "Small fixes like rerouting a downspout or draining one low spot run about $450 to $1,000. A standard single run is usually $1,900 to $3,000, full systems run $3,000 to $4,500, and large properties start around $4,500. We price yours after we walk it, ideally right after a rain."
+    },
+    "christmas-lights": {
+      "q": "How do I get a Christmas light quote in Longview?",
+      "a": "Request a free quote online. We quote lights remotely from a photo mock-up of your house, so nobody has to climb a ladder to measure. Most Longview homes start at $900. We supply the lights, custom-cut the C9 lines, install them, take them down after the season and store them."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Longview?",
+      "a": "Yes. Longview is home base. We design and install new sprinkler systems and repair existing ones all over town, under Texas Licensed Irrigator Matthew Maines, LI0006657, and we pull the city permit before we start. Pricing comes after a free walkthrough."
+    }
   },
-  {
-   "title": "Rolling lots move water",
-   "text": "Longview isn't flat. Runoff from the street or the lot next door often ends up against a foundation or in a back corner, which is where regrading, French drains and short walls pay for themselves."
-  },
-  {
-   "title": "Leaves and needles most of the year",
-   "text": "Pines drop needles off and on all year, then oaks, pecans and sweetgums let go from November into December. Beds and lawns under them fill up faster than most people plan for."
-  }
- ],
- "popular": [
-  "landscaping",
-  "lawn-maintenance",
-  "drainage",
-  "hardscaping",
-  "flower-bed-installation",
-  "christmas-lights"
- ],
- "faq": [
-  {
-   "q": "Do you cover all of Longview?",
-   "a": "Yes. Longview is our home base, and we work across the whole city, from Spring Hill on the north side to Pine Tree and Greggton on the west side, the neighborhoods around downtown and the part of town in Harrison County. We also work nearby White Oak, Hallsville and Lake Cherokee. If you're not sure, call or text (903) 844-6877."
-  },
-  {
-   "q": "How much does landscaping cost in Longview?",
-   "a": "Weekly mowing runs about $50 to $65 per visit for a typical yard. Most landscaping and planting projects land between $900 and $3,600, and simple refreshes start at a few hundred. Patios usually run $3,100 to $9,100, drainage $2,000 to $3,750, and retaining walls $3,000 to $19,000 depending on height and length. Your exact number comes on a written, itemized estimate after we walk the yard."
-  },
-  {
-   "q": "What do Longview homeowners call you for most?",
-   "a": "Weekly mowing keeps us in Longview yards all season. French drains and regrading are some of our most requested work here, because the red clay under the sand holds water after spring storms and sends it toward foundations. Beyond that it's usually bed refreshes, sod, patios and retaining walls."
-  },
-  {
-   "q": "Can I see a design before I commit to a Longview project?",
-   "a": "Yes. Our Landscape Design Preview shows you the plan before we break ground. It's $199 for flower beds, $449 for hardscape and $999 for a full property, and the fee is credited toward the install if you book within 90 days."
-  }
- ],
- "service_angles": {
-  "lawn-maintenance": "Longview lawns are mostly St. Augustine under the trees and Bermuda out in the sun, and plenty of yards have both. We mow each one at its own height, raise the deck through the July and August heat, and edge the drive, walks and beds every visit. Weekly mowing runs about $50 to $65 per visit for a typical residential yard.",
-  "leaf-removal": "Leaf season in Longview runs long: pines shed needles all year, then oaks, pecans and sweetgums drop from November into December, and the older streets with big trees get buried. We clear lawns, beds and hard surfaces and haul it all off instead of blowing it into the street. It's quoted after a walkthrough, since tree cover drives the price.",
-  "fertilization": "Longview's sandy topsoil doesn't hold nutrients long, and years of pine needles push a lot of yards acidic. We soil test, add lime when the numbers call for it, and time feedings to the season, starting in late April once nights hold above 60 degrees and finishing with a fall winterizer. Visits start from about $190.",
-  "hedge-trimming": "Foundation shrubs in Longview grow hard from spring into late summer, and ligustrum, holly and boxwood can swallow a window in one season. We shape them often enough to stay full without shearing them bare, keep them off the brick and haul off every clipping. Most hedge jobs run $150 to $800, depending on how many shrubs and how tall.",
-  "tree-shrub-care": "Plenty of Longview crepe myrtles have been topped for years and need to be brought back with thinning cuts in late winter. We prune shrubs and ornamental trees by species and season, raise low limbs that shade out the lawn, and remove small trees and shrubs that have outgrown their spot. Tree and shrub care is quoted after we walk the yard.",
-  "tree-planting": "Planting in Longview means digging wide, not deep, because a root ball set too low sits in the red clay and drowns, so we set it slightly high, build a watering basin and finish with a mulch ring. The best window runs from September to around Thanksgiving, while the soil is still warm and the air has cooled. Each planting is quoted once we've seen the spot, the soil and what's overhead.",
-  "sod-installation": "New sod roots in the top few inches, and in Longview that's sandy ground that dries out fast. We clear the old turf, level and amend before any sod goes down, lay St. Augustine on the shaded lots and Bermuda in full sun, and leave you a watering plan for the first few weeks. Because sod is priced by the pallet, cost tracks square footage, and most jobs run $1,500 to $4,700.",
-  "landscaping": "Most Longview landscaping starts with what's already there: tired foundation beds, a bare corner under a pine, a front walk with no edge. We lay it out, amend the sandy soil, plant for the sun each bed actually gets and finish it clean. Most projects run $900 to $3,600, and a Design Preview lets you see the plan first.",
-  "flower-bed-installation": "Longview beds fail two ways: sandy soil that won't hold water in July, or clay pockets that stay wet and rot roots. We amend each bed, set the grade so water runs away from the brick and choose plants that take East Texas heat and humidity. Fall and early spring are the best planting windows, when new roots can settle before summer.",
-  "mulch-installation": "In Longview the mulch fight is with the trees overhead, since pine straw and oak leaves pile into beds every fall and the sandy soil dries out quickly once the cover thins. We re-cut the edges, clean out the bed, loosen the crusted top inch and lay an even 1 to 1.5 inches, kept back off trunks and siding. Depending on how many beds and how much mulch, a refresh usually runs $600 to $2,400.",
-  "hardscaping": "A Longview patio has to sit on something better than the clay under the sand, or it settles and cracks within a few summers. We dig out, compact a crushed stone base and pitch every patio, walkway and fire pit pad so water runs away from the house. Depending on size and stone, most builds run $3,100 to $9,100.",
-  "retaining-walls": "Longview's rolling lots give walls plenty of work: a backyard that falls toward the house, a drive cut into a hill, a bed sliding onto a walk. Every wall gets a compacted base below grade, gravel backfill and a drain to daylight, since red clay holds water and pushes. Height and length set the price, and most walls land between $3,000 and $19,000.",
-  "drainage": "Water in Longview sheets off the slopes, soaks through the sand and stops on the clay, so it ends up against foundations and in back corners. We watch where it goes, then fix it with regrading, French drains, downspout runs or pop-up emitters tied to a real outlet. A downspout reroute or a single low spot starts around $450, and most full projects run $2,000 to $3,750.",
-  "christmas-lights": "We hang lights all over Longview, from single-story ranch homes to two-story houses with steep gables. We supply the lights, custom-cut professional C9 lines to your roofline, install them, take them down after the season and store them until next year. Quotes are done remotely from a photo mock-up of your house, and most homes start at $900."
- },
- "service_faq": {
-  "lawn-maintenance": {
-   "q": "Should my Longview lawn be mowed weekly or every other week?",
-   "a": "Weekly keeps a growing-season lawn sharp, especially Bermuda in full sun. Every other week can work for shaded St. Augustine or the slower months. We'll look at your yard and tell you which fits, and the per-visit price is in writing before we start."
-  },
-  "leaf-removal": {
-   "q": "When should I book leaf removal in Longview?",
-   "a": "Most Longview yards do best with two passes: one after the oaks and pecans drop in November and one in December for the stragglers and pine straw. Heavily wooded lots may need a third. Leaves left on St. Augustine through a wet winter can smother it, so don't wait until spring."
-  },
-  "fertilization": {
-   "q": "Do you aerate lawns in Longview?",
-   "a": "Yes. Core aeration pulls plugs out of compacted ground so water, air and fertilizer reach the roots. It does the most good on heavier clay spots and high-traffic areas, and we do it from late August to mid-September, with a feeding right behind it."
-  },
-  "hedge-trimming": {
-   "q": "How often do Longview hedges need trimming?",
-   "a": "Most need shaping every four to six weeks from spring through late summer, then less often as growth slows in fall. Ligustrum and photinia push the hardest. Waiting too long means a heavier cut that can leave bare spots."
-  },
-  "tree-shrub-care": {
-   "q": "Can you fix crepe myrtles that were topped?",
-   "a": "Usually, yes. We pick the strongest shoots off each knuckle, thin out the rest and let the tree grow back a natural shape over a few seasons. That work happens in late winter, before bud break."
-  },
-  "tree-planting": {
-   "q": "What trees do well in Longview yards?",
-   "a": "Native oaks for shade, bald cypress for wetter ground, and smaller trees like redbud and crepe myrtle near the house all do well here. Placement matters as much as the tree: far enough from the foundation, the drive and overhead lines for its full size. We'll walk it with you before anything goes in the ground."
-  },
-  "sod-installation": {
-   "q": "St. Augustine or Bermuda for my Longview yard?",
-   "a": "It comes down to sun. Bermuda wants full sun most of the day and fades out under pines and oaks. St. Augustine handles partial shade better, which is why you see it in so many shaded Longview yards. Plenty of lots need both, and we lay each one where it fits."
-  },
-  "landscaping": {
-   "q": "Can you work within my HOA's rules in Longview?",
-   "a": "Yes. Send us your HOA guidelines or approval form and we'll plan the beds, plants and any hardscape around them. Your itemized estimate lists the materials and layout, which helps with the submission."
-  },
-  "flower-bed-installation": {
-   "q": "When is the best time to plant new beds in Longview?",
-   "a": "Fall and early spring. Cooler weather lets new plants root in before the summer heat. We can plant in summer, but those beds need closer watering until they settle in."
-  },
-  "mulch-installation": {
-   "q": "What mulch works best in Longview?",
-   "a": "Hardwood and cypress hold up well and break down slowly. Pine straw fits the look of a lot of wooded Longview lots and stays put on slopes. Whatever the material, we lay it 1 to 1.5 inches deep over a prepped bed."
-  },
-  "hardscaping": {
-   "q": "Will a new patio make my Longview drainage worse?",
-   "a": "It can if it's built flat or pitched toward the house. We set every patio with a slight fall away from the foundation and plan where that runoff goes, into a bed, a swale or a drain. If the yard already holds water, we fix that first."
-  },
-  "retaining-walls": {
-   "q": "Why is my Longview retaining wall leaning?",
-   "a": "Almost always water. Red clay behind a wall soaks up rain, swells and pushes, and walls built without gravel backfill or a drain lean first and crack later. Some can be reset, and others need to come down and go back up on a proper base. We'll tell you which after we look at it."
-  },
-  "drainage": {
-   "q": "How much does a French drain cost in Longview?",
-   "a": "Small fixes like rerouting a downspout or draining one low spot run about $450 to $1,000. A standard single run is usually $1,900 to $3,000, full systems run $3,000 to $4,500, and large properties start around $4,500. We price yours after we walk it, ideally right after a rain."
-  },
-  "christmas-lights": {
-   "q": "How do I get a Christmas light quote in Longview?",
-   "a": "Call or text (903) 844-6877. We quote lights remotely from a photo mock-up of your house, so nobody has to climb a ladder to measure. Most Longview homes start at $900. We supply the lights, custom-cut the C9 lines, install them, take them down after the season and store them."
-  }
- },
- "nearby": [
-  "white-oak-tx",
-  "kilgore-tx",
-  "hallsville-tx",
-  "lake-cherokee-tx"
- ]
+  "nearby": [
+    "white-oak-tx",
+    "kilgore-tx",
+    "hallsville-tx",
+    "lake-cherokee-tx"
+  ]
 }

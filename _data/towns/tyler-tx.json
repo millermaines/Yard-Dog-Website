@@ -7,11 +7,11 @@
   "lng": null,
   "drive": "out I-20 past Kilgore, roughly 40 miles west of Longview",
   "hub_title": "Landscaping & Lawn Care in Tyler, TX | Yard Dog Landscapes",
-  "hub_meta": "Patios, retaining walls, drainage, landscaping and Christmas lights in Tyler, TX from a family-owned Longview crew. Free written quotes. (903) 844-6877.",
+  "hub_meta": "Patios, retaining walls, drainage, landscaping and Christmas lights in Tyler, TX from a family-owned Longview crew. Free written quotes.",
   "h1": "Landscaping & lawn care in Tyler",
   "lede": "Tyler is the biggest city we work in and the far western edge of our regular area. Project work like patios, walls, drainage and new beds fits best here, and we'll tell you straight about the rest.",
   "intro": [
-    "Yard Dog Landscapes takes on landscaping, hardscaping and lawn care work in Tyler from our base in Longview. We're a family-owned company started in 2017 by owner Miller Maines, and Miller and a crew of four do every job, the same crew every visit, with nothing subcontracted. We're fully insured, and Google reviewers have rated us 5.0 stars across 111 reviews. Call or text (903) 844-6877 anytime for a free on-site walkthrough and a written, itemized estimate.",
+    "Yard Dog Landscapes takes on landscaping, hardscaping and lawn care work in Tyler from our base in Longview. We're a family-owned company started in 2017 by owner Miller Maines, and Miller and a crew of four do every job, the same crew every visit, with nothing subcontracted. We're fully insured, and Google reviewers have rated us 5.0 stars across {{REVIEWS}} reviews. Request a free on-site walkthrough anytime and get a written, itemized estimate.",
     "Tyler is the Smith County seat and the biggest city in this part of East Texas, and its yards cover a wide range. The Azalea District has older brick homes with azaleas and dogwoods that have been shaped for decades. Newer subdivisions come with builder beds and young trees. Out past Loop 323, toward Lake Tyler, Whitehouse and Chapel Hill, lots get bigger and more wooded. The soil is the familiar East Texas sandy loam over red clay, and in the Rose Capital, plenty of homeowners take their roses and azaleas seriously.",
     "To be straight about the drive: Tyler is roughly 40 miles west of Longview, the far edge of our regular area. For one-time projects like a patio, a retaining wall, a drainage fix, new sod or a full landscape, that distance doesn't change much, and we're glad to take the work. Weekly mowing and other recurring visits depend on what else we have going in Tyler, so call with your address and we'll tell you where it stands."
   ],
@@ -57,7 +57,7 @@
   "faq": [
     {
       "q": "Do you really work in Tyler, or just Longview?",
-      "a": "We work in Tyler. It's roughly 40 miles west of Longview, the far edge of our regular area, so we're upfront about what fits. Patios, retaining walls, drainage, sod, landscaping and Christmas lights are all easy to schedule here. Weekly mowing depends on what else we have in Tyler at the time, so call (903) 844-6877 and ask."
+      "a": "We work in Tyler. It's roughly 40 miles west of Longview, the far edge of our regular area, so we're upfront about what fits. Patios, retaining walls, drainage, sod, landscaping and Christmas lights are all easy to schedule here. Weekly mowing depends on what else we have in Tyler at the time, so send a quote request and ask."
     },
     {
       "q": "Does Christmas light pricing change for Tyler?",
@@ -86,12 +86,13 @@
     "hardscaping": "Patios and walkways are some of the best fits for Tyler, since each one is a single project where the drive is a small part of the job. Around older brick homes, flagstone and warm-toned pavers sit well, and every build goes on an excavated, compacted crushed stone base pitched away from the house. Most projects run $3,100 to $9,100.",
     "retaining-walls": "Tyler lots with a drop toward the street or a back fence are where walls make the most sense, turning a slope you can't use into level yard. We build segmental block or natural stone on a compacted base set below grade, with gravel backfill, a drain to daylight and geogrid on taller walls. Most walls fall between $3,000 and $19,000, with height and length setting the number.",
     "drainage": "Drainage in Tyler follows the same rules as the rest of East Texas: sandy loam on top, clay underneath, and water that moves sideways once the top foot is full. We track down the source, which is usually roof water, a wrong-way grade or trapped subsurface water, and build the fix for that one. A small fix runs $450 to $1,000, and most full drainage projects come in at $2,000 to $3,750.",
-    "christmas-lights": "We install Christmas lights in Tyler for homes and businesses, in warm white or color. We supply the lights, custom-cut C9 lines to the roofline, take them down after the season and store them until next year. Because of the distance, your quote will say plainly which pricing applies to your address, the standard rate or the rate for installs more than an hour out."
+    "christmas-lights": "We install Christmas lights in Tyler for homes and businesses, in warm white or color. We supply the lights, custom-cut C9 lines to the roofline, take them down after the season and store them until next year. Because of the distance, your quote will say plainly which pricing applies to your address, the standard rate or the rate for installs more than an hour out.",
+    "irrigation": "Tyler yards, from the Azalea District to South Tyler, are bed-heavy, and azaleas and roses want steady moisture at the roots, not spray on the leaves. We put beds on drip, zone the lawn by sun and shade, and set the controller for East Texas summers."
   },
   "service_faq": {
     "lawn-maintenance": {
       "q": "Will you do weekly mowing at my house in Tyler?",
-      "a": "Maybe. Weekly service means a trip every week through the growing season, so it depends on what else we have in Tyler and where you are. Call or text (903) 844-6877 with your address and we'll give you a straight answer. Our published range for a typical lot is about $50 to $65 per visit, and your written quote gives the exact number."
+      "a": "Maybe. Weekly service means a trip every week through the growing season, so it depends on what else we have in Tyler and where you are. Send your address with a quote request and we'll give you a straight answer. Our published starting price for a typical lot is $65 per visit, and your written quote gives the exact number."
     },
     "leaf-removal": {
       "q": "How many leaf cleanups does a Tyler yard need?",
@@ -144,6 +145,10 @@
     "christmas-lights": {
       "q": "When should I book Christmas lights in Tyler?",
       "a": "As early in the fall as you can, since install dates fill up. Send a photo of the house and we'll quote it with a mock-up, so there's no waiting on a visit. Everything comes down in January, and we store the lights for next season."
+    },
+    "irrigation": {
+      "q": "Do you install sprinkler systems in Tyler?",
+      "a": "Yes. We take on sprinkler system installs and repairs in Tyler, about 40 miles west of Longview, under Texas Licensed Irrigator Matthew Maines, LI0006657, and pull the permit the job requires. Installs are scheduled as projects, and the walkthrough and quote are free."
     }
   },
   "nearby": [

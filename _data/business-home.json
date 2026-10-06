@@ -9,7 +9,7 @@
  "image": "https://www.yarddoglandscapes.com/brand_assets/Yard%20Dog%20Logo.png",
  "logo": "https://www.yarddoglandscapes.com/brand_assets/Yard%20Dog%20Logo.png",
  "url": "https://www.yarddoglandscapes.com",
- "telephone": "+1-903-844-6877",
+ "telephone": "+1-903-522-5291",
  "email": "info@yarddoglandscapes.com",
  "priceRange": "$$",
  "address": {
@@ -212,7 +212,7 @@
  ],
  "contactPoint": {
   "@type": "ContactPoint",
-  "telephone": "+1-903-844-6877",
+  "telephone": "+1-903-522-5291",
   "contactType": "customer service",
   "areaServed": "US",
   "availableLanguage": "English"

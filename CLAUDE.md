@@ -66,3 +66,7 @@
 - Do not stop after one screenshot pass
 - Do not use `transition-all`
 - Do not use default Tailwind blue/indigo as primary color
+
+## Obsolete generators
+- `_scripts/build-locations.mjs`, `gen-niche-pages.mjs`, `gen-niche-locations.mjs`, `mass-update.mjs` and the other one-off
+  page scripts wrote the pre-2026 design. Running them now would overwrite the rebuilt pages. Use `_scripts/site/build.py`.

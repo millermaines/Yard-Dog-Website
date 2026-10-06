@@ -79,12 +79,12 @@
             } catch (e) { /* analytics never blocks a lead */ }
           } else {
             btn.disabled = false; btn.textContent = label;
-            err(s2, (x.j && x.j.error) || 'That did not go through. Please try again, or call or text (903) 844-6877.');
+            err(s2, (x.j && x.j.error) || 'That did not go through. Please try again, or text (903) 522-5291.');
           }
         })
         .catch(function () {
           btn.disabled = false; btn.textContent = label;
-          err(s2, 'Could not reach us just now. Check your connection and try again, or call or text (903) 844-6877.');
+          err(s2, 'Could not reach us just now. Check your connection and try again, or text (903) 522-5291.');
         });
     });
   });

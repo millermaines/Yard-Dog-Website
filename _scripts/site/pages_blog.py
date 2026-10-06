@@ -42,10 +42,11 @@ def parse(path):
     b = body.group(1).strip()
     for a, z in FIXES.get(slug, []):
         b = b.replace(a, z)
+    b = textify(b)
     return dict(slug=slug, title=title, title_tag=ttag, meta=meta, date=dt, tag=tag, read=int(rt.group(1)) if rt else 5,
                 lead=txt(lead.group(1)) if lead else '', img_src=fig.group(1) if fig else '', img_alt=H.unescape(fig.group(2)) if fig else '',
                 caption=txt(fig.group(3)) if fig else '', body=b,
-                cta_h=txt(ctah.group(1)) if ctah else 'Want us to take a look?', cta_p=txt(ctah.group(2)) if ctah else '',
+                cta_h=txt(ctah.group(1)) if ctah else 'Want us to take a look?', cta_p=textify(txt(ctah.group(2))) if ctah else '',
                 related=[(r[0].strip('/'), txt(r[1]), txt(r[2])) for r in rel],
                 crumb=crumbname[0].strip() if crumbname else title,
                 date_h=date.fromisoformat(dt).strftime('%B %-d, %Y'))

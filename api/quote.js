@@ -59,10 +59,10 @@ export default async function handler(req, res) {
     if (r.ok && j && j.ok) return res.status(200).json({ ok: true });
     console.error('[quote] platy refused', r.status, j && j.error);
     return res.status(r.status >= 400 && r.status < 500 ? r.status : 502)
-      .json({ ok: false, error: (j && j.error) || 'That did not go through. Please try again, or call or text (903) 844-6877.' });
+      .json({ ok: false, error: (j && j.error) || 'That did not go through. Please try again, or text (903) 522-5291.' });
   } catch (e) {
     console.error('[quote] platy unreachable', e && e.message);
-    return res.status(502).json({ ok: false, error: 'Could not send that just now. Please try again, or call or text (903) 844-6877.' });
+    return res.status(502).json({ ok: false, error: 'Could not send that just now. Please try again, or text (903) 522-5291.' });
   } finally {
     clearTimeout(timer);
   }

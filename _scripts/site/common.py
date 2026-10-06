@@ -249,6 +249,12 @@ def footer():
 </div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
 <div class="mcta"><a class="q" href="/contact">Get a free quote</a></div>'''
 
+_CSS = []
+def site_css():
+    if not _CSS:
+        _CSS.append(open(os.path.join(ROOT, 'site.css')).read().replace('</style', '<\\/style'))
+    return _CSS[0]
+
 _AV = {}
 def asset_v(name):
     """Short content hash, so a changed stylesheet or script is never served from a stale cache."""
@@ -262,15 +268,14 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
     canon = canonical or (BASE + href(slug))
     og = abs_url(og_img or '/img/bg-home.jpg')
     lds = '\n'.join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>' for d in ld)
-    m = re.search(r'--bg:url\((/img/[^)]+)\)', body)
-    pre = f'<link rel="preload" as="image" href="{m.group(1)}" fetchpriority="high">' if m else ''
+    pre = ''
     ver = '<meta name="google-site-verification" content="TTw9_h3UV4aprn_LWuW5P7EQQpNVcJBNbF9Zvy002os">' if slug == 'index' else ''
     doc = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>
+<!-- Google tag (gtag.js), loaded after the page so it never delays the first paint; calls queue in dataLayer until then -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');
+addEventListener('load',function(){{setTimeout(function(){{var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id={GA_ID}';document.head.appendChild(s)}},800)}});</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(title)}</title>
@@ -288,7 +293,7 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
 <link rel="preload" href="/fonts/anton-latin-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 {pre}
-<link rel="stylesheet" href="/site.css?v={asset_v('site.css')}">
+<style>{site_css()}</style>
 {extra_head}
 {lds}
 </head>

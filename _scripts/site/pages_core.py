@@ -12,7 +12,8 @@ def svc_price(s):
 
 # ======================================================================= home
 def home():
-    recent = ''.join(f'<span class="th">{img(k)}</span>' for k in ('d:walk-dsc03930', 'white-oak-flagstone-patio-after', 'driveway-retaining-wall-after'))
+    recent = ''.join(f'<span class="th"><img src="/img/work/thumb/{BYKEY[k]["file"]}" width="{BYKEY[k]["tw"]}" height="{BYKEY[k]["th"]}" alt="{e(BYKEY[k]["alt"])}" decoding="async"></span>'
+                     for k in ('d:walk-dsc03930', 'white-oak-flagstone-patio-after', 'driveway-retaining-wall-after'))
     hero = (f'<section class="hero plain home"><div class="w">'
             f'<div><p class="kick">Longview, Texas. Family-owned since 2017.</p><h1>Sit. Stay.<br>Perfect<br>Landscape.</h1>'
             f'<p class="lede">Lawn care, landscaping, patios, retaining walls and drainage across Longview and East Texas. One local crew that shows up when it says it will, builds it right, and cleans up before it leaves.</p>'

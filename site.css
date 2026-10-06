@@ -48,7 +48,7 @@ h1{font:400 clamp(52px,7.4vw,104px)/.9 var(--display);text-transform:uppercase;m
 .t img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .t:hover img{transform:scale(1.035)}
 .cta{position:relative;isolation:isolate;overflow:hidden;background:var(--night);color:#fff;padding-block:80px}
-.cta::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(13,13,13,.95) 0%,rgba(13,13,13,.8) 55%,rgba(13,13,13,.55) 100%),url(/img/cta-bg.jpg) center 60%/cover no-repeat}
+.cta::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(13,13,13,.95) 0%,rgba(13,13,13,.8) 55%,rgba(13,13,13,.55) 100%)}
 .cta::after{content:"";position:absolute;inset:0;z-index:-1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px;opacity:.07}
 .cta .w{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .cta h2{font:400 clamp(36px,5vw,64px)/.95 var(--display);text-transform:uppercase;margin:0}

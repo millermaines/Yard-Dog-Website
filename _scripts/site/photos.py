@@ -151,9 +151,9 @@ def main():
         full = im.copy(); full.thumbnail((1600, 1600), Image.LANCZOS)
         full.save(os.path.join(OUT, 'full', name), 'WEBP', quality=80, method=5)
         g = im.copy(); g.thumbnail((820, 820), Image.LANCZOS)
-        g.save(os.path.join(OUT, 'grid', name), 'WEBP', quality=70, method=6)
+        g.save(os.path.join(OUT, 'grid', name), 'WEBP', quality=64, method=6)
         th = im.copy(); th.thumbnail((480, 10000), Image.LANCZOS)   # phone-size gallery tiles
-        th.save(os.path.join(OUT, 'thumb', name), 'WEBP', quality=70, method=6)
+        th.save(os.path.join(OUT, 'thumb', name), 'WEBP', quality=64, method=6)
         services = list(dict.fromkeys(J['services'] + (MORE.get(key, []) if job == 'more' else []) + EXTRA.get(key, [])))
         items.append(dict(
             key=key, file=name, w=full.width, h=full.height, gw=g.width, gh=g.height, tw=th.width, th=th.height,

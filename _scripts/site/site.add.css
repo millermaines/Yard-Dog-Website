@@ -320,3 +320,4 @@ footer.ft .lic{margin:28px 0 0;font-size:13px;color:#9a9a95}
 .lcard li{display:flex;gap:10px;align-items:baseline}
 .lcard li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--red);transform:translateY(-2px)}
 @media (max-width:900px){.lcard{justify-self:stretch;max-width:none;margin-right:14px}}
+.hfig img{background:#1e1e1e}

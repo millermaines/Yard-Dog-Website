@@ -1,6 +1,14 @@
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-$$('video[data-auto]').forEach(v=>{if(reduce){v.controls=true;return}const d=+(v.dataset.delay||0);const go=()=>setTimeout(()=>v.play().catch(()=>{}),d);if(v.readyState>=2)go();else v.addEventListener('loadeddata',go,{once:true});v.load()});
+// crew clips: nothing downloads until the page has finished loading and a clip is on screen; they pause when scrolled away.
+// Reduced motion or Data Saver: the poster stays up with play controls, and nothing downloads unless tapped.
+(()=>{const clips=$$('video[data-auto]');if(!clips.length)return;const lite=navigator.connection&&navigator.connection.saveData;
+if(reduce||lite||!('IntersectionObserver' in window)){clips.forEach(v=>{v.controls=true});return}
+const watch=()=>{const io=new IntersectionObserver(es=>es.forEach(en=>{const v=en.target;v.dataset.vis=en.isIntersecting?'1':'';
+  if(!en.isIntersecting){v.pause();return}
+  if(!v.dataset.on){v.dataset.on='1';const d=+(v.dataset.delay||0);v.addEventListener('loadeddata',()=>setTimeout(()=>{if(v.dataset.vis)v.play().catch(()=>{})},d),{once:true});v.preload='auto';v.load()}
+  else if(v.readyState>=2)v.play().catch(()=>{})}),{rootMargin:'150px 0px'});clips.forEach(v=>io.observe(v))};
+if(document.readyState==='complete')setTimeout(watch,250);else addEventListener('load',()=>setTimeout(watch,250),{once:true})})();
 const grid=$('#grid');const tiles=$$('.t',grid);let filter='all',job=null,shown=[];
 function target(){const w=innerWidth;return w<480?180:w<900?220:300}
 function layout(){

@@ -132,7 +132,7 @@ def tile_sizes(p):
 def our_work():
     tiles = []
     for i, p in enumerate(PHOTOS):
-        lazy = '' if i < 12 else ' loading="lazy"'
+        lazy = '' if i < 4 else ' loading="lazy"'   # only the first row loads eagerly; on phones the grid starts below the clips
         tiles.append(f'<a class="t" href="/img/work/full/{p["file"]}" data-i="{i}" data-g="{p["group"]}" data-k="{"f" if p["kind"] == "finished" else "w"}" data-j="{p["job"]}">'
                      f'<img src="/img/work/grid/{p["file"]}" srcset="/img/work/thumb/{p["file"]} {p["tw"]}w, /img/work/grid/{p["file"]} {p["gw"]}w" '
                      f'sizes="{tile_sizes(p)}" width="{p["gw"]}" height="{p["gh"]}" alt="{e(p["alt"])}" decoding="async"{lazy}></a>')
@@ -149,9 +149,9 @@ def our_work():
     hero = (crumb([('Our Work', 'our-work')]) +
             f'<section class="hero plain"><div class="w"><div><p class="kick">Longview &amp; East Texas landscaping</p><h1>Our Work</h1>'
             f'<p class="lede">Patios, flagstone walkways, retaining walls, boat and RV pads, flower beds and weekly lawn care across Longview, Lake Cherokee, White Oak, Kilgore and the rest of East Texas. Every photo here is our crew on our jobs.</p><a class="btn" href="/contact">Get a free quote</a></div>'
-            f'<div class="clips"><video data-auto src="/media/hype-b.mp4" poster="/media/hype-b.jpg" muted loop playsinline preload="metadata" width="432" height="768" title="Boat and RV pad dirt work in White Oak" aria-label="Boat and RV pad dirt work in White Oak"></video>'
-            f'<video class="mid" data-auto data-delay="1600" src="/media/hype-a.mp4" poster="/media/hype-a.jpg" muted loop playsinline preload="metadata" width="432" height="768" title="Flagstone walkway build in Kilgore" aria-label="Flagstone walkway build in Kilgore"></video>'
-            f'<video data-auto data-delay="3200" src="/media/hype-c.mp4" poster="/media/hype-c.jpg" muted loop playsinline preload="metadata" width="432" height="768" title="Weekly lawn maintenance route" aria-label="Weekly lawn maintenance route"></video></div></div>{GRAIN}{swoosh("#f3f2ee")}</section>')
+            f'<div class="clips"><video data-auto src="/media/hype-b.mp4" poster="/media/hype-b.jpg" muted loop playsinline preload="none" width="432" height="768" title="Boat and RV pad dirt work in White Oak" aria-label="Boat and RV pad dirt work in White Oak"></video>'
+            f'<video class="mid" data-auto data-delay="1600" src="/media/hype-a.mp4" poster="/media/hype-a.jpg" muted loop playsinline preload="none" width="432" height="768" title="Flagstone walkway build in Kilgore" aria-label="Flagstone walkway build in Kilgore"></video>'
+            f'<video data-auto data-delay="3200" src="/media/hype-c.mp4" poster="/media/hype-c.jpg" muted loop playsinline preload="none" width="432" height="768" title="Weekly lawn maintenance route" aria-label="Weekly lawn maintenance route"></video></div></div>{GRAIN}{swoosh("#f3f2ee")}</section>')
     towns = ', '.join(f'<a href="/{t}">{e(TOWNS[t]["name"])}</a>' for t in TOWN_ORDER)
     body = hero + (f'<section class="gal" aria-labelledby="galh"><div class="w"><h2 id="galh" class="sr">Project photos</h2><div class="fl" role="group" aria-label="Filter photos">{chips}<button type="button" class="f jobchip" hidden aria-pressed="true"></button></div><div class="grid" id="grid">{"".join(tiles)}</div></div></section>'
                    f'<section class="projects" aria-labelledby="pjh"><div class="w"><h2 id="pjh">Recent projects</h2><p class="pi">What we built, where, and what went into it. Tap a project to see its photos.</p><div class="pg">{"".join(proj)}</div>'
@@ -172,7 +172,7 @@ def our_work():
                                ('hype-c', 'Weekly lawn maintenance route', 'Mowing, edging, trimming and blow-off on a weekly lawn care route in the Longview area.', '2026-09-28')]]
     page('our-work', 'Our Work: Patios, Walls & Lawn Care Photos | Yard Dog Landscapes, Longview TX', desc, body,
          [business_node(), gal, *vids, crumbs_ld([('Our Work', 'our-work')])], og_img='/img/work/full/' + PHOTOS[0]['file'],
-         extra_js='<script>window.YD_GALLERY=true</script><script src="/gallery.js?v=1" defer></script>')
+         extra_js=f'<script>window.YD_GALLERY=true</script><script src="/gallery.js?v={asset_v("gallery.js")}" defer></script>')
 
 # ======================================================================= services hub
 def services_hub():

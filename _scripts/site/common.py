@@ -6,8 +6,8 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 DATA = os.path.join(ROOT, '_data')
 BASE = 'https://www.yarddoglandscapes.com'
 BIZ_ID = BASE + '/#business'
-PHONE_TEL = '+19035225291'  # Yard Dog's Platy texting number (text only)
-PHONE = '(903) 522-5291'
+PHONE_TEL = '+19038446877'
+PHONE = '(903) 844-6877'
 EMAIL = 'info@yarddoglandscapes.com'
 GA_ID = 'G-3WN8YFJRKC'
 GBP = 'https://www.google.com/maps?cid=3450977957239277557'
@@ -64,19 +64,6 @@ EXTRAS = {  # photos outside the work gallery
         caption='Warm white C9 lights custom-cut to every ridge and peak', alt='Aerial view at night of an East Texas home with warm white Christmas lights outlining the roofline', services=['christmas-lights']),
 }
 
-# ---------------------------------------------------------------- phone
-def textify(h):
-    """Old copy pointed people at Miller's cell. The site now sends everyone to the Platy texting number (text only)."""
-    h = h.replace('tel:+19038446877', 'sms:+19035225291').replace('tel:9038446877', 'sms:+19035225291')
-    for a, b in [('Please call or text us at', 'Please text us at'), ('call or text us at', 'text us at'), ('Call or text', 'Text'),
-                 ('call or text', 'text'), ('Call (903) 844-6877', 'Text (903) 522-5291'), ('call (903) 844-6877', 'text (903) 522-5291'),
-                 ('contact us at (903) 844-6877', 'text us at (903) 522-5291'), ('Phone: (903) 844-6877', 'Text: (903) 522-5291'),
-                 ('placeholder="(903) 844-6877"', 'placeholder="(903) 555-1234"'), ('(903) 844-6877', '(903) 522-5291'),
-                 ('+1-903-844-6877', '+1-903-522-5291'), ('give us a call', 'send us a text'), ('Call us and', 'Text us and'),
-                 ('call and we will', 'text us and we will')]:
-        h = h.replace(a, b)
-    return h
-
 # ---------------------------------------------------------------- links
 def href(slug):
     return '/' if slug in ('', 'index') else '/' + slug
@@ -115,9 +102,7 @@ def business_node(path='business.json'):
     d['areaServed'] = [f"{TOWNS[t]['name']}, TX" for t in TOWN_ORDER]
     d['hasMap'] = GBP
     d['slogan'] = 'Sit. Stay. Perfect Landscape.'
-    d['telephone'] = '+1-903-522-5291'
-    d['contactPoint'] = {'@type': 'ContactPoint', 'telephone': '+1-903-522-5291', 'contactType': 'customer service',
-                         'description': 'Text messages only. Text anytime for a free quote.', 'areaServed': 'US', 'availableLanguage': 'English'}
+    d['telephone'] = '+1-903-844-6877'
     return d
 
 def crumbs_ld(pairs):
@@ -163,7 +148,7 @@ def faq_html(qas):
 
 def cta(h="Ready when you are.", p="Tell us about your property. We'll walk it with you and send a written estimate within a day."):
     return (f'<section class="cta"><div class="w"><div><h2>{e(h)}</h2><p>{e(p)}</p></div><div class="act">'
-            f'<a class="btn lg" href="/contact">Get a free quote</a><a class="tel" href="sms:{PHONE_TEL}">Text {PHONE}</a></div></div></section>')
+            f'<a class="btn lg" href="/contact">Get a free quote</a><a class="tel" href="tel:{PHONE_TEL}">{PHONE}</a></div></div></section>')
 
 REVIEWS = {
     'ashley': ('Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future.', 'Ashley Riley', 'Lawn maintenance'),
@@ -206,13 +191,13 @@ def header(cur):
 <div class="dd"><a href="/longview-tx" class="ddt">Service areas</a><div class="ddp ddp-town">{towns}</div></div>
 {top("our-work", "Our Work")}{top("pricing", "Pricing")}{top("about", "About")}{top("blog", "Blog")}
 </nav>
-<a class="ph" href="sms:{PHONE_TEL}">Text {PHONE}</a><a class="btn hb" href="/contact">Get a free quote</a>
+<a class="ph" href="tel:{PHONE_TEL}">{PHONE}</a><a class="btn hb" href="/contact">Get a free quote</a>
 <button class="mb" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button></div>
 <nav class="mnav" id="mnav" hidden aria-label="Mobile">
 <details><summary>Services</summary><div class="msub">{m_svcs}<a href="/services">All services</a></div></details>
 <details><summary>Service areas</summary><div class="msub">{m_towns}</div></details>
 <a href="/our-work">Our Work</a><a href="/pricing">Pricing</a><a href="/about">About</a><a href="/blog">Blog</a><a href="/careers">Careers</a><a href="/contact">Contact</a>
-<a class="btn" href="/contact">Get a free quote</a><a class="mt" href="sms:{PHONE_TEL}">or text {PHONE}</a></nav></header>'''
+<a class="btn" href="/contact">Get a free quote</a><a class="mt" href="tel:{PHONE_TEL}">or call {PHONE}</a></nav></header>'''
 
 def footer():
     svc = ''.join(f'<li><a href="/{s}">{e(SHORT[s])}</a></li>' for s in SERVICE_ORDER)
@@ -220,13 +205,13 @@ def footer():
     return f'''<footer class="ft"><div class="w"><div class="fg">
 <div><a class="lk2" href="/" aria-label="Yard Dog Landscapes home"><img src="/img/lockup.webp" width="405" height="120" alt="Yard Dog Landscapes" loading="lazy"></a>
 <p>Sit. Stay. Perfect Landscape.<br>Family-owned lawn care, landscaping and hardscaping from Longview, Texas, since 2017.</p>
-<a class="big" href="sms:{PHONE_TEL}">Text {PHONE}</a><p>Text only, no calls. We reply fast.<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>Longview, TX</p>
+<a class="big" href="tel:{PHONE_TEL}">{PHONE}</a><p><a href="mailto:{EMAIL}">{EMAIL}</a><br>Longview, TX. Call or text anytime.</p>
 <p class="soc"><a href="{GBP}" target="_blank" rel="noopener">Google reviews</a><a href="https://www.facebook.com/yarddoglandscapes" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/yarddoglawnlights" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/millermaines" target="_blank" rel="noopener">YouTube</a></p></div>
 <div><h3>Services</h3><ul>{svc}</ul></div>
 <div><h3>Service areas</h3><ul>{towns}</ul></div>
 <div><h3>Company</h3><ul><li><a href="/about">About us</a></li><li><a href="/our-work">Our work</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/design-preview">Design preview</a></li><li><a href="/blog">Blog</a></li><li><a href="/careers">Careers</a></li><li><a href="/contact">Free quote</a></li></ul></div>
 </div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
-<div class="mcta"><a class="c" href="sms:{PHONE_TEL}">Text us</a><a class="q" href="/contact">Get a free quote</a></div>'''
+<div class="mcta"><a class="c" href="tel:{PHONE_TEL}">Call</a><a class="q" href="/contact">Get a free quote</a></div>'''
 
 def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js='', robots='index, follow, max-image-preview:large',
          og_type='website', canonical=None):
@@ -320,7 +305,7 @@ def quote_form(fid='q', preselect=None, town=None, heading='Get a free quote', s
 <input class="hp" name="pf_ref" tabindex="-1" autocomplete="off" aria-hidden="true">
 <p class="qerr" role="alert" hidden></p>
 <div class="qrow"><button class="qback" type="button">Back</button><button class="btn qsend" type="submit">Send my request</button></div>
-<p class="fine">No spam and no pushy follow-ups. Questions first? Text <a href="sms:{PHONE_TEL}">{PHONE}</a>.</p></fieldset>
+<p class="fine">No spam and no pushy follow-ups. Prefer to talk? Call or text <a href="tel:{PHONE_TEL}">{PHONE}</a>.</p></fieldset>
 <div class="qdone" hidden><div class="ok" aria-hidden="true"><svg width="28" height="22" viewBox="0 0 28 22"><path d="M2 11l8 8L26 3" fill="none" stroke="#fff" stroke-width="4"/></svg></div>
-<h2>Request sent</h2><p>Thanks, <span class="qn"></span>. We'll call you within a day to set up your free walkthrough. Need us sooner? Text <a href="sms:{PHONE_TEL}">{PHONE}</a>.</p></div>
+<h2>Request sent</h2><p>Thanks, <span class="qn"></span>. We'll call you within a day to set up your free walkthrough. Need us sooner? Call or text <a href="tel:{PHONE_TEL}">{PHONE}</a>.</p></div>
 </form>'''

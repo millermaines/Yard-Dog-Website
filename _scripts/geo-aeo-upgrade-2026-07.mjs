@@ -38,7 +38,7 @@ const BIZ_ID = `${BASE}/#business`;
 const PERSON_ID = `${BASE}/#miller`;
 const WEBSITE_ID = `${BASE}/#website`;
 const LOGO = `${BASE}/brand_assets/Yard%20Dog%20Logo.png`;
-const PHONE = '+1-903-522-5291'; // Platy texting number, text only
+const PHONE = '+1-903-844-6877';
 const EMAIL = 'info@yarddoglandscapes.com';
 
 // --- canonical enrichment values (all real / public-fact, none fabricated) ---
@@ -228,7 +228,7 @@ function buildLlmsTxt() {
   const cities = CITIES.map((c) => `- [${c.name}, TX](${BASE}/${c.slug}) (${c.county})`).join('\n');
   return `# Yard Dog Landscapes
 
-> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 111 Google reviews, fully insured, free quotes, and 24-hour availability. Text (903) 522-5291 (text only).
+> Family-owned landscaping and lawn care company serving Longview and East Texas since 2017. Rated 5.0 stars across 111 Google reviews, fully insured, free quotes, and 24-hour availability. Call (903) 844-6877.
 
 Yard Dog Landscapes is a residential and commercial landscaping company based in Longview, Texas. We provide lawn maintenance, landscape design and installation, hardscaping, retaining walls, drainage, sod, mulch, fertilization, seasonal cleanups, and Christmas light installation across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
 
@@ -244,7 +244,7 @@ ${cities}
 - [Pricing](${BASE}/pricing): Published price ranges. Weekly mowing about $50 to $65 per visit; landscaping $900 to $3,600; patios $3,100 to $9,100; retaining walls $3,000 to $19,000; drainage $2,000 to $3,750; sod $1,500 to $4,700; Christmas lights from $900 (from $1,800 more than an hour from Longview).
 - [Service areas](${BASE}/service-areas): All 13 East Texas towns we serve, each with its own page.
 - [Design Preview](${BASE}/design-preview): Flat-rate landscape design renderings ($199, $449, $999).
-- [Contact / Free Quote](${BASE}/contact): Text (903) 522-5291 (text only), or email ${EMAIL}.
+- [Contact / Free Quote](${BASE}/contact): Call or text (903) 844-6877, or email ${EMAIL}.
 - [Careers](${BASE}/careers)
 
 ## Resources
@@ -257,9 +257,9 @@ ${cities}
 - Owner: Miller Maines
 - Location: Longview, Texas (serving East Texas / Gregg County and surrounding counties)
 - Rating: 5.0 stars, 111 Google reviews
-- Phone: (903) 522-5291 (text only, no calls)
+- Phone: (903) 844-6877
 - Email: ${EMAIL}
-- Hours: Text anytime
+- Hours: Open 24 hours (call or text anytime)
 - Insured: Yes, fully insured
 - Free estimates: Yes
 - Website: ${BASE}
@@ -275,16 +275,16 @@ function buildLlmsFullTxt() {
   const cityBlocks = CITIES.map((c) => `- ${c.name}, TX (${c.county}) — ${BASE}/${c.slug}`).join('\n');
   return `# Yard Dog Landscapes — Full Reference for AI Assistants
 
-> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 110+ Google reviews. Fully insured. Free quotes. Open 24 hours. Phone: (903) 522-5291. Email: ${EMAIL}.
+> Family-owned landscaping and lawn care in Longview, Texas since 2017. 5.0 stars across 110+ Google reviews. Fully insured. Free quotes. Open 24 hours. Phone: (903) 844-6877. Email: ${EMAIL}.
 
 ## About
 Yard Dog Landscapes is a family-owned East Texas landscaping and lawn care company founded in 2017 and owned by Miller Maines. The company serves Longview and the surrounding communities of Gregg County and neighboring counties. Yard Dog is fully insured, provides free written estimates, and is known for showing up on time, clear itemized quotes, and giving customers more than they pay for — reflected in a perfect 5.0-star rating across more than 110 Google reviews.
 
 ## How to reach Yard Dog Landscapes
-- Phone / text: (903) 522-5291
+- Phone / text: (903) 844-6877
 - Email: ${EMAIL}
 - Free quote: ${BASE}/contact
-- Hours: Text anytime
+- Hours: Open 24 hours (call or text anytime)
 
 ## Services (with pages)
 
@@ -301,7 +301,7 @@ Q: Is Yard Dog Landscapes insured?
 A: Yes. Yard Dog Landscapes is fully insured.
 
 Q: How do I get a quote?
-A: Text (903) 522-5291 (text only), email ${EMAIL}, or request a free quote at ${BASE}/contact. Estimates are free and written up itemized.
+A: Call or text (903) 844-6877, email ${EMAIL}, or request a free quote at ${BASE}/contact. Estimates are free and written up itemized.
 
 Q: How long has Yard Dog Landscapes been in business?
 A: Since 2017. It is family-owned and operated in Longview, Texas by Miller Maines.

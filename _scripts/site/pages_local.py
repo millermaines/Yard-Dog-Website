@@ -52,7 +52,7 @@ def pricecard(s, town=None, fid='q'):
     top = top.replace('&amp;ndash;', '&ndash;')
     fac = ''.join(f'<li>{e(x)}</li>' for x in p.get('factors', [])[:6])
     return (f'<div class="pricecard">{top}<p class="pn">{e(p.get("note") or "")}</p><ul>{fac}</ul>'
-            f'<a class="btn" href="#{fid}">Get my exact price</a><a class="tl" href="sms:{PHONE_TEL}">or text {PHONE}</a></div>')
+            f'<a class="btn" href="#{fid}">Get my exact price</a><a class="tl" href="tel:{PHONE_TEL}">or call {PHONE}</a></div>')
 
 def steps_html(s, light=True):
     pr = s['process']
@@ -97,7 +97,7 @@ def service_page(slug):
         hero_open, tag = '<section class="hero plain">', ''
     hero = (crumb([('Services', 'services'), (s['name'], slug)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(s["kicker"])}</p><h1>{e(s["h1"])}</h1><p class="lede">{e(s["lede"])}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="sms:{PHONE_TEL}">Text {PHONE}</a></div>'
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
             f'{facts_list(STD_FACTS)}{tag}</div></div>{GRAIN}{swoosh()}</section>')
     q = s['faq'][0]['q'] if False else None
     answer_q = {'christmas-lights': 'Who installs Christmas lights in Longview, TX?'}.get(slug) or f"Who does {s['short']} in Longview, TX?"
@@ -121,7 +121,7 @@ def service_page(slug):
              + ''.join(f'<p>{e(p)}</p>' for p in et['text']) + '</div></div></section>')
     qas = [(x['q'], x['a']) for x in s['faq']]
     body += (f'<section class="sec stone"><div class="w faqw"><div><h2 class="h2">{e(s["name"])} questions</h2>'
-             f'<p class="sub">Something else on your mind? Text <a href="sms:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a>.</p></div>'
+             f'<p class="sub">Something else on your mind? Call or text <a href="tel:{PHONE_TEL}" style="font-weight:700;color:var(--ink)">{PHONE}</a>.</p></div>'
              f'<div class="faq">{faq_html(qas)}</div></div></section>')
     tg = ''.join(f'<a href="/{slug}-{t}">{e(TOWNS[t]["name"])}<small>{e(TOWNS[t]["county"])}</small></a>' for t in TOWN_ORDER)
     body += (f'<section class="sec"><div class="w"><h2 class="h2">{e(s["name"])} near you</h2>'
@@ -187,7 +187,7 @@ def town_page(tslug, idx):
     hero = (crumb([('Service areas', 'service-areas'), (f"{t['name']}, TX", tslug)]) +
             f'<section class="hero photo" style="--bg:url({bg});--bp:center 55%"><div class="w"><div><p class="kick">{e(t["name"])}, Texas</p>'
             f'<h1>{e(t["h1"])}</h1><p class="lede">{e(t["lede"])}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="sms:{PHONE_TEL}">Text {PHONE}</a></div>'
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
             f'{facts_list(facts)}{tag}</div></div>{GRAIN}{swoosh()}</section>')
     intro = t['intro']
     body = hero + (f'<section class="sec"><div class="w"><div class="answer"><h2>Who does landscaping and lawn care in {e(t["name"])}, TX?</h2><p>{e(intro[0])}</p></div>'
@@ -254,7 +254,7 @@ def combo_page(slug, tslug, tidx):
     h1 = fill(tt['h1'], t)
     hero = (crumb([(f"{t['name']}, TX", tslug), (s['name'], name)]) + hero_open +
             f'<div class="w"><div><p class="kick">{e(t["name"])}, Texas</p><h1>{e(h1)}</h1><p class="lede">{e(fill(tt["lede"], t))}</p>'
-            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="sms:{PHONE_TEL}">Text {PHONE}</a></div>'
+            f'<div class="acts"><a class="btn lg" href="#q">Get a free quote</a><a class="tel2" href="tel:{PHONE_TEL}">{PHONE}</a></div>'
             f'{facts_list([e(t["county"]) + ", Texas", STD_FACTS[1], STD_FACTS[2]])}{tag}</div></div>{GRAIN}{swoosh()}</section>')
     aq = {'hardscaping': f"Who builds patios and walkways in {t['name']}, TX?", 'retaining-walls': f"Who builds retaining walls in {t['name']}, TX?",
           'christmas-lights': f"Who installs Christmas lights in {t['name']}, TX?"}.get(slug, f"Who does {s['short']} in {t['name']}, TX?")

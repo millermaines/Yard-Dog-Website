@@ -48,7 +48,7 @@
   // track calls and texts as GA4 events
   $$('a[href^="tel:"],a[href^="sms:"],a[href^="mailto:"]').forEach(function (l) {
     l.addEventListener('click', function () {
-      try { if (window.gtag) gtag('event', l.href.indexOf('mailto:') === 0 ? 'email_click' : (l.href.indexOf('sms:') === 0 ? 'text_click' : 'phone_click'), { link_url: l.href, page_path: location.pathname }); } catch (e) {}
+      try { if (window.gtag) gtag('event', l.href.indexOf('mailto:') === 0 ? 'email_click' : 'phone_click', { link_url: l.href, page_path: location.pathname }); } catch (e) {}
     });
   });
 })();

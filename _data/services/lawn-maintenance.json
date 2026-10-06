@@ -7,7 +7,7 @@
   "h1": "Lawn maintenance in Longview & East Texas",
   "kicker": "Lawn maintenance",
   "lede": "Weekly and bi-weekly mowing, edging, trimming and blowing by the same crew every visit. Most residential yards run about $50 to $65 per visit.",
-  "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview, TX, founded in 2017 and rated 5.0 stars across 111 Google reviews. Miller Maines and the same crew of four mow, edge, string-trim and blow off every visit on a weekly or bi-weekly schedule, and we never subcontract the work. Most residential yards run about $50 to $65 per visit. Lot size, how the yard is laid out and how often you want us out set your price. Text (903) 522-5291 for a free quote.",
+  "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview, TX, founded in 2017 and rated 5.0 stars across 111 Google reviews. Miller Maines and the same crew of four mow, edge, string-trim and blow off every visit on a weekly or bi-weekly schedule, and we never subcontract the work. Most residential yards run about $50 to $65 per visit. Lot size, how the yard is laid out and how often you want us out set your price. Call (903) 844-6877 for a free quote.",
   "overview": [
     "Lawn maintenance is the basics done the same way every week. We mow, edge along the walks, driveway and beds, string-trim around everything the mower can't reach, and blow every hard surface clean. Clippings go back into the turf instead of into bags, where they hand a little nitrogen and moisture back to the soil.",
     "The part most crews skip is the cut itself. We set the deck for the grass you have, not one height for every yard. Bermuda runs lower, St. Augustine never drops under three inches, and both go up in July. We take no more than a third of the blade at a time, keep blades sharp so the grass is sliced instead of torn, and change mowing direction so the turf doesn't rut. Same crew every visit, so the people mowing your yard in August are the ones who noticed the thin spot in May."
@@ -61,8 +61,8 @@
   "town_template": {
     "h1": "Lawn maintenance in {town}",
     "title": "Lawn Maintenance in {town}, TX | Yard Dog Landscapes",
-    "meta": "Weekly and bi-weekly lawn maintenance in {town}, TX. Mowing, edging, trimming and blowing by the same Yard Dog crew every visit. Text us for a free quote.",
+    "meta": "Weekly and bi-weekly lawn maintenance in {town}, TX. Mowing, edging, trimming and blowing by the same Yard Dog crew every visit. Call for a free quote.",
     "lede": "Weekly and bi-weekly mowing, edging and trimming in {town}, done by the same crew every visit at the right height for your grass.",
-    "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview that mows yards in {town} and around {county}. We've been in business since 2017 and hold a 5.0 rating across 111 Google reviews. The same crew mows, edges, trims and blows off every visit on a weekly or bi-weekly schedule, and we never subcontract. Most yards run about $50 to $65 per visit, depending on lot size and how often we come. Text (903) 522-5291 for a free quote."
+    "answer": "Yard Dog Landscapes is a family-owned lawn crew based in Longview that mows yards in {town} and around {county}. We've been in business since 2017 and hold a 5.0 rating across 111 Google reviews. The same crew mows, edges, trims and blows off every visit on a weekly or bi-weekly schedule, and we never subcontract. Most yards run about $50 to $65 per visit, depending on lot size and how often we come. Call (903) 844-6877 for a free quote."
   }
 }

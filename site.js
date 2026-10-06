@@ -9,9 +9,10 @@
     mb.addEventListener('click', function () {
       var open = mb.getAttribute('aria-expanded') === 'true';
       mb.setAttribute('aria-expanded', String(!open)); mn.hidden = open;
+      document.documentElement.classList.toggle('menu-open', !open);  // hides the sticky quote bar while the menu is open
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !mn.hidden) { mn.hidden = true; mb.setAttribute('aria-expanded', 'false'); mb.focus(); }
+      if (e.key === 'Escape' && !mn.hidden) { mn.hidden = true; mb.setAttribute('aria-expanded', 'false'); document.documentElement.classList.remove('menu-open'); mb.focus(); }
     });
   }
 

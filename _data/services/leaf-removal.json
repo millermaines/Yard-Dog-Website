@@ -47,7 +47,7 @@
   ],
   "price": {
     "range": "By the hour",
-    "unit": "",
+    "unit": "hours estimated up front",
     "note": "Leaf removal is straight labor. We bill by the hour, and after a free walkthrough you get a written estimate of how many hours the job should take. No bag fees.",
     "factors": [
       "Lot size",

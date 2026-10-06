@@ -180,9 +180,11 @@ STARS = '<i aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</i>'
 def faq_html(qas):
     return ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(ans)}</p></details>' for i, (q, ans) in enumerate(qas))
 
-def cta(h="Ready when you are.", p="Tell us about your property. We'll walk it with you and send a written estimate within a day."):
+def cta(h="Ready when you are.", p="Tell us about your property. We'll walk it with you and send a written estimate within a day.",
+        btn=('Get a free quote', '/contact'), link=('See pricing', '/pricing')):
+    second = f'<a class="tel" href="{link[1]}">{e(link[0])}</a>' if link else ''
     return (f'<section class="cta"><div class="w"><div><h2>{e(h)}</h2><p>{e(p)}</p></div><div class="act">'
-            f'<a class="btn lg" href="/contact">Get a free quote</a><a class="tel" href="/pricing">See pricing</a></div></div></section>')
+            f'<a class="btn lg" href="{btn[1]}">{e(btn[0])}</a>{second}</div></div></section>')
 
 REVIEWS = {
     'ashley': ('Miller and the 2 young gentleman that did work at my home today were great! Each of them had great manners, respect and worked extremely hard to get the job done. I look forward to using them again in the near future.', 'Ashley Riley', 'Lawn maintenance'),
@@ -247,6 +249,14 @@ def footer():
 </div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
 <div class="mcta"><a class="q" href="/contact">Get a free quote</a></div>'''
 
+_AV = {}
+def asset_v(name):
+    """Short content hash, so a changed stylesheet or script is never served from a stale cache."""
+    if name not in _AV:
+        import hashlib
+        _AV[name] = hashlib.md5(open(os.path.join(ROOT, name), 'rb').read()).hexdigest()[:8]
+    return _AV[name]
+
 def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js='', robots='index, follow, max-image-preview:large',
          og_type='website', canonical=None):
     canon = canonical or (BASE + href(slug))
@@ -278,7 +288,7 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
 <link rel="preload" href="/fonts/anton-latin-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 {pre}
-<link rel="stylesheet" href="/site.css?v=1">
+<link rel="stylesheet" href="/site.css?v={asset_v('site.css')}">
 {extra_head}
 {lds}
 </head>
@@ -290,7 +300,7 @@ def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js=''
 </main>
 {footer()}
 <script src="/yd-ads.js" defer></script>
-{extra_js}<script src="/site.js?v=1" defer></script>
+{extra_js}<script src="/site.js?v={asset_v('site.js')}" defer></script>
 </body>
 </html>
 '''

@@ -2,7 +2,7 @@
 captions, the job and town it came from, and which service pages it belongs on.
 
 Run once when photos change:  python3 _scripts/site/photos.py
-Writes img/work/grid/*.webp (820px), img/work/full/*.webp (up to 1600px) and _data/photos.json.
+Writes img/work/thumb/*.webp (480px wide), img/work/grid/*.webp (820px), img/work/full/*.webp (up to 1600px) and _data/photos.json.
 
 Placement rule: a photo only appears on a service page if the service is in its `services` list, so a
 mower never lands on a retaining wall page. Design renderings are NOT real work and are excluded here
@@ -104,7 +104,7 @@ def slug(s):
 
 def main():
     shutil.rmtree(OUT, ignore_errors=True)
-    for d in ('grid', 'full'):
+    for d in ('thumb', 'grid', 'full'):
         os.makedirs(os.path.join(OUT, d))
     fin = [x for x in NEW + OLD if x[3] and x[0] not in RENDERINGS]
     wrk = [x for x in NEW + OLD if not x[3] and x[0] not in RENDERINGS]
@@ -152,9 +152,11 @@ def main():
         full.save(os.path.join(OUT, 'full', name), 'WEBP', quality=80, method=5)
         g = im.copy(); g.thumbnail((820, 820), Image.LANCZOS)
         g.save(os.path.join(OUT, 'grid', name), 'WEBP', quality=70, method=6)
+        th = im.copy(); th.thumbnail((480, 10000), Image.LANCZOS)   # phone-size gallery tiles
+        th.save(os.path.join(OUT, 'thumb', name), 'WEBP', quality=70, method=6)
         services = list(dict.fromkeys(J['services'] + (MORE.get(key, []) if job == 'more' else []) + EXTRA.get(key, [])))
         items.append(dict(
-            key=key, file=name, w=full.width, h=full.height, gw=g.width, gh=g.height,
+            key=key, file=name, w=full.width, h=full.height, gw=g.width, gh=g.height, tw=th.width, th=th.height,
             caption=cap, place=place, town=J['town'], job=job, title=J['title'] or cap, date=J['date'],
             kind='finished' if finished else 'in-progress', services=services,
             group=GROUP.get(job) or MOREGROUP.get(key, 'other'),

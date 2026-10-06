@@ -31,13 +31,13 @@ def home():
                  ('drainage', 'Drainage', 'img-3736'), ('landscaping', 'Landscaping', 'img-3738')]
     cards = ''.join(f'<a class="card" href="/{s}">{img(k)}<div class="ct"><h3>{e(t)}</h3><p>{e(first_sentence(SERVICES[s]["lede"]))}</p><span class="go">{e(svc_price(s))}</span></div></a>' for s, t, k in cards_def)
     services = (f'<section class="sec stone"><div class="w"><div class="head"><div><h2 class="h2">The full pack of<br>outdoor services</h2></div>'
-                f'<a class="more" href="/services">All 14 services and prices</a></div><div class="cards">{cards}</div></div></section>')
+                f'<a class="more" href="/services">All {len(SERVICE_ORDER)} services and prices</a></div><div class="cards">{cards}</div></div></section>')
     recent = [('walkway', 'd:walk-dsc03953', 'Kilgore'), ('rvpad', 'd:rvpad-dsc03563', 'White Oak'), ('whiteoak', 'st:pat_025', 'White Oak'), ('driveway', 'driveway-retaining-wall-after', 'Lake Cherokee')]
     rc = ''.join(f'<a class="card" href="/our-work#job={j}">{img(k)}<div class="ct"><p class="pm">{e(town)}, TX</p><h3>{e(JOB_TEXT[j][0])}</h3></div></a>' for j, k, town in recent)
     work = (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">Built this season</h2><p class="sub">Every photo is our crew on our jobs. No stock photos.</p></div>'
             f'<a class="more" href="/our-work">See all {len(PHOTOS)} photos</a></div><div class="cards c4">{rc}</div></div></section>')
     how = ('<section class="sec dark" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><h2 class="h2">Four steps. No guesswork.</h2>'
-           '<ol class="steps" style="margin-top:40px"><li><h3>Reach out</h3><p>Send the quote form or call. It takes about a minute.</p></li><li><h3>We walk it with you</h3><p>We meet at the property, listen, measure and map out the work.</p></li><li><h3>Written estimate</h3><p>Itemized and in writing within a day. No pressure, no upsells.</p></li><li><h3>The crew shows up</h3><p>On time, in uniform, and we leave the place cleaner than we found it.</p></li></ol>'
+           '<ol class="steps" style="margin-top:40px"><li><h3>Reach out</h3><p>Send the quote form. It takes about a minute.</p></li><li><h3>We walk it with you</h3><p>We meet at the property, listen, measure and map out the work.</p></li><li><h3>Written estimate</h3><p>Itemized and in writing within a day. No pressure, no upsells.</p></li><li><h3>The crew shows up</h3><p>On time, in uniform, and we leave the place cleaner than we found it.</p></li></ol>'
            '<p style="margin-top:44px"><a class="btn lg" href="#q">Start with step one</a></p></div></section>')
     about = (f'<section class="sec"><div class="w split"><figure class="portrait" style="margin:0"><img src="/img/miller-maines-yard-dog-f350.webp" width="1000" height="1333" alt="Miller Maines, owner of Yard Dog Landscapes, in front of a Yard Dog truck" loading="lazy"><figcaption>Miller Maines<span>Owner, Yard Dog Landscapes</span></figcaption></figure>'
              f'<div><h2 class="h2">Loyal as a hound.<br>Sharp as a spade.</h2><p>Yard Dog started in 2017 with one truck, one trailer and a stubborn belief that lawn care should feel personal. Almost a decade later we still answer our own phone, still walk every property before we price it, and still treat your yard like our own front lawn.</p>'
@@ -93,7 +93,7 @@ def about():
             '<div><h3>On time, every time</h3><p>We schedule tight and talk fast. If rain moves your day, you hear from us the same day.</p></div>'
             '<div><h3>Local and fully insured</h3><p>Based in Longview, fully insured, and we stand behind the work.</p></div></div></div></section>')
     tg = ''.join(f'<a href="/{t}">{e(TOWNS[t]["name"])}<small>{e(TOWNS[t]["county"])}</small></a>' for t in TOWN_ORDER)
-    where = f'<section class="sec stone"><div class="w"><h2 class="h2">Where we work</h2><p class="sub">From our home base in Longview, our crews cover seven East Texas counties. If you\'re close by and don\'t see your town, call and ask.</p><div class="tgrid" style="margin-top:28px">{tg}</div></div></section>'
+    where = f'<section class="sec stone"><div class="w"><h2 class="h2">Where we work</h2><p class="sub">From our home base in Longview, our crews cover seven East Texas counties. If you\'re close by and don\'t see your town, send us your address and ask.</p><div class="tgrid" style="margin-top:28px">{tg}</div></div></section>'
     rv = f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">They say it better</h2></div>{GBADGE}</div>{revs(["ashley", "melissa", "anna"])}</div></section>'
     body = hero + story + crew + trucks + prom + where + rv + cta('Ready to throw us the bone?', "Tell us about your property. We'll come look at it, listen to what you want, and send a clear written estimate within a day.")
     desc = 'Meet Yard Dog Landscapes, the family-owned lawn care and landscaping crew Miller Maines started in Longview, TX in 2017. Same crew every visit, 5.0 on Google.'
@@ -123,12 +123,18 @@ EXTRA_JOB_TEXT = {
     'lawn': ('Weekly lawn maintenance', 'Every week', 'Mowing, edging, trimming and blow-off on weekly and bi-weekly routes. Same crew every visit.'),
 }
 
+def tile_sizes(p):
+    # gallery.js lays tiles out in justified rows 180 / 220 / 300px tall (phone / tablet / desktop)
+    ar = p['gw'] / p['gh']
+    return f"(max-width: 480px) {round(180 * ar)}px, (max-width: 900px) {round(220 * ar)}px, {round(300 * ar)}px"
+
 def our_work():
     tiles = []
     for i, p in enumerate(PHOTOS):
         lazy = '' if i < 12 else ' loading="lazy"'
         tiles.append(f'<a class="t" href="/img/work/full/{p["file"]}" data-i="{i}" data-g="{p["group"]}" data-k="{"f" if p["kind"] == "finished" else "w"}" data-j="{p["job"]}">'
-                     f'<img src="/img/work/grid/{p["file"]}" width="{p["gw"]}" height="{p["gh"]}" alt="{e(p["alt"])}" decoding="async"{lazy}></a>')
+                     f'<img src="/img/work/grid/{p["file"]}" srcset="/img/work/thumb/{p["file"]} {p["tw"]}w, /img/work/grid/{p["file"]} {p["gw"]}w" '
+                     f'sizes="{tile_sizes(p)}" width="{p["gw"]}" height="{p["gh"]}" alt="{e(p["alt"])}" decoding="async"{lazy}></a>')
     cats = [('all', 'All'), ('patios', 'Patios & walkways'), ('walls', 'Walls & pads'), ('beds', 'Beds & rock'), ('lawn', 'Lawn care'), ('w', 'Crew at work')]
     chips = ''.join(f'<button type="button" class="f" data-f="{k}" aria-pressed="{str(k == "all").lower()}">{n}</button>' for k, n in cats)
     proj = []
@@ -140,7 +146,7 @@ def our_work():
         proj.append(f'<article class="pj"><p class="pm">{e(place)}{(" &middot; " + e(d)) if d else ""}</p><h3>{e(t)}</h3><p>{e(s)}</p>'
                     f'<p class="pl"><button type="button" class="see" data-job="{job}">See {n} photo{"s" if n != 1 else ""}</button>{lk}</p></article>')
     hero = (crumb([('Our Work', 'our-work')]) +
-            f'<section class="hero"><div class="w"><div><p class="kick">Longview &amp; East Texas landscaping</p><h1>Our Work</h1>'
+            f'<section class="hero plain"><div class="w"><div><p class="kick">Longview &amp; East Texas landscaping</p><h1>Our Work</h1>'
             f'<p class="lede">Patios, flagstone walkways, retaining walls, boat and RV pads, flower beds and weekly lawn care across Longview, Lake Cherokee, White Oak, Kilgore and the rest of East Texas. Every photo here is our crew on our jobs.</p><a class="btn" href="/contact">Get a free quote</a></div>'
             f'<div class="clips"><video data-auto src="/media/hype-b.mp4" poster="/media/hype-b.jpg" muted loop playsinline preload="metadata" width="432" height="768" title="Boat and RV pad dirt work in White Oak" aria-label="Boat and RV pad dirt work in White Oak"></video>'
             f'<video class="mid" data-auto data-delay="1600" src="/media/hype-a.mp4" poster="/media/hype-a.jpg" muted loop playsinline preload="metadata" width="432" height="768" title="Flagstone walkway build in Kilgore" aria-label="Flagstone walkway build in Kilgore"></video>'
@@ -241,7 +247,7 @@ def pricing():
 def contact():
     embed = ('<div class="embedcard"><div class="platy-form-mount" data-platy-form="k10wty88jnyk6dfl2jsmve"></div>'
              '<script src="https://app.getplaty.com/platy-form.js" data-platy-form="k10wty88jnyk6dfl2jsmve" data-platy-src="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve/embed"></script>'
-             '<p class="fb">Trouble seeing the form? <a href="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:+19038446877">(903) 844-6877</a>.</p></div>')
+             '<p class="fb">Trouble seeing the form? <a href="https://app.getplaty.com/f/k10wty88jnyk6dfl2jsmve" target="_blank" rel="noopener">Open it in a new tab</a>.</p></div>')
     info = (f'<div class="cinfo"><div><small>Phone</small><a href="tel:{PHONE_TEL}">{PHONE}</a></div><div><small>Email</small><a href="mailto:{EMAIL}">{EMAIL}</a></div>'
             f'<div><small>Hours</small><span>Monday to Friday, 7 AM to 5 PM. Quote requests anytime online.</span></div><div><small>Service area</small><span>Longview, Kilgore, White Oak, Hallsville, Marshall, Tyler and the rest of East Texas</span></div></div>')
     hero = (crumb([('Contact', 'contact')]) +
@@ -260,12 +266,13 @@ def contact():
 # ======================================================================= careers (form markup and script kept exactly)
 def careers():
     s = open(os.path.join(SRC, 'careers.html')).read()
-    form = re.search(r'(?s)<form id="careersForm".*?</form>', s).group(0)
+    form = re.search(r'(?s)<form id="careersForm".*?</form>', s).group(0).replace('placeholder="(903) 844-6877"', 'placeholder="(903) 555-0123"')
     status = re.search(r'(?s)<div[^>]*id="applyStatus".*?</div>\s*</div>', s)
     status = status.group(0) if status else '<div id="applyStatus" class="apply-status" hidden><div class="apply-status-inner"></div></div>'
     scripts = re.findall(r'(?s)<script>(.*?)</script>', s)
     js = scripts[-1]
     js = js[js.find('// ---- Careers application submit ----'):]
+    js = re.sub(r'Please call or text us at <a href=[^>]*>[^<]*</a>\.?', 'Please try again in a minute, or email <a href="mailto:info@yarddoglandscapes.com">info@yarddoglandscapes.com</a>.', js)
     hero = (crumb([('Careers', 'careers')]) +
             f'<section class="{hero_cls("d:rvpad-dsc03158")}"><div class="w"><div><p class="kick">Careers in Longview, TX</p><h1>Join the pack</h1>'
             f'<p class="lede">Good pay, a paid day to prove it, and a crew that takes care of each other. Get on the short list and you get the call first.</p><div class="acts"><a class="btn lg" href="#careersForm">Apply in 2 minutes</a></div></div>{hero_fig("d:rvpad-dsc03158")}</div>{GRAIN}{swoosh()}</section>')
@@ -278,7 +285,7 @@ def careers():
     crewsec = f'<section class="sec stone tight"><div class="w"><div class="mos" style="grid-auto-rows:200px">{mos}</div></div></section>'
     app = (f'<section class="sec" id="apply"><div class="w">'
            f'{form}{status}</div></section>')
-    body = hero + perks + crewsec + app + cta('Know someone who fits?', 'Send them this page. Good hands get called first.')
+    body = hero + perks + crewsec + app + cta('Know someone who fits?', 'Send them this page. Good hands get called first.', btn=('Apply in 2 minutes', '#careersForm'), link=None)
     t = 'Landscaping Jobs in Longview, TX | Join the Pack at Yard Dog Landscapes'
     desc = 'Yard Dog Landscapes is hiring good hands in Longview and East Texas. A two-minute application, a paid trial day, and pay above the going rate.'
     def job(title, d):
@@ -371,7 +378,7 @@ def cost_guide():
             f'<section class="{hero_cls("img-3452")}"><div class="w"><div><p class="kick">2026 cost guide</p><h1>French drain &amp; yard drainage cost in East Texas</h1>'
             f'<p class="lede">Real price ranges for French drains, surface drainage and regrading in Longview and across East Texas: what they cost, what drives the number, and why the cheapest drain is rarely the cheapest in the long run.</p>'
             f'<div class="acts"><a class="btn lg" href="/contact">Get a free drainage quote</a></div></div>{hero_fig("img-3452", cap="Drain tubing going in on one of our jobs")}</div>{GRAIN}{swoosh()}</section>')
-    body = hero + ('<section class="sec"><div class="w"><div class="answer"><h2>How much does a French drain cost in East Texas?</h2><p>Most French drain systems in the Longview and East Texas area run $2,000 to $4,500 installed. Small, single-problem fixes like rerouting a downspout or draining one low spot start around $450 to $1,000, while larger whole-property systems, or drainage bundled with regrading and landscape work, run $4,500 and up. The price depends on how many feet of pipe the yard needs, how deep the crew has to dig, where the water can be sent, and how much sod or stone goes back on top. Call (903) 844-6877 for a free assessment.</p></div>'
+    body = hero + ('<section class="sec"><div class="w"><div class="answer"><h2>How much does a French drain cost in East Texas?</h2><p>Most French drain systems in the Longview and East Texas area run $2,000 to $4,500 installed. Small, single-problem fixes like rerouting a downspout or draining one low spot start around $450 to $1,000, while larger whole-property systems, or drainage bundled with regrading and landscape work, run $4,500 and up. The price depends on how many feet of pipe the yard needs, how deep the crew has to dig, where the water can be sent, and how much sod or stone goes back on top. Request a free assessment online.</p></div>'
                    f'<div class="doc" style="margin-top:44px;max-width:980px"><h2>What drainage costs in East Texas</h2>{table}<p>Ranges reflect real Yard Dog drainage jobs across Gregg, Harrison, Smith and Upshur counties. Your yard drains its own way, so the only accurate number is a free on-site quote.</p></div></div></section>')
     body += f'<section class="sec stone"><div class="w"><h2 class="h2">What moves the price</h2>{drv}</div></section>'
     body += ('<section class="sec"><div class="w doc">'

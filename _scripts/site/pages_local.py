@@ -8,7 +8,8 @@ def fill(t, town):
     return t.replace('{town}', town['name']).replace('{county}', town['county'])
 
 def first_sentence(t):
-    m = re.match(r'(.+?[.?])(\s|$)', t)
+    # a period after St, Mr, Dr, Mt, vs or a single initial is an abbreviation, not the end of a sentence
+    m = re.match(r'(.+?(?<!\bSt)(?<!\bMr)(?<!\bDr)(?<!\bMt)(?<!\bvs)(?<!\b[A-Z])[.?!])(\s|$)', t)
     return m.group(1) if m else t
 
 def facts_list(items):
@@ -281,7 +282,8 @@ def combo_page(slug, tslug, tidx):
                  f'<p class="sub">Real jobs by our crew around East Texas. Each photo says where it was taken.</p></div>'
                  f'<a class="more" href="/our-work">See all {len(PHOTOS)} photos</a></div>{strip(shown)}</div></section>')
     lq = t['service_faq'][slug]
-    qas = [(lq['q'], lq['a'])] + [(x['q'], x['a']) for x in s['faq'][:3]]
+    here = lambda q: q.replace('in Longview, TX', f"in {t['name']}, TX").replace('in Longview?', f"in {t['name']}?")
+    qas = [(lq['q'], lq['a'])] + [(here(x['q']), x['a']) for x in s['faq'][:3]]
     body += (f'<section class="sec stone"><div class="w faqw"><div><h2 class="h2">{e(s["name"])} questions in {e(t["name"])}</h2></div>'
              f'<div class="faq">{faq_html(qas)}</div></div></section>')
     others = [x for x in ([p for p in t.get('popular', []) if p in SERVICES] + SERVICE_ORDER) if x != slug]

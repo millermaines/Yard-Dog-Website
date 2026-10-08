@@ -445,6 +445,16 @@
       "source": "/christmas-lights-longview-tx",
       "destination": "/christmas-lights",
       "permanent": true
+    },
+    {
+      "source": "/christmas-light-installation-longview-tx",
+      "destination": "/christmas-lights",
+      "permanent": true
+    },
+    {
+      "source": "/lawn-fertilization-longview-tx",
+      "destination": "/fertilization",
+      "permanent": true
     }
   ]
 }

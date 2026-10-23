@@ -9,6 +9,10 @@
   `_scripts/site/`, then rebuild. Don't hand-edit generated pages except blog posts (see blog/CALENDAR.md).
 - Photos: `_scripts/site/photos.py` builds `img/work/` and `_data/photos.json`. A photo only appears on a service
   page if that service is in its `services` tag list. Design renderings are never shown as finished work.
+- Project pages (`/our-work/<slug>`, `pages_projects.py`) come from `_data/projects.json`. `_scripts/site/project_media.py`
+  turns a job's Drive originals into `img/work/*/<slug>-NN.webp` (+ `_data/project_photos.json`) and `media/projects/*.mp4`.
+  `photos.py` leaves those project photos alone. A daily scheduled task adds new jobs from the shared Drive:
+  see `_scripts/site/DRIVE_SCAN.md` and `_data/drive_seen.json`.
 - Quote forms: the native form (quote.js) posts to `/api/quote`, which forwards to Yard Dog's Platy request form.
   The contact page uses the official Platy embed (it supports photo uploads).
 - The generic "Output defaults" below (single index.html, Tailwind CDN, placeholders) do not apply to this site.

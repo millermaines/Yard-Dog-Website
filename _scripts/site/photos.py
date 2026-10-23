@@ -103,9 +103,14 @@ def slug(s):
 
 
 def main():
-    shutil.rmtree(OUT, ignore_errors=True)
+    # Clear the old library but keep project photos (project_media.py builds those from Drive originals that are not kept here).
+    pp = os.path.join(ROOT, '_data', 'project_photos.json')
+    keep = {x['file'] for x in json.load(open(pp))} if os.path.exists(pp) else set()
     for d in ('thumb', 'grid', 'md', 'full'):
-        os.makedirs(os.path.join(OUT, d))
+        os.makedirs(os.path.join(OUT, d), exist_ok=True)
+        for f in os.listdir(os.path.join(OUT, d)):
+            if f not in keep:
+                os.remove(os.path.join(OUT, d, f))
     fin = [x for x in NEW + OLD if x[3] and x[0] not in RENDERINGS]
     wrk = [x for x in NEW + OLD if not x[3] and x[0] not in RENDERINGS]
 

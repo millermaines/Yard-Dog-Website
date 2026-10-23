@@ -13,13 +13,13 @@ def svc_price(s):
 # ======================================================================= home
 def home():
     recent = ''.join(f'<span class="th"><img src="/img/work/thumb/{BYKEY[k]["file"]}" width="{BYKEY[k]["tw"]}" height="{BYKEY[k]["th"]}" alt="{e(BYKEY[k]["alt"])}" decoding="async"></span>'
-                     for k in ('d:walk-dsc03930', 'white-oak-flagstone-patio-after', 'driveway-retaining-wall-after'))
+                     for k in ('p:poolpatio:still:v1022-patio-by-pool@48.6', 'p:irrigation:still:v1011-jacob-final@17.9', 'd:walk-dsc03930'))
     hero = (f'<section class="hero plain home"><div class="w">'
             f'<div><p class="kick">Longview, Texas. Family-owned since 2017.</p><h1>Sit. Stay.<br>Perfect<br>Landscape.</h1>'
             f'<p class="lede">Lawn care, landscaping, patios, retaining walls and drainage across Longview and East Texas. One local crew that shows up when it says it will, builds it right, and cleans up before it leaves.</p>'
             f'<div class="acts"><a class="btn lg" href="/our-work" style="background:#fff;color:#111">See our work</a></div>'
             f'<p class="stars">{STARS}<span><b>5.0</b> from {REVIEW_COUNT} Google reviews</span></p>'
-            f'<a class="recent" href="/our-work">{recent}<span class="rl">Recent jobs in Kilgore, White Oak and Lake Cherokee</span></a></div>'
+            f'<a class="recent" href="/our-work">{recent}<span class="rl">Recent jobs in Hallsville, Longview and Kilgore</span></a></div>'
             f'{quote_form("q", heading="Get a free quote", sub="Two quick steps. It goes straight to our office, and we call you within a day.")}'
             f'</div>{GRAIN}{swoosh()}</section>')
     trust = ('<section class="trust" aria-label="Why homeowners pick Yard Dog"><div class="w">'
@@ -33,10 +33,11 @@ def home():
     cards = ''.join(f'<a class="card" href="/{s}">{img(k)}<div class="ct"><h3>{e(t)}</h3><p>{e(first_sentence(SERVICES[s]["lede"]))}</p><span class="go">{e(svc_price(s))}</span></div></a>' for s, t, k in cards_def)
     services = (f'<section class="sec stone"><div class="w"><div class="head"><div><h2 class="h2">The full pack of<br>outdoor services</h2></div>'
                 f'<a class="more" href="/services">All {len(SERVICE_ORDER)} services and prices</a></div><div class="cards">{cards}</div></div></section>')
-    recent = [('walkway', 'd:walk-dsc03953', 'Kilgore'), ('rvpad', 'd:rvpad-dsc03563', 'White Oak'), ('whiteoak', 'st:pat_025', 'White Oak'), ('driveway', 'driveway-retaining-wall-after', 'Lake Cherokee')]
-    rc = ''.join(f'<a class="card" href="/our-work#job={j}">{img(k)}<div class="ct"><p class="pm">{e(town)}, TX</p><h3>{e(JOB_TEXT[j][0])}</h3></div></a>' for j, k, town in recent)
-    work = (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">Built this season</h2><p class="sub">Every photo is our crew on our jobs. No stock photos.</p></div>'
-            f'<a class="more" href="/our-work">See all {len(PHOTOS)} photos</a></div><div class="cards c4">{rc}</div></div></section>')
+    recent = [('poolpatio', 'p:poolpatio:still:v1022-patio-by-pool@9.7', 'Hallsville'), ('irrigation', 'p:irrigation:still:v1011-jacob-final@7.2', 'Longview'),
+              ('walkway', 'd:walk-dsc03953', 'Kilgore'), ('rvpad', 'd:rvpad-dsc03563', 'White Oak')]
+    rc = ''.join(f'<a class="card" href="{job_href(j)}">{img(k)}<div class="ct"><p class="pm">{e(town)}, TX</p><h3>{e(JOB_TEXT[j][0])}</h3></div></a>' for j, k, town in recent)
+    work = (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">Built this season</h2><p class="sub">Every photo and video is our crew on our jobs. No stock photos.</p></div>'
+            f'<a class="more" href="/our-work">See all {len(PROJECTS)} projects</a></div><div class="cards c4">{rc}</div></div></section>')
     how = ('<section class="sec dark" style="--bg:url(/img/bg-blur.jpg)"><div class="w"><h2 class="h2">Four steps. No guesswork.</h2>'
            '<ol class="steps" style="margin-top:40px"><li><h3>Reach out</h3><p>Send the quote form. It takes about a minute.</p></li><li><h3>We walk it with you</h3><p>We meet at the property, listen, measure and map out the work.</p></li><li><h3>Written estimate</h3><p>Itemized and in writing within a day. No pressure, no upsells.</p></li><li><h3>The crew shows up</h3><p>On time, in uniform, and we leave the place cleaner than we found it.</p></li></ol>'
            '<p style="margin-top:44px"><a class="btn lg" href="#q">Start with step one</a></p></div></section>')
@@ -106,7 +107,9 @@ def about():
          [business_node(), ap, person, crumbs_ld([('About', 'about')])], og_img='/img/miller-maines-owner-yard-dog-truck.webp')
 
 # ======================================================================= our work
-PROJECTS = [
+JOB_LIST = [
+    ('poolpatio', 'hallsville-tx', []),
+    ('irrigation', 'longview-tx', []),
     ('walkway', 'kilgore-tx', [('Hardscaping in Kilgore', 'hardscaping-kilgore-tx'), ('Landscaping in Kilgore', 'landscaping-kilgore-tx')]),
     ('rvpad', 'white-oak-tx', [('Retaining walls in White Oak', 'retaining-walls-white-oak-tx'), ('Drainage in White Oak', 'drainage-white-oak-tx')]),
     ('whiteoak', 'white-oak-tx', [('Patios in White Oak', 'hardscaping-white-oak-tx'), ('Hardscaping', 'hardscaping')]),
@@ -136,10 +139,20 @@ def our_work():
         tiles.append(f'<a class="t" href="/img/work/full/{p["file"]}" data-i="{i}" data-g="{p["group"]}" data-k="{"f" if p["kind"] == "finished" else "w"}" data-j="{p["job"]}">'
                      f'<img src="/img/work/grid/{p["file"]}" srcset="/img/work/thumb/{p["file"]} {p["tw"]}w, /img/work/grid/{p["file"]} {p["gw"]}w" '
                      f'sizes="{tile_sizes(p)}" width="{p["gw"]}" height="{p["gh"]}" alt="{e(p["alt"])}" decoding="async"{lazy}></a>')
-    cats = [('all', 'All'), ('patios', 'Patios & walkways'), ('walls', 'Walls & pads'), ('beds', 'Beds & rock'), ('lawn', 'Lawn care'), ('w', 'Crew at work')]
+    cats = [('all', 'All'), ('patios', 'Patios & walkways'), ('walls', 'Walls & pads'), ('sod', 'Sod & irrigation'), ('beds', 'Beds & rock'), ('lawn', 'Lawn care'), ('w', 'Crew at work')]
+    pcs = []
+    for P in PROJECTS:
+        ks = [p['key'] for p in PHOTOS if p['job'] == P['job']]
+        fin = [k for k in ks if BYKEY[k]['kind'] == 'finished'] or ks
+        nv = len(P.get('videos', []))
+        vb = f'<span class="vb">{"Video" if nv == 1 else str(nv) + " videos"}</span>' if nv else ''
+        pcs.append(f'<a class="card" href="/our-work/{P["slug"]}">{img(fin[0])}{vb}<div class="ct"><p class="pm">{e(TOWNS[P["town"]]["name"])}, TX &middot; {e(P["date_h"])}</p>'
+                   f'<h3>{e(P["title"])}</h3><p>{len(ks)} photos</p></div></a>')
     chips = ''.join(f'<button type="button" class="f" data-f="{k}" aria-pressed="{str(k == "all").lower()}">{n}</button>' for k, n in cats)
     proj = []
-    for job, town, links in PROJECTS:
+    for job, town, links in JOB_LIST:
+        if job in PROJ_BY_JOB:
+            continue   # has its own project page, shown as a card above the gallery
         t, d, s = JOB_TEXT.get(job) or EXTRA_JOB_TEXT[job]
         place = f"{TOWNS[town]['name']}, TX" if town else ('Longview area routes' if job == 'lawn' else 'East Texas')
         n = sum(1 for p in PHOTOS if p['job'] == job)
@@ -148,17 +161,19 @@ def our_work():
                     f'<p class="pl"><button type="button" class="see" data-job="{job}">See {n} photo{"s" if n != 1 else ""}</button>{lk}</p></article>')
     hero = (crumb([('Our Work', 'our-work')]) +
             f'<section class="hero plain"><div class="w"><div><p class="kick">Longview &amp; East Texas landscaping</p><h1>Our Work</h1>'
-            f'<p class="lede">Patios, flagstone walkways, retaining walls, boat and RV pads, flower beds and weekly lawn care across Longview, Lake Cherokee, White Oak, Kilgore and the rest of East Texas. Every photo here is our crew on our jobs.</p><a class="btn" href="/contact">Get a free quote</a></div>'
+            f'<p class="lede">Patios, flagstone walkways, retaining walls, boat and RV pads, sod, irrigation and weekly lawn care across Longview, Hallsville, White Oak, Kilgore, Lake Cherokee and the rest of East Texas. Every photo and video here is our crew on our jobs.</p><a class="btn" href="/contact">Get a free quote</a></div>'
             f'<div class="clips"><video data-auto src="/media/hype-b.mp4" poster="/media/hype-b.jpg" muted loop playsinline preload="none" width="432" height="768" title="Boat and RV pad dirt work in White Oak" aria-label="Boat and RV pad dirt work in White Oak"></video>'
             f'<video class="mid" data-auto data-delay="1600" src="/media/hype-a.mp4" poster="/media/hype-a.jpg" muted loop playsinline preload="none" width="432" height="768" title="Flagstone walkway build in Kilgore" aria-label="Flagstone walkway build in Kilgore"></video>'
             f'<video data-auto data-delay="3200" src="/media/hype-c.mp4" poster="/media/hype-c.jpg" muted loop playsinline preload="none" width="432" height="768" title="Weekly lawn maintenance route" aria-label="Weekly lawn maintenance route"></video></div></div>{GRAIN}{swoosh("#f3f2ee")}</section>')
     towns = ', '.join(f'<a href="/{t}">{e(TOWNS[t]["name"])}</a>' for t in TOWN_ORDER)
-    body = hero + (f'<section class="gal" aria-labelledby="galh"><div class="w"><h2 id="galh" class="sr">Project photos</h2><div class="fl" role="group" aria-label="Filter photos">{chips}<button type="button" class="f jobchip" hidden aria-pressed="true"></button></div><div class="grid" id="grid">{"".join(tiles)}</div></div></section>'
-                   f'<section class="projects" aria-labelledby="pjh"><div class="w"><h2 id="pjh">Recent projects</h2><p class="pi">What we built, where, and what went into it. Tap a project to see its photos.</p><div class="pg">{"".join(proj)}</div>'
+    pjs = (f'<section class="sec tight pjs" aria-labelledby="pjsh"><div class="w"><div class="head"><div><h2 id="pjsh" class="h2">Projects</h2>'
+           f'<p class="sub">Each job has its own page with the crew\'s videos, every photo, and what went into it.</p></div></div><div class="pcards">{"".join(pcs)}</div></div></section>')
+    body = hero + pjs + (f'<section class="gal" aria-labelledby="galh"><div class="w"><h2 id="galh" class="sr">Project photos</h2><div class="fl" role="group" aria-label="Filter photos">{chips}<button type="button" class="f jobchip" hidden aria-pressed="true"></button></div><div class="grid" id="grid">{"".join(tiles)}</div></div></section>'
+                   f'<section class="projects" aria-labelledby="pjh"><div class="w"><h2 id="pjh">More jobs</h2><p class="pi">A few more jobs from around East Texas. Tap one to see its photos.</p><div class="pg">{"".join(proj)}</div>'
                    f'<p class="area"><strong>Service area:</strong> {towns}.</p></div></section>'
                    + cta('Want this at your place?', "We'll walk the property with you and send a written estimate within a day. 5.0 stars on Google from {REVIEW_COUNT} reviews.") +
                    '<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo"><button class="cl" type="button" aria-label="Close">&times;</button><button class="pv" type="button" aria-label="Previous photo">&lsaquo;</button><img id="lbi" alt=""><p><span id="lbc"></span><small id="lbn"></small></p><button class="nx" type="button" aria-label="Next photo">&rsaquo;</button></div>')
-    desc = 'Photos and video of real patios, flagstone walkways, retaining walls, RV pads, beds and lawn care by Yard Dog Landscapes in Longview, White Oak and Kilgore, TX.'
+    desc = 'Videos and photos of real patios, flagstone walkways, retaining walls, RV pads, sod and irrigation by Yard Dog Landscapes in Longview, Hallsville, White Oak and Kilgore, TX.'
     gal = {'@context': 'https://schema.org', '@type': ['CollectionPage', 'ImageGallery'], '@id': BASE + '/our-work#gallery', 'url': BASE + '/our-work',
            'name': 'Our Work: landscaping, hardscape and lawn care projects in Longview and East Texas', 'description': desc,
            'about': {'@id': BIZ_ID}, 'publisher': {'@id': BIZ_ID}, 'primaryImageOfPage': BASE + '/img/work/full/' + PHOTOS[0]['file'],
@@ -170,8 +185,10 @@ def our_work():
             for v, n, d, u in [('hype-a', 'Flagstone walkway build in Kilgore, TX', 'Crew compacting base, mixing mortar and setting chopped stone borders for a flagstone walkway in Kilgore, TX.', '2026-09-18'),
                                ('hype-b', 'Boat and RV pad dirt work in White Oak, TX', 'Track loader hauling fill, fabric and gravel for a raised boat and RV pad in White Oak, TX.', '2026-09-11'),
                                ('hype-c', 'Weekly lawn maintenance route', 'Mowing, edging, trimming and blow-off on a weekly lawn care route in the Longview area.', '2026-09-28')]]
-    page('our-work', 'Our Work: Patios, Walls & Lawn Care Photos | Yard Dog Landscapes, Longview TX', desc, body,
-         [business_node(), gal, *vids, crumbs_ld([('Our Work', 'our-work')])], og_img='/img/work/full/' + PHOTOS[0]['file'],
+    plist = {'@context': 'https://schema.org', '@type': 'ItemList', '@id': BASE + '/our-work#projects', 'name': 'Yard Dog Landscapes projects',
+             'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/our-work/' + P['slug'], 'name': P['h1']} for i, P in enumerate(PROJECTS)]}
+    page('our-work', 'Our Work: Patio, Wall, Sod & Lawn Projects | Yard Dog Landscapes, Longview TX', desc, body,
+         [business_node(), gal, plist, *vids, crumbs_ld([('Our Work', 'our-work')])], og_img='/img/work/full/' + PHOTOS[0]['file'],
          extra_js=f'<script>window.YD_GALLERY=true</script><script src="/gallery.js?v={asset_v("gallery.js")}" defer></script>')
 
 # ======================================================================= services hub

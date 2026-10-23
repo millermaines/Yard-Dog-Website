@@ -226,6 +226,20 @@ function metaDescOf(slug) {
   } catch { return ''; }
 }
 
+// Project pages (one per job, with crew video and photos), from the site generator's data.
+function readJson(rel) {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8')); } catch { return []; }
+}
+const PROJECTS = readJson('_data/projects.json');
+const PHOTO_COUNT = readJson('_data/photos.json').length + readJson('_data/project_photos.json').length;
+function projectLines() {
+  return PROJECTS.map((p) => {
+    const nv = (p.videos || []).filter((v) => v.duration).length;
+    const vid = nv ? ` (${nv === 1 ? 'video' : nv + ' videos'} and photos)` : ' (photos)';
+    return `- [${p.h1}](${BASE}/our-work/${p.slug})${vid}: ${p.summary}`;
+  }).join('\n');
+}
+
 function buildLlmsTxt() {
   const services = SERVICES.map((s) => `- [${s.name}](${BASE}/${s.slug})`).join('\n');
   const cities = CITIES.map((c) => `- [${c.name}, TX](${BASE}/${c.slug}) (${c.county})`).join('\n');
@@ -243,12 +257,15 @@ ${cities}
 
 ## Company
 - [About Yard Dog Landscapes](${BASE}/about): Family-owned in Longview since 2017, owned by Miller Maines. Built on showing up, doing the work right, and giving customers more than they pay for.
-- [Our Work](${BASE}/our-work): 111 photos and crew videos of real East Texas projects, including a flagstone walkway and a checkerboard paver patio in Kilgore, a raised boat and RV pad and a flagstone patio with fire pit in White Oak, and a driveway retaining wall rebuild at Lake Cherokee.
+- [Our Work](${BASE}/our-work): ${PHOTO_COUNT} photos and the crew's own videos of real East Texas projects, with a page for each job.
 - [Pricing](${BASE}/pricing): Published price ranges. Weekly mowing from $65 per visit; landscaping $900 to $3,600; patios $3,100 to $9,100; retaining walls $3,000 to $19,000; drainage $2,000 to $3,750; sod $1,500 to $4,700; Christmas lights from $900 (from $1,800 more than an hour from Longview).
 - [Service areas](${BASE}/service-areas): All 13 East Texas towns we serve, each with its own page.
 - [Design Preview](${BASE}/design-preview): Flat-rate landscape design renderings ($199, $449, $999).
 - [Contact / Free Quote](${BASE}/contact): Online quote form, or email ${EMAIL}.
 - [Careers](${BASE}/careers)
+
+## Projects
+${projectLines()}
 
 ## Resources
 - [Blog](${BASE}/blog): Practical East Texas lawn and landscape guides (grass types, fertilization timing, mulch depth, drainage, pruning).
@@ -296,6 +313,9 @@ ${svcBlocks}
 ## Service areas
 ${cityBlocks}
 
+## Recent projects
+${PROJECTS.map((p) => `### ${p.h1}\n${p.summary}\nURL: ${BASE}/our-work/${p.slug}`).join('\n\n')}
+
 ## Common questions
 Q: What areas does Yard Dog Landscapes serve?
 A: Longview, White Oak, Kilgore, Gladewater, Hallsville, Marshall, Tyler, Henderson, Carthage, and Nacogdoches, Texas — across Gregg, Harrison, Smith, Rusk, Upshur, Panola, and Nacogdoches counties in East Texas.
@@ -341,9 +361,11 @@ function listHtml() {
   for (const f of fs.readdirSync(ROOT)) {
     if (f.endsWith('.html') && f !== 'design-preview.html') files.push(path.join(ROOT, f));
   }
-  const blogDir = path.join(ROOT, 'blog');
-  if (fs.existsSync(blogDir)) {
-    for (const f of fs.readdirSync(blogDir)) if (f.endsWith('.html')) files.push(path.join(blogDir, f));
+  for (const sub of ['blog', 'our-work']) {
+    const dir = path.join(ROOT, sub);
+    if (fs.existsSync(dir)) {
+      for (const f of fs.readdirSync(dir)) if (f.endsWith('.html')) files.push(path.join(dir, f));
+    }
   }
   return files;
 }

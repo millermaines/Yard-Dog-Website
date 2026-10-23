@@ -11,7 +11,7 @@ PHONE = '(903) 844-6877'
 EMAIL = 'info@yarddoglandscapes.com'
 GA_ID = 'G-3WN8YFJRKC'
 GBP = 'https://www.google.com/maps?cid=3450977957239277557'
-TODAY = '2026-10-05'
+TODAY = '2026-10-23'
 # Google review count, as shown on the Business Profile. Update here only: data files use {{REVIEWS}},
 # templates use {REVIEW_COUNT}, and both are filled in at build time.
 REVIEW_COUNT = '143'
@@ -28,8 +28,38 @@ def load_dir(sub):
     d = os.path.join(DATA, sub)
     return {f[:-5]: _read(os.path.join(d, f)) for f in sorted(os.listdir(d)) if f.endswith('.json')}
 
-PHOTOS = load('photos.json')
+PROJECTS = load('projects.json')            # one page per job at /our-work/<slug> (pages_projects.py)
+PROJ_BY_JOB = {p['job']: p for p in PROJECTS}
+
+def _merge_photos(base, extra):
+    """Project photos (project_media.py) join the library: the newest finished shots lead, and their in-progress
+    shots are woven in among the older photos so no single job takes over the top of the gallery."""
+    def mix(lst):
+        by = {}
+        for x in lst:
+            by.setdefault(x['job'], []).append(x)
+        out = []
+        while any(by.values()):
+            for k in list(by):
+                if by[k]:
+                    out.append(by[k].pop(0))
+        return out
+    fin = mix([x for x in extra if x['kind'] == 'finished'])
+    wip = mix([x for x in extra if x['kind'] != 'finished'])
+    out, wi = list(fin), 0
+    for i, x in enumerate(base):
+        out.append(x)
+        if i % 3 == 2 and wi < len(wip):
+            out.append(wip[wi]); wi += 1
+    return out + wip[wi:]
+
+_PP = os.path.join(DATA, 'project_photos.json')
+PHOTOS = _merge_photos(load('photos.json'), _read(_PP) if os.path.exists(_PP) else [])
 BYKEY = {p['key']: p for p in PHOTOS}
+
+def job_href(job):
+    """Where a job's photos live: its project page when it has one, otherwise the Our Work gallery filtered to it."""
+    return f"/our-work/{PROJ_BY_JOB[job]['slug']}" if job in PROJ_BY_JOB else f'/our-work#job={job}'
 SERVICES = load_dir('services')
 TOWNS = load_dir('towns')
 
@@ -61,8 +91,8 @@ SERVICE_HERO = {
     'lawn-maintenance': 'd:crew-dsc04063', 'leaf-removal': 'd:crew-dsc04179', 'fertilization': 'X:healthy-striped-bermuda-lawn-east-texas.webp',
     'hedge-trimming': 'front-roses-after', 'tree-shrub-care': 'side-hydrangeas-after', 'tree-planting': None,
     'landscaping': 'img-3738', 'flower-bed-installation': '1', 'mulch-installation': 'back-fence-after',
-    'sod-installation': None, 'hardscaping': 'd:walk-dsc03930', 'retaining-walls': 'driveway-retaining-wall-after',
-    'drainage': 'img-3736', 'irrigation': None, 'christmas-lights': 'X:christmas-lights-roofline-aerial-east-texas.webp'}
+    'sod-installation': 'p:irrigation:still:v1011-jacob-final@7.2', 'hardscaping': 'd:walk-dsc03930', 'retaining-walls': 'driveway-retaining-wall-after',
+    'drainage': 'img-3736', 'irrigation': 'p:irrigation:still:v1009-foot-drone@42.3', 'christmas-lights': 'X:christmas-lights-roofline-aerial-east-texas.webp'}
 EXTRAS = {  # photos outside the work gallery
     'X:healthy-striped-bermuda-lawn-east-texas.webp': dict(file='/img/extra/healthy-striped-bermuda-lawn-east-texas.webp', w=640, h=1011,
         caption='A thick, evenly fed bermuda lawn on one of our routes', alt='Thick striped bermuda lawn in East Texas', services=['fertilization']),
@@ -216,6 +246,7 @@ GBADGE = (f'<a class="gbadge" href="{GBP}" target="_blank" rel="noopener"><b>5.0
 
 # ---------------------------------------------------------------- shell
 def header(cur):
+    cur = cur.split('/')[0]   # a project page (our-work/<slug>) lights up Our Work
     svc_cols = ''.join(
         f'<div><p class="mh">{e(g)}</p>' + ''.join(f'<a href="/{s}"{" aria-current=page" if s == cur else ""}>{e(SHORT[s])}</a>' for s in ss) + '</div>'
         for g, ss in GROUPS)
@@ -314,6 +345,7 @@ addEventListener('load',function(){{setTimeout(function(){{var s=document.create
 </html>
 '''
     out = os.path.join(ROOT, f'{slug}.html')
+    os.makedirs(os.path.dirname(out), exist_ok=True)
     doc = doc.replace('{REVIEW_COUNT}', REVIEW_COUNT)
     doc = re.sub(r'href="/(' + '|'.join(map(re.escape, SERVICE_ORDER)) + r')-longview-tx"', r'href="/\1"', doc)
     open(out, 'w').write(doc)

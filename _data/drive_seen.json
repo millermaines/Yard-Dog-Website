@@ -1,0 +1,48 @@
+{
+ "about": "State for the daily Drive scan (see _scripts/site/DRIVE_SCAN.md). Every Drive file created before handled_through, and every id listed below, is already handled. Only newer files are candidates.",
+ "shared_drive": {
+  "name": "Yard Dog Landscapes",
+  "id": "0AK-gURr4K7KrUk9PVA"
+ },
+ "watch": [
+  {
+   "name": "Edited Videos",
+   "id": "1Pb9TxTh_lwu1FeARo-cE5pm_muss1kDG",
+   "kind": "videos"
+  },
+  {
+   "name": "Photos (one folder per project)",
+   "id": "1wJUrSmmia5wGRhleDhFEtw9GJ63cM4Us",
+   "kind": "photo folders"
+  },
+  {
+   "name": "Social Media (post folders)",
+   "id": "1Y4icvu4x7QYV2LYD09VqA9hZDa8bVx5D",
+   "kind": "photo folders"
+  }
+ ],
+ "handled_through": "2026-10-23T20:00:00Z",
+ "used": {
+  "1gmP-cxnDF0nSEVucLewp5QJCJczp9Dqx": "flagstone-patio-hallsville-tx (walkthrough video)",
+  "11RQvDgv0cyM8CUDsXpqo30aqjqU_fYNw": "flagstone-patio-hallsville-tx (build video)",
+  "1eNvcScNPtyV2z_MvxS0YXhXLHIQDZGZ_": "irrigation-sod-installation-longview-tx (walkthrough video)",
+  "1fHQH9xKf6rHW1ZFovBv5VnhoNs1KRKYY": "irrigation-sod-installation-longview-tx (build video)",
+  "1Cftm6y7ug-cAT2XkBLaV0dLAYg8E99Jm": "flagstone-walkway-kilgore-tx (walkthrough video)",
+  "1-cPTp6bVAb1RMk7LQaRwhg5i3SPZR0ee": "flagstone-walkway-kilgore-tx (build video)",
+  "1pDNQFVBlz8OGpDD0i7SUuYB47cGHTZ0E": "boat-rv-pad-white-oak-tx (walkthrough video)",
+  "1oc2ZABi301hMFeoM7MUYlDXEvePLxuOn": "boat-rv-pad-white-oak-tx (build video)",
+  "1yQtPmZDCozig1Ky0jG17i9Aukn2rhhBd": "flagstone-patio-fire-pit-white-oak-tx (build video)",
+  "12B_agByOFMmfdU0KcjyWzsDwZP3vGLA0": "weekly-lawn-care-route-longview-tx (video)",
+  "1B96vIGIq97HZRC7aoD0ROYyvAoc8RKlt": "flagstone-patio-hallsville-tx (photo folder, all 28 photos)",
+  "1c1SfgYs3mIIVQaU33VbYxo0TDE3CHPz0": "flagstone-patio-hallsville-tx (9-photo carousel, same shots as the project folder)",
+  "1eWr15RdfTv7FS1caPmZAgxIk6YKvBxVJ": "irrigation-sod-installation-longview-tx (photo folder, all 28 photos)",
+  "1UbrtA8K8JOdDtymVcRWZ_ZFOLJwTG5Lu": "irrigation-sod-installation-longview-tx (social post folder)",
+  "1CVNZ4GYcAuBAg3yIM1qillu3QyUHL6xq": "flagstone-walkway-kilgore-tx (photo folder; a curated set is on the site)",
+  "1xpbTtbpAr2PgoiFvAoGljepp4eX71LUi": "boat-rv-pad-white-oak-tx (photo folder; a curated set is on the site)",
+  "1j66rhTVBBBB18NGShIlbzmVdyCfjSI6f": "weekly-lawn-care-route-longview-tx (crew photo folder; a curated set is on the site)"
+ },
+ "skipped": {
+  "1hjMwYfS-QREvJ3pcsguvYvpghjD1cqJ_": "Jacob's Video: earlier cut of the irrigation and sod walkthrough; the site uses Jacob's Final Reworked",
+  "1MQRTlHytVxIK4YvdFGAnsjz_pWmUKd_9": "Jacob's Final: replaced by Jacob's Final Reworked"
+ }
+}

@@ -65,7 +65,8 @@ def strip(keys, s3=False):
     for k in keys:
         p = photo(k)
         where = p['place'] if p['place'] and p['place'] != 'East Texas' else 'East Texas'
-        link = f'/our-work#job={p["job"]}' if p.get('job') and p['job'] not in ('more', 'lawn') else '/our-work'
+        j = p.get('job')
+        link = job_href(j) if j in PROJ_BY_JOB else (f'/our-work#job={j}' if j and j not in ('more', 'lawn') else '/our-work')
         out.append(f'<figure><a href="{link}">{img(k)}</a><figcaption><b>{e(p["caption"])}</b>{e(where)}</figcaption></figure>')
     return f'<div class="strip{" s3" if s3 else ""}">' + ''.join(out) + '</div>'
 
@@ -149,8 +150,10 @@ def service_page(slug):
 # ======================================================================= town hubs
 GENERIC_HEROES = ['front-roses-after', 'img-3738', 'img-3523', 'deck-after', '4', 'img-3526', '6', 'side-hydrangeas-after',
                   'img-3737', 'd:crew-dsc04076', 'img-3525', '3']
-LOCAL_HERO = {'kilgore-tx': 'd:walk-dsc03930', 'white-oak-tx': 'white-oak-flagstone-patio-after', 'lake-cherokee-tx': 'driveway-retaining-wall-after'}
-LOCAL_JOBS = {'kilgore-tx': ['walkway', 'checker'], 'white-oak-tx': ['whiteoak', 'rvpad'], 'lake-cherokee-tx': ['driveway']}
+LOCAL_HERO = {'kilgore-tx': 'd:walk-dsc03930', 'white-oak-tx': 'white-oak-flagstone-patio-after', 'lake-cherokee-tx': 'driveway-retaining-wall-after',
+              'hallsville-tx': 'p:poolpatio:still:v1022-patio-by-pool@9.7'}
+LOCAL_JOBS = {'kilgore-tx': ['walkway', 'checker'], 'white-oak-tx': ['whiteoak', 'rvpad'], 'lake-cherokee-tx': ['driveway'],
+              'hallsville-tx': ['poolpatio'], 'longview-tx': ['irrigation']}
 JOB_TEXT = {
     'walkway': ('Flagstone walkway & chopped stone borders', 'September 2026', 'A flagstone walkway framed in chopped stone, run from the drive to the back porch with path lights along both sides. Base compacted, every border stone shaped and set by hand.'),
     'checker': ('Checkerboard paver patio', 'April 2026', 'A worn-out backyard off a covered brick porch turned into a checkerboard concrete paver patio with gravel joints, laid out on a compacted base.'),
@@ -158,6 +161,8 @@ JOB_TEXT = {
     'rvpad': ('Raised boat & RV pad', 'September 2026', 'A level pad for a boat and RV: a pressure-treated timber wall set and lined up, fill hauled in and compacted with a track loader, drainage fabric down and gravel spread on top.'),
     'driveway': ('Driveway retaining wall rebuild', 'July 2026', 'A leaning block wall along a driveway pulled out and rebuilt course by course on a compacted base, with drainage fabric and pipe behind it.'),
 }
+for _p in PROJECTS:   # jobs that only exist as project pages (newest first in projects.json)
+    JOB_TEXT.setdefault(_p['job'], (_p['title'], _p['date_h'], _p['summary']))
 
 def town_hero_key(tslug, idx):
     if tslug in LOCAL_HERO:
@@ -176,7 +181,15 @@ def local_block(job, town):
     imgs = ''.join(img(k) for k in keys)
     return (f'<div class="local" style="margin-top:36px"><div class="lp">{imgs}</div><div><span class="pill">{e(town["name"])}, {e(d)}</span>'
             f'<h3 class="h2" style="font-size:clamp(28px,3.2vw,40px);margin-top:12px">{e(t)}</h3><p>{e(txt)}</p>'
-            f'<p style="margin-top:18px"><a class="more" href="/our-work#job={job}">See all {n} photos</a></p></div></div>')
+            f'<p style="margin-top:18px">{project_link(job, n)}</p></div></div>')
+
+def project_link(job, n):
+    pr = PROJ_BY_JOB.get(job)
+    if not pr:
+        return f'<a class="more" href="/our-work#job={job}">See all {n} photos</a>'
+    nv = len(pr.get('videos', []))
+    what = f'{n} photos' + (f' and {"the video" if nv == 1 else str(nv) + " videos"}' if nv else '')
+    return f'<a class="more" href="{job_href(job)}">See the project: {what}</a>'
 
 def town_page(tslug, idx):
     t = TOWNS[tslug]

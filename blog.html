@@ -820,6 +820,51 @@ footer.ft .nap a:hover{text-decoration:underline}
 /* phone menu open: no sticky quote bar on top of it */
 html.menu-open .mcta{display:none}
 @media (max-width:900px){.top .mnav .msub a{display:flex;align-items:center;min-height:44px}}
+
+/* ---- Project pages (/our-work/<slug>): the crew's walkthrough video stands where a hero photo would ---- */
+.hero.proj .w{grid-template-columns:minmax(0,1fr) minmax(0,380px);align-items:center}
+.pvid{margin:0;justify-self:end;width:100%;max-width:380px}
+.pvid video{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:#1e1e1e;box-shadow:14px 14px 0 var(--red),0 30px 60px -20px rgba(0,0,0,.7)}
+.pvid figcaption{margin-top:18px;font-size:13.5px;line-height:1.45;color:#bdbdb8;display:flex;justify-content:space-between;gap:12px}
+.pvid figcaption span{font-variant-numeric:tabular-nums;color:#8f8f8a}
+@media (max-width:900px){.hero.proj .w{grid-template-columns:minmax(0,1fr)}.pvid{justify-self:start;max-width:340px}}
+.pbuild{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:72px;align-items:start;margin-top:40px}
+.pbuild .pvid{justify-self:start;max-width:340px;position:sticky;top:96px}
+.pbuild .pvid video{box-shadow:12px 12px 0 var(--red),0 24px 50px -24px rgba(0,0,0,.45)}
+.pbuild .pvid figcaption{color:var(--mute)}
+.pbuild .pvid figcaption span{color:var(--mute)}
+@media (max-width:900px){.pbuild{grid-template-columns:minmax(0,1fr);gap:40px}.pbuild .pvid{position:static;max-width:320px}}
+.steps.col{grid-template-columns:minmax(0,1fr);margin-top:0}
+.steps.col li{display:grid;grid-template-columns:76px minmax(0,1fr);padding:24px 0 22px}
+.steps.col li::before{grid-row:span 2;margin:0;font-size:46px}
+.steps.col h3{align-self:end}
+.pfacts{background:#f3f2ee;border-radius:14px;padding:26px 26px 24px}
+.pfacts h2{font:400 26px/1.05 var(--display);text-transform:uppercase;margin:0}
+.pfacts dl{margin:6px 0 0}
+.pfacts dt{font:700 13px/1.2 var(--sans);color:var(--mute);margin-top:16px}
+.pfacts dd{margin:4px 0 0;font-size:16px;line-height:1.5;font-weight:600}
+.pfacts .btn{margin-top:24px;width:100%}
+.tx{margin-top:28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tx+.tx{margin-top:0;border-top:0}
+.tx summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;font:700 16px/1.35 var(--sans)}
+.tx summary::-webkit-details-marker{display:none}
+.tx summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(var(--red),var(--red)) center/14px 2.5px no-repeat,linear-gradient(var(--red),var(--red)) center/2.5px 14px no-repeat;transition:transform .2s}
+.tx[open] summary::after{transform:rotate(45deg)}
+.body2 .prose2 .tx p{font-size:16px;color:#2b2b2b;margin:0 0 20px}
+.pgal{padding-block:88px}
+.pgal .head{margin-bottom:28px}
+@media (max-width:700px){.pgal{padding-block:64px}}
+/* Our Work: one card per project */
+.pcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pcards .card{aspect-ratio:3/4}
+.pcards .card h3{font-size:24px}
+.pcards .vb{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;font:700 12.5px/1 var(--sans);color:#fff;background:rgba(13,13,13,.72);padding:8px 11px 8px 9px;border-radius:999px}
+.pcards .vb::before{content:"";width:0;height:0;border-left:9px solid var(--red);border-top:5.5px solid transparent;border-bottom:5.5px solid transparent}
+@media (max-width:1000px){.pcards{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pcards{gap:10px}.pcards .card .ct{padding:14px}.pcards .card h3{font-size:19px}.pcards .card p{display:none}.pcards .vb{top:10px;left:10px}}
+.card:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hero.pjh h1{font-size:clamp(42px,5.2vw,74px);line-height:.92}
+@media (max-width:480px){.hero.pjh h1{font-size:clamp(36px,10.4vw,46px)}}
 </style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "@id": "https://www.yarddoglandscapes.com/blog#blog", "url": "https://www.yarddoglandscapes.com/blog", "name": "Yard Dog Landscapes Blog", "description": "Lawn care and landscaping advice for East Texas homeowners from the crew at Yard Dog Landscapes.", "publisher": {"@id": "https://www.yarddoglandscapes.com/#business"}, "inLanguage": "en-US", "blogPost": [{"@type": "BlogPosting", "headline": "Mulch the First Leaves, Rake the Last Ones", "url": "https://www.yarddoglandscapes.com/blog-fall-leaf-strategy-east-texas", "datePublished": "2026-09-26"}, {"@type": "BlogPosting", "headline": "The Fall Window That Decides How Many Winter Weeds You Fight in February", "url": "https://www.yarddoglandscapes.com/blog-fall-preemergent-east-texas", "datePublished": "2026-09-19"}, {"@type": "BlogPosting", "headline": "Beds Need a Fall Top-Dress, Not a Full Mulch Reload", "url": "https://www.yarddoglandscapes.com/blog-fall-mulch-top-dress-east-texas", "datePublished": "2026-09-12"}, {"@type": "BlogPosting", "headline": "Fall Beats Spring for Planting Trees and Shrubs in East Texas", "url": "https://www.yarddoglandscapes.com/blog-fall-planting-window-east-texas", "datePublished": "2026-09-05"}, {"@type": "BlogPosting", "headline": "The Webbed Nests Taking Over East Texas Pecans in Late Summer", "url": "https://www.yarddoglandscapes.com/blog-fall-webworms-east-texas", "datePublished": "2026-08-29"}, {"@type": "BlogPosting", "headline": "Late August Is When You Set Up Your Fall Lawn, Not September", "url": "https://www.yarddoglandscapes.com/blog-fall-lawn-reset-east-texas", "datePublished": "2026-08-22"}, {"@type": "BlogPosting", "headline": "The Late-Summer Grub Damage That Peels Up Like Carpet", "url": "https://www.yarddoglandscapes.com/blog-grub-worms-east-texas", "datePublished": "2026-08-15"}, {"@type": "BlogPosting", "headline": "Stop Topping Your Crepe Myrtles: The Case Against Crape Murder", "url": "https://www.yarddoglandscapes.com/blog-crepe-myrtle-crape-murder", "datePublished": "2026-08-08"}, {"@type": "BlogPosting", "headline": "Armyworms Can Strip an East Texas Lawn Overnight in Late Summer", "url": "https://www.yarddoglandscapes.com/blog-fall-armyworms-east-texas", "datePublished": "2026-08-01"}, {"@type": "BlogPosting", "headline": "Why St. Augustine Dies in the Sunniest Part of the Yard in Late Summer", "url": "https://www.yarddoglandscapes.com/blog-chinch-bugs-st-augustine", "datePublished": "2026-07-25"}, {"@type": "BlogPosting", "headline": "When Your East Texas Yard Needs a French Drain (And When It Doesn't)", "url": "https://www.yarddoglandscapes.com/blog-drainage-french-drain-east-texas", "datePublished": "2026-07-18"}, {"@type": "BlogPosting", "headline": "Why Mowing Shorter in Summer Backfires", "url": "https://www.yarddoglandscapes.com/blog-summer-mowing-height", "datePublished": "2026-07-11"}, {"@type": "BlogPosting", "headline": "The Five Plants That Actually Survive a Longview July", "url": "https://www.yarddoglandscapes.com/blog-flower-beds-that-survive-july", "datePublished": "2026-07-04"}, {"@type": "BlogPosting", "headline": "Brown Patch vs. Heat Stress: How to Tell the Difference (Before You Make It Worse)", "url": "https://www.yarddoglandscapes.com/blog-brown-patch-vs-heat-stress", "datePublished": "2026-06-27"}, {"@type": "BlogPosting", "headline": "What You Should and Shouldn't Prune in June", "url": "https://www.yarddoglandscapes.com/blog-summer-pruning-rules", "datePublished": "2026-06-20"}, {"@type": "BlogPosting", "headline": "Why We Don't Put Landscape Fabric Under Mulch", "url": "https://www.yarddoglandscapes.com/blog-landscape-fabric-under-mulch-east-texas", "datePublished": "2026-06-13"}, {"@type": "BlogPosting", "headline": "The Three Irrigation Mistakes That Cook East Texas Lawns", "url": "https://www.yarddoglandscapes.com/blog-irrigation-mistakes-east-texas", "datePublished": "2026-06-06"}, {"@type": "BlogPosting", "headline": "Why Fire Ants Explode in May (and What Actually Kills the Mound)", "url": "https://www.yarddoglandscapes.com/blog-fire-ants-east-texas", "datePublished": "2026-05-30"}, {"@type": "BlogPosting", "headline": "Bermuda vs. St. Augustine in East Texas: Which Fits Your Yard", "url": "https://www.yarddoglandscapes.com/blog-bermuda-vs-st-augustine-east-texas", "datePublished": "2026-05-23"}, {"@type": "BlogPosting", "headline": "How Much Mulch You Actually Need (It's Less Than You Think)", "url": "https://www.yarddoglandscapes.com/blog-mulch-depth-east-texas", "datePublished": "2026-05-16"}, {"@type": "BlogPosting", "headline": "The East Texas Fertilization Window Most Homeowners Miss", "url": "https://www.yarddoglandscapes.com/blog-east-texas-spring-fertilization", "datePublished": "2026-05-09"}, {"@type": "BlogPosting", "headline": "Why Your East Texas Lawn Looks Worse in July (And What Actually Helps)", "url": "https://www.yarddoglandscapes.com/blog-east-texas-summer-lawn", "datePublished": "2026-05-02"}]}</script>

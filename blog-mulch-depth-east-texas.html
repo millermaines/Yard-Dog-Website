@@ -820,6 +820,51 @@ footer.ft .nap a:hover{text-decoration:underline}
 /* phone menu open: no sticky quote bar on top of it */
 html.menu-open .mcta{display:none}
 @media (max-width:900px){.top .mnav .msub a{display:flex;align-items:center;min-height:44px}}
+
+/* ---- Project pages (/our-work/<slug>): the crew's walkthrough video stands where a hero photo would ---- */
+.hero.proj .w{grid-template-columns:minmax(0,1fr) minmax(0,380px);align-items:center}
+.pvid{margin:0;justify-self:end;width:100%;max-width:380px}
+.pvid video{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:#1e1e1e;box-shadow:14px 14px 0 var(--red),0 30px 60px -20px rgba(0,0,0,.7)}
+.pvid figcaption{margin-top:18px;font-size:13.5px;line-height:1.45;color:#bdbdb8;display:flex;justify-content:space-between;gap:12px}
+.pvid figcaption span{font-variant-numeric:tabular-nums;color:#8f8f8a}
+@media (max-width:900px){.hero.proj .w{grid-template-columns:minmax(0,1fr)}.pvid{justify-self:start;max-width:340px}}
+.pbuild{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:72px;align-items:start;margin-top:40px}
+.pbuild .pvid{justify-self:start;max-width:340px;position:sticky;top:96px}
+.pbuild .pvid video{box-shadow:12px 12px 0 var(--red),0 24px 50px -24px rgba(0,0,0,.45)}
+.pbuild .pvid figcaption{color:var(--mute)}
+.pbuild .pvid figcaption span{color:var(--mute)}
+@media (max-width:900px){.pbuild{grid-template-columns:minmax(0,1fr);gap:40px}.pbuild .pvid{position:static;max-width:320px}}
+.steps.col{grid-template-columns:minmax(0,1fr);margin-top:0}
+.steps.col li{display:grid;grid-template-columns:76px minmax(0,1fr);padding:24px 0 22px}
+.steps.col li::before{grid-row:span 2;margin:0;font-size:46px}
+.steps.col h3{align-self:end}
+.pfacts{background:#f3f2ee;border-radius:14px;padding:26px 26px 24px}
+.pfacts h2{font:400 26px/1.05 var(--display);text-transform:uppercase;margin:0}
+.pfacts dl{margin:6px 0 0}
+.pfacts dt{font:700 13px/1.2 var(--sans);color:var(--mute);margin-top:16px}
+.pfacts dd{margin:4px 0 0;font-size:16px;line-height:1.5;font-weight:600}
+.pfacts .btn{margin-top:24px;width:100%}
+.tx{margin-top:28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tx+.tx{margin-top:0;border-top:0}
+.tx summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;font:700 16px/1.35 var(--sans)}
+.tx summary::-webkit-details-marker{display:none}
+.tx summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(var(--red),var(--red)) center/14px 2.5px no-repeat,linear-gradient(var(--red),var(--red)) center/2.5px 14px no-repeat;transition:transform .2s}
+.tx[open] summary::after{transform:rotate(45deg)}
+.body2 .prose2 .tx p{font-size:16px;color:#2b2b2b;margin:0 0 20px}
+.pgal{padding-block:88px}
+.pgal .head{margin-bottom:28px}
+@media (max-width:700px){.pgal{padding-block:64px}}
+/* Our Work: one card per project */
+.pcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pcards .card{aspect-ratio:3/4}
+.pcards .card h3{font-size:24px}
+.pcards .vb{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;font:700 12.5px/1 var(--sans);color:#fff;background:rgba(13,13,13,.72);padding:8px 11px 8px 9px;border-radius:999px}
+.pcards .vb::before{content:"";width:0;height:0;border-left:9px solid var(--red);border-top:5.5px solid transparent;border-bottom:5.5px solid transparent}
+@media (max-width:1000px){.pcards{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pcards{gap:10px}.pcards .card .ct{padding:14px}.pcards .card h3{font-size:19px}.pcards .card p{display:none}.pcards .vb{top:10px;left:10px}}
+.card:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hero.pjh h1{font-size:clamp(42px,5.2vw,74px);line-height:.92}
+@media (max-width:480px){.hero.pjh h1{font-size:clamp(36px,10.4vw,46px)}}
 </style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://www.yarddoglandscapes.com/blog-mulch-depth-east-texas#article", "mainEntityOfPage": "https://www.yarddoglandscapes.com/blog-mulch-depth-east-texas", "headline": "How Much Mulch You Actually Need (It's Less Than You Think)", "description": "Big-box stores tell you 3 inches of mulch. We do 1 to 1.5 inches and the beds look better, the weeds stay down, and your plants don't suffocate. Here's the math and the reason.", "image": "https://www.yarddoglandscapes.com/img/blog/blog-mulch-depth-east-texas.webp", "datePublished": "2026-05-16", "dateModified": "2026-05-16", "inLanguage": "en-US", "articleSection": "Mulch Installation", "author": {"@type": "Person", "@id": "https://www.yarddoglandscapes.com/#miller", "name": "Miller Maines", "jobTitle": "Owner, Yard Dog Landscapes", "url": "https://www.yarddoglandscapes.com/about"}, "publisher": {"@id": "https://www.yarddoglandscapes.com/#business"}, "about": {"@id": "https://www.yarddoglandscapes.com/#business"}}</script>

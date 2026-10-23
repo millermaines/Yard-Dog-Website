@@ -1,4 +1,13 @@
 {
  "about": "Log of Google Business Profile posts made by the Tuesday/Saturday scheduled task (see _scripts/site/GBP_POSTS.md). Never reuse a photo listed here; don't post the same project twice in a row.",
- "posts": []
+ "posts": [
+  {
+   "date": "2026-10-23",
+   "project": "flagstone-patio-hallsville-tx",
+   "photo": "still:v1022-patio-by-pool@50.5 (video still, cropped 4:3; close to flagstone-patio-hallsville-tx-02.webp)",
+   "text": "New flagstone patio by the pool in Hallsville, TX.\n\nThis family wanted a spot to sit around a fire at night now that summer is winding down, so our crew built a rounded flagstone patio off the end of their pool deck.\n\nWe started with chopped stone borders, set by hand to a string line and checked with a level so the edge stays true. Inside the border went a crushed limestone base, raked out solid and even. The flagstone they picked went on top, with every piece fit by hand and the joints filled.\n\nSee the video and every photo from this job on our site.",
+   "url": "https://www.yarddoglandscapes.com/our-work/flagstone-patio-hallsville-tx?utm_source=google&utm_medium=organic&utm_campaign=gbp_post",
+   "status": "submitted, pending Google review"
+  }
+ ]
 }

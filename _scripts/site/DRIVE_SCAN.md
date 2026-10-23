@@ -1,6 +1,6 @@
-# Daily Drive scan: new job media → project pages
+# Weekly Drive scan (Fridays): new job media → project pages
 
-A scheduled task runs this every evening. It turns new job videos and photos in the Yard Dog shared Drive into
+A scheduled task runs this every Friday evening (8:43 PM Central), after the cameraman has uploaded the week's media. It turns new job videos and photos in the Yard Dog shared Drive into
 project pages at `/our-work/<slug>` and publishes them. Miller asked for this on 2026-10-23 and chose:
 
 - **Publish automatically.** No approval step.

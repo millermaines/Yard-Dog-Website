@@ -1,5 +1,5 @@
 {
- "about": "State for the daily Drive scan (see _scripts/site/DRIVE_SCAN.md). Every Drive file created before handled_through, and every id listed below, is already handled. Only newer files are candidates.",
+ "about": "State for the weekly Drive scan (see _scripts/site/DRIVE_SCAN.md). Every Drive file created before handled_through, and every id listed below, is already handled. Only newer files are candidates.",
  "shared_drive": {
   "name": "Yard Dog Landscapes",
   "id": "0AK-gURr4K7KrUk9PVA"

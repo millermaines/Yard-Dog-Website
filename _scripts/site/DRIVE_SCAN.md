@@ -14,8 +14,8 @@ project pages at `/our-work/<slug>` and publishes them. Miller asked for this on
 
 ## 0. Set up
 
-1. Repo: `millermaines/yard-dog-website`. If `/home/claude/yard-dog-website` is missing, attach it with `add_repo`
-   (access `push`) and clone it there. `git checkout main && git pull`. Vercel deploys `main` to www.yarddoglandscapes.com.
+1. Repo: `millermaines/Yard-Dog-Website` (GitHub also answers to the old lowercase name). If
+   `/home/claude/yard-dog-website` is missing, attach it with `add_repo` (access `push`) and clone it there. `git checkout main && git pull`. Vercel deploys `main` to www.yarddoglandscapes.com.
 2. `pip install --break-system-packages pillow` if PIL is missing. `ffmpeg`/`ffprobe` must exist.
 3. Read `CLAUDE.md`. Never run the obsolete generators it lists.
 
@@ -105,9 +105,15 @@ nothing cropped or overlapping, the video poster shows, captions match the photo
   set `handled_through` to the newest `createdTime` handled.
 - Commit to `main` with a plain message ("Project page: flagstone patio in Hallsville"), push.
 - Wait for Vercel, then confirm `https://www.yarddoglandscapes.com/our-work/<slug>` returns 200 with the new h1.
-- Search Console (Claude in Chrome, Google account `yarddoglawnlight@gmail.com`, property
-  `https://www.yarddoglandscapes.com/`): URL inspection → Request indexing for each new or changed project page,
-  and for `/our-work`. Never enter a password or pass a CAPTCHA; if a sign-in wall shows up, skip this step and say so.
+- Search Console (Claude in Chrome, Google account `yarddoglawnlight@gmail.com`, domain property
+  `sc-domain:yarddoglandscapes.com`). Open `https://search.google.com/search-console?authuser=yarddoglawnlight@gmail.com`
+  (account numbers in `/u/N/` change; the email always resolves). For each new or changed project page, and for
+  `/our-work`: type the full URL into the "Inspect any URL" box at the top, Enter, wait for the result, click
+  "Request indexing", then wait about 45 seconds for the live test to finish and the "Indexing requested" box to show
+  before clicking Dismiss. Clicking outside the box while it says "Testing if live URL can be indexed" cancels the
+  request. Reload the overview page before each new URL so the search box takes the typing. Google allows about ten
+  requests a day; the sitemap covers the rest. Never enter a password or pass a CAPTCHA; if a sign-in wall shows up,
+  skip this step and say so.
 
 ## 8. Report
 

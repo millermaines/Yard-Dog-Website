@@ -2,7 +2,7 @@
 
 A scheduled task posts one real job to the Yard Dog Google Business Profile every Tuesday and Saturday morning.
 Miller set this up on 2026-10-23 and chose: **post automatically** (no approval step), **Tuesday and Saturday**.
-Each post shows a real photo from a job, says what was done and in which town, and has a **Learn more** button that
+Each post shows a handful of the cameraman's photos from one job, says what was done and in which town, and has a **Learn more** button that
 opens that job's project page on the site.
 
 ## 0. Set up

@@ -152,7 +152,7 @@ GENERIC_HEROES = ['front-roses-after', 'img-3738', 'img-3523', 'deck-after', '4'
                   'img-3737', 'd:crew-dsc04076', 'img-3525', '3']
 LOCAL_HERO = {'kilgore-tx': 'd:walk-dsc03930', 'white-oak-tx': 'white-oak-flagstone-patio-after', 'lake-cherokee-tx': 'driveway-retaining-wall-after',
               'hallsville-tx': 'p:poolpatio:still:v1022-patio-by-pool@9.7'}
-LOCAL_JOBS = {'kilgore-tx': ['walkway', 'checker'], 'white-oak-tx': ['whiteoak', 'rvpad'], 'lake-cherokee-tx': ['driveway'],
+LOCAL_JOBS = {'kilgore-tx': ['patioext', 'walkway', 'checker'], 'white-oak-tx': ['whiteoak', 'rvpad'], 'lake-cherokee-tx': ['driveway'],
               'hallsville-tx': ['poolpatio'], 'longview-tx': ['irrigation']}
 JOB_TEXT = {
     'walkway': ('Flagstone walkway & chopped stone borders', 'September 2026', 'A flagstone walkway framed in chopped stone, run from the drive to the back porch with path lights along both sides. Base compacted, every border stone shaped and set by hand.'),

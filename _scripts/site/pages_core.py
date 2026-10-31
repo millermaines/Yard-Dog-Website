@@ -33,8 +33,8 @@ def home():
     cards = ''.join(f'<a class="card" href="/{s}">{img(k)}<div class="ct"><h3>{e(t)}</h3><p>{e(first_sentence(SERVICES[s]["lede"]))}</p><span class="go">{e(svc_price(s))}</span></div></a>' for s, t, k in cards_def)
     services = (f'<section class="sec stone"><div class="w"><div class="head"><div><h2 class="h2">The full pack of<br>outdoor services</h2></div>'
                 f'<a class="more" href="/services">All {len(SERVICE_ORDER)} services and prices</a></div><div class="cards">{cards}</div></div></section>')
-    recent = [('poolpatio', 'p:poolpatio:still:v1022-patio-by-pool@9.7', 'Hallsville'), ('irrigation', 'p:irrigation:still:v1011-jacob-final@7.2', 'Longview'),
-              ('walkway', 'd:walk-dsc03953', 'Kilgore'), ('rvpad', 'd:rvpad-dsc03563', 'White Oak')]
+    recent = [('patioext', 'p:patioext:still:v1028-patio-extension@10.5', 'Kilgore'), ('poolpatio', 'p:poolpatio:still:v1022-patio-by-pool@9.7', 'Hallsville'),
+              ('irrigation', 'p:irrigation:still:v1011-jacob-final@7.2', 'Longview'), ('walkway', 'd:walk-dsc03953', 'Kilgore')]
     rc = ''.join(f'<a class="card" href="{job_href(j)}">{img(k)}<div class="ct"><p class="pm">{e(town)}, TX</p><h3>{e(JOB_TEXT[j][0])}</h3></div></a>' for j, k, town in recent)
     work = (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">Built this season</h2><p class="sub">Every photo and video is our crew on our jobs. No stock photos.</p></div>'
             f'<a class="more" href="/our-work">See all {len(PROJECTS)} projects</a></div><div class="cards c4">{rc}</div></div></section>')

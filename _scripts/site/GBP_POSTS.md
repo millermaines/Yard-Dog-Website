@@ -5,6 +5,16 @@ Miller set this up on 2026-10-23 and chose: **post automatically** (no approval 
 Each post shows a handful of the cameraman's photos from one job, says what was done and in which town, and has a **Learn more** button that
 opens that job's project page on the site.
 
+## Schedule and the second try
+
+The task fires twice on each posting day, at 9:43 AM and 3:43 PM Central. The afternoon run is a second try for
+mornings when Miller's Mac was asleep or Chrome was closed (that skipped Oct 31 and Nov 3, 2026).
+
+- First thing every run: if `_data/gbp_posts.json` already has a post dated today (America/Chicago), stop. Don't post
+  and don't send a message.
+- If the Mac or Chrome can't be reached: on the morning run, report "Couldn't reach your Mac/Chrome, trying again at
+  3:43 PM." On the afternoon run, report "Skipped today's post: your Mac was asleep or Chrome was closed."
+
 ## 0. Set up
 
 1. Repo: `millermaines/Yard-Dog-Website`. If `/home/claude/yard-dog-website` is missing, attach it with `add_repo`

@@ -41,13 +41,14 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 ## Queue (next up, top of list ships first)
 
-**Status note (2026-11-04):** the blog fell 5 weeks behind after Sep 26. Two catch-up posts went out Nov 4. The Oct 3, Oct 10 and Oct 24 rows above are stale (winter color, ryegrass and last-feeding windows have mostly passed): don't publish them as written. Replace them with November topics (see the anchor list at the bottom: Christmas lights, tree pruning windows, winter lawn, planning) and keep the Saturday cadence. A weekly scheduled task now publishes the next post each Saturday.
+**Status note (2026-11-04):** the blog fell 5 weeks behind after Sep 26. Five catch-up posts went out Nov 4 (the Oct 3, Oct 10 and Oct 24 queue rows were rewritten for November and published: winter color, ryegrass, last feeding). The rows below are the fresh November queue. Keep the Saturday cadence; see _scripts/site/BLOG_WEEKLY.md for the weekly steps.
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-10-03 | blog-fall-winter-color-east-texas | October Is the Planting Window for Winter Color in East Texas | Flower Bed Installation | Why pansies, violas, and snapdragons go in while the soil is still warm in October instead of after the first freeze, which cool-season annuals actually hold through a Longview winter and which ones melt in a hard one, why bed drainage matters more than plant choice in our clay, and the light feeding schedule that keeps them blooming into February instead of stalling out in December |
-| 2026-10-10 | blog-ryegrass-overseeding-east-texas | Should You Overseed With Ryegrass This Fall? Usually Not | Lawn Maintenance | Why mid-October is the only window that works for ryegrass here (soil temperature falling through 70 degrees), the winter mowing and watering commitment nobody accounts for, why overseeding a dormant bermuda lawn delays and weakens its spring green-up, why St. Augustine should never be overseeded at all, and the two situations where winter color is genuinely worth it |
-| 2026-10-24 | blog-last-fertilization-east-texas | The Last Feeding of the Year, and Why It Is Not Nitrogen | Fertilization | Why a heavy nitrogen application in late October pushes tender growth into the first freeze and sets up winterkill and spring disease in East Texas bermuda and St. Augustine, what a late-season potassium feeding actually does for cold hardiness and root reserves, how a soil test tells you whether you need one at all in our clay, and the cutoff week after which you should just stop feeding and let the lawn go dormant |
+| 2026-11-07 | blog-christmas-lights-east-texas | When to Book Christmas Lights in East Texas (It Is Earlier Than You Think) | Christmas Lights | Why installs fill up by early December, what goes into a professional install (measure, custom-cut, clip to the roofline, take-down and storage), and what to decide before the first call |
+| 2026-11-14 | blog-tree-pruning-windows-east-texas | The Best Months to Prune Trees in East Texas | Tree & Shrub Care | Why late winter before bud break is the window for most trees, what to prune now and what to wait on (crepe myrtles, oaks, spring bloomers), and why topping is never the answer |
+| 2026-11-21 | blog-winter-lawn-care-east-texas | What a Dormant Lawn Still Needs in December | Lawn Maintenance | Mowing as it slows, keeping leaves off, deep watering in dry spells, and what to leave alone until spring |
+| 2026-11-28 | blog-plan-spring-projects-east-texas | Book Spring Projects Now: Patios, Walkways, and Sod | Hardscape | Why winter is the planning season, how a site visit and quote work, and which projects are best built before spring |
 
 ---
 
@@ -55,6 +56,9 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-11-04 | blog-last-fertilization-east-texas.html | Stop Feeding the Lawn Now: Why the Fertilizing Season Is Over | Fertilization |
+| 2026-11-04 | blog-ryegrass-overseeding-east-texas.html | Should You Overseed With Ryegrass This Fall? Usually Not | Lawn Maintenance |
+| 2026-11-04 | blog-winter-color-east-texas.html | Winter Color Still Goes In This Month: Pansies, Violas, and Dianthus in East Texas | Flower Bed Installation |
 | 2026-11-04 | blog-first-freeze-prep-east-texas.html | The Week Before the First Freeze: What Actually Needs Doing | Tree & Shrub Care |
 | 2026-11-04 | blog-fall-perennial-cutback-east-texas.html | What to Cut Back in Your Beds This Fall, and What to Leave Standing | Flower Bed Installation |
 | 2026-09-26 | blog-fall-leaf-strategy-east-texas.html | Mulch the First Leaves, Rake the Last Ones | Leaf Removal |

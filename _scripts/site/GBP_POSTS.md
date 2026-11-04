@@ -66,6 +66,14 @@ stills pulled from a video.** Several photos go on every post, stacked in the po
 4. Click **+ Button**, choose **Learn more** in the dropdown, and paste the URL into the field that appears.
 5. Screenshot the whole editor and check it once more, then click **Post**. Wait for it to confirm.
 6. Open the profile (`See your profile` / Updates) and confirm the post shows, live or pending review. Close your tab.
+7. **Also add the same photos to the Photos gallery** (Miller asked for this 2026-11-04: update-post photos do NOT
+   land in the gallery on their own, so upload them separately). On the same locations page click the photo icon in the
+   Yard Dog row (next to the pencil). It opens "Add photos and videos" in a new tab inside a frame; run the same
+   `location.href=[...document.querySelectorAll('iframe')].find(f=>f.src.includes('/local/business/')).src` trick on
+   that tab. Then `find` the file input and `file_upload` the same staged JPGs (under 10 MB per call). Do NOT use the
+   file input you find on the full search page: that one belongs to the post composer. After the upload the page jumps
+   to "Photos and videos" and the new photos show with a PENDING tag; count them (all of them must be there). Close
+   the tab. Never upload one photo twice, and don't touch the old photos.
 
 If anything is off (sign-in wall, CAPTCHA, the post is rejected, the editor looks different), stop. Don't retry in
 a loop. Report what happened.
@@ -81,6 +89,6 @@ One or two lines to Miller: what was posted (project and town) and that it's liv
 
 ## Never
 
-Change anything else on the profile (name, phone, hours, categories, services, description, photos section),
+Change anything else on the profile (name, phone, hours, categories, services, description; in the photos section only add the post's own photos as in step 3.7),
 reply to or touch reviews, delete or edit old posts, enter a password, get past a CAPTCHA, use the phone number
 anywhere in a post, post a photo that isn't real Yard Dog work, or use a still or screenshot from a video.

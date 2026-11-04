@@ -41,13 +41,13 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 ## Queue (next up, top of list ships first)
 
+**Status note (2026-11-04):** the blog fell 5 weeks behind after Sep 26. Two catch-up posts went out Nov 4. The Oct 3, Oct 10 and Oct 24 rows above are stale (winter color, ryegrass and last-feeding windows have mostly passed): don't publish them as written. Replace them with November topics (see the anchor list at the bottom: Christmas lights, tree pruning windows, winter lawn, planning) and keep the Saturday cadence. A weekly scheduled task now publishes the next post each Saturday.
+
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
 | 2026-10-03 | blog-fall-winter-color-east-texas | October Is the Planting Window for Winter Color in East Texas | Flower Bed Installation | Why pansies, violas, and snapdragons go in while the soil is still warm in October instead of after the first freeze, which cool-season annuals actually hold through a Longview winter and which ones melt in a hard one, why bed drainage matters more than plant choice in our clay, and the light feeding schedule that keeps them blooming into February instead of stalling out in December |
 | 2026-10-10 | blog-ryegrass-overseeding-east-texas | Should You Overseed With Ryegrass This Fall? Usually Not | Lawn Maintenance | Why mid-October is the only window that works for ryegrass here (soil temperature falling through 70 degrees), the winter mowing and watering commitment nobody accounts for, why overseeding a dormant bermuda lawn delays and weakens its spring green-up, why St. Augustine should never be overseeded at all, and the two situations where winter color is genuinely worth it |
-| 2026-10-17 | blog-fall-perennial-cutback-east-texas | What to Cut Back in Your Beds This Fall, and What to Leave Standing | Flower Bed Installation | Which perennials and ornamental grasses to cut back after the first frost in East Texas and which to leave standing until late February, why leaving seed heads and hollow stems helps overwinter beneficial insects, how cutting salvias and lantana too early invites freeze damage to the crown, and a simple fall bed cleanup order that pairs with a top-dress of mulch. |
 | 2026-10-24 | blog-last-fertilization-east-texas | The Last Feeding of the Year, and Why It Is Not Nitrogen | Fertilization | Why a heavy nitrogen application in late October pushes tender growth into the first freeze and sets up winterkill and spring disease in East Texas bermuda and St. Augustine, what a late-season potassium feeding actually does for cold hardiness and root reserves, how a soil test tells you whether you need one at all in our clay, and the cutoff week after which you should just stop feeding and let the lawn go dormant |
-| 2026-10-31 | blog-first-freeze-prep-east-texas | The Week Before the First Freeze: What Actually Needs Doing | Tree & Shrub Care | Our first freeze in Gregg County usually lands somewhere in the second week of November, so the last days of October are the window. Which tender plants are worth covering and which are a waste of a sheet, why a deep watering the day before a freeze protects roots better than anything you drape over them, how to shut down and drain an irrigation system before a hard freeze cracks a backflow preventer, and the fall pruning cuts to leave alone until February. |
 
 ---
 
@@ -55,6 +55,8 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-11-04 | blog-first-freeze-prep-east-texas.html | The Week Before the First Freeze: What Actually Needs Doing | Tree & Shrub Care |
+| 2026-11-04 | blog-fall-perennial-cutback-east-texas.html | What to Cut Back in Your Beds This Fall, and What to Leave Standing | Flower Bed Installation |
 | 2026-09-26 | blog-fall-leaf-strategy-east-texas.html | Mulch the First Leaves, Rake the Last Ones | Leaf Removal |
 | 2026-09-19 | blog-fall-preemergent-east-texas.html | The Fall Window That Decides How Many Winter Weeds You Fight in February | Lawn Maintenance |
 | 2026-09-12 | blog-fall-mulch-top-dress-east-texas.html | Beds Need a Fall Top-Dress, Not a Full Mulch Reload | Mulch Installation |

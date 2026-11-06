@@ -101,6 +101,15 @@
       $$('.po', w).forEach(function (a) {
         a.addEventListener('click', function () { set(Date.now() + 60 * DAY); track('promo_click', { service: a.getAttribute('data-s') }); close(); });
       });
+      // phones: drag the sheet down to dismiss it (the handle bar at the top hints at this)
+      var sy = null, dy = 0;
+      card.addEventListener('touchstart', function (e) { if (card.scrollTop > 0) return; sy = e.touches[0].clientY; dy = 0; card.style.transition = 'none'; }, { passive: true });
+      card.addEventListener('touchmove', function (e) { if (sy === null) return; dy = Math.max(0, e.touches[0].clientY - sy); card.style.transform = dy ? 'translateY(' + dy + 'px)' : ''; }, { passive: true });
+      card.addEventListener('touchend', function () {
+        if (sy === null) return;
+        sy = null; card.style.transition = ''; card.style.transform = '';
+        if (dy > 70) { set(Date.now()); track('promo_close', { how: 'swipe' }); close(); }
+      });
       document.addEventListener('keydown', onKey);
       requestAnimationFrame(function () { requestAnimationFrame(function () { w.classList.add('on'); }); });
       try { card.focus({ preventScroll: true }); } catch (e) {}   // the dialog itself takes focus; Tab reaches the close button and both quote links

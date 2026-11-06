@@ -95,8 +95,15 @@ def service_page(slug):
     url = BASE + '/' + slug
     hk = SERVICE_HERO.get(slug)
     ph = pool(slug)
-    gallery = [k for k in ph if k != hk][:8]
-    if hk:
+    v = s.get('video')
+    vhero = bool(v and v.get('hero'))   # crew clip beside the headline; the hero photo then joins the gallery
+    gallery = [k for k in ph if vhero or k != hk][:8]
+    if vhero:
+        hero_open = '<section class="hero shot proj">'
+        fig = (f'<figure class="pvid"><video data-auto src="/media/projects/{v["file"]}.mp4" poster="/media/projects/{v["file"]}.jpg" muted loop playsinline preload="none" '
+               f'width="{v["w"]}" height="{v["h"]}" title="{e(v["title"])}" aria-label="{e(v["title"])}"></video>'
+               f'<figcaption>{e(v["cap"])}</figcaption></figure>')
+    elif hk:
         hero_open, fig = f'<section class="{hero_cls(hk)}">', hero_fig(hk)
     else:
         hero_open, fig = plain_hero(slug)
@@ -115,8 +122,7 @@ def service_page(slug):
             f'<h2 class="h2">What we do</h2>' + ''.join(f'<p>{e(p)}</p>' for p in s['overview']) +
             '<ul class="chk big">' + ''.join(f'<li>{e(x)}</li>' for x in s['included']) + '</ul></div>'
             f'<aside>{pricecard(s)}</aside></div></section>')
-    v = s.get('video')
-    if v:   # a short muted crew clip beside the steps (no burned-in text; plays via site.js data-auto)
+    if v and not vhero:   # a short muted crew clip beside the steps (no burned-in text; plays via site.js data-auto)
         st = '<ol class="steps light col">' + ''.join(f'<li><h3>{e(x["title"])}</h3><p>{e(x["text"])}</p></li>' for x in s['process']) + '</ol>'
         vid = (f'<figure class="pvid"><video data-auto src="/media/projects/{v["file"]}.mp4" poster="/media/projects/{v["file"]}.jpg" muted loop playsinline preload="none" '
                f'width="{v["w"]}" height="{v["h"]}" title="{e(v["title"])}" aria-label="{e(v["title"])}"></video>'

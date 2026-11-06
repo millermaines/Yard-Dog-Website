@@ -120,6 +120,7 @@
     "date": "2026-01-14",
     "w": 720,
     "h": 1280,
-    "duration": 6.7
+    "duration": 6.7,
+    "hero": true
   }
 }

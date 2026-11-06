@@ -64,6 +64,14 @@ NEW = [
  (drv(L+'4152'), 'Trimming along the house', 'lawn', 0),
  (drv(L+'4179'), 'Blowing off clippings', 'lawn', 0),
  (drv(L+'4197'), 'Blowing off the driveway', 'lawn', 0),
+ # leaf vacuum cleanup, stills from the crew's leaf removal video (Jan 2026), lightly denoised and sharpened; finals kept at img/work/full/leaf-vacuum-cleanup-east-texas-NN.webp
+ ('st:leaf_blow_trailer', 'Blowing leaves toward the leaf vacuum trailer', 'leaves', 0),
+ ('st:leaf_vac_pile', 'Vacuuming up a pile of oak leaves, no bags', 'leaves', 0),
+ ('st:leaf_drone', 'From above: the vacuum hose pulling leaves into the trailer', 'leaves', 0),
+ ('st:leaf_blow_wave', 'Backpack blower pushing a wave of oak leaves across the lawn', 'leaves', 0),
+ ('st:leaf_vac_green', 'Our leaf vacuum trailer sucking up the leaves', 'leaves', 0),
+ ('st:leaf_wide1', 'Clearing a backyard buried in oak leaves', 'leaves', 0),
+ ('st:leaf_blow_house', 'Blowing leaves out from under the trees', 'leaves', 0),
 ]
 OLD = [
  ('white-oak-flagstone-patio-after', 'Cherokee flagstone patio and chopped stone fire pit', 'whiteoak', 1),

@@ -88,7 +88,7 @@ SHORT = {  # short service names for chips and nav
 
 # Hero photo per service (None = honest typographic hero; there is no real photo of that work yet)
 SERVICE_HERO = {
-    'lawn-maintenance': 'd:crew-dsc04063', 'leaf-removal': 'd:crew-dsc04179', 'fertilization': 'X:healthy-striped-bermuda-lawn-east-texas.webp',
+    'lawn-maintenance': 'd:crew-dsc04063', 'leaf-removal': 'st:leaf_vac_green', 'fertilization': 'X:healthy-striped-bermuda-lawn-east-texas.webp',
     'hedge-trimming': 'front-roses-after', 'tree-shrub-care': 'side-hydrangeas-after', 'tree-planting': None,
     'landscaping': 'img-3738', 'flower-bed-installation': '1', 'mulch-installation': 'back-fence-after',
     'sod-installation': 'p:irrigation:still:v1011-jacob-final@7.2', 'hardscaping': 'd:walk-dsc03930', 'retaining-walls': 'driveway-retaining-wall-after',
@@ -115,14 +115,18 @@ def photo(key):
         return dict(key=key, src=x['file'], full=x['file'], w=x['w'], h=x['h'], alt=x['alt'], caption=x['caption'], place='', job='', town=None, kind='finished')
     p = BYKEY[key]
     return dict(key=key, src='/img/work/grid/' + p['file'], full='/img/work/full/' + p['file'], w=p['gw'], h=p['gh'],
-                alt=p['alt'], caption=p['caption'], place=p['place'], job=p['job'], town=p['town'], kind=p['kind'])
+                alt=p['alt'], caption=p['caption'], place=p['place'], job=p['job'], town=p['town'], kind=p['kind'], pos=p.get('pos'))
+
+def pos_attr(p):
+    """Focal point for photos shown in a cropped frame (tall video stills): photos.json "pos" -> object-position."""
+    return f' style="object-position:{p["pos"]}"' if p.get('pos') else ''
 
 def img(key, cls='', lazy=True, full=False, sizes=None):
     p = photo(key)
     src = p['full'] if full else p['src']
     attrs = f' loading="lazy"' if lazy else ' fetchpriority="high"'
     c = f' class="{cls}"' if cls else ''
-    return f'<img src="{src}" width="{p["w"]}" height="{p["h"]}" alt="{e(p["alt"])}"{attrs} decoding="async"{c}>'
+    return f'<img src="{src}" width="{p["w"]}" height="{p["h"]}" alt="{e(p["alt"])}"{attrs} decoding="async"{c}{pos_attr(p)}>'
 
 def hero_ok(key):
     """Only photos with enough pixels to stay sharp in the hero frame (video stills are too small)."""
@@ -130,9 +134,10 @@ def hero_ok(key):
 
 def hero_fig(key=None, src=None, w=None, h=None, alt='', cap=''):
     """The hero photo, shown crisp in its own frame beside the headline (never stretched across the screen)."""
-    srcset = ''
+    srcset, ps = '', ''
     if key:
         p = photo(key)
+        ps = pos_attr(p)
         src, w, h, alt = p['full'], p['w'], p['h'], p['alt']
         cap = cap or (p['caption'] + (', ' + p['place'] if p['place'] and p['place'] != 'East Texas' else ''))
         if key in BYKEY:
@@ -143,7 +148,7 @@ def hero_fig(key=None, src=None, w=None, h=None, alt='', cap=''):
                       f' sizes="(max-width: 900px) calc(100vw - 54px), {560 if w > h else 440}px"')
             src = f"/img/work/md/{b['file']}"
     land = ' land' if w > h else ''
-    return (f'<figure class="hfig{land}"><img src="{src}"{srcset} width="{w}" height="{h}" alt="{e(alt)}" fetchpriority="high" decoding="async">'
+    return (f'<figure class="hfig{land}"><img src="{src}"{srcset} width="{w}" height="{h}" alt="{e(alt)}" fetchpriority="high" decoding="async"{ps}>'
             f'<figcaption>Pictured: {e(cap)}</figcaption></figure>')
 
 def hero_cls(key=None, w=None, h=None):

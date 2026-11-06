@@ -3,21 +3,21 @@
   "name": "Leaf Removal",
   "short": "leaf removal",
   "title": "Leaf Removal & Leaf Vacuuming in Longview, TX | Yard Dog Landscapes",
-  "meta": "Leaf removal in Longview, TX with a leaf vacuum trailer. We blow leaves to the drive, vacuum and shred them 10 to 1, and haul them off. No bags. Billed hourly.",
+  "meta": "Leaf removal in Longview, TX with the only leaf vacuum trailer in the area. We blow the leaves off, vacuum them up and haul them away. No bags, one flat price.",
   "h1": "Leaf removal in Longview & East Texas",
   "kicker": "Leaf removal",
-  "lede": "We blow the leaves out of your lawn and beds onto the driveway, vacuum them into our trailer and haul them off. The vacuum shreds them about 10 to 1, so there are no bags and nothing left at the curb. Billed by the hour.",
-  "answer": "Yard Dog Landscapes is a family-owned crew in Longview, TX, founded in 2017 and rated 5.0 stars across {{REVIEWS}} Google reviews. We remove leaves with a leaf vacuum trailer. The crew blows leaves and pine straw out of the lawn and beds onto a paved surface, then vacuums them up. The vacuum shreds the leaves about 10 to 1, so roughly 10 yards of leaves hauls off as 1 yard, with no bags. Leaf removal is billed by the hour, and you get an estimate of the hours up front after a free walkthrough. Send a quote request and we'll get back to you within a day.",
+  "lede": "We blow the leaves off your lawn and out of your beds, vacuum them into our leaf vacuum trailer and haul them away. No bags at the curb and nothing mulched into your grass. One flat price, quoted up front.",
+  "answer": "Yard Dog Landscapes is a family-owned crew in Longview, TX, founded in 2017 and rated 5.0 stars across {{REVIEWS}} Google reviews. We are the only company in the area with a leaf vacuum trailer. The crew blows leaves and pine straw off the lawn and out of the beds onto the street or another paved surface, then vacuums them up. The vacuum shreds the leaves about 10 to 1, so roughly 10 yards of leaves hauls off as 1 yard, with no bags and nothing mulched into the lawn. Leaf removal is one flat price, quoted up front after a free walkthrough. Send a quote request and we'll get back to you within a day.",
   "overview": [
     "Leaf removal here is not one Saturday with a rake. Pecans drop first, sweetgums let go in early November, and post oaks and water oaks hang on to dead leaves and drop them a few at a time into February. We time cleanups to what is actually falling on your lot, not to a date on the calendar.",
-    "Here is how a visit works. The crew blows leaves out of the lawn, the shrub beds and the rock beds onto the driveway or another paved surface. We pull the vacuum trailer up to that spot and vacuum everything up. The vacuum shreds as it goes, roughly 10 yards of leaves down to 1, so one trailer hauls off what would otherwise be a curb full of bags. Nothing gets blown into the neighbor's yard or the storm drain, and we re-edge the bed lines the leaves buried before we leave.",
-    "Because nothing gets bagged, you aren't paying for bags or for the time it takes to fill them. Leaf removal is straight labor, billed by the hour, and we tell you how many hours we expect before we start. On smaller lots the light early drop can go back into the lawn through the mower, which feeds the soil instead of filling the trailer."
+    "Here is how a visit works. The crew blows leaves out of the lawn, the shrub beds and the rock beds onto the street or another paved surface. We pull the leaf vacuum trailer up and vacuum everything up, and the hose reaches back into the yard for the piles the trailer can't get close to. The vacuum shreds as it goes, roughly 10 yards of leaves down to 1, so one trailer hauls off what would otherwise be a curb full of bags. Nothing is left in the street or blown into the neighbor's yard, and we re-edge the bed lines the leaves buried before we leave.",
+    "No other crew around here runs a leaf vacuum trailer. Most leaf jobs end with bags at the curb or leaves mulched into the grass, where a heavy drop mats down and smothers the lawn. Ours ends with the leaves gone. And because nothing gets bagged, you aren't paying for bags or for the time it takes to fill them. You get one flat price for the job before we start, so a deep drop or a long day doesn't change what you pay."
   ],
   "included": [
     "Full-property leaf and pine straw cleanup",
     "Leaves blown out of shrub beds and rock beds, bed lines re-edged",
     "Driveway, walk and patio clearing",
-    "Leaf vacuum trailer that shreds leaves about 10 to 1",
+    "The area's only leaf vacuum trailer, shredding leaves about 10 to 1",
     "Haul-off with no bags left at the curb",
     "Fall and winter passes timed to the drop",
     "Post-storm cleanups",
@@ -26,19 +26,19 @@
   "process": [
     {
       "title": "Walk the lot",
-      "text": "We look at the trees, the beds and how much is already down, then send a written estimate of the hours, usually within a day."
+      "text": "We look at the trees, the beds and how much is already down, then send one flat price in writing, usually within a day."
     },
     {
       "title": "Plan the passes",
       "text": "Most lots need a pass in mid-November, another in mid-December and a last one before spring green-up. Heavy canopy over St. Augustine can need weekly clearing for three or four weeks."
     },
     {
-      "title": "Blow it to the drive",
-      "text": "The crew blows leaves out of the lawn, the beds and the rock beds onto the driveway or another paved surface the trailer can reach."
+      "title": "Blow it all off",
+      "text": "The crew blows leaves out of the lawn, the beds and the rock beds onto the street or another paved surface the trailer can reach."
     },
     {
       "title": "Vacuum and haul",
-      "text": "We pull the vacuum trailer up, vacuum the leaves, shred them about 10 to 1 and haul them off. No bags."
+      "text": "We pull the leaf vacuum trailer up, vacuum the leaves, shred them about 10 to 1 and haul them away. No bags, nothing mulched in."
     },
     {
       "title": "Clean up the edges",
@@ -46,16 +46,16 @@
     }
   ],
   "price": {
-    "range": "By the hour",
-    "unit": "hours estimated up front",
-    "note": "Leaf removal is straight labor. We bill by the hour, and after a free walkthrough you get a written estimate of how many hours the job should take. No bag fees.",
+    "range": "Flat rate",
+    "unit": "quoted up front",
+    "note": "Leaf removal is one flat price for the job. After a free walkthrough you get it in writing before we start. No bag fees and no hourly meter running.",
     "factors": [
       "Lot size",
       "Number and type of trees",
       "How deep the leaves have piled",
       "Beds and rock beds to clear",
       "Number of passes through the season",
-      "How far the leaves are from the driveway"
+      "How far the leaves are from the street or drive"
     ]
   },
   "timing": "Removal starts in the first half of November, when the sweetgums let go and the volume roughly triples in a few days. Plan on another pass in mid-December and a last one before spring green-up, because post oaks and water oaks drop into February. Before November, the light drop is usually better mulched into the lawn with the mower.",
@@ -69,7 +69,11 @@
   "faq": [
     {
       "q": "How much does leaf removal cost in Longview, TX?",
-      "a": "We bill leaf removal by the hour. It is straight labor, with no bag fees. After a free walkthrough you get a written estimate of how many hours your lot should take, based on lot size, how many trees you have, how deep the leaves are and how many beds need clearing. Send a quote request to set it up."
+      "a": "Leaf removal is one flat price for the job, quoted up front. There are no bag fees and no hourly meter. After a free walkthrough you get a written price based on lot size, how many trees you have, how deep the leaves are and how many beds need clearing. Send a quote request to set it up."
+    },
+    {
+      "q": "Is there a leaf vacuum service near me in East Texas?",
+      "a": "Yes. Yard Dog is the only company in the Longview area with a leaf vacuum trailer. We blow your leaves off the lawn and out of the beds, vacuum them up and haul them away, with no bags and nothing mulched into the grass. We work Longview, White Oak, Kilgore, Lake Cherokee, Gladewater, Hallsville, Marshall, Tyler and the rest of East Texas."
     },
     {
       "q": "When should leaves be removed in East Texas?",
@@ -85,11 +89,11 @@
     },
     {
       "q": "Do you bag the leaves?",
-      "a": "No. We vacuum them. The crew blows the leaves onto your driveway or another paved surface, and we vacuum them into our trailer and haul them off. The vacuum shreds them about 10 to 1, so roughly 10 yards of leaves leaves your property as 1 yard. We don't blow leaves into the street, the storm drain or the neighbor's yard. Pine straw is the one exception: it makes good mulch, so if you want it kept in the beds, we leave it there and only clear it off the lawn."
+      "a": "No. We vacuum them. We are the only crew in the area with a leaf vacuum trailer. The crew blows the leaves onto the street or another paved surface, and we vacuum them into our trailer and haul them away. The vacuum shreds them about 10 to 1, so roughly 10 yards of leaves leaves your property as 1 yard. Nothing is left in the street or blown into the neighbor's yard. Pine straw is the one exception: it makes good mulch, so if you want it kept in the beds, we leave it there and only clear it off the lawn."
     },
     {
       "q": "Do I need a driveway for the leaf vacuum?",
-      "a": "It helps. We blow the leaves onto a driveway or another paved surface where the trailer can pull up. On the walkthrough we look at where the trailer can reach and plan the job around it, and that is part of the hour estimate we give you."
+      "a": "It helps, but you don't need one. We blow the leaves onto the street or another paved surface where the trailer can pull up, and the vacuum hose reaches piles out in the yard. On the walkthrough we look at where the trailer can reach and plan the job around it, and that is built into your flat price."
     }
   ],
   "related": [
@@ -104,8 +108,18 @@
   "town_template": {
     "h1": "Leaf removal in {town}",
     "title": "Leaf Removal in {town}, TX | Leaf Vacuum Service | Yard Dog",
-    "meta": "Leaf removal in {town}, TX with a leaf vacuum trailer: blown to the drive, shredded 10 to 1 and hauled off. No bags. Billed by the hour.",
-    "lede": "Fall and winter leaf cleanups in {town}, blown to the drive, vacuumed up and hauled off. No bags, billed by the hour.",
-    "answer": "Yard Dog Landscapes is a family-owned crew based in Longview that does leaf removal in {town} and around {county}. Founded in 2017, we hold a 5.0 rating across {{REVIEWS}} Google reviews. We blow leaves and pine straw out of lawns and beds onto a paved surface, vacuum them into our trailer, which shreds them about 10 to 1, and haul them off with no bags. Leaf removal is billed by the hour, with an estimate of the hours up front after a free walkthrough. Send a quote request and we'll get back to you within a day."
+    "meta": "Leaf removal in {town}, TX with the area's only leaf vacuum trailer: blown off, vacuumed up and hauled away. No bags, one flat price.",
+    "lede": "Fall and winter leaf cleanups in {town}: blown off the lawn and beds, vacuumed up and hauled away. No bags, one flat price.",
+    "answer": "Yard Dog Landscapes is a family-owned crew based in Longview that does leaf removal in {town} and around {county}. Founded in 2017, we hold a 5.0 rating across {{REVIEWS}} Google reviews. We are the only company in the area with a leaf vacuum trailer. We blow leaves and pine straw out of lawns and beds onto the street or another paved surface, vacuum them into our trailer, which shreds them about 10 to 1, and haul them off with no bags. Leaf removal is one flat price, quoted up front after a free walkthrough. Send a quote request and we'll get back to you within a day."
+  },
+  "video": {
+    "file": "leaf-vacuum-cleanup-east-texas",
+    "title": "Yard Dog leaf vacuum trailer at work in East Texas",
+    "desc": "The Yard Dog crew blows oak leaves out of a backyard, then vacuums them up with the leaf vacuum trailer and hauls them away. No bags.",
+    "cap": "Blow, vacuum, haul away. Our leaf vacuum trailer at work.",
+    "date": "2026-01-14",
+    "w": 720,
+    "h": 1280,
+    "duration": 6.7
   }
 }

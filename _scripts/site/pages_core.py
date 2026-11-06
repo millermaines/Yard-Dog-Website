@@ -118,12 +118,14 @@ JOB_LIST = [
     ('flagstone', None, [('Hardscaping', 'hardscaping')]),
     ('woodwall', None, [('Retaining walls', 'retaining-walls')]),
     ('beds', None, [('Flower bed installation', 'flower-bed-installation'), ('Mulch installation', 'mulch-installation')]),
+    ('leaves', None, [('Leaf removal', 'leaf-removal'), ('Lawn maintenance', 'lawn-maintenance')]),
     ('lawn', None, [('Lawn maintenance', 'lawn-maintenance'), ('Lawn care in Longview', 'lawn-maintenance-longview-tx')]),
 ]
 EXTRA_JOB_TEXT = {
     'flagstone': ('Flagstone patio with stone border', 'May 2026', 'Bare ground built up with fabric and a crushed stone base into a flagstone patio framed by a clean stone border.'),
     'woodwall': ('Wood-to-block retaining wall', '', 'A failing double timber wall along a privacy fence torn out and rebuilt in segmental block with gravel drainage and capstones.'),
     'beds': ('Foundation beds & sandstone edging', 'May 2026', 'Four beds around one home: new sandstone block edging, black mulch, knockout roses, boxwoods, ferns and salvia, with the hydrangeas kept under the big tree.'),
+    'leaves': ('Leaf vacuum cleanup', 'January 2026', 'A backyard buried in oak leaves, blown into piles, vacuumed up with our leaf vacuum trailer and hauled away. No bags and nothing mulched into the lawn.'),
     'lawn': ('Weekly lawn maintenance', 'Every week', 'Mowing, edging, trimming and blow-off on weekly and bi-weekly routes. Same crew every visit.'),
 }
 

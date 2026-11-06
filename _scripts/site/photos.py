@@ -56,6 +56,8 @@ JOBS = {
                       services=['retaining-walls']),
     'lawn':      dict(title='Weekly lawn maintenance', place='East Texas', town=None, date='',
                       services=['lawn-maintenance']),
+    'leaves':    dict(title='Leaf vacuum cleanup', place='East Texas', town=None, date='2026-01',
+                      services=['leaf-removal']),
     'more':      dict(title='', place='East Texas', town=None, date='', services=[]),
 }
 
@@ -78,8 +80,7 @@ EXTRA = {
     'front-roses-after': ['hedge-trimming', 'tree-shrub-care'],
     'side-hydrangeas-after': ['tree-shrub-care'],
     'back-fence-after': [], 'deck-after': [],
-    # lawn crew blowing = leaf/debris cleanup
-    'd:crew-dsc04179': ['leaf-removal'], 'd:crew-dsc04197': ['leaf-removal'], 'st:mow_022': ['leaf-removal'],
+    # (lawn blow-off shots no longer tagged leaf-removal: the leaf page uses real leaf vacuum stills)
 }
 # Services for the loose "more" photos.
 MORE = {
@@ -92,7 +93,7 @@ MORE = {
 }
 # Gallery filter group for Our Work.
 GROUP = {'walkway': 'patios', 'whiteoak': 'patios', 'checker': 'patios', 'flagstone': 'patios', 'rvpad': 'walls',
-         'driveway': 'walls', 'woodwall': 'walls', 'beds': 'beds', 'lawn': 'lawn'}
+         'driveway': 'walls', 'woodwall': 'walls', 'beds': 'beds', 'lawn': 'lawn', 'leaves': 'lawn'}
 MOREGROUP = {'img-3738': 'beds', 'img-3525': 'patios', 'img-3737': 'patios', 'img-3523': 'patios', 'img-3526': 'beds',
              '6': 'walls', '4': 'patios', 'img-3736': 'beds', '3': 'beds', '5': 'beds', '11': 'other', 'img-3454': 'patios',
              'img-3680': 'patios', 'img-3683': 'patios', 'img-3452': 'beds', '1': 'beds'}

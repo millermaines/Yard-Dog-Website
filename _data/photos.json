@@ -1456,8 +1456,7 @@
   "date": "",
   "kind": "in-progress",
   "services": [
-   "lawn-maintenance",
-   "leaf-removal"
+   "lawn-maintenance"
   ],
   "group": "lawn",
   "alt": "Blowing off clippings, East Texas"
@@ -1603,8 +1602,7 @@
   "date": "",
   "kind": "in-progress",
   "services": [
-   "lawn-maintenance",
-   "leaf-removal"
+   "lawn-maintenance"
   ],
   "group": "lawn",
   "alt": "Blowing off the driveway, East Texas"
@@ -2043,8 +2041,7 @@
   "date": "",
   "kind": "in-progress",
   "services": [
-   "lawn-maintenance",
-   "leaf-removal"
+   "lawn-maintenance"
   ],
   "group": "lawn",
   "alt": "Blowing off the walks, East Texas"
@@ -2701,5 +2698,180 @@
   ],
   "group": "walls",
   "alt": "Final rake along the timber wall, White Oak, TX"
+ },
+ {
+  "key": "st:leaf_blow_trailer",
+  "file": "leaf-vacuum-cleanup-east-texas-01.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Blowing leaves toward the leaf vacuum trailer",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Blowing leaves toward the leaf vacuum trailer, East Texas",
+  "pos": "50% 18%"
+ },
+ {
+  "key": "st:leaf_vac_pile",
+  "file": "leaf-vacuum-cleanup-east-texas-02.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Vacuuming up a pile of oak leaves, no bags",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Vacuuming up a pile of oak leaves, no bags, East Texas",
+  "pos": "50% 45%"
+ },
+ {
+  "key": "st:leaf_drone",
+  "file": "leaf-vacuum-cleanup-east-texas-03.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "From above: the vacuum hose pulling leaves into the trailer",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "From above: the vacuum hose pulling leaves into the trailer, East Texas",
+  "pos": "50% 85%"
+ },
+ {
+  "key": "st:leaf_blow_wave",
+  "file": "leaf-vacuum-cleanup-east-texas-04.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Backpack blower pushing a wave of oak leaves across the lawn",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Backpack blower pushing a wave of oak leaves across the lawn, East Texas",
+  "pos": "50% 30%"
+ },
+ {
+  "key": "st:leaf_vac_green",
+  "file": "leaf-vacuum-cleanup-east-texas-05.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Our leaf vacuum trailer sucking up the leaves",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Our leaf vacuum trailer sucking up the leaves, East Texas",
+  "pos": "50% 4%"
+ },
+ {
+  "key": "st:leaf_wide1",
+  "file": "leaf-vacuum-cleanup-east-texas-06.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Clearing a backyard buried in oak leaves",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Clearing a backyard buried in oak leaves, East Texas",
+  "pos": "50% 60%"
+ },
+ {
+  "key": "st:leaf_blow_house",
+  "file": "leaf-vacuum-cleanup-east-texas-07.webp",
+  "w": 900,
+  "h": 1600,
+  "gw": 461,
+  "gh": 820,
+  "tw": 480,
+  "th": 853,
+  "mw": 800,
+  "mh": 1422,
+  "caption": "Blowing leaves out from under the trees",
+  "place": "East Texas",
+  "town": null,
+  "job": "leaves",
+  "title": "Leaf vacuum cleanup",
+  "date": "2026-01",
+  "kind": "in-progress",
+  "services": [
+   "leaf-removal"
+  ],
+  "group": "lawn",
+  "alt": "Blowing leaves out from under the trees, East Texas",
+  "pos": "50% 45%"
  }
 ]

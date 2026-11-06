@@ -115,8 +115,17 @@ def service_page(slug):
             f'<h2 class="h2">What we do</h2>' + ''.join(f'<p>{e(p)}</p>' for p in s['overview']) +
             '<ul class="chk big">' + ''.join(f'<li>{e(x)}</li>' for x in s['included']) + '</ul></div>'
             f'<aside>{pricecard(s)}</aside></div></section>')
-    body += (f'<section class="sec stone"><div class="w"><h2 class="h2">How the job goes</h2>'
-             f'<p class="sub">{e(s["timing"])}</p><div style="margin-top:36px">{steps_html(s)}</div></div></section>')
+    v = s.get('video')
+    if v:   # a short muted crew clip beside the steps (no burned-in text; plays via site.js data-auto)
+        st = '<ol class="steps light col">' + ''.join(f'<li><h3>{e(x["title"])}</h3><p>{e(x["text"])}</p></li>' for x in s['process']) + '</ol>'
+        vid = (f'<figure class="pvid"><video data-auto src="/media/projects/{v["file"]}.mp4" poster="/media/projects/{v["file"]}.jpg" muted loop playsinline preload="none" '
+               f'width="{v["w"]}" height="{v["h"]}" title="{e(v["title"])}" aria-label="{e(v["title"])}"></video>'
+               f'<figcaption>{e(v["cap"])}</figcaption></figure>')
+        body += (f'<section class="sec stone"><div class="w"><h2 class="h2">How the job goes</h2>'
+                 f'<p class="sub">{e(s["timing"])}</p><div class="pbuild">{vid}{st}</div></div></section>')
+    else:
+        body += (f'<section class="sec stone"><div class="w"><h2 class="h2">How the job goes</h2>'
+                 f'<p class="sub">{e(s["timing"])}</p><div style="margin-top:36px">{steps_html(s)}</div></div></section>')
     if gallery:
         body += (f'<section class="sec"><div class="w"><div class="head"><div><h2 class="h2">Our {e(s["short"])} work</h2>'
                  f'<p class="sub">Real jobs by our crew, with where they were built. Tap any photo to see the whole project.</p></div>'
@@ -145,6 +154,11 @@ def service_page(slug):
     body += quote_section(s)
     ld = [business_node(), service_ld(s, url, imgs=([hk] if hk else []) + gallery), faq_ld(qas),
           crumbs_ld([('Services', 'services'), (s['name'], slug)]), webpage_ld(slug, s['title'], s['meta'], abs_url(hero_bg(hk)) if hk else None)]
+    if v:
+        ld.append({'@context': 'https://schema.org', '@type': 'VideoObject', '@id': url + '#video', 'name': v['title'], 'description': v['desc'],
+                   'thumbnailUrl': [BASE + f"/media/projects/{v['file']}.jpg"], 'contentUrl': BASE + f"/media/projects/{v['file']}.mp4",
+                   'uploadDate': f"{v['date']}T12:00:00-06:00", 'duration': f"PT{round(v['duration'])}S", 'width': v['w'], 'height': v['h'],
+                   'inLanguage': 'en-US', 'isFamilyFriendly': True, 'publisher': {'@id': BIZ_ID}, 'creator': {'@id': BIZ_ID}, 'mainEntityOfPage': url})
     page(slug, s['title'], s['meta'], body, ld, og_img=hero_bg(hk) if hk else None, extra_js='<script src="/quote.js?v=1" defer></script>')
 
 # ======================================================================= town hubs

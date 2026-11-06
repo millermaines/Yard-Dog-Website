@@ -865,6 +865,50 @@ html.menu-open .mcta{display:none}
 .card:focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .hero.pjh h1{font-size:clamp(42px,5.2vw,74px);line-height:.92}
 @media (max-width:480px){.hero.pjh h1{font-size:clamp(36px,10.4vw,46px)}}
+/* seasonal booking pop-up (built by site.js): the page stays scrollable behind a light blur */
+.promo{position:fixed;inset:0;z-index:45;display:grid;place-items:center;padding:24px 16px;background:rgba(13,13,13,.3);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);opacity:0;transition:opacity .28s ease}
+.promo.on{opacity:1}
+.promo .pc{position:relative;isolation:isolate;width:min(760px,100%);background:#131313;color:#fff;border-radius:18px;padding:28px 28px 26px;overflow:hidden;
+ box-shadow:0 40px 90px -30px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.07);transform:translateY(22px) scale(.98);transition:transform .5s cubic-bezier(.2,.9,.25,1.12)}
+.promo.on .pc{transform:none}
+.promo .pc:focus{outline:none}
+.promo .pc::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(440px 260px at 0% 0%,rgba(209,42,55,.34),transparent 70%),radial-gradient(380px 240px at 100% 100%,rgba(209,42,55,.16),transparent 70%)}
+.promo .px{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.09);color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .15s,transform .15s}
+.promo .px:hover{background:rgba(255,255,255,.18)}
+.promo .px:active{transform:scale(.92)}
+.promo .px:focus-visible,.promo .po:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.promo .phd{display:flex;align-items:center;gap:14px;margin-right:48px}
+.promo .phd img{width:52px;height:auto;flex:none;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}
+.promo h2{margin:0;font:400 clamp(30px,4.2vw,44px)/.95 var(--display);text-transform:uppercase;letter-spacing:.005em}
+.promo .ps{margin:12px 0 22px;max-width:56ch;color:#c4c4c0;font:500 15px/1.5 var(--sans)}
+.promo .pg2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.promo .po{display:flex;flex-direction:column;background:#1c1c1c;border-radius:14px;overflow:hidden;color:#fff;text-decoration:none;box-shadow:0 0 0 1px rgba(255,255,255,.07);transition:box-shadow .2s,transform .2s}
+.promo .po:hover{box-shadow:0 0 0 1px rgba(209,42,55,.7),0 18px 40px -18px rgba(209,42,55,.55);transform:translateY(-2px)}
+.promo .po:active{transform:translateY(0)}
+.promo .po .im{aspect-ratio:4/3;overflow:hidden;background:#222}
+.promo .po img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.promo .po:hover img{transform:scale(1.04)}
+.promo .po .tx{flex:1;display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;margin:0;border:0}
+.promo .po h3{margin:0;font:400 28px/1 var(--display);text-transform:uppercase}
+.promo .po p{margin:0 0 6px;color:#c4c4c0;font:500 14px/1.45 var(--sans)}
+.promo .po .btn{margin-top:auto;align-self:flex-start;padding:13px 20px;font-size:14.5px}
+.promo .po:hover .btn{background:var(--red-dk)}
+@media (max-width:640px){
+ .promo{place-items:end stretch;padding:0}
+ .promo .pc{width:100%;border-radius:18px 18px 0 0;padding:20px 16px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(60px)}
+ .promo .phd{gap:10px}
+ .promo .phd img{width:38px}
+ .promo .ps{margin:8px 0 14px;font-size:14px}
+ .promo .pg2{grid-template-columns:1fr;gap:10px}
+ .promo .po{flex-direction:row}
+ .promo .po .im{width:112px;flex:none;aspect-ratio:auto;align-self:stretch;min-height:132px}
+ .promo .pc{max-height:calc(100dvh - 24px);overflow-y:auto;overscroll-behavior:contain}
+ .promo .po .tx{padding:12px 14px 14px;gap:4px}
+ .promo .po h3{font-size:22px}
+ .promo .po p{font-size:13px;margin-bottom:6px}
+ .promo .po .btn{padding:10px 15px;font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){.promo,.promo .pc,.promo .po,.promo .po img{transition:none}.promo .pc{transform:none}}
 </style>
 <meta property="og:video" content="https://www.yarddoglandscapes.com/media/projects/boat-rv-pad-white-oak-tx-walkthrough.mp4"><meta property="og:video:type" content="video/mp4"><meta property="og:video:width" content="720"><meta property="og:video:height" content="1280">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": ["LocalBusiness", "HomeAndConstructionBusiness"], "name": "Yard Dog Landscapes", "image": "https://www.yarddoglandscapes.com/brand_assets/Yard%20Dog%20Logo.png", "telephone": "+1-903-844-6877", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "143", "bestRating": "5"}, "email": "info@yarddoglandscapes.com", "address": {"@type": "PostalAddress", "addressLocality": "Longview", "addressRegion": "TX", "addressCountry": "US"}, "url": "https://www.yarddoglandscapes.com", "openingHours": ["Mo-Fr 07:00-17:00"], "areaServed": ["Longview, TX", "White Oak, TX", "Kilgore, TX", "Lake Cherokee, TX", "Gladewater, TX", "Hallsville, TX", "Marshall, TX", "Tyler, TX", "Henderson, TX", "Gilmer, TX", "Big Sandy, TX", "Carthage, TX", "Nacogdoches, TX"], "priceRange": "$$", "@id": "https://www.yarddoglandscapes.com/#business", "foundingDate": "2017", "founder": {"@type": "Person", "@id": "https://www.yarddoglandscapes.com/#miller", "name": "Miller Maines", "jobTitle": "Owner"}, "geo": {"@type": "GeoCoordinates", "latitude": 32.4385084, "longitude": -94.8481025}, "knowsAbout": ["Landscaping", "Lawn care", "Lawn maintenance", "Retaining walls", "Hardscaping", "Drainage and grading", "Sod installation", "Mulch installation", "Fertilization", "Flower bed installation", "Hedge trimming", "Tree planting", "Tree and shrub care", "Leaf removal", "Christmas light installation", "Bermuda grass", "St. Augustine grass", "East Texas landscaping", "Gregg County lawn care"], "contactPoint": {"@type": "ContactPoint", "telephone": "+1-903-844-6877", "contactType": "customer service", "areaServed": "US", "availableLanguage": "English"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Landscaping & Lawn Care Services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landscaping", "url": "https://www.yarddoglandscapes.com/landscaping"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lawn Maintenance", "url": "https://www.yarddoglandscapes.com/lawn-maintenance"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mulch Installation", "url": "https://www.yarddoglandscapes.com/mulch-installation"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sod Installation", "url": "https://www.yarddoglandscapes.com/sod-installation"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardscaping", "url": "https://www.yarddoglandscapes.com/hardscaping"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retaining Walls", "url": "https://www.yarddoglandscapes.com/retaining-walls"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drainage & Grading", "url": "https://www.yarddoglandscapes.com/drainage"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fertilization", "url": "https://www.yarddoglandscapes.com/fertilization"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Flower Bed Installation", "url": "https://www.yarddoglandscapes.com/flower-bed-installation"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hedge Trimming", "url": "https://www.yarddoglandscapes.com/hedge-trimming"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree Planting", "url": "https://www.yarddoglandscapes.com/tree-planting"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree & Shrub Care", "url": "https://www.yarddoglandscapes.com/tree-shrub-care"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leaf Removal", "url": "https://www.yarddoglandscapes.com/leaf-removal"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Christmas Light Installation", "url": "https://www.yarddoglandscapes.com/christmas-lights"}}]}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "17:00"}], "logo": "https://www.yarddoglandscapes.com/brand_assets/Yard%20Dog%20Logo.png", "sameAs": ["https://www.facebook.com/yarddoglandscapes", "https://www.instagram.com/yarddoglandscape", "https://www.instagram.com/yarddoglawnlights", "https://www.youtube.com/millermaines", "https://www.google.com/maps?cid=3450977957239277557"], "hasMap": "https://www.google.com/maps?cid=3450977957239277557", "slogan": "Sit. Stay. Perfect Landscape."}</script>
@@ -927,6 +971,6 @@ html.menu-open .mcta{display:none}
 </div><div class="bot"><span>&copy; 2026 Yard Dog Landscapes. Family-owned and fully insured.</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></span></div></div></footer>
 <div class="mcta"><a class="q" href="/contact">Get a free quote</a></div>
 <script src="/yd-ads.js" defer></script>
-<script src="/quote.js?v=1" defer></script><script src="/gallery.js?v=5d217109" defer></script><script src="/site.js?v=43e3f243" defer></script>
+<script src="/quote.js?v=1" defer></script><script src="/gallery.js?v=5d217109" defer></script><script src="/site.js?v=9864086b" defer></script>
 </body>
 </html>

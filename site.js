@@ -75,7 +75,7 @@
         '<div class="phd"><img src="/img/promo/yard-dog-head.webp" width="96" height="111" alt=""><h2 id="promoH">Booking now for November &amp; December</h2></div>' +
         '<p class="ps">Leaf removal and Christmas lights are both on the schedule. Pick one for a free quote and we\'ll get back to you within a day.</p>' +
         '<div class="pg2">' +
-        '<a class="po" href="/leaf-removal#q" data-s="leaf-removal"><div class="im"><img src="/img/promo/leaf-vacuum-trailer.webp" width="640" height="480" alt="Yard Dog leaf vacuum trailer sucking up leaves"></div>' +
+        '<a class="po" href="/leaf-removal#q" data-s="leaf-removal"><div class="im"><img src="/img/promo/leaf-vacuum-trailer-wide.webp" width="800" height="600" alt="Yard Dog crew at the leaf vacuum trailer, loaded with leaves"></div>' +
         '<div class="tx"><h3>Leaf removal</h3><p>Blown off, vacuumed up and hauled away. The only leaf vacuum trailer in the area.</p><span class="btn">Get a leaf quote</span></div></a>' +
         '<a class="po" href="/christmas-lights#q" data-s="christmas-lights"><div class="im"><img src="/img/promo/christmas-lights-roofline.webp" width="640" height="480" alt="Warm white Christmas lights outlining a roofline at night"></div>' +
         '<div class="tx"><h3>Christmas lights</h3><p>Custom-cut C9s on your roofline. We install them, take them down and store them.</p><span class="btn">Get a lights quote</span></div></a>' +
@@ -84,8 +84,8 @@
       var card = $('.pc', w);
       function close() {
         document.removeEventListener('keydown', onKey);
-        w.classList.remove('on');
-        setTimeout(function () { if (w.parentNode) w.parentNode.removeChild(w); }, reduce ? 0 : 300);
+        w.classList.remove('on'); w.classList.add('out');   // slides back down, then the blur fades (CSS)
+        setTimeout(function () { if (w.parentNode) w.parentNode.removeChild(w); }, reduce ? 0 : 460);
         if (back && back.focus && document.contains(back)) try { back.focus({ preventScroll: true }); } catch (e) {}
       }
       function onKey(e) {

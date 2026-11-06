@@ -103,7 +103,7 @@
    },
    {
     "q": "Do you aerate lawns in Kilgore?",
-    "a": "Yes. Core aeration is part of the program for compacted lawns and goes down between late August and mid-September, with the feeding right behind it. We look at the lawn and a soil probe on the walkthrough to see whether yours is packed hard enough to need it."
+    "a": "Yes. Core aeration is part of the program for compacted lawns and goes down between late August and mid-September, with the feeding right behind it. We look at the lawn on the walkthrough to see whether yours is packed hard enough to need it."
    }
   ]
  },
@@ -115,7 +115,7 @@
   "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, installs flower beds in Kilgore. New beds are priced with our planting work, which most often runs $900 to $3,600. A small refresh of an existing bed starts at a few hundred dollars. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew plants every bed.",
   "local_h": "Choosing plants for Kilgore's light and low pH",
   "local": [
-   "Kilgore beds are good ground for azaleas, camellias, gardenias and hydrangeas, because years of pine needles have left the soil on the acidic side. We used that when we built two new azalea beds beside a flagstone walkway in Kilgore in September 2026. Plants that want richer, more neutral soil have a harder time here unless we amend the bed. So the first question at the walkthrough is what the soil and the sun will actually let you grow.",
+   "Kilgore beds are good ground for azaleas, camellias, gardenias and hydrangeas, because years of pine needles have left the soil on the acidic side. In September 2026 we planted two new azalea beds beside a flagstone walkway in Kilgore. Plants that want richer, more neutral soil have a harder time here unless we amend the bed. So the first question at the walkthrough is what the soil and the sun will actually let you grow.",
    "Light is the second question, and under pecans and pines it is often limited. We check how many hours of sun a bed gets, how it drains after a rain and what you want to see from the street and the porch. Shade-tolerant plantings go in the dim corners, and sun-lovers go where the canopy opens. Heat lovers like vinca wait until the soil is truly warm, usually mid-May, because a cool, wet spring rots them.",
    "Sand drains fast, so the bed needs help holding moisture. We cut the edge, pull weeds by the root, loosen the top of the soil and work in compost. We also set the bed so water drains away from the house, which matters on Kilgore's flat lots where water tends to pond. Edging can be stone, steel or a natural cut. Plants go in with real spacing so air can move between them, then mulch goes down at 1 to 1.5 inches, pulled back off the stems.",
    "The best planting window is fall, September through November, while the soil is warm and the air is cooling. Early spring also works. Seasonal color rotates with the weather so the bed has something blooming most of the year. If you want to see the layout first, our $199 Flower Bed Preview gives you a rendering. When we finish, we clean up and walk you through watering, which is deep and less often rather than a little every day."
@@ -131,7 +131,7 @@
    },
    {
     "q": "Can you build a flower bed under my pecan tree?",
-    "a": "Often, yes, with care. The bed is cut and planted by hand around the surface roots, and we keep the soil work shallow so the tree's roots are not hurt. Shade plants suit the spot better than sun plants, and mulch is kept pulled back from the trunk."
+    "a": "Often, yes, with care. Surface roots limit how much we can dig, so the soil work stays shallow to keep from hurting the tree. Shade plants suit the spot better than sun plants, and mulch is kept pulled back from the trunk."
    },
    {
     "q": "When should I plant a new bed in Kilgore?",
@@ -151,8 +151,8 @@
   "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, builds patios, walkways and flagstone work in Kilgore. Most projects run $3,100 to $9,100, with a small patio or walkway at the low end. You get the exact number in a written, itemized estimate after we walk the site. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew builds the whole thing.",
   "local_h": "What we built in Kilgore this year, and why it will stay put",
   "local": [
-   "In April 2026 we took a worn-out Kilgore backyard off a covered brick porch and built a checkerboard concrete paver patio with gravel joints. The pavers are spaced instead of set tight, and the gravel in the gaps gives the checkerboard its look and lets rain soak through. Everything sits on a dug-out, compacted base, and the patio sits right off the porch where the old yard had worn down. Rain that reaches the joints drains down through the base instead of sheeting toward the house.",
-   "In September we built a 90-foot flagstone walkway with chopped stone borders, two new azalea beds and landscape lighting that runs all the way to the back porch. The month after, we added a round flagstone seating area onto that walk, framed in chopped stone and set in mortar. Together they show how a walk, lighting and a place to sit can be planned as one piece. Both jobs sit on the same kind of base as the patio.",
+   "In April 2026 we took a worn-out Kilgore backyard off a covered brick porch and built a checkerboard concrete paver patio with gravel joints. The pavers are spaced instead of set tight, and the gravel in the gaps gives the checkerboard its look and lets rain soak through. Everything sits on a dug-out, compacted base, and the patio sits right off the porch where the old yard had worn down. The checkerboard was laid out square to the porch before the first paver went down.",
+   "In September we built a 90-foot flagstone walkway with chopped stone borders, two new azalea beds and landscape lighting that runs all the way to the back porch. The month after, we added a round flagstone seating area onto that walk, framed in chopped stone and set in mortar. The customer came back for the seating area, and it ties into the walk. Each of these jobs is built on a compacted base.",
    "Kilgore's sandy ground is easy to dig, but sand shifts. A paver or flagstone set on a thin bed of sand over that will settle, rock and split. So we excavate to the right depth, lay and compact a crushed stone base, and set the pitch so water sheds away from the house. Flat lots with clay or hardpan underneath still pond after heavy storms, so we plan where roof water and runoff go before the first stone is set.",
    "Heavy canopy matters for hardscape too. Digging near a pecan or post oak means working around roots, and needles and leaves collect on any patio under pines. We talk through where they will land when we walk the site. Fire pits, seating walls, steps and borders can all be added. If you want to see it first, the $449 Hardscape Preview gives you layout renderings before we dig. Tell us how you use the space, and we size the surface to match."
   ],
@@ -175,7 +175,7 @@
    },
    {
     "q": "Can I add a fire pit or seating wall to my patio?",
-    "a": "Yes. Fire pits, outdoor fireplaces, seating walls, steps and chopped stone borders are all part of what we build. They add to the price, so we list them as separate lines in the written estimate. The Hardscape Preview can show the layout before any digging."
+    "a": "Yes. Fire pits, outdoor fireplaces, seating walls, steps and chopped stone borders are all part of what we build. They add to the price, and the written, itemized estimate shows what is included. The Hardscape Preview can show the layout before any digging."
    }
   ]
  },
@@ -188,7 +188,7 @@
   "local_h": "Keeping Kilgore hedges tight without cutting bare wood",
   "local": [
    "Kilgore's long, humid growing season keeps boxwoods, hollies and ligustrums pushing new growth from spring clear into fall. A foundation hedge trimmed once in the spring is shaggy by August and growing into window screens and across the walk. Most hedges here want two to three trims between spring and fall. June is the clean window for hollies and boxwoods, and we shape them often enough to stay tight without cutting back into bare wood that will not regrow.",
-   "Kilgore's acidic ground suits azaleas, and plenty of yards in town have them. They are the shrub that punishes bad timing. Azaleas and mophead hydrangeas set next year's buds on this year's stems within weeks of finishing their show, so a trim in July or later gives you a green bush with no color. Early to mid June is the last clean shot, and right after bloom is the only safe time. We check what each shrub is before a blade touches it.",
+   "Kilgore's acidic ground suits azaleas, and many East Texas yards have them. They are the shrub that punishes bad timing. Azaleas and mophead hydrangeas set next year's buds on this year's stems within weeks of finishing their show, so a trim in July or later gives you a green bush with no color. Early to mid June is the last clean shot, and right after bloom is the only safe time. We check what each shrub is before a blade touches it.",
    "Shrubs under the big trees grow lopsided, because they lean toward whatever light gets through. On a lot with pecans and pines overhead, we shape each hedge a little wider at the base so the lower branches keep their leaves, and we do not shear it into a flat box. Tarps go down first, since pine needles and pecan leaves tend to collect in the beds around the foundation. Every clipping is raked, blown out of the beds and hauled off.",
    "At the walkthrough we count the shrubs, check how overgrown they are and note which ones flower on old wood. Ligustrum and other hedges that got away from a past owner can take a hard rejuvenation cut, and we tell you honestly which ones will come back. Skip heavy shearing in late fall, because the tender regrowth burns brown in the first cold snap. We can put you on a recurring trim schedule or come back when you call."
   ],
@@ -211,7 +211,7 @@
    },
    {
     "q": "How often will my Kilgore hedges need a trim?",
-    "a": "Most want two to three trims between spring and fall, when they put on the most growth. We can set a recurring schedule or come back when you call. Hedges close to windows, walks and a downspout tend to need the earliest visit."
+    "a": "Most want two to three trims between spring and fall, when they put on the most growth. We can set a recurring schedule or come back when you call. Hedges close to windows and walks tend to look shaggy first."
    }
   ]
  },
@@ -259,7 +259,7 @@
   "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, designs and installs landscaping in Kilgore. Most planting projects run $900 to $3,600, and small refreshes start at a few hundred dollars. Every job begins with a free walkthrough and a written, itemized estimate. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew plants, edges and cleans up.",
   "local_h": "A Kilgore yard built around paths, shade and old trees",
   "local": [
-   "A recent Kilgore landscaping job started as a walkway. In September 2026 we built a 90-foot flagstone walkway with chopped stone borders, added two new azalea beds beside it and ran landscape lighting all the way to the back porch. The plantings and the path were planned together, so the beds sit where the walk bends and the lights fall where people actually step. That is how we like to approach a yard here: one plan, not three separate jobs.",
+   "A recent Kilgore landscaping job started as a walkway. In September 2026 we built a 90-foot flagstone walkway with chopped stone borders, added two new azalea beds beside it and ran landscape lighting all the way to the back porch. The walk, the two azalea beds along it and the lights on both sides went in as one job. That is how we like to approach a yard here: one plan, not three separate jobs.",
    "A lot of Kilgore design comes down to working with what is already overhead. A bed reshaped around an old pecan has to respect its roots, and a lawn that has given up under a canopy can become a mulched bed with shade plants. We plan for the light that is really there. The soil leans sandy and acidic, so we amend with compost to hold moisture and choose plants that like that ground, such as azaleas and camellias.",
    "Planting goes in at the right depth. Trees and shrubs are set with the root flare at grade, never buried, and the beds are cut with a clean edge, weeded by the root and finished with mulch or rock and stone borders. Fall is the best planting window here. From September to about Thanksgiving the soil stays warm while the air cools, so anything woody builds roots for months before it sees summer heat.",
    "Bigger plans can include flagstone stepping-stone paths, retaining walls or drainage fixes where the site calls for them. If you want to see it drawn first, a Design Preview gives you renderings before anything goes in the ground, and the full-property preview is $999, credited toward the install if you book within 90 days. When we finish, the crew hauls off debris, blows off the walks and drive, and walks you through watering the new plants."
@@ -271,7 +271,7 @@
    },
    {
     "q": "Can you add path lighting to a Kilgore landscaping project?",
-    "a": "Yes. The flagstone walkway we built in Kilgore in September 2026 had landscape lighting running to the back porch. We plan the fixtures with the layout so the light falls where you walk, and the lighting is priced into the same written estimate as the path and plantings."
+    "a": "Yes. The flagstone walkway we built in Kilgore in September 2026 had landscape lighting running to the back porch. We plan the fixtures with the layout so the light falls where you walk, and the lighting goes in the same written estimate as the path and plantings."
    },
    {
     "q": "What grows well in Kilgore's acidic, sandy soil?",
@@ -331,7 +331,7 @@
   "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, clears leaves and pine straw from Kilgore lots with the area's only leaf vacuum trailer. Removal is one flat price, quoted in writing after a free walkthrough, with no bag fees and no hourly meter running. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew works your lot every pass.",
   "local_h": "A pecan, post oak and pine drop, pass by pass",
   "local": [
-   "Kilgore has one of the heavier leaf loads in our service area, because so many lots sit under pecans, post oaks and loblolly pines. Removal starts in the first half of November, when the volume roughly triples in a few days. Pine needles land on top of the oak and pecan leaves, and pecans add husks and small twigs to the mix. A mower bag cannot keep up with that, and a leaf blower alone just moves it to the neighbor's side of the fence.",
+   "Kilgore carries a heavy leaf load, because so many older lots sit under pecans, post oaks and loblolly pines. Removal starts in the first half of November, when the volume roughly triples in a few days. Pine needles land on top of the oak and pecan leaves, and pecans add husks and small twigs to the mix. A mower bag cannot keep up with that, and a leaf blower alone just moves it to the neighbor's side of the fence.",
    "On a wooded Kilgore lot with St. Augustine underneath, timing matters more than looks. St. Augustine grows from surface runners and stays partly green into the cold months, so a wet leaf mat smothers the very part of the plant that has to survive winter. That mat also sets up large patch, which shows up as dead circles in March that people blame on the cold. Heavy canopy over St. Augustine can need weekly clearing for three or four weeks.",
    "Here is how a pass works. The crew blows leaves out of the lawn, the shrub beds and the rock beds onto the street or another paved surface the trailer can reach. We pull the leaf vacuum trailer up, vacuum it all, shred it about 10 to 1 and haul it away. No bags sit at the curb and nothing gets mulched in. Then we re-edge bed lines the leaves buried and clear the drive, walks and patio, and we can clear exterior gutters on the same visit.",
    "Most Kilgore lots need a pass in mid-November, another in mid-December and a last one before spring green-up, since post oaks hold leaves and drop them into February. Before November the light drop is better mulched into the lawn with the mower. The flat price follows lot size, number of trees, how deep the leaves are, how many beds need clearing and how many passes we plan. After a storm, we do post-storm cleanups too."
@@ -406,7 +406,7 @@
    "Sand behaves differently from clay when you cut into a slope. Kilgore's sandy soil erodes and slumps once it is cut, and it keeps sliding until something holds it. A wall here has to do more than stack blocks. It needs a compacted base set below grade, gravel backfill and weep outlets that let water out before it undercuts the footing. Skip any of those and the first hard rain finds the weak spot.",
    "Water is what moves walls, even in sandy ground. Kilgore's topsoil drains fast, but it often sits on clay or a hardpan layer, so water reaches that layer and runs sideways behind the wall. We put a gravel chimney and a perforated drain pipe at the bottom of every wall, with an outlet that actually leads somewhere. On taller walls we add geogrid reinforcement. If a wall is tall enough to need a stamped engineering plan, we tell you at the walkthrough.",
    "Not every slope needs a wall. If the grade is gentle, a regrade with plants or sod to hold the soil may be enough. Once the ground drops more than you can mow, or soil keeps washing onto a walk or drive, a wall is usually the fix. We measure the grade change and give you both options when both make sense. Short seating walls and terraced steps are another way to use a drop in a Kilgore yard.",
-   "We build segmental block, natural stone, boulder and timber walls, and we rebuild ones that are leaning or failing. Height, linear footage, material, excavation, drainage and geogrid drive the written estimate. A dry stretch is the best time to dig and compact. If a bank near your drive is already washing out, do not wait for the next stretch of spring rain. Walls built with patios or beds are priced as one plan."
+   "We build segmental block, natural stone, boulder and timber walls, and we rebuild ones that are leaning or failing. Height, linear footage, material, excavation, drainage and geogrid drive the written estimate. A dry stretch is the best time to dig and compact. If a bank near your drive is already washing out, do not wait for the next stretch of spring rain. A wall that goes in with a patio or beds can be part of the same plan."
   ],
   "faq": [
    {
@@ -436,7 +436,7 @@
   "meta": "Sod installation in Kilgore, TX with St. Augustine for the shade and bermuda for full sun. Most projects run $1,500 to $4,700, priced by the pallet.",
   "h1": "New sod for Kilgore yards, shade or full sun",
   "lede": "St. Augustine where the canopy covers the yard, bermuda only where it gets full sun, laid on prepared ground with a written watering schedule.",
-  "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, installs sod in Kilgore. Most projects fall between $1,500 and $4,700, priced by the pallet on the square footage you are covering. That includes stripping old turf, grading, compost, the sod itself and starter fertilizer. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew prepares and lays every yard.",
+  "answer": "Yard Dog Landscapes, a family-owned and fully insured company based in Longview, installs sod in Kilgore. Most projects fall between $1,500 and $4,700, priced by the pallet on the square footage you are covering. Stripping old turf, grading and compost are part of the job, and starter fertilizer goes down at install. We are rated 5.0 on Google across {{REVIEWS}} reviews, and the same crew prepares and lays every yard.",
   "local_h": "Picking the right grass under Kilgore's trees",
   "local": [
    "In Kilgore the sod question is rarely about the sod. It is about how much light actually reaches the ground. We walk the yard and note where the summer sun falls, not where it falls in January, when the pecans and post oaks are bare and every lot looks sunnier than it is. Then we recommend a grass, or a split, for each area. St. Augustine goes where the canopy covers the yard, and bermuda goes only where it gets full sun.",
@@ -512,7 +512,7 @@
   "local_h": "Pruning shrubs and small trees in the shade of big ones",
   "local": [
    "Under Kilgore's mature pecans and post oaks, the understory takes a beating. Shrubs and small trees compete for light, lean toward every gap in the canopy and end up lopsided. We prune for shape and health, cut out dead wood and open up the plants that have grown into a wall or a roofline. On a typical Kilgore lot that means a walk around the yard, a plant-by-plant list of what needs work and what should be left alone, and a written quote.",
-   "Crepe myrtles are the plant we see most often in need of rescue. We thin them in February while they are dormant and before the buds break, and we do not top them. Topping leaves knuckles and a crop of weak shoots that flop under the weight of the blooms. A tree already topped can be recovered, but it takes two or three winters, so we plan the work out and come back each dormant season to finish it.",
+   "Crepe myrtles are the plant that most often gets cut wrong. We thin them in February while they are dormant and before the buds break, and we do not top them. Topping leaves knuckles and a crop of weak shoots that flop under the weight of the blooms. A tree already topped can be recovered, but it takes two or three winters, so we plan the work out and come back each dormant season to finish it.",
    "Oaks get different timing. Oak wilt is a real concern in East Texas, and the beetles that carry it are drawn to fresh pruning cuts in spring and early summer, so the post oaks in Kilgore are left alone then. Dead lower limbs get cleared off shade trees, cuts go at the branch collar, and when a limb comes down in a storm we cut it clean and haul it away. A big pine or pecan leaning over a roof is not a job we take on.",
    "Small trees and shrubs that have outgrown their spot can come out, and the trimmings get raked and hauled before we leave. We also do seasonal fertilizer feeding for trees and shrubs and a mulch refresh around tree bases, which helps in Kilgore's fast-draining sand. A tree that sits at a corner of the house gets the same careful look as the one in the back. Pricing follows the count, the size and condition of each plant and how much debris there is."
   ],

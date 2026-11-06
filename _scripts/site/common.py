@@ -62,6 +62,7 @@ def job_href(job):
     return f"/our-work/{PROJ_BY_JOB[job]['slug']}" if job in PROJ_BY_JOB else f'/our-work#job={job}'
 SERVICES = load_dir('services')
 TOWNS = load_dir('towns')
+COMBO = load_dir('combo') if os.path.isdir(os.path.join(DATA, 'combo')) else {}   # per-page local copy: COMBO[town][service]
 
 # Display order
 SERVICE_ORDER = ['lawn-maintenance', 'leaf-removal', 'fertilization', 'hedge-trimming', 'tree-shrub-care', 'tree-planting',

@@ -313,7 +313,7 @@ def combo_page(slug, tslug, tidx):
         body += (f'<section class="sec stone"><div class="w"><h2 class="h2">How the job goes</h2><p class="sub">{e(s["timing"])}</p>'
                  f'<ol class="steps light{" s5" if len(s["process"]) == 5 else ""}" style="margin-top:36px">'
                  + ''.join(f'<li><h3>{e(x["title"])}</h3></li>' for x in s['process']) +
-                 f'</ol><p class="sub" style="margin-top:24px"><a class="more" href="/{slug}">Full {e(s["short"])} process, prices and FAQ</a></p></div></section>')
+                 f'</ol><p class="sub" style="margin-top:24px"><a class="more" style="white-space:normal;display:inline-block;max-width:100%" href="/{slug}">Full {e(s["short"])} process, prices and FAQ</a></p></div></section>')
     else:
         body = hero + (f'<section class="sec"><div class="w"><div class="answer"><h2>{e(aq)}</h2><p>{e(answer)}</p></div></div></section>'
                 f'<section class="sec" style="padding-top:0"><div class="w body2"><div class="prose2">'

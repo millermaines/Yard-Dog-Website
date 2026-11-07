@@ -45,10 +45,10 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-11-07 | blog-christmas-lights-east-texas | When to Book Christmas Lights in East Texas (It Is Earlier Than You Think) | Christmas Lights | Why installs fill up by early December, what goes into a professional install (measure, custom-cut, clip to the roofline, take-down and storage), and what to decide before the first call |
 | 2026-11-14 | blog-tree-pruning-windows-east-texas | The Best Months to Prune Trees in East Texas | Tree & Shrub Care | Why late winter before bud break is the window for most trees, what to prune now and what to wait on (crepe myrtles, oaks, spring bloomers), and why topping is never the answer |
 | 2026-11-21 | blog-winter-lawn-care-east-texas | What a Dormant Lawn Still Needs in December | Lawn Maintenance | Mowing as it slows, keeping leaves off, deep watering in dry spells, and what to leave alone until spring |
 | 2026-11-28 | blog-plan-spring-projects-east-texas | Book Spring Projects Now: Patios, Walkways, and Sod | Hardscape | Why winter is the planning season, how a site visit and quote work, and which projects are best built before spring |
+| 2026-12-05 | blog-winter-tree-watering-east-texas | Do Your Trees Need Water in a Dry East Texas Winter? | Tree & Shrub Care | Why new plantings and young trees can dry out in winter dry spells, how to check the soil, a slow deep soak on a mild afternoon, and what not to do before a freeze |
 
 ---
 
@@ -56,6 +56,7 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-11-07 | blog-christmas-lights-east-texas.html | When to Book Christmas Lights in East Texas (It Is Earlier Than You Think) | Christmas Lights |
 | 2026-11-04 | blog-last-fertilization-east-texas.html | Stop Feeding the Lawn Now: Why the Fertilizing Season Is Over | Fertilization |
 | 2026-11-04 | blog-ryegrass-overseeding-east-texas.html | Should You Overseed With Ryegrass This Fall? Usually Not | Lawn Maintenance |
 | 2026-11-04 | blog-winter-color-east-texas.html | Winter Color Still Goes In This Month: Pansies, Violas, and Dianthus in East Texas | Flower Bed Installation |

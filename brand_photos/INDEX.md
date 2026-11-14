@@ -74,6 +74,7 @@ a "site:" caption — those entries land at the bottom.
 
 - `chinch-bugs-st-augustine-turf.jpg`: Macro of chinch bugs (adults with the pale folded-wing mark, plus nymphs) clustered on a green grass blade. CC0, NOT our own photo, so caption it as illustrative. Hero for blog-chinch-bugs-st-augustine. See `EXTERNAL-PHOTO-CREDITS.md`.
 - `fallen-leaves-on-green-lawn.jpg`: Overhead view of a light scatter of yellow leaves over green turf, thin enough to still read as a green lawn. CC0, NOT our own photo, so caption it as illustrative. Hero for blog-fall-leaf-strategy-east-texas. See `EXTERNAL-PHOTO-CREDITS.md`.
+- `bare-oak-canopy-dormant-season.jpg`: Stand of leafless deciduous trees under an overcast sky, full branch structure visible from trunk to tip. CC0, NOT our own photo, so caption it as illustrative. Hero for blog-dormant-pruning-window-east-texas. See `EXTERNAL-PHOTO-CREDITS.md`.
 
 ## DO NOT USE on the website
 

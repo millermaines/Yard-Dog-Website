@@ -45,10 +45,11 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Plan Date | Slug | Working Title | Service Tag | Angle / Hook |
 |---|---|---|---|---|
-| 2026-11-14 | blog-tree-pruning-windows-east-texas | The Best Months to Prune Trees in East Texas | Tree & Shrub Care | Why late winter before bud break is the window for most trees, what to prune now and what to wait on (crepe myrtles, oaks, spring bloomers), and why topping is never the answer |
 | 2026-11-21 | blog-winter-lawn-care-east-texas | What a Dormant Lawn Still Needs in December | Lawn Maintenance | Mowing as it slows, keeping leaves off, deep watering in dry spells, and what to leave alone until spring |
 | 2026-11-28 | blog-plan-spring-projects-east-texas | Book Spring Projects Now: Patios, Walkways, and Sod | Hardscape | Why winter is the planning season, how a site visit and quote work, and which projects are best built before spring |
 | 2026-12-05 | blog-winter-tree-watering-east-texas | Do Your Trees Need Water in a Dry East Texas Winter? | Tree & Shrub Care | Why new plantings and young trees can dry out in winter dry spells, how to check the soil, a slow deep soak on a mild afternoon, and what not to do before a freeze |
+| 2026-12-12 | blog-landscape-design-preview-east-texas | Plan the Yard Before You Build It: What a Design Preview Shows | Landscaping | Why winter is the time to see a flower bed or hardscape drawn out before spring, what the paid Landscape Design Preview covers, and how the fee credits toward the install if booked within 90 days |
+| 2026-12-19 | blog-christmas-lights-take-down-east-texas | When Do the Christmas Lights Come Down? What Happens After the Holiday | Christmas Lights | Take-down and storage as part of the job, why January timing matters, and what to expect |
 
 ---
 
@@ -56,6 +57,7 @@ pre-emergent, insecticide or fungicide, or install or repair irrigation.
 
 | Ship Date | Filename | Title | Tag |
 |---|---|---|---|
+| 2026-11-14 | blog-tree-pruning-windows-east-texas.html | The Best Months to Prune Trees in East Texas | Tree & Shrub Care |
 | 2026-11-07 | blog-christmas-lights-east-texas.html | When to Book Christmas Lights in East Texas (It Is Earlier Than You Think) | Christmas Lights |
 | 2026-11-04 | blog-last-fertilization-east-texas.html | Stop Feeding the Lawn Now: Why the Fertilizing Season Is Over | Fertilization |
 | 2026-11-04 | blog-ryegrass-overseeding-east-texas.html | Should You Overseed With Ryegrass This Fall? Usually Not | Lawn Maintenance |

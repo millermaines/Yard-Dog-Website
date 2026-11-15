@@ -14,7 +14,7 @@ def svc_price(s):
 def home():
     recent = ''.join(f'<span class="th"><img src="/img/work/thumb/{BYKEY[k]["file"]}" width="{BYKEY[k]["tw"]}" height="{BYKEY[k]["th"]}" alt="{e(BYKEY[k]["alt"])}" decoding="async"></span>'
                      for k in ('p:poolpatio:still:v1022-patio-by-pool@48.6', 'p:irrigation:still:v1011-jacob-final@17.9', 'd:walk-dsc03930'))
-    hero = (f'<section class="hero plain home"><div class="w">'
+    hero = (f'<section class="hero plain home"><img class="hphoto" src="/img/yard-dog-crew-hero.webp" width="1000" height="1500" alt="A Yard Dog crew member walking to the truck with a sledgehammer, the Yard Dog Landscapes logo on the back of his hoodie" fetchpriority="high" decoding="async"><div class="w">'
             f'<div><p class="kick">Longview, Texas. Family-owned since 2017.</p><h1>Sit. Stay.<br>Perfect<br>Landscape.</h1>'
             f'<p class="lede">Lawn care, landscaping, patios, retaining walls and drainage across Longview and East Texas. One local crew that shows up when it says it will, builds it right, and cleans up before it leaves.</p>'
             f'<div class="acts"><a class="btn lg" href="/our-work" style="background:#fff;color:#111">See our work</a></div>'

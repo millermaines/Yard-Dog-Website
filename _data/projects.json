@@ -1,5 +1,146 @@
 [
  {
+  "slug": "deck-repair-white-oak-tx",
+  "job": "deckrepair",
+  "group": "w",
+  "town": "white-oak-tx",
+  "place": "White Oak, TX",
+  "date": "2026-11",
+  "date_h": "November 2026",
+  "services": [
+   "landscaping"
+  ],
+  "title": "Full deck repair with new steps and railing",
+  "h1": "Full Deck Repair with New Steps and Railing in White Oak, TX",
+  "seo_title": "Deck Repair, New Steps & Railing in White Oak, TX | Yard Dog",
+  "meta": "A full deck repair in White Oak, TX: new steps, new railing all the way across, busted boards replaced, then restained and painted. See the work in progress.",
+  "summary": "A full deck repair in White Oak: new steps, new railing across the whole deck, busted boards replaced, then restained and painted.",
+  "intro": [
+   "This White Oak deck had boards that had gone bad, steps that were worn out and a railing that had to come off. Our crew took it back to the frame and rebuilt it: new steps, new railing across the deck, and fresh boards wherever the old ones were busted.",
+   "These photos were taken while the work was under way. The deck is being restained and painted, and we'll add the finished photos here as soon as we have them."
+  ],
+  "steps": [
+   [
+    "Take off the old railing",
+    "The old railing came off first so the crew could see every post and board underneath."
+   ],
+   [
+    "Tear out the old steps",
+    "The worn steps were taken apart down to the framing, ready for new ones."
+   ],
+   [
+    "Pull the busted boards",
+    "Rotted and split deck boards were pried up and the nails pulled before anything new went down."
+   ],
+   [
+    "Replace boards and build new steps",
+    "New boards went in where the old ones came out, and the crew built the new steps."
+   ],
+   [
+    "Run new railing across the deck",
+    "The new railing was set along the full length of the deck on the posts."
+   ],
+   [
+    "Restain and paint",
+    "Last, the deck gets restained and the railing and trim are painted, so the whole thing matches."
+   ]
+  ],
+  "details": [
+   [
+    "Location",
+    "White Oak, TX"
+   ],
+   [
+    "Status",
+    "Work in progress, finished photos coming"
+   ],
+   [
+    "Work",
+    "Full deck repair"
+   ],
+   [
+    "Included",
+    "New steps, new railing, replaced boards, restain and paint"
+   ]
+  ],
+  "faq": [
+   [
+    "Can you repair an old deck instead of replacing it?",
+    "Often, yes. On this White Oak deck we replaced only the boards that were busted, rebuilt the steps and railing, and restained and painted the rest. We look at the frame and boards first and tell you what needs to be replaced."
+   ],
+   [
+    "What does a full deck repair include?",
+    "On this job it was new steps, new railing across the whole deck, replacement of busted boards, then restaining and painting. Every deck is different, so your written quote lists exactly what we will do."
+   ],
+   [
+    "Do you do deck repair in White Oak, TX?",
+    "Yes. White Oak is one of the towns our crews work in from our base in Longview. Send the quote form and we'll set up a free walkthrough and a written estimate."
+   ]
+  ],
+  "links": [
+   [
+    "Landscaping services",
+    "landscaping"
+   ],
+   [
+    "Landscaping in White Oak",
+    "landscaping-white-oak-tx"
+   ],
+   [
+    "Everything in White Oak",
+    "white-oak-tx"
+   ]
+  ],
+  "videos": [],
+  "photos": [
+   {
+    "src": "DSC04947.jpg",
+    "cap": "The deck with the old railing taken off and only the posts left",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04971.jpg",
+    "cap": "Deck boards being pulled up across the middle of the deck",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04859.jpg",
+    "cap": "Crew taking apart the old railing and steps",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04891.jpg",
+    "cap": "Old steps removed from the deck, with the crew working on the boards",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04863.jpg",
+    "cap": "Prying up a busted deck board",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04875.jpg",
+    "cap": "Pulling a bad board and its nails",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04968.jpg",
+    "cap": "Crew pulling a railing post and cutting out old boards",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC04887.jpg",
+    "cap": "Worn, weathered deck boards marked for replacement",
+    "kind": "in-progress"
+   }
+  ],
+  "drive": {
+   "photo_folders": [
+    "1g1SHIVplPvLTuwtaeIz3z_OVW5Z51r7U"
+   ]
+  }
+ },
+ {
   "slug": "flagstone-patio-extension-kilgore-tx",
   "job": "patioext",
   "group": "patios",

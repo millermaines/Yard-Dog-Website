@@ -66,7 +66,7 @@ def home():
     desc = 'Family-owned landscaping, lawn care, patios, walls and drainage in Longview and East Texas since 2017. Rated 5.0 from {REVIEW_COUNT} Google reviews. Free written quotes.'
     wp['description'] = desc
     page('index', 'Yard Dog Landscapes | Landscaping, Lawn Care & Patios in Longview, TX', desc, body, [biz, ws, wp, faq_ld(qas)],
-         og_img='/img/bg-home.jpg', extra_js='<script src="/quote.js?v=1" defer></script>')
+         og_img='/img/og-yard-dog.jpg', extra_js='<script src="/quote.js?v=1" defer></script>')
 
 # ======================================================================= about
 CREW = [('d:walk-dsc03710', 'Setting stone borders, Kilgore', 't2'), ('d:rvpad-dsc03105', 'Standing timbers for an RV pad, White Oak', ''),

@@ -307,7 +307,7 @@ def asset_v(name):
 def page(slug, title, desc, body, ld=(), og_img=None, extra_head='', extra_js='', robots='index, follow, max-image-preview:large',
          og_type='website', canonical=None):
     canon = canonical or (BASE + href(slug))
-    og = abs_url(og_img or '/img/bg-home.jpg')
+    og = abs_url(og_img or '/img/og-yard-dog.jpg')
     lds = '\n'.join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>' for d in ld)
     pre = ''
     ver = '<meta name="google-site-verification" content="TTw9_h3UV4aprn_LWuW5P7EQQpNVcJBNbF9Zvy002os">' if slug == 'index' else ''

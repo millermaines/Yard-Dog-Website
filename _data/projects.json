@@ -1,5 +1,176 @@
 [
  {
+  "slug": "river-rock-flower-bed-christmas-lights-longview-tx",
+  "job": "rockbedlights",
+  "group": "beds",
+  "town": "longview-tx",
+  "place": "Longview, TX",
+  "date": "2026-11",
+  "date_h": "November 2026",
+  "services": [
+   "flower-bed-installation",
+   "christmas-lights"
+  ],
+  "title": "River rock flower bed and Christmas lights",
+  "h1": "River Rock Flower Bed and Christmas Lights in Longview, TX",
+  "seo_title": "River Rock Flower Bed & Christmas Lights in Longview, TX | Yard Dog",
+  "meta": "A Longview front bed rebuilt as a low-maintenance river rock bed over landscape fabric, planted with new shrubs, plus C9 Christmas lights on the roofline.",
+  "summary": "A Longview front bed cleared out and rebuilt as a river rock bed over landscape fabric, planted with Indian hawthorns, Sunshine Ligustrum and Texas Sage, with Christmas lights on the front roofline.",
+  "intro": [
+   "This Longview front bed was cleared out and rebuilt as a clean, low-maintenance river rock bed. Landscape fabric went down first, river rock went over it, and the new shrubs went in through holes cut in the fabric: Indian hawthorns, Sunshine Ligustrum and Texas Sage, a mix that handles East Texas heat with very little upkeep.",
+   "The same home got Christmas lights for the season. Warm white C9 bulbs are clipped along the gutters and eaves across the front of the house. These photos were taken on install day, while the shrubs were being set and planted."
+  ],
+  "steps": [
+   [
+    "Clear the old bed",
+    "The old shrubs, mulch and debris came out of the bed so it could be rebuilt from bare ground."
+   ],
+   [
+    "Lay landscape fabric",
+    "Landscape fabric went down across the whole bed to keep weeds from coming up through the rock."
+   ],
+   [
+    "Spread the river rock",
+    "River rock was spread over the fabric, with a few larger boulders set in the bed."
+   ],
+   [
+    "Set out the shrubs",
+    "The new shrubs were set out in their pots first so the spacing could be checked before anything was planted."
+   ],
+   [
+    "Plant through the fabric",
+    "For each shrub the crew pulled back the rock, cut an opening in the fabric, dug the hole and planted it, then pulled the rock back around it."
+   ],
+   [
+    "Hang the lights",
+    "Warm white C9 bulbs were clipped to the gutters and eaves across the front of the house."
+   ]
+  ],
+  "details": [
+   [
+    "Location",
+    "Longview, TX"
+   ],
+   [
+    "Work",
+    "Flower bed renovation and Christmas lights"
+   ],
+   [
+    "Plants",
+    "Indian hawthorns, Sunshine Ligustrum, Texas Sage"
+   ],
+   [
+    "Bed",
+    "Landscape fabric and river rock"
+   ],
+   [
+    "Lights",
+    "Warm white C9 bulbs on the gutters and eaves, front of the home"
+   ]
+  ],
+  "faq": [
+   [
+    "Do you plant shrubs in a river rock bed?",
+    "Yes. On this Longview bed the fabric and rock went down first, then for each shrub we pulled back the rock, cut an opening in the fabric and planted it. The rock goes back around the base when it's done."
+   ],
+   [
+    "What shrubs hold up in a river rock bed in East Texas?",
+    "On this job we used Indian hawthorns, Sunshine Ligustrum and Texas Sage. They handle the heat with very little upkeep. We pick plants for your bed on the walkthrough and list them in the written quote."
+   ],
+   [
+    "Can you do flower beds and Christmas lights for the same home in Longview?",
+    "Yes. This Longview home had its front bed rebuilt and Christmas lights hung on the front roofline. Send the quote form and tell us everything you want done."
+   ]
+  ],
+  "links": [
+   [
+    "Flower bed installation",
+    "flower-bed-installation"
+   ],
+   [
+    "Christmas light installation",
+    "christmas-lights"
+   ],
+   [
+    "Everything in Longview",
+    "longview-tx"
+   ]
+  ],
+  "videos": [],
+  "photos": [
+   {
+    "src": "DSC05066.jpg",
+    "cap": "New river rock bed by the front porch, with the shrubs set out to plant and Christmas lights on the roofline",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation",
+     "christmas-lights"
+    ]
+   },
+   {
+    "src": "DSC04986.jpg",
+    "cap": "Sunshine Ligustrum set out along the river rock bed under the front window",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05049.jpg",
+    "cap": "Planting a Sunshine Ligustrum in the river rock bed",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05000.jpg",
+    "cap": "Cutting through the landscape fabric to dig a planting hole",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC04991.jpg",
+    "cap": "New shrubs lined up on the river rock in front of the house",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05012.jpg",
+    "cap": "Sunshine Ligustrum, Texas Sage and an azalea waiting to be planted",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05065.jpg",
+    "cap": "C9 Christmas lights clipped along the eaves and gutters",
+    "kind": "finished",
+    "services": [
+     "christmas-lights"
+    ]
+   },
+   {
+    "src": "DSC05062.jpg",
+    "cap": "Warm white C9 bulbs on the roofline, close up",
+    "kind": "finished",
+    "services": [
+     "christmas-lights"
+    ]
+   }
+  ],
+  "drive": {
+   "photo_folders": [
+    "1uLbXbpLmsp5Ico8oOp9_shJ5k8FyQMa-"
+   ]
+  }
+ },
+ {
   "slug": "deck-repair-white-oak-tx",
   "job": "deckrepair",
   "group": "w",
@@ -13,11 +184,11 @@
   "title": "Full deck repair with new steps and railing",
   "h1": "Full Deck Repair with New Steps and Railing in White Oak, TX",
   "seo_title": "Deck Repair, New Steps & Railing in White Oak, TX | Yard Dog",
-  "meta": "A full deck repair in White Oak, TX: new steps, new railing all the way across, busted boards replaced, then restained and painted. See the work in progress.",
-  "summary": "A full deck repair in White Oak: new steps, new railing across the whole deck, busted boards replaced, then restained and painted.",
+  "meta": "A full deck repair in White Oak, TX: new steps, new cable railing across the deck, busted boards replaced, then restained and painted. See it in progress and finished.",
+  "summary": "A full deck repair in White Oak: new steps, new cable railing across the whole deck, busted boards replaced, then restained and painted.",
   "intro": [
    "This White Oak deck had boards that had gone bad, steps that were worn out and a railing that had to come off. Our crew took it back to the frame and rebuilt it: new steps, new railing across the deck, and fresh boards wherever the old ones were busted.",
-   "These photos were taken while the work was under way. The deck is being restained and painted, and we'll add the finished photos here as soon as we have them."
+   "The first photos were taken while the work was under way. The last ones show it finished: boards restained, posts and rails painted black with cable railing between them, and the new steps in place."
   ],
   "steps": [
    [
@@ -38,11 +209,11 @@
    ],
    [
     "Run new railing across the deck",
-    "The new railing was set along the full length of the deck on the posts."
+    "The new railing was set along the full length of the deck: black posts and rails with a wood cap on top and steel cables run between the posts."
    ],
    [
     "Restain and paint",
-    "Last, the deck gets restained and the railing and trim are painted, so the whole thing matches."
+    "Last, the deck boards were restained and the posts and rails painted black, so the whole deck matches."
    ]
   ],
   "details": [
@@ -52,7 +223,7 @@
    ],
    [
     "Status",
-    "Work in progress, finished photos coming"
+    "Finished"
    ],
    [
     "Work",
@@ -60,7 +231,7 @@
    ],
    [
     "Included",
-    "New steps, new railing, replaced boards, restain and paint"
+    "New steps, new cable railing, replaced boards, restain and paint"
    ]
   ],
   "faq": [
@@ -93,6 +264,36 @@
   ],
   "videos": [],
   "photos": [
+   {
+    "src": "DSC04972.jpg",
+    "cap": "The finished deck with new steps, restained boards and black cable railing",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC04984.jpg",
+    "cap": "Finished deck corner with the cable railing and wood cap rail",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC04979.jpg",
+    "cap": "New steps up to the restained deck and black railing",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC04977.jpg",
+    "cap": "New steps at the covered end of the deck",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC04980.jpg",
+    "cap": "Restained deck boards in front of the covered porch",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC04974.jpg",
+    "cap": "Black railing posts with steel cables and a wood cap rail",
+    "kind": "finished"
+   },
    {
     "src": "DSC04947.jpg",
     "cap": "The deck with the old railing taken off and only the posts left",
@@ -136,7 +337,8 @@
   ],
   "drive": {
    "photo_folders": [
-    "1g1SHIVplPvLTuwtaeIz3z_OVW5Z51r7U"
+    "1g1SHIVplPvLTuwtaeIz3z_OVW5Z51r7U",
+    "1LBn3y33-iryYp12KACVXuJ00hcixF9KZ"
    ]
   }
  },

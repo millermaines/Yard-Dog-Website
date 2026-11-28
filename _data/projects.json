@@ -1,5 +1,159 @@
 [
  {
+  "slug": "christmas-light-installation-longview-tx",
+  "job": "lightslv",
+  "group": "other",
+  "town": "longview-tx",
+  "place": "Longview, TX",
+  "date": "2026-11",
+  "date_h": "November 2026",
+  "services": [
+   "christmas-lights"
+  ],
+  "title": "Christmas light installation",
+  "h1": "Christmas Light Installation in Longview, TX",
+  "seo_title": "Christmas Light Installation in Longview, TX | Yard Dog",
+  "meta": "A Longview brick home lit with C9 bulbs clipped along the gutters and gable edges, plus C9 ground stakes along a planting bed at a second Longview property.",
+  "summary": "C9 Christmas lights clipped along the gutters and up the gable edges of a brick home in Longview, and C9 bulbs on ground stakes along a planting bed at a second Longview property the same day.",
+  "intro": [
+   "Our crew hung Christmas lights on this brick home in Longview in late November. C9 bulbs went on in a single line along the gutters, around the corners and up the edges of the front gable, each bulb held in a clip on the gutter lip or the shingle edge.",
+   "The same day the crew set C9 bulbs on ground stakes along the edge of a planting bed at a second Longview property. These photos were taken during the install, with the bulbs lit in daylight."
+  ],
+  "steps": [
+   [
+    "Run the line along the roof",
+    "One crew member worked from the roof and one from the ladder, passing the C9 line along the roofline."
+   ],
+   [
+    "Clip each bulb",
+    "Every bulb sits in a plastic clip hooked over the gutter lip, so the line stays straight and evenly spaced."
+   ],
+   [
+    "Follow the gables and corners",
+    "The line was carried up the edges of the front gable and around the gutter corners so the outline of the house reads at night."
+   ],
+   [
+    "Stake the bed edge",
+    "At the second property, C9 bulbs were clipped into ground stakes and pushed in along the edge of a planting bed."
+   ]
+  ],
+  "details": [
+   [
+    "Location",
+    "Longview, TX"
+   ],
+   [
+    "Work",
+    "Christmas light installation"
+   ],
+   [
+    "Roofline",
+    "C9 bulbs on clips along the gutters and gable edges of a brick home"
+   ],
+   [
+    "Ground stakes",
+    "C9 bulbs on stakes along a planting bed, at a second Longview property"
+   ]
+  ],
+  "faq": [
+   [
+    "How do you attach Christmas lights to gutters?",
+    "With clips. On this Longview home each C9 bulb sits in a plastic clip that hooks over the gutter lip, which keeps the line straight and the bulbs evenly spaced along the roofline."
+   ],
+   [
+    "Can you light a bed edge or walkway, not just the roofline?",
+    "Yes. The same day as this roofline install, our crew set C9 bulbs on ground stakes along a planting bed at another Longview property. Ground stakes, tree wraps, garland and wreaths can all be added to a roofline install."
+   ],
+   [
+    "Do you take the lights down after Christmas?",
+    "Yes. In Longview and across East Texas we take the lights down after the season and store them for you. Send the quote form and tell us what you want lit."
+   ]
+  ],
+  "links": [
+   [
+    "Christmas light installation",
+    "christmas-lights"
+   ],
+   [
+    "Everything in Longview",
+    "longview-tx"
+   ]
+  ],
+  "videos": [],
+  "photos": [
+   {
+    "src": "DSC05145.jpg",
+    "cap": "C9 lights up the gable edge and along the gutter below the arched window",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC05119.jpg",
+    "cap": "Warm white C9 bulbs clipped along the gutter, evenly spaced",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC05144.jpg",
+    "cap": "The C9 line following the gutter around a corner of the house",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC05147.jpg",
+    "cap": "C9 bulbs along the gutter on the side of the house",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC05153.jpg",
+    "cap": "Lights carried along the gutter where two rooflines meet",
+    "kind": "finished"
+   },
+   {
+    "src": "DSC05087.jpg",
+    "cap": "One crew member on the roof, one on the ladder clipping bulbs to the gutter",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05114.jpg",
+    "cap": "Passing the C9 line along the roof edge",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05140.jpg",
+    "cap": "Hooking each bulb's clip over the gutter lip",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05082.jpg",
+    "cap": "Working the gutter line from the roof",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05103.jpg",
+    "cap": "Crew on the ground feeding the light line up to the roof",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05170.jpg",
+    "cap": "Setting C9 ground stakes along a planting bed at a second Longview property",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05169.jpg",
+    "cap": "Clipping a C9 bulb into a ground stake",
+    "kind": "in-progress"
+   },
+   {
+    "src": "DSC05176.jpg",
+    "cap": "C9 bulbs on ground stakes along the bed edge",
+    "kind": "finished"
+   }
+  ],
+  "drive": {
+   "photo_folders": [
+    "10YdfSttjnS2YoCMDf6mLtYJtQ5YVtNsF"
+   ]
+  }
+ },
+ {
   "slug": "river-rock-flower-bed-christmas-lights-longview-tx",
   "job": "rockbedlights",
   "group": "beds",
@@ -162,11 +316,60 @@
     "services": [
      "christmas-lights"
     ]
+   },
+   {
+    "src": "DSC04988.jpg",
+    "cap": "New shrubs in their pots on the river rock, set out before planting",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC04990.jpg",
+    "cap": "Shrubs spaced out across the river rock bed before planting",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05013.jpg",
+    "cap": "Digging a planting hole in the river rock bed by the side fence",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05029.jpg",
+    "cap": "Setting a Sunshine Ligustrum into its hole in the rock bed",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05034.jpg",
+    "cap": "Carrying a Sunshine Ligustrum to its spot in the river rock bed",
+    "kind": "in-progress",
+    "services": [
+     "flower-bed-installation"
+    ]
+   },
+   {
+    "src": "DSC05064.jpg",
+    "cap": "C9 bulbs clipped along the gutter, with the upper roofline lit behind",
+    "kind": "finished",
+    "services": [
+     "christmas-lights"
+    ]
    }
   ],
   "drive": {
    "photo_folders": [
-    "1uLbXbpLmsp5Ico8oOp9_shJ5k8FyQMa-"
+    "1uLbXbpLmsp5Ico8oOp9_shJ5k8FyQMa-",
+    "1OT64-DWNNtO-oxCWpvLZ2uUT-GTOmM4t"
    ]
   }
  },
